@@ -20,7 +20,8 @@ $(document).ready(function() {
         url: url,
         dataType:"json",
         success: function(data) {
-          ret = [data['entries'],data['upcs']];
+          //ret = [data['entries'],data['upcs']];
+          ret = [data['upcs'],data['entries']];
         }
       });
       return ret;
