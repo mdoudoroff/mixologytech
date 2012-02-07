@@ -1,3 +1,4 @@
+
 /*
  * HTML5 Boilerplate
  *
@@ -218,107 +219,98 @@ td { vertical-align: top; }
    Author:
    ========================================================================== */
 
-
-header {
-	padding: 0.5em;
-	text-align: center;
-}
-
-footer {
-	border-top: 2px solid #ddd;
-	padding: 0.5em;
-	font-size: 80%;
-	text-align: center;
-}
-
-footer p {
+body {
+	font-family: Georgia;
 	margin: 0;
+	background: url(bkgd-ipad.help.png);
 }
 
-header h1 {
-	font-size: 300%;
-	letter-spacing: -1px;
-	text-shadow: 0 0 9px rgb(141, 141, 141);
-	margin: 0;
+div#footer {
+	width:100%;
+	height:24px;
+	margin-bottom: 8px;
+	background: url(footer.ing2.png) repeat-x;
 }
 
-section {
-	clear: both;
+#container {
+	margin-left: 36px;
+	margin-right: 36px;
+	font-size: 18px;
+	text-align: left;
 }
 
-div[role="main"] {
-	padding: 0.5em;
+h1, h2, h3 {
+	font-family: Helvetica;
 }
 
-#appcontainer {
-	text-align: center;
-	padding: 0.5em 0;
-	background: -webkit-radial-gradient(black 15%, transparent 16%) 0 0, -webkit-radial-gradient(black 15%, transparent 16%) 8px 8px, -webkit-radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, -webkit-radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
-	background-image: -webkit-radial-gradient(center, black 15%, transparent 16%), -webkit-radial-gradient(center, black 15%, transparent 16%), -webkit-radial-gradient(center, rgba(255, 255, 255, 0.0976562) 15%, transparent 20%), -webkit-radial-gradient(center, rgba(255, 255, 255, 0.0976562) 15%, transparent 20%);
-	background-repeat-x: initial, initial, initial, initial;
-	background-repeat-y: initial, initial, initial, initial;
-	background-attachment: initial, initial, initial, initial;
-	background-position-x: 0px, 8px, 0px, 8px;
-	background-position-y: 0px, 8px, 1px, 9px;
-	background-origin: initial, initial, initial, initial;
-	background-clip: initial, initial, initial, initial;
-	background-color: #282828;
-	background-size: 16px 16px;
-	
-	border-radius: 6px;
-	}
-
-.app {
-	display: inline-block;
-	width: 89px;
-	text-align: center;
+h1 {
+	margin-top: 36px;
+	font-size: 36px;
 	font-weight: bold;
-	font-size:80%;
-	line-height: 100%;
-	height: 90px;
-	padding: 0.5em;
-	vertical-align: top;
 }
 
-.app img {
-	width: 64px;
-	margin-bottom: 3px;
+h2 {
+	font-weight: bold;
+	font-size: 27px;
 }
 
-.app:hover {
-	border-radius: 9px;
-	background-color: rgba(255, 255, 255, 0.15);
-	}
-
-.app a {
-	color: white;
-	text-decoration: none;
+p {
+	margin-bottom: 18px;
+	line-height: 24px;
 }
 
-figure.left {
-	float: left;
-	width: 25%;
-	margin-right: 1em;
+p img {
+	vertical-align: text-bottom;
+	margin: 0 0 1px 0;
 }
 
-figure.left img, figure.right img {
-	width: 100%;
+a {
+	color: rgb(200,0,0);
+	text-decoration: underline;
+	font-weight: bold;
 }
-
-figure.right {
-	float: right;
-	width: 25%;
-	margin-left: 1em;
-}
-
 
 ul {
-	list-style-type: square;
+	list-style-type: disc;
+	margin-left: 18px;
+	text-indent: 0;
+	margin-top: -9px;
+	margin-bottom: 9px;
 }
 
-figcaption {
-	font-style: italic;
-	font-size: 90%;
+li {
+	list-style-position: outside;
+	opacity: 1;
+	line-height: 27px;
+}
+
+div.dingbat {
+	text-align: center;
+	margin: 18px 0 18px 0;
+}
+
+table {
+	margin: 0 auto 18px auto;
+}
+
+table th, table td {
+	text-align: left;
+	padding: 0 9px 0 9px;
+}
+
+th.first, td.first {
+	text-align: left;
+	padding-left: 0;
+}
+
+ul#otheringrs1,ul#otheringrs2,ul#otheringrs3 {
+	width: 200px;
+	list-style-type: none;
+	margin: 0 0 0 36px;
+	text-indent: 0;
+	font-size: 16px;
+	float: left;
+	padding: 0;
 }
 
 
@@ -330,30 +322,7 @@ figcaption {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
-  
-  
-  body {
-  	padding: 0 15% 0 15%;
-  }
-
-	#appcontainer {
-		margin: 0 15%;
-	}
-  
-  figure {
-  	margin: 0 5%;
-  }
-  
-  figure.left {
-  	margin: 0 1em 0 0;
-  }
-  
-  figure.right {
-  	margin: 0 0 0 1em;
-  }
-  
 }
-
 
 
 
