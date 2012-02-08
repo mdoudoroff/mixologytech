@@ -112,7 +112,11 @@ $(document).ready(function() {
 
     );
 
+	
+	$('p').addClass('hyphenate');
+	$('li').addClass('hyphenate');
 
+	Hyphenator.run();
 
 });
 
