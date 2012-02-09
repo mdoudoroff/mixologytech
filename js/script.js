@@ -28,7 +28,7 @@ $(document).ready(function() {
       return ret;
     };
 
-/*
+
     // The url for our json data
     var jsonurl = "/ingr-stats.json";
 
@@ -72,7 +72,7 @@ $(document).ready(function() {
 
 
         );
-*/
+/*
     var plot1 = $.jqplot('chart1', [totalentries, totalbarcodes], {
         seriesDefaults: {
             pointLabels: {
@@ -111,7 +111,7 @@ $(document).ready(function() {
 
 
     );
-
+*/
 	
 	$('p').addClass('hyphenate');
 	$('li').addClass('hyphenate');
