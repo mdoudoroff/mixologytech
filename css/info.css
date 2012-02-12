@@ -233,9 +233,8 @@ div#footer {
 }
 
 #container {
-	margin-left: 36px;
-	margin-right: 36px;
-	font-size: 18px;
+	margin-left: 1em;
+	margin-right: 1em;
 	text-align: left;
 }
 
@@ -244,19 +243,24 @@ h1, h2, h3 {
 }
 
 h1 {
-	margin-top: 36px;
-	font-size: 36px;
+	margin-top: 1em;
+	font-size: 180%;
 	font-weight: bold;
 }
 
 h2 {
 	font-weight: bold;
-	font-size: 27px;
+	font-size: 125%;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 100%;
 }
 
 p {
-	margin-bottom: 18px;
-	line-height: 24px;
+	margin-bottom: 1em;
+	line-height: 140%;
 }
 
 p img {
@@ -271,17 +275,17 @@ a {
 }
 
 ul {
-	list-style-type: disc;
-	margin-left: 18px;
+	list-style-type: square;
+	margin-left: 0;
 	text-indent: 0;
-	margin-top: -9px;
-	margin-bottom: 9px;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 li {
 	list-style-position: outside;
 	opacity: 1;
-	line-height: 27px;
+	line-height: 140%;
 }
 
 div.dingbat {
