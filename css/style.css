@@ -263,8 +263,12 @@ p,li {
 
 section {
 	clear: both;
-	margin-bottom: 2em;
-	padding-bottom: 2em;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+
+section>figure {
+	margin-top: 2em;
 }
 
 div[role="main"] {
@@ -347,6 +351,15 @@ figcaption {
 	font-size: 90%;
 }
 
+
+#testimonials p {
+	font-style: italic;
+	font-size: 95%;
+}
+
+#vitals, #vitals p {
+	text-align: center;
+}
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.

@@ -1,243 +1,138 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>My Bar</title>
+  <title>MixologyTech - My Bar for iOS</title>
   <meta name="description" content="">
-  <meta name="author" content="">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
 
-  <!-- CSS concatenated and minified via ant build script-->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- end CSS-->
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="../js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+	  <img width="40%" style="margin-bottom: 3%;" src="../gfx/icon-mybar-256.png" alt="My Bar app icon" />
+		<h1>My Bar</h1>
+  </header>
+  <div role="main">
 
-  <div id="container">
-    <header>
-      <img src="img/appicon-256.png" alt="My Bar app icon" id="appicon" />
-      <h1>My Bar</h1>
-      <p>Simple home bar management for iPhone &amp; iPod Touch with <span style="color:#f33;">RedLaser™</span> barcode scanning</p>
-    </header>
-    <div id="main" role="main">
-      
-    
-      <section id="vitals">
-      <p>Version 1.0 &bull; Released September 1, 2011<br>Version 1.1 &bull; Released December 6, 2011<br>Version 1.1.1 &bull; Released January 6, 2011<br>Version 1.5 &bull; Released February 7, 2012</p>
-      <p><strong>Special introductory price: US$4.99</strong></p>
-      <p><strong>Please note:</strong> we’ve put a lot of work into this app, but it’s still a 1.x version. While our barcode coverage is probably better than anyone else has got, it’s not perfect. We are still filling in holes and you can help! Every unmatched barcode you scan and submit through My Bar is one nobody will ever worry about again.</p>
-      <a href="http://itunes.apple.com/us/app/my-bar/id457644660"><img src="img/App_Store_Badge_EN.png" width="163" height="56" alt="App Store Badge EN"></a>
-      </section>
-      
-      <section id="testimonials">
-        
-        <p>“Really good, will become awesome!”—Mattias H.</p>
-        <p>“The app is really cool.  Nice work!”—Ed P.</p>
-        <p>“I just bought the app. I look forward to playing around with it! This seems like a great idea.”—David M.</p>
-        <p>“The app is great and I'm looking forward to spending some time scanning my inventory, adding barcodes etc.”—Keith L.</p>
-        <p>“Thank you for this great app”—Stefan G.</p>
-        <p>“This is a very helpful app for a home bar enthusiast. The bar code scanning is a great feature. While there are bound to be items that the scanner can not find, the app lets you submit the missing items and they update the apps database often with our submissions. I contacted the company with questions and I received quick response with real information, that is the kind of attention to customer service all companies should provide.”—Minneapolis Me
-        </section>
-      
-      <section id="demo">
-      <h2>Demo Video</h2>
-      <figure>
-          <video width="100%" poster="img/video-poster.jpg" controls>
-              <source src="http://mixtech.s3.amazonaws.com/mybar-v1-demo.m4v" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-              <source src="http://mixtech.s3.amazonaws.com/mybar-v1-demo.webm" type='video/webm; codecs="vp8, vorbis"' />
-              <source src="http://mixtech.s3.amazonaws.com/mybar-v1-demo.theora.ogv" type='video/ogg; codecs="theora, vorbis"' />
-          </video>
-          
- 
-          
-          
-          
-          
-      </figure>
-      
-      </section>
-      
-      <section id="more" class="clearfix">
-        
-        <h2>Your Lists</h2>
+		<section>
 
-        <p>My Bar keeps some handy lists for you.</p>
-        <ul>
-        <li>Your <strong>Inventory</strong> list is for what you’ve got.</li>
-        <li>Your <strong>Shopping</strong> list is for what you need to pick up.</li>
-        <li>Your <strong>Favorites</strong> list is stuff you really really like.</li>
-        <li>Your <strong>Someday</strong> list is stuff you’ve been meaning to try.</li>
-        </ul>
-        <p>My Bar even automatically remembers ingredients you’ve had in your inventory in the past. Those are in your <strong>Past Inventory</strong> list.</p>
-        <p>You can also create your own custom lists to track whatever you like, such as the ingredients you’ll need for a party, or the inventory at a vacation home, or your recommendations for a buddy.</p>
-        
-        
-      <h2>A living database of bar ingredients</h2>
-      <p>My Bar knows about thousands of bar ingredients. It also knows what those ingredients are and how they relate to each other and organizes them in a hierarchy.</p>
-      <img src="img/aboutdatabase-fig.png" alt="Aboutdatabase Fig">
-      <p>When you see an unfamiliar bottle in the store, My Bar can usually tell you what it is.</p>
-      <p>My Bar can identify a large and growing number of spirits by scanning the bar code on back. My Bar uses RedLaser virtual bar code scanning—the best available for iOS. Just pull virtually anywhere in the app to expose the scanner trigger. (Camera required for this feature.)</p>
-      <img src="img/help.1-fig-scan.png" alt="Help.1 Fig Scan">
-      <p>A few letters in the search bar is also usually all it takes to call up any ingredient. Just pull down virtually anywhere in the app to start a new search.</p>
-      <img src="img/help.1-fig-search.png"  alt="Help.1 Fig Search">
-      <p>Meanwhile, the database keeps getting better. We are growing My Bar’s database constantly, adding new ingredients, adding more information about the ingredients, adding more photos and bar codes. A tap on the home screen of the app downloads the latest database.</p>
-      <img src="img/help.4-update-alert.png"  alt="Help.4 Update Alert">
-      
-      
-      <aside id="update">
-      
-      <section>
-      	<h2>February 11, 2012</h2>
-      	<p>3837 total entries (71 added)<br>5012 total bar codes (71 added)</p>
-      	<h3>New entries</h3>
-      	<ul>
-      		<li>1921 Blanco</li>
-      		<li>1921 Reposado</li>
-      		<li>Absolut Orient Apple</li>
-      		<li>Alpen Wolfe</li>
-      		<li>Angel’s Envy</li>
-      		<li>Auchentoshan 12 Year</li>
-      		<li>Beefeater Summer Edition</li>
-      		<li>Bitter Truth Repeal Day Bitters, The</li>
-      		<li>Bruichladdich “The Organic”</li>
-      		<li>Bruichladdich “Waves”</li>
-      		<li>Burnett’s Whipped Cream Vodka</li>
-      		<li>Cimarron Reposado</li>
-      		<li>Clear Creek Loganberry Liqueur</li>
-      		<li>Clément Canne Bleu 2010</li>
-      		<li>Clément Single Cask</li>
-      		<li>Combier</li>
-      		<li>Combier Doppelt Kummel Extra</li>
-      		<li>Combier Roi René Rouge</li>
-      		<li>Cuca Fresca Cachaça</li>
-      		<li>Cuca Fresca Pura Gold</li>
-      		<li>Don Perfil Capitan General 10 Year</li>
-      		<li>D’Aristi Xtabentun</li>
-      		<li>Elixir Combier</li>
-      		<li>Fee Brothers Black Walnut Bitters</li>
-      		<li>Fee Brothers Plum Bitters</li>
-      		<li>Glengoyne 12 Year</li>
-      		<li>Glengoyne 12 Year Cask Strength</li>
-      		<li>High West</li>
-      		<li>High West Silver Whiskey Western Oat</li>
-      		<li>Hudson New York Corn Whiskey</li>
-      		<li>Ilegal Mezcal Añejo</li>
-      		<li>Ilegal Mezcal Joven</li>
-      		<li>Ilegal Mezcal Reposado</li>
-      		<li>Inverarity</li>
-      		<li>Junior Johnson’s Midnight Moon Carolina Moonshine</li>
-      		<li>Junior Johnson’s Midnight Moon Lightning Lemonade</li>
-      		<li>Kahlua Coffee Cream</li>
-      		<li>Kuchan Indian Blood Peach Eau De Vie</li>
-      		<li>Lash, The</li>
-      		<li>Lecompte Originel</li>
-      		<li>Leopold Bros. American Orange</li>
-      		<li>Leopold Bros. Frenchpress Style American Coffee</li>
-      		<li>Leopold Bros. Michigan Tart Cherry</li>
-      		<li>Leopold Bros. New England Cranberry</li>
-      		<li>Leopold Bros. New York Sour Apple Liqueur</li>
-      		<li>Leopold Bros. Rocky Mountain Blackberry</li>
-      		<li>Leopold Bros. Three Pins Alpine Herbal Liqueur</li>
-      		<li>Luxardo Sambuca</li>
-      		<li>Marzadro Le Dic’ Otto Lune Grappa Stravecchia</li>
-      		<li>McGuinness Blue Curaçao</li>
-      		<li>Miracle Mile Holiday Bitters</li>
-      		<li>Montilla-Morales Pedro Ximenez Solera 1981</li>
-      		<li>Oxley Classic English Dry Gin</li>
-      		<li>Phillips Black 100</li>
-      		<li>Phillips Blue 100</li>
-      		<li>Phillips Butter Ripple Schnapps</li>
-      		<li>Phillips Hot 100</li>
-      		<li>Phillips Root 100</li>
-      		<li>Rainha das Gerais Fazenda Aroeiras</li>
-      		<li>Ron de Jeremy</li>
-      		<li>Royal Combier</li>
-      		<li>Sangster’s Original Gold Jamaica Rum Cream</li>
-      		<li>Schenley Silent Sam</li>
-      		<li>Square One Botanical</li>
-      		<li>St. George Agua Libre Dark Rum</li>
-      		<li>St. George Agua Libre “Fresh Squeezed” Rum</li>
-      		<li>Treaty Oak Platinum Rum</li>
-      		<li>Vieux Carré Absinthe Superieure</li>
-      		<li>Vizcaya VXOP Cuban Formula Rum</li>
-      		<li>Voyant Chai Cream</li>
-      		<li>XXX Shine Corn Whiskey</li>
-      	</ul>
-      </section>
-      
- 
-  
-                
-          <p><a href="updates.html">View full database update history &gt;</a></p>
-          
-      </aside>
+			<p>My Bar is a premium iPhone app that makes simple inventory management feasible for liquor enthusiasts and mixologists.</p>
+			
+			<p><strong style="color:red;">Important!</strong> My Bar does things that no other app can, but My Bar is not for everyone. <u>Please do not purchase My Bar until you know it will provide you with value.</u></p>
+			
+			<ol>
+				<li>Download and play with our free app <strong><a href="../ingrapp/index.html">Bar Ingredients</a></strong>, which will introduce you to the <a href="../index.html">MixologyTech Ingredients Database</a>.</li>
+				<li>Watch the screencast video (below) to understand how My Bar’s features work.</li>
+				<li><a href="mailto:&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x6d;&#x61;&#x72;&#x74;&#x69;&#x6e;&#64;&#109;&#105;&#120;&#111;&#108;&#111;&#103;&#121;&#x74;&#101;&#x63;&#104;&#46;&#99;&#111;&#x6d;">Email me</a> with any questions or doubts you have.</li>
+			</ol>
+	
+			<p><strong>iPad users:</strong> this app has no native iPad interface, but it is usable with the iPhone UI on iPad and iPad 2 (including iPad 2 camera support for barcode scanning).</p>
+	
+			<p>Thank you!</p>
+			
+			<p>—Martin Doudoroff, developer</p>
 
-  
-      
-      <h2>Research &amp; learn</h2>
-      <p>Every entry has at least some kind of basic definition/description that tells you what it is and what other ingredients are similar or related.</p>
-      <p>Most entries can tell you more, such as where the ingredient comes from, its alcoholic strength, its flavor, and what makes a good substitute.</p>
-      <p>Many entries have photos. High resolutions ones so you can pinch to zoom in and read the labels. We're adding photos as quickly as we can (and you can help—see below).</p>
-      
-      <h2>Make it better</h2>
-      <p>Feedback is built-in. Help us help you.</p>
-      <p><strong>If an ingredient you like is missing from the database</strong>, tell us and we'll add it. The missing ingredient will show up in the next database update. It’s that simple.</p>
-      <p><strong>If you have an ingredient that has no photo</strong>, snap a picture of it with the camera, submit it through the app and everyone else will benefit. A no brainer.</p>
-      <p><strong>If you find a bar code that isn’t working for an ingredient</strong>, look it up through search, scan the barcode with the camera through the app and submit it. It’ll go in the next update and work for everybody. Easy.</p>
+		</section>
 
-      <h2>Screen grabs</h2>
-      <div id="grabs">
-      <a href="img/screenie1.jpg"><img src="img/screenie1.jpg" width="17%" alt="Screenie1"></a>
-      <a href="img/screenie2.jpg"><img src="img/screenie2.jpg" width="17%" alt="Screenie2"></a>
-      <a href="img/screenie3.jpg"><img src="img/screenie3.jpg" width="17%" alt="Screenie3"></a>
-      <a href="img/screenie4.jpg"><img src="img/screenie4.jpg" width="17%" alt="Screenie4"></a>
-      <a href="img/screenie5.jpg"><img src="img/screenie5.jpg" width="17%" alt="Screenie5"></a>
-      </div>
-      
-      
-      </section>
-      
-      
-      
-    </div>
-    <footer>
-<p>App by <a href="http://mixologytech.com">MixologyTech</a> &amp; <a href="http://dragonforged.com">Dragon Forged Software</a>.<br>Copyright © 2011 Martin Doudoroff LLC.<br>For technical support, please email <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#109;&#105;&#120;&#111;&#108;&#111;&#103;&#121;&#116;&#101;&#099;&#104;&#046;&#099;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#109;&#105;&#120;&#111;&#108;&#111;&#103;&#121;&#116;&#101;&#099;&#104;&#046;&#099;&#111;&#109;</a></p>
-<p>RedLaser is a trademark of eBay.</p>
-    </footer>
-  </div> <!--! end of #container -->
+		<section>
+			<h2>Features</h2>
+			<ul>
+				<li>All the features of the <a href="../ingrapp/index.html">Bar Ingredients app</a>.</li>
+				<li><strong>Lists</strong>: track your inventory, shopping list, favorites, etc. Create custom lists for whatever purpose.</li>
+				<li><strong>Barcode scanning</strong>: use the built-in camera on your device to look up items and to batch scan into your lists. The spirits database recognizes 5000+ barcodes (more every week through crowd sourcing). Add unrecognized bar codes on the fly.</li>
+				<li><strong>Custom ingredients</strong>: add your own entries for limited edition items and things that aren't in the official database yet.</li>
+				<li><strong>Notes</strong>: add simple annotations to entries for future reference.</li>
+				<li><strong>iCloud support</strong>: all your lists, custom ingredients and notes are automatically backed up and sync’d through iCloud if you’re an iCloud user.</li>
+			</ul>
+			
+			<h2>Screen Cast</h2>
+			<figure>
+			   <video width="100%" poster="img/mybar-v1.5-poster.jpg" controls>
+				   <source src="http://mixtech.s3.amazonaws.com/mybar-v1.5-demo.m4v" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+				   <source src="http://mixtech.s3.amazonaws.com/mybar-v1.5-demo.webm" type='video/webm; codecs="vp8, vorbis"' />
+				   <source src="http://mixtech.s3.amazonaws.com/mybar-v1.5-demo.theora.ogv" type='video/ogg; codecs="theora, vorbis"' />
+			   </video>
+			</figure>
+			</section>
+			
+			<section id="testimonials">
+			<h2>Testimonials</h2>
+			<p>“Really good, will become awesome!”—Mattias H.</p>
+			<p>“The app is really cool.  Nice work!”—Ed P.</p>
+			<p>“I just bought the app. I look forward to playing around with it! This seems like a great idea.”—David M.</p>
+			<p>“The app is great and I'm looking forward to spending some time scanning my inventory, adding barcodes etc.”—Keith L.</p>
+			<p>“Thank you for this great app”—Stefan G.</p>
+			<p>“This is a very helpful app for a home bar enthusiast. The bar code scanning is a great feature. While there are bound to be items that the scanner can not find, the app lets you submit the missing items and they update the apps database often with our submissions. I contacted the company with questions and I received quick response with real information, that is the kind of attention to customer service all companies should provide.”—Minneapolis Me</p>
+			<p>“Thanks for a great app, and quick answer.”—Tony L.</p>
+			<p>“I don't mind telling you this is a great app. I've been keeping track
+			of my inventory in a list app for years and I always wanted something
+			more robust. This is a winner in my book.”—Marshall F.</p>
+			
+					</section>
+
+		<section id="vitals">
+		<p>Version 1.0 &bull; Released September 1, 2011<br>Version 1.1 &bull; Released December 6, 2011<br>Version 1.1.1 &bull; Released January 6, 2011<br>Version 1.5 &bull; Released February 7, 2012</p>
+		<p><a href="../app-release-notes.html">Release notes</a></p>
+		<p><strong>Current Price: US$11.99</strong></p>
+		<a href="http://itunes.apple.com/us/app/my-bar/id457644660"><img src="img/App_Store_Badge_EN.png" width="163" height="56" alt="App Store Badge EN"></a>
+		</section>
+		
 
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  </div>
+  <footer>
+		<p>MixologyTech is a business of Martin Doudoroff LLC.</p>
+  </footer>
 
 
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
-  <!-- end scripts-->
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
 
-  <script> // Change UA-XXXXX-X to be your site's ID
-    window._gaq = [['_setAccount','UA-19665919-1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
+  <!-- scripts concatenated and minified via build script -->
+  <script defer src="../js/plugins.js"></script>
+  <script defer src="../js/script.js"></script>
+  <!-- end scripts -->
+
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
 
-
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
   
 </body>
 </html>
