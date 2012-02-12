@@ -224,7 +224,7 @@ body {
 }
 
 header {
-	padding: 2em 0 0.5em 0;
+	padding: 1em 0 0.5em 0;
 	text-align: center;
 }
 
@@ -240,12 +240,16 @@ footer p {
 	text-align: center;
 }
 
+header img {
+	margin-top: 0;
+}
+
 header h1 {
 	letter-spacing: -1px;
 	margin: 0;
 	color: #19156d;
 	text-shadow: 1px 1px 1px #ffffff;
-	font: bold 300% Helvetica, "Helvetica Neue", sans-serif;
+	font: bold 240% Helvetica, "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -254,6 +258,7 @@ a {
 
 h2 {
 	text-align: center;
+	font-size: 125%;
 	text-shadow: 1px 1px 1px #ffffff;
 }
 
@@ -344,6 +349,13 @@ figure.right {
 
 ul {
 	list-style-type: square;
+	margin-left: 0;
+	padding-left: 1em;
+}
+
+ol {
+	padding-left: 1em;
+	margin-left: 0.4em;
 }
 
 figcaption {
