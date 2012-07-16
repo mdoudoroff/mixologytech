@@ -344,14 +344,15 @@ td {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  padding: 18px;
 }
 nav {
   float: left;
-  width: 275px;
+  width: 270px;
 }
 #treeContainer {
   float: right;
-  width: 745px;
+  width: 720px;
   position: relative;
 }
 body {
