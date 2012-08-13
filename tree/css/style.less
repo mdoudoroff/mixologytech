@@ -1,29 +1,57 @@
 @import "DGLY-h5bp-top.less";
 
-
 #container {
-	width:1024px;
+	width:980px;
 	margin-left:auto;
 	margin-right:auto;
 	position:relative;
-	padding: 18px;
+	padding: 9px 18px 18px 18px;
+	background-color: white;
+}
+
+header {
+	/*border-bottom: 2px solid green;*/
+	margin-bottom: 18px;
+	height: 108px;
+}
+
+footer {
+	clear:both;
+	border-top: 2px solid #ddd;
 }
 
 nav {
+	position: relative;
 	float:left;
-	width: 270px;
-	
+	width: 342px;
+	margin-bottom: 18px;
 }
 
 #treeContainer {
 	float:right;
-	width: 720px;
+	width: 604px;
 	position:relative;
+	margin-bottom: 18px;
+}
+
+#xrefs {
+	float:right;
+	width: 495px;
+	position:relative;
+	margin-bottom: 18px;
+	margin-left: 18px;
+}
+
+#details {
+	float:left;
+	width: 495px;
+	margin-bottom: 18px;
 }
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 13px;
+	background-color: #f5f4f0;
 }
 
 ul {
@@ -34,6 +62,18 @@ ul {
 
 li {
 	margin-top:9px;
+}
+
+nav ul ul {
+	margin-left: 18px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
 }
 
 .product {
@@ -56,15 +96,84 @@ li {
 	color:white;
 }
 
+.photos {
+	font-size:10px;
+	padding: 1px 3px;
+	background-color:yellow;
+	color:orange;
+}
+
+
 .el {
 	background:none;
 	position:absolute;
-	border-left: 3px solid #eee;
-	border-bottom: 3px solid #eee;
+	border-left: 3px solid #ddd;
+	border-bottom: 3px solid #ddd;
 	-webkit-border-bottom-left-radius: 9px;
 	-moz-border-radius-bottomleft: 9px;
 	border-bottom-left-radius: 9px;
-	z-index: -9;
+}
+
+#selectedSubTree {
+	background: #ddd;
+	padding: 2px 4px;
+}
+
+.zeeBottom {
+	position:absolute;
+	border-right: 3px solid #ddd;
+	border-bottom: 3px solid #ddd;
+	-webkit-border-bottom-right-radius: 9px;
+	-moz-border-radius-bottomright: 9px;
+	border-bottom-right-radius: 9px;
+}
+
+.zeeTop {
+	position:absolute;
+	border-left: 3px solid #ddd;
+	border-top: 3px solid #ddd;
+	-webkit-border-top-left-radius: 9px;
+	-moz-border-radius-topleft: 9px;
+	border-top-left-radius: 9px;
+}
+
+
+.lastupdated {
+	text-align:right;
+	color: #ddd;
+}
+
+#dbicon {
+	height: 100px;
+	float: left;
+	margin-right: 18px;
+}
+
+#apps {
+	border: 2px solid #f5f4f0;
+	float:right;
+	width: 450px;
+	padding: 6px;
+	text-align: right;
+}
+
+#apps .app {
+	float: right;
+	width: 100px;
+	text-align: center;
+}
+
+#mybaricon {
+	height: 63px;
+}
+
+#baringredientsicon {
+	height: 63px;
+}
+
+header p {
+	font-size: 125%;
+	padding-top: 18px;
 }
 
 @import "DGLY-h5bp-bottom.less";
