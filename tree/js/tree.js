@@ -163,6 +163,79 @@ jQuery(document).ready(function() {
 		rebuildSubTreeBox();
 	}
 
+
+	// == search form crap
+
+	$("#searchField").val("Search...").addClass("empty");
+	
+	// When you click on #search
+	$("#searchField").focus(function(){
+		
+		// If the value is equal to "Search..."
+		if($(this).val() === "Search...") {
+			// remove all the text and the class of .empty
+			$(this).val("").removeClass("empty");
+		}
+		
+	});
+	
+	// When the focus on #search is lost
+	$("#searchField").blur(function(){
+		
+		// If the input field is empty
+		if($(this).val() === "") {
+			// Add the text "Search..." and a class of .empty
+			$(this).val("Search...").addClass("empty");
+		}
+		
+	});
+
+	// dynamic search binding (keyup-based)
+	// note: returns all results, not just "top" results, so maybe a variant is needed for "drop down"-type results presentation
+	$('#searchField').keyup(function() {
+		
+		var searchStr = $('#searchField').val();
+		if (searchStr.length > 1) {
+			$.getJSON('/search/'+searchStr,function(msg){
+				
+				$('#searchResults').empty();
+				$('#searchResults').append($('<ul>'));
+
+				for (var i = 0; i < msg.length; i++) {
+					$('#searchResults').append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a></li>'));
+				}
+
+				$('#searchResults').append($('</ul>'));
+			});
+		}
+	});
+
+	// submit search binding (requires form submit)
+	$('#searchForm').submit(function() {
+		var searchStr = $('#searchField').val();
+		if (searchStr) {
+	  	
+			$.getJSON('/search/'+searchStr,function(msg){
+				
+				$('#searchResults').empty();
+				$('#searchResults').append($('<ul>'));
+
+				for (var i = 0; i < msg.length; i++) {
+					$('#searchResults').append($('<li>'+msg[i].name+'</li>'));
+				}
+
+				$('#searchResults').append($('</ul>'));
+				
+			});
+	  	
+		
+		}
+	  return false;
+	});
+
+
+
+
 });
 
 

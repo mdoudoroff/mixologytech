@@ -486,6 +486,14 @@ header p {
   font-size: 125%;
   padding-top: 18px;
 }
+.empty {
+  color: #524630;
+}
+#searchResults {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */
