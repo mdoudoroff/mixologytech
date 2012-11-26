@@ -9633,7 +9633,7 @@ jQuery(document).ready(function() {
 				$('#searchResults').append($('<ul>'));
 
 				for (var i = 0; i < msg.length; i++) {
-					$('#searchResults').append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a></li>'));
+					$('#searchResults').append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> ('+msg[i].context+')</li>'));
 				}
 
 				$('#searchResults').append($('</ul>'));
