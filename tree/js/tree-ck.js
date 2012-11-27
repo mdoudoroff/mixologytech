@@ -9626,46 +9626,41 @@ jQuery(document).ready(function() {
 	$('#searchField').keyup(function() {
 		
 		var searchStr = $('#searchField').val();
+		var searchResults = $('#searchResults');
 		if (searchStr.length > 1) {
 			$.getJSON('/search/'+searchStr,function(msg){
-				
-				$('#searchResults').empty();
-				$('#searchResults').append($('<ul>'));
 
-				for (var i = 0; i < msg.length; i++) {
-					$('#searchResults').append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> ('+msg[i].context+')</li>'));
+				searchResults.empty();
+
+				if (msg.length>0) {
+
+					
+					searchResults.append($('<ul>'));
+
+					for (var i = 0; i < 10; i++) {
+						if (i < msg.length) {
+							searchResults.append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> ('+msg[i].context+')</li>'));
+						}
+
+					}
+					if (msg.length > 10) {
+						searchResults.append($('<li><em><a href="/tree/index.html?q='+encodeURIComponent(searchStr)+'">... and '+(msg.length-10)+' more</a></li>'));
+					}
+					searchResults.append($('</ul>'));
+					searchResults.show();
 				}
-
-				$('#searchResults').append($('</ul>'));
+				else if (searchStr.length > 0) {
+					searchResults.append($('<p><em>No matches. Try searching on the first few letters of a product or category.</em></p>'));
+					searchResults.show();
+				} else {
+					searchResults.hide();
+				}
 			});
 		}
-	});
-
-	// submit search binding (requires form submit)
-	$('#searchForm').submit(function() {
-		var searchStr = $('#searchField').val();
-		if (searchStr) {
-	  	
-			$.getJSON('/search/'+searchStr,function(msg){
-				
-				$('#searchResults').empty();
-				$('#searchResults').append($('<ul>'));
-
-				for (var i = 0; i < msg.length; i++) {
-					$('#searchResults').append($('<li>'+msg[i].name+'</li>'));
-				}
-
-				$('#searchResults').append($('</ul>'));
-				
-			});
-	  	
-		
+		else {
+			searchResults.hide();
 		}
-	  return false;
 	});
-
-
-
 
 });
 
