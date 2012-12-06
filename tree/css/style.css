@@ -344,24 +344,20 @@ td {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding: 9px 18px 18px 18px;
-  background-color: white;
+  padding: 0;
+  background-color: #f5f4f0;
 }
 header {
   /*border-bottom: 2px solid green;*/
 
   margin-bottom: 18px;
   height: 108px;
+  padding: 18px 18px 0 18px;
 }
 footer {
+  background-color: #e5e4e0;
   clear: both;
-  border-top: 2px solid #ddd;
-}
-nav {
-  position: relative;
-  float: left;
-  width: 342px;
-  margin-bottom: 18px;
+  padding: 9px 18px;
 }
 #treeContainer {
   float: right;
@@ -369,22 +365,15 @@ nav {
   position: relative;
   margin-bottom: 18px;
 }
-#xrefs {
-  float: right;
-  width: 495px;
-  position: relative;
-  margin-bottom: 18px;
-  margin-left: 18px;
-}
-#details {
-  float: left;
-  width: 495px;
-  margin-bottom: 18px;
-}
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
-  background-color: #f5f4f0;
+  background-color: #e5e4e0;
+}
+h3 {
+  line-height: 18px;
+  margin-top: 18px;
+  margin-bottom: 0px;
 }
 ul {
   margin-top: 0;
@@ -403,58 +392,6 @@ a {
 a:hover {
   color: red;
 }
-.product {
-  color: #888;
-}
-.editorial {
-  font-style: italic;
-  margin-left: 40px;
-  padding: 3px;
-  background-color: yellow;
-  display: block;
-  color: orange;
-}
-.defunct {
-  font-size: 10px;
-  padding: 1px 3px;
-  background-color: #ccc;
-  color: white;
-}
-.photos {
-  font-size: 10px;
-  padding: 1px 3px;
-  background-color: yellow;
-  color: orange;
-}
-.el {
-  background: none;
-  position: absolute;
-  border-left: 3px solid #ddd;
-  border-bottom: 3px solid #ddd;
-  -webkit-border-bottom-left-radius: 9px;
-  -moz-border-radius-bottomleft: 9px;
-  border-bottom-left-radius: 9px;
-}
-#selectedSubTree {
-  background: #ddd;
-  padding: 2px 4px;
-}
-.zeeBottom {
-  position: absolute;
-  border-right: 3px solid #ddd;
-  border-bottom: 3px solid #ddd;
-  -webkit-border-bottom-right-radius: 9px;
-  -moz-border-radius-bottomright: 9px;
-  border-bottom-right-radius: 9px;
-}
-.zeeTop {
-  position: absolute;
-  border-left: 3px solid #ddd;
-  border-top: 3px solid #ddd;
-  -webkit-border-top-left-radius: 9px;
-  -moz-border-radius-topleft: 9px;
-  border-top-left-radius: 9px;
-}
 .lastupdated {
   text-align: right;
   color: #ddd;
@@ -470,6 +407,7 @@ a:hover {
   width: 450px;
   padding: 6px;
   text-align: right;
+  background-color: white;
 }
 #apps .app {
   float: right;
@@ -489,13 +427,18 @@ header p {
 .empty {
   color: #524630;
 }
-#extranav {
-  padding: 3px 0;
+nav {
+  padding: 3px 18px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
+  background-color: #c5c4c0;
 }
 #searchForm {
   position: relative;
+  width: 600px;
+}
+#searchField {
+  width: 250px;
 }
 #searchResults {
   display: none;
@@ -511,6 +454,15 @@ header p {
   z-index: 99;
   border: 1px solid #d5d4d0;
   border-radius: 3px;
+}
+.el {
+  background: none;
+  position: absolute;
+  border-left: 3px solid #ddd;
+  border-bottom: 3px solid #ddd;
+  -webkit-border-bottom-left-radius: 9px;
+  -moz-border-radius-bottomleft: 9px;
+  border-bottom-left-radius: 9px;
 }
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

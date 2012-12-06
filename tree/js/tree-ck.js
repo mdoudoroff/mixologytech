@@ -9465,12 +9465,9 @@ function createBoxesForElements(container,e1,elementArray) {
 	});
 }
 
-function createSubTreeBox(container,e1,elementArray) {
+function createSubTreeBox(container,e1) {
 	var e1pos = e1.position();
 	var e1height = e1.outerHeight(false);
-	
-	var e2pos;
-	var e2height;
 	
 	var w;
 	var h;
@@ -9551,42 +9548,18 @@ function rebuildSubTreeBox() {
 	
 	$('.zee').remove();
 	
-	var section = $('nav')[0];
+	var section = $('#root')[0];
 	var source = $('#selectedSubTree')[0];
-	var destinations = $('#sectionHeading');
 		
-	createSubTreeBox( $(section), $(source), destinations );
+	createSubTreeBox( $(section), $(source) );
 	
 }
 
+var searchPrompt = 'Search by ingredient name...';
+
 jQuery(document).ready(function() {
-
-	var filters = $("nav");
-	var button;
-
-	// == spacer
-	filters.append('<br>');
 	
-	// == add a toggle for proprietary/stub
-	button = $('<div class="toggle">Hide products</div>');
-	button.click( function() {
-		$('.product').hide();
-		rebuildHierarchyBoxes();
-	});
-	filters.append(button);
-	button = $('<div class="toggle">Show products</div>');
-	button.click( function() {
-		$('.product').show();
-		rebuildHierarchyBoxes();
-	});
-	filters.append(button);
-
-	// == spacer
-	filters.append('<br>');
-
-
 	// == hack in the "lines"
-	
 	rebuildHierarchyBoxes();
 
 	var selected = $('#selectedSubTree');
@@ -9597,13 +9570,13 @@ jQuery(document).ready(function() {
 
 	// == search form crap
 
-	$("#searchField").val("Search...").addClass("empty");
+	$("#searchField").val(searchPrompt).addClass("empty");
 	
 	// When you click on #search
 	$("#searchField").focus(function(){
 		
 		// If the value is equal to "Search..."
-		if($(this).val() === "Search...") {
+		if($(this).val() === searchPrompt) {
 			// remove all the text and the class of .empty
 			$(this).val("").removeClass("empty");
 		}
@@ -9616,7 +9589,7 @@ jQuery(document).ready(function() {
 		// If the input field is empty
 		if($(this).val() === "") {
 			// Add the text "Search..." and a class of .empty
-			$(this).val("Search...").addClass("empty");
+			$(this).val(searchPrompt).addClass("empty");
 		}
 		
 	});

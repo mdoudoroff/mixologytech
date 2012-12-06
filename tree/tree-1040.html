@@ -19,7 +19,7 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tree.css">
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -44,14 +44,14 @@
       <img id="dbicon" src="http://mixologytech.com/gfx/icon.ingr-database.png" />
       <p><strong>MixologyTech Ingredients Database<br />Web Edition</strong><br />A work in progress. <a href="index.html">Learn more</a></p>
   </header>
-  <div id="extranav">
-      <div style="float:right;"><a href="tree-22.html">Top o’ the tree</a></div>
+  <nav>
       <form action="index.html" id="searchForm">
         <input type="search" name="q" id="searchField" /> <input type="submit" value="Go" />
         <ul id="searchResults"></ul>
       </form>
-  </div>
-  <nav>
+  </nav>
+  <article>
+  <div id="root">
   <h1>liquor</h1>
 <ul>
 <li><a href="tree-1003.html">bottled cocktails</a></li>
@@ -107,7 +107,7 @@
 <li><a href="tree-1724.html">texturizers</a></li>
 <li><a href="tree-2207.html">unknown or ambiguous references</a></li>
 </ul>
-  </nav>
+  </div>
   
 <div id="treeContainer">
 
@@ -324,6 +324,7 @@
 			<li id="2054" class="product"><a href="ing-2054.html">Jacquin’s Apricot Brandy</a></li>
 			<li id="3618" class="product"><a href="ing-3618.html">Lantenhammer Marillenliqueur</a></li>
 			<li id="2135" class="product"><a href="ing-2135.html">Leroux Apricot Brandy</a></li>
+			<li id="5492" class="product"><a href="ing-5492.html">Luxardo Albicocca</a></li>
 			<li id="2856" class="product"><a href="ing-2856.html">Luxardo Apricot</a></li>
 			<li id="140" class="product"><a href="ing-140.html">Marie Brizard Apry</a> <span class="photos">PHOTOS</span></li>
 			<li id="2010" class="product"><a href="ing-2010.html">Mohawk Apricot Brandy</a></li>
@@ -616,6 +617,7 @@
 					<li id="2028" class="product"><a href="ing-2028.html">Mohawk Blue Curaçao</a></li>
 					<li id="1971" class="product"><a href="ing-1971.html">Mr. Boston Blue Curaçao</a></li>
 					<li id="2089" class="product"><a href="ing-2089.html">Newport Blue Curaçao</a></li>
+					<li id="5514" class="product"><a href="ing-5514.html">Potter’s Blue Curaçao</a></li>
 					<li id="3090" class="product"><a href="ing-3090.html">Senior Curacao of Curacao (blue)</a></li>
 					<li id="4609" class="product"><a href="ing-4609.html">VOK Blue Curacao</a></li>
 				</ul>
@@ -674,6 +676,7 @@
 				<li id="1928" class="product"><a href="ing-1928.html">Gaetano Triple Sec</a></li>
 				<li id="2043" class="product"><a href="ing-2043.html">Hiram Walker Triple Sec</a></li>
 				<li id="2164" class="product"><a href="ing-2164.html">Jacquin’s Triple Sec</a></li>
+				<li id="5515" class="product"><a href="ing-5515.html">La Paz Triple Sec</a></li>
 				<li id="2129" class="product"><a href="ing-2129.html">Leroux Triple Sec</a></li>
 				<li id="1930" class="product"><a href="ing-1930.html">Llord’s Triple Sec</a></li>
 				<li id="2858" class="product"><a href="ing-2858.html">Luxardo Triplum</a></li>
@@ -1116,6 +1119,7 @@
 			<li id="4818" class="product"><a href="ing-4818.html">Orendain Crema de Almendrado</a></li>
 		</ul>
 		<li id="1335" class="product"><a href="ing-1335.html">Castries</a> <span class="photos">PHOTOS</span></li>
+		<li id="5516" class="product"><a href="ing-5516.html">Charbay Nostalgie Black Walnut Liqueur</a></li>
 		<li id="232" class="nonproduct"><a href="ing-232.html">chocolate-flavored liqueur</a></li>
 		<ul data-par="232">
 			<li id="4297" class="product"><a href="ing-4297.html">Cazanove Sunset Licor</a></li>
@@ -1336,7 +1340,10 @@
 			<li id="3609" class="product"><a href="ing-3609.html">Agavero Licor de Tequila</a> <span class="photos">PHOTOS</span></li>
 			<li id="2954" class="product"><a href="ing-2954.html">Del Maguey Crema de Mezcal</a></li>
 		</ul>
-		<li id="394" class="product"><a href="ing-394.html">Okolehao <span class="defunct">DEFUNCT</span></a></li>
+		<li id="394" class="product"><a href="ing-394.html">Okolehao</a></li>
+		<ul data-par="394">
+			<li id="5494" class="product"><a href="ing-5494.html">Maui Okolehao Liqueur</a></li>
+		</ul>
 		<li id="5398" class="product"><a href="ing-5398.html">Ponche Kuba Rum Cream Liqueur</a></li>
 		<li id="178" class="nonproduct"><a href="ing-178.html">rock & rye</a></li>
 		<ul data-par="178">
@@ -1380,6 +1387,7 @@
 
 </div>  
 
+  </article>
   <footer>
   <p>We endeavor to keep this information correct and up-do-date. Sometimes we make a mistake or fall behind. Please submit corrections, augmentations, and feedback to <a href="mailto:&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x6d;&#x61;&#x72;&#x74;&#x69;&#x6e;&#64;&#109;&#105;&#120;&#111;&#108;&#111;&#103;&#121;&#x74;&#101;&#x63;&#104;&#46;&#99;&#111;&#x6d;">by email</a>.</p>
   <p>Copyright 2012 MixologyTech, a business of Martin Doudoroff LLC. All rights reserved, except snapshots of bottles and other ingredients are under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 license</a> and may be reused by anyone under those terms.</p>
