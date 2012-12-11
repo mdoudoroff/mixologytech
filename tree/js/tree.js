@@ -34,7 +34,10 @@ function createBoxesForElements(container,e1,elementArray) {
 	});
 }
 
-function createSubTreeBox(container,e1) {
+function createSubTreeBox(container,e1,dest) {
+	// container is the div enclosing the left hand tree
+	// e1 is the selected item therein
+
 	var e1pos = e1.position();
 	var e1height = e1.outerHeight(false);
 	
@@ -43,19 +46,20 @@ function createSubTreeBox(container,e1) {
 	var x;
 	var y;
 		
+	// bottom part of zee
+
 	w = container.width() - e1.width() - 50;
 	h = (e1pos.top+e1height/2 - 23)/2;
-		
-	x = e1.width() + 8;
+	x = e1pos.left + e1.width() + 8;
 	y = e1pos.top+e1height/2-h;
 		
-	container.append(createBox('zeeBottom',w,h,x,y));
+	container.prepend(createBox('zeeBottom',w,h,x,y));
 
-	w = 70;
-	x = (container.width()-w)+28;
+	
+	x = x + w; // based on positioning of bottom
 	y = 27;
-		
-	container.append(createBox('zeeTop',w,h,x,y));
+	var w2 = dest.position().left - x - 18;
+	container.prepend(createBox('zeeTop',w2,h,x,y));
 		
 }
 
@@ -119,8 +123,8 @@ function rebuildSubTreeBox() {
 	
 	var section = $('#root')[0];
 	var source = $('#selectedSubTree')[0];
-		
-	createSubTreeBox( $(section), $(source) );
+	var dest = $('#treeContainer');
+	createSubTreeBox( $(section), $(source), $(dest) );
 	
 }
 

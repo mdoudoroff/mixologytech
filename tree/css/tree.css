@@ -916,11 +916,18 @@ nav {
     page-break-after: avoid;
   }
 }
+article {
+  padding: 9px 18px;
+}
 #root {
   position: relative;
   float: left;
   width: 342px;
   margin-bottom: 18px;
+}
+#root ul,
+#root li {
+  z-index: 99;
 }
 #treeContainer {
   float: right;
@@ -962,6 +969,7 @@ nav {
   -webkit-border-bottom-right-radius: 9px;
   -moz-border-radius-bottomright: 9px;
   border-bottom-right-radius: 9px;
+  z-index: 0;
 }
 .zeeTop {
   position: absolute;
@@ -970,6 +978,7 @@ nav {
   -webkit-border-top-left-radius: 9px;
   -moz-border-radius-topleft: 9px;
   border-top-left-radius: 9px;
+  z-index: 0;
 }
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

@@ -1,7 +1,9 @@
 @import "DGLY-h5bp-top.less";
 @import "style.less";
 
-
+article {
+	padding: 9px 18px;
+}
 
 #root {
 	position: relative;
@@ -9,6 +11,11 @@
 	width: 342px;
 	margin-bottom: 18px;
 }
+
+#root ul, #root li {
+	z-index: 99;
+}
+
 
 #treeContainer {
 	float:right;
@@ -57,6 +64,7 @@
 	-webkit-border-bottom-right-radius: 9px;
 	-moz-border-radius-bottomright: 9px;
 	border-bottom-right-radius: 9px;
+	z-index: 0;
 }
 
 .zeeTop {
@@ -66,6 +74,7 @@
 	-webkit-border-top-left-radius: 9px;
 	-moz-border-radius-topleft: 9px;
 	border-top-left-radius: 9px;
+	z-index: 0;
 }
 
 @import "DGLY-h5bp-bottom.less";
