@@ -947,6 +947,20 @@ p:first-of-type {
 #photos img {
   border: 9px solid white;
 }
+#alpha {
+  width: 30%;
+  float: left;
+}
+#categorical {
+  width: 30%;
+  float: right;
+}
+#categorical h2 {
+  font-size: 13px;
+}
+#popular {
+  width: 30%;
+}
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */
