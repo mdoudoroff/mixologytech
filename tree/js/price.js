@@ -50,7 +50,7 @@ jQuery(document).ready(function() {
 		
 		var searchStr = $('#searchFieldFull').val();
 		if (searchStr.length > 1) {
-			$.getJSON('/search/'+searchStr,function(msg){
+			$.getJSON('/search/ing/'+searchStr,function(msg){
 
 				$('#searchResultsFull').empty();
 
@@ -95,7 +95,7 @@ jQuery(document).ready(function() {
 		var searchStr = $('#pIngredient').val();
 		var link;
 		if (searchStr.length > 1) {
-			$.getJSON('/search/'+searchStr,function(msg){
+			$.getJSON('/search/ing/'+searchStr,function(msg){
 
 				$('#pIngredientMatches').empty();
 
@@ -133,7 +133,7 @@ jQuery(document).ready(function() {
 			var searchStr = $('#pRegionSearch').val();
 			var link;
 			if (searchStr.length > 1) {
-				$.getJSON('/region/'+searchStr,function(msg){
+				$.getJSON('/search/region/'+searchStr,function(msg){
 
 					$('#pRegionMatches').empty();
 
@@ -179,7 +179,7 @@ jQuery(document).ready(function() {
 		window.log(jdata);
 		jQuery.ajax({
 			type:'POST',
-            url: '/submitprice', // the pyramid server
+            url: '/search/submitprice', // the pyramid server
             data: jdata,
             contentType: 'application/json; charset=utf-8'
         });
