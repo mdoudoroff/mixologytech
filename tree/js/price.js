@@ -179,7 +179,7 @@ jQuery(document).ready(function() {
 		window.log(jdata);
 		jQuery.ajax({
 			type:'POST',
-            url: 'http://localhost:8000/submitprice', // the pyramid server
+            url: '/submitprice', // the pyramid server
             data: jdata,
             contentType: 'application/json; charset=utf-8'
         });
