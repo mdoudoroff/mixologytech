@@ -1,6 +1,7 @@
 // @codekit-prepend "DGLY-jquery-1.7.2.js";
 // @codekit-prepend "DGLY-h5bp.js";
 
+
 // modified from http://jquery-howto.blogspot.com/2009/09/get-url-parameters-values-with-jquery.html
 function getUrlVars()
 {
@@ -155,11 +156,11 @@ jQuery(document).ready(function() {
 
 					}
 					else {
-						$('#pIngredientMatches').append($('<p><em>No matches. Try searching on the first few letters of a country or state.</em></p>'));
+						$('#pRegionMatches').append($('<p><em>No matches. Try searching on the first few letters of a country or state.</em></p>'));
 					}
 				});
 			} else {
-				$('#pIngredientMatches').empty();
+				$('#pRegionMatches').empty();
 			}
 		});
 
@@ -171,7 +172,8 @@ jQuery(document).ready(function() {
 			'currency':$('#pCurrency').val(),
 			'volume':$('#pVol').val(),
 			'units':$('#pUnits').val(),
-			'region':$('#pRegion').val()
+			'region':$('#pRegion').val(),
+			'timestamp':new Date().getTime() / 1000
 		};
 		var jdata = JSON.stringify({'prices':[vals]});
 		window.log(jdata);
