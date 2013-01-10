@@ -142,14 +142,20 @@ jQuery(document).ready(function() {
 						$('#pRegionMatches').append($('<ul>'));
 
 						for (var i = 0; i < msg.length; i++) {
-							link = $('<li>'+msg[i]+'</li>');
+							if (msg[i][1].length > 0) {
+								link = $('<li data-region="'+msg[i][0]+'" data-iso="'+msg[i][2]+'" data-currency="'+msg[i][3]+'">'+msg[i][0]+' ('+msg[i][1]+')</li>');
+							} else {
+								link = $('<li data-region="'+msg[i][0]+'" data-iso="'+msg[i][2]+'" data-currency="'+msg[i][3]+'">'+msg[i][0]+'</li>');
+							}
 							$('#pRegionMatches').append(link);
 						}
 
 						$('#pRegionMatches').append($('</ul>'));
 
 						$("#pRegionMatches li").click(function(){
-							$('#pRegion').val($(this).text());
+							$('#pRegion').val($(this).data('region'));
+							$('#pCurrencyDisplay').val($(this).data('currency')+' ('+$(this).data('iso')+')');
+							$('#pCurrency').val($(this).data('iso'));
 							$('#pRegionSearch').val('');
 							$('#pRegionMatches').empty();
 						});
