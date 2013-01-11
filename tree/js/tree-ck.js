@@ -9605,7 +9605,7 @@ jQuery(document).ready(function() {
 		var searchStr = $('#searchField').val();
 		var searchResults = $('#searchResults');
 		if (searchStr.length > 1) {
-			$.getJSON('/search/'+searchStr,function(msg){
+			$.getJSON('/search/ing/'+searchStr,function(msg){
 
 				searchResults.empty();
 

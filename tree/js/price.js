@@ -95,7 +95,7 @@ jQuery(document).ready(function() {
 		var searchStr = $('#pIngredient').val();
 		var link;
 		if (searchStr.length > 1) {
-			$.getJSON('/search/ing/'+searchStr,function(msg){
+			$.getJSON('/search/product/'+searchStr,function(msg){
 
 				$('#pIngredientMatches').empty();
 

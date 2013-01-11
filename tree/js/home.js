@@ -49,7 +49,7 @@ jQuery(document).ready(function() {
 		
 		var searchStr = $('#searchFieldFull').val();
 		if (searchStr.length > 1) {
-			$.getJSON('/search/'+searchStr,function(msg){
+			$.getJSON('/search/ing/'+searchStr,function(msg){
 
 				$('#searchResultsFull').empty();
 
