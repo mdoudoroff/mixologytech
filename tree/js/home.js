@@ -1,5 +1,3 @@
-// @codekit-prepend "DGLY-jquery-1.7.2.js";
-// @codekit-prepend "DGLY-h5bp.js";
 
 // modified from http://jquery-howto.blogspot.com/2009/09/get-url-parameters-values-with-jquery.html
 function getUrlVars()
@@ -15,17 +13,19 @@ function getUrlVars()
     return vars;
 }
 
+var searchPrompt = 'Search by ingredient name...';
+
 jQuery(document).ready(function() {
 
 	// == search form crap
 
-	$("#searchFieldFull").val("Search...").addClass("empty");
+	$("#searchField").val(searchPrompt).addClass("empty");
 	
 	// When you click on #search
-	$("#searchFieldFull").focus(function(){
+	$("#searchField").focus(function(){
 		
 		// If the value is equal to "Search..."
-		if($(this).val() === "Search...") {
+		if($(this).val() === searchPrompt) {
 			// remove all the text and the class of .empty
 			$(this).val("").removeClass("empty");
 		}
@@ -33,54 +33,68 @@ jQuery(document).ready(function() {
 	});
 	
 	// When the focus on #search is lost
-	$("#searchFieldFull").blur(function(){
+	$("#searchField").blur(function(){
 		
 		// If the input field is empty
 		if($(this).val() === "") {
 			// Add the text "Search..." and a class of .empty
-			$(this).val("Search...").addClass("empty");
+			$(this).val(searchPrompt).addClass("empty");
 		}
 		
 	});
 
 	// dynamic search binding (keyup-based)
 	// note: returns all results, not just "top" results, so maybe a variant is needed for "drop down"-type results presentation
-	$('#searchFieldFull').keyup(function() {
+	$('#searchField').keyup(function() {
 		
-		var searchStr = $('#searchFieldFull').val();
+		var searchStr = $('#searchField').val();
+		var searchResults = $('#searchResultsFull');
+		if (searchStr.length > 0) {
+			$('#resetsearch').css('opacity','1.0');
+		} else {
+			$('#resetsearch').css('opacity','0.5');
+		}
 		if (searchStr.length > 1) {
 			$.getJSON('/search/ing/'+searchStr,function(msg){
 
-				$('#searchResultsFull').empty();
+				searchResults.empty();
 
 				if (msg.length>0) {
 
-					
-					$('#searchResultsFull').append($('<ul>'));
+					searchResults.append($('<ul>'));
 
 					for (var i = 0; i < msg.length; i++) {
-						$('#searchResultsFull').append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> ('+msg[i].context+')</li>'));
-					}
+						if (i < msg.length) {
+							searchResults.append($('<li><a tabindex="-1" href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+' ('+msg[i].context+')</a></li>'));
+						}
 
-					$('#searchResultsFull').append($('</ul>'));
+					}
+					searchResults.append($('</ul>'));
 				}
-				else {
-					$('#searchResultsFull').append($('<p><em>No matches. Try searching on the first few letters of a product or category.</em></p>'));
+				else if (searchStr.length > 0) {
+					searchResults.append($('<li><em>No matches. Try searching on the first few letters of a product or category.</em></li>'));
+				} else {
+					searchResults.empty();
 				}
 			});
-		} else {
-			$('#searchResultsFull').empty();
+		}
+		else {
+			searchResults.empty();
 		}
 	});
 
 
-
-
+	// reset switch
+	$('#resetsearch').click( function() {
+		$('#searchResultsFull').empty();
+		$('#searchField').val('');
+		$('#resetsearch').css('opacity','0.5');
+	});
 
 	// lastly, check the query string for an incoming GET
 	if (getUrlVars().q) {
-		$('#searchFieldFull').val(getUrlVars().q);
-		$('#searchFieldFull').keyup();
+		$('#searchField').val(getUrlVars().q);
+		$('#searchField').keyup();
 	}
 
 });

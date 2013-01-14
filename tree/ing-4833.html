@@ -14,10 +14,13 @@
   <meta name="description" content="">
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
+  
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/detail.css">
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -26,32 +29,63 @@
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
   <script src="js/modernizr-custom.js"></script>
+
 </head>
 <body>
 
-  <div id="container" class="clearfix">
+  <div id="container" class="container">
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   
-  <header>
-      <div id="apps">
+  <header class="row">
+      <div class="span7">
+        <img id="dbicon" src="http://mixologytech.com/gfx/icon.ingr-database.png" />
+        <p><strong>MixologyTech Ingredients Database<br />Web Edition</strong><br />A work in progress. <a href="index.html">Learn more</a></p>
+      </div>
+      <div class="span5">
           <div class="app"><a href="http://mixologytech.com/mybar/index.html"><img src="http://mixologytech.com/gfx/icon-mybar-256.png" id="mybaricon" /><br />My Bar</a></div>
           <div class="app"><a href="http://mixologytech.com/ingrapp/index.html"><img src="http://mixologytech.com/gfx/icon-ingr-256.png" id="baringredientsicon" /><br />Bar Ingredients</a></div>
           Get this entire database in your pocket with these apps for iOS:
       </div>
-      <img id="dbicon" src="http://mixologytech.com/gfx/icon.ingr-database.png" />
-      <p><strong>MixologyTech Ingredients Database<br />Web Edition</strong><br />A work in progress. <a href="index.html">Learn more</a></p>
   </header>
-  <nav>
-      <div style="float:right;"><a href="tree-22.html">Ingredient Tree</a> &bull; <a href="tree-22.html">Flavors</a></div>
-      <form action="index.html" id="searchForm">
-        <input type="search" name="q" id="searchField" /> <input type="submit" value="Go" />
-        <ul id="searchResults"></ul>
-      </form>
+  <nav class="row">
+    <div class="navbar span12">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+     
+          <!-- Be sure to leave the brand out there if you want it shown -->
+          <!--<a class="brand" href="#">Project name</a>-->
+
+          <form action="index.html" id="searchForm" class="navbar-search pull-left">
+            <input type="search" name="q" id="searchField" class="search-query" />
+            <div class="dropdown">
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" id="searchResults"></ul>
+            </div>
+          </form>
+          <a id="resetsearch" href="#" ><i class="icon-remove"></i></a>
+
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <!-- .nav, .navbar-search, .navbar-form, etc -->
+            
+
+          </div>
+
+
+        </div>
+      </div>
   </nav>
-  <article>
-<h1>Silver Wolf Vodka</h1><div id="miniTreeContainer"><section id="1012">
+
+  <article class="row">
+<div class="span12"><h1>Silver Wolf Vodka</h1></div><!-- end title block --><div class="span6"><div id="miniTreeContainer"><section id="1012">
 <ul class="first" data-par=""><li class="nonproduct" id="1012"><a href="tree-1012.html">neutral spirits & grain eau de vie</a></li>
 	<ul data-par="1012"><li class="nonproduct" id="267"><a href="ing-267.html">vodka</a></li>
 		<ul data-par="267"><li class="product" id="4833"><a href="ing-4833.html">Silver Wolf Vodka</a></li>
@@ -61,12 +95,15 @@
 </ul></section></div><div id="details"><div id="novelDescription" class="local"><h3>description</h3><p>Silver Wolf Vodka is a proprietary example of vodka.</p>
 <p>Vodka is a generic category for neutral spirit, diluted and filtered through charcoal. Dependent on the nature of the distillate, the temperature and number of distillations, the nature of the diluting water, additives (such as glycerin) and the number of filtrations for any particular brand’s given character. Vodka can be made from many bases: grain, potato, beet, cane, or rice. “Vodka” is diminutive for “voda”, the word for water in Russian. Vodka was traditionally unflavored (other than the flavor of the alcohol itself) and infusions of flavoring ingredients garnered the spirit a different name, depending upon the ingredient(s) added. In current-day parlance, flavored renditions are all considered subsets of vodka, so-named. Vodka was historically traditional mainly to Russia, Poland, and Latvia.</p>
 </div><div id="flavorTree" class="local"><h3>flavors</h3><a href="flavor-alcohol.html">alcohol</a></div><div id="sub" class="inherited"><h3>substitute</h3><p>other vodka</p>
-</div><div id="abv" class="local"><h3>abv</h3>40.0%</div><div id="origin" class="local"><h3>origin</h3></div></div><div id="xrefs"></div><br style="clear:both;" /><div id="integration" style="clear:both;"></div><p class="lastupdated">Last updated: 2012 April 30 03:47PM </p></article>
-  <footer>
-  <small>
-  <p>We endeavor to keep this information correct and up-do-date. Sometimes we make a mistake or fall behind. Please submit corrections, augmentations, and feedback to <a href="mailto:&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x6d;&#x61;&#x72;&#x74;&#x69;&#x6e;&#64;&#109;&#105;&#120;&#111;&#108;&#111;&#103;&#121;&#x74;&#101;&#x63;&#104;&#46;&#99;&#111;&#x6d;">by email</a>.</p>
-  <p>Copyright 2012 MixologyTech, a business of Martin Doudoroff LLC. All rights reserved, except snapshots of bottles and other ingredients are under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 license</a> and may be reused by anyone under those terms.</p>
-  </small>
+</div><div id="abv" class="local"><h3>abv</h3>40.0%</div><div id="origin" class="local"><h3>origin</h3></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --><div class="span12"><div id="integration" style="clear:both;"></div><p class="lastupdated">Last updated: 2012 April 30 03:47PM </p></div><!-- end integration block --></article>
+ 
+  <footer class="row">
+    <div class="span12">
+      <small>
+      <p>We endeavor to keep this information correct and up-do-date. Sometimes we make a mistake or fall behind. Please submit corrections, augmentations, and feedback to <a href="mailto:&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x6d;&#x61;&#x72;&#x74;&#x69;&#x6e;&#64;&#109;&#105;&#120;&#111;&#108;&#111;&#103;&#121;&#x74;&#101;&#x63;&#104;&#46;&#99;&#111;&#x6d;">by email</a>.</p>
+      <p>Copyright 2012 MixologyTech, a business of Martin Doudoroff LLC. All rights reserved, except snapshots of bottles and other ingredients are under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 license</a> and may be reused by anyone under those terms.</p>
+      </small>
+    </div>
   </footer>
 
   </div>
@@ -74,6 +111,8 @@
   <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
 
   <!-- scripts concatenated and minified via build script -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->
 

@@ -13,11 +13,13 @@
   <title></title>
   <meta name="description" content="">
 
-  <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width">
-
+<!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/home.css">
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -29,33 +31,60 @@
 </head>
 <body>
 
-  <div id="container">
+  <div id="container" class="container">
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-  <header>
-      <div id="apps">
+   <header class="row">
+      <div class="span7">
+        <img id="dbicon" src="http://mixologytech.com/gfx/icon.ingr-database.png" />
+        <p><strong>MixologyTech Ingredients Database<br />Web Edition</strong><br />A work in progress. <a href="index.html">Learn more</a></p>
+      </div>
+      <div class="span5">
           <div class="app"><a href="http://mixologytech.com/mybar/index.html"><img src="http://mixologytech.com/gfx/icon-mybar-256.png" id="mybaricon" /><br />My Bar</a></div>
           <div class="app"><a href="http://mixologytech.com/ingrapp/index.html"><img src="http://mixologytech.com/gfx/icon-ingr-256.png" id="baringredientsicon" /><br />Bar Ingredients</a></div>
           Get this entire database in your pocket with these apps for iOS:
       </div>
-      <img id="dbicon" src="http://mixologytech.com/gfx/icon.ingr-database.png" />
-      <p><strong>MixologyTech Ingredients Database<br />Web Edition</strong><br />A work in progress. <a href="index.html">Learn more</a></p>
-
   </header>
+  <nav class="row">
+    <div class="navbar span12">
+      <div class="navbar-inner">
+        <div class="container">
 
-  <div id="extranav">
-    <div style="float:right;"><a href="tree-22.html">Top o’ the tree</a></div>
-    <form action="index.html" id="searchFormFull">
-      <input type="search" name="q" id="searchFieldFull" /> <input type="submit" value="Go" />
-    </form>
-  </div>
-  <ul id="searchResultsFull"></ul>
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+     
+          <!-- Be sure to leave the brand out there if you want it shown -->
+          <!--<a class="brand" href="#">Project name</a>-->
 
+          <form action="index.html" id="searchForm" class="navbar-search pull-left">
+            <input type="search" name="q" id="searchField" class="search-query" />
+          </form>
+          <a id="resetsearch" href="#" ><i class="icon-remove"></i></a>
+
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <!-- .nav, .navbar-search, .navbar-form, etc -->
+            
+
+          </div>
+
+
+        </div>
+      </div>
+  </nav>
   
-	
-  <p>&nbsp;</p>
+	<article class="row">
+    <div class="span12">
+      <ul id="searchResultsFull"></ul>
+    </div>
+  </article>
+
   <footer>
 
   <small>
@@ -69,6 +98,8 @@
   <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
 
   <!-- scripts concatenated and minified via build script -->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>  
   <script src="js/home-ck.js"></script>
   <!-- end scripts -->
 
