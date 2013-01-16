@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -18,6 +19,8 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/price.css">
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -29,49 +32,142 @@
 </head>
 <body>
 
-  <div id="container">
+  <div id="container" class="container">
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-  <header>
-      <div id="apps">
+   <header class="row">
+      <div class="span7">
+        <img id="dbicon" src="http://mixologytech.com/gfx/icon.ingr-database.png" />
+        <p><strong>MixologyTech Ingredients Database<br />Web Edition</strong><br />A work in progress. <a href="index.html">Learn more</a></p>
+      </div>
+      <div class="span5">
           <div class="app"><a href="http://mixologytech.com/mybar/index.html"><img src="http://mixologytech.com/gfx/icon-mybar-256.png" id="mybaricon" /><br />My Bar</a></div>
           <div class="app"><a href="http://mixologytech.com/ingrapp/index.html"><img src="http://mixologytech.com/gfx/icon-ingr-256.png" id="baringredientsicon" /><br />Bar Ingredients</a></div>
           Get this entire database in your pocket with these apps for iOS:
       </div>
-      <img id="dbicon" src="http://mixologytech.com/gfx/icon.ingr-database.png" />
-      <p><strong>MixologyTech Ingredients Database<br />Web Edition</strong><br />A work in progress. <a href="index.html">Learn more</a></p>
-
   </header>
+  <nav class="row">
+    <div class="navbar span12">
+      <div class="navbar-inner">
+        <div class="container">
 
-  <div id="extranav">
-    <div style="float:right;"><a href="tree-22.html">Top o’ the tree</a></div>
-    <form action="index.html" id="searchFormFull">
-      <input type="search" name="q" id="searchFieldFull" /> <input type="submit" value="Go" />
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+     
+          <!-- Be sure to leave the brand out there if you want it shown -->
+          <!--<a class="brand" href="#">Project name</a>-->
+
+          <form action="index.html" id="searchForm" class="navbar-search pull-left">
+            <input type="search" name="q" id="searchField" class="search-query" />
+            <div class="dropdown">
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" id="searchResults"></ul>
+            </div>
+          </form>
+          <a id="resetsearch" href="#" ><i class="icon-remove"></i></a>
+
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <!-- .nav, .navbar-search, .navbar-form, etc -->
+            
+
+          </div>
+
+
+        </div>
+      </div>
+  </nav>
+  
+  <article class="row">
+    <div class="span12">
+
+    <h1>Submit price datum</h1>
+    
+  	<form action="" id="price" class="form-horizontal">
+      <fieldset>
+        <div class="control-group">
+          <label class="control-label">Set Region</label>
+          <div class="controls">
+            <input type="search" name="regionSearch" id="pRegionSearch" />
+            <div class="dropdown">
+              <ul id="pRegionMatches" class="dropdown-menu" role="menu" aria-labelledby="dLabel"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">Find Product</label>
+          <div class="controls">
+            <input type="search" name="ingredient" id="pIngredient" />
+            <div class="dropdown">
+              <ul id="pIngredientMatches" class="dropdown-menu" role="menu" aria-labelledby="dLabel"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">Product</label>
+          <div class="controls">
+            <input type="text" name="disp" id="pIngredientDisplay" class="input-xlarge" readonly="readonly" /><input type="hidden" name="iid" id="pIngredientIID" />
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">Volume</label>
+          <div class="controls">
+            <input type="text" name="volume" class="input-mini" id="pVol" />
+            <select type="text" name="units" id="pUnits" />
+              <option value="ml">ml</option>
+              <option value="cl">cl</option>
+              <option value="l">l (liters)</option>
+              <option value="oz">oz</option>
+              <option value="other">other or n/a</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">Price</label>
+          <div class="controls">
+            <input type="text" class="input-mini" name="price" id="pPrice" />
+            <input type="text" name="pCurrencyDisplay" id="pCurrencyDisplay" readonly="readonly" />
+            <input type="hidden" name="pCurrency" id="pCurrency" />
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">Price type</label>
+          <div class="controls">
+            <label class="radio"><input type="radio" name="ptype" value="r" checked="checked"> Retail</label>
+            <label class="radio"><input type="radio" name="ptype" value="w"> Wholesale</label>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">Region</label>
+          <div class="controls">
+            <input type="text" class="input-large" name="region" id="pRegion" readonly="readonly" placeholder="SET WITH FIND REGION" />
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">&nbsp;</label>
+          <div class="controls">
+            <input type="button" class="btn btn-primary" id="pSubmit" value="Submit Datum" />
+          </div>
+        </div>
+
+    </fieldset>
     </form>
-  </div>
-  <ul id="searchResultsFull"></ul>
 
-  <h1>Submit price datum</h1>
-  
-	<form action="" id="price">
+   </div>
+  </article>
 
-    <label>Set Region</label><input type="search" name="regionSearch" id="pRegionSearch" /><ul id="pRegionMatches"></ul><br />
-  
-    <label>Find Product</label><input type="search" name="ingredient" id="pIngredient" /><ul id="pIngredientMatches"></ul><br />
-
-    <label>Product</label><input type="text" name="disp" id="pIngredientDisplay" readonly="readonly" /><input type="hidden" name="iid" id="pIngredientIID" /><br />
-    <label for="volume">Volume</label><input type="text" name="volume" id="pVol" /><select type="text" name="units" id="pUnits" /><option value="ml">ml</option><option value="cl">cl</option><option value="l">l (liters)</option><option value="oz">oz</option><option value="other">other or n/a</option></select><br />
-    <label for="price">Price</label><input type="text" name="price" id="pPrice" /><input type="text" name="pCurrencyDisplay" id="pCurrencyDisplay" readonly="readonly" /><input type="hidden" name="pCurrency" id="pCurrency" /><br />
-    <label>Price type</label><input type="radio" name="ptype" value="r" checked="checked"> <label for="r">Retail</label> &nbsp; <input type="radio" name="ptype" value="w"> <label for="w">Wholesale</label><br />
-    <label>Region</label><input type="text" name="region" id="pRegion" readonly="readonly" /><br />
-    <label>&nbsp;</label><input type="button" id="pSubmit" value="Submit Datum" />
-
-  </form>
-
-
-  
   <footer>
 
   <small>
@@ -85,6 +181,8 @@
   <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
 
   <!-- scripts concatenated and minified via build script -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script> 
   <script src="js/price-ck.js"></script>
   <!-- end scripts -->
 

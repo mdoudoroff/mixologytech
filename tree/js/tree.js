@@ -76,13 +76,14 @@ jQuery(document).ready(function() {
 		}
 	});
 
+	// impose clickaway functionality
 	$('body').click(function(e) {
 	    if (!$(e.target).is('#searchResults')) {
 	        $('#searchResults').hide();
 	    }
 	});
 
-	// impose clickaway functionality
+	// reset switch
 	$('#resetsearch').click( function() {
 		$('#searchResults').hide();
 		$('#searchField').val('');

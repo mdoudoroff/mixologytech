@@ -1,32 +1,26 @@
-// @codekit-prepend "DGLY-jquery-1.7.2.js";
-// @codekit-prepend "DGLY-h5bp.js";
 
 
-// modified from http://jquery-howto.blogspot.com/2009/09/get-url-parameters-values-with-jquery.html
-function getUrlVars()
-{
-    var vars = [], hash;
-    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-    for(var i = 0; i < hashes.length; i++)
-    {
-        hash = hashes[i].split('=');
-        vars.push(hash[0]);
-        vars[hash[0]] = decodeURIComponent(hash[1]);
-    }
-    return vars;
-}
+window.log = function(){
+  log.history = log.history || [];   // store logs to an array for reference
+  log.history.push(arguments);
+  if(this.console){
+    console.log( Array.prototype.slice.call(arguments) );
+  }
+};
+
+var searchPrompt = 'Search by ingredient name...';
 
 jQuery(document).ready(function() {
 
 	// == search form crap
 
-	$("#searchFieldFull").val("Search...").addClass("empty");
+	$("#searchField").val(searchPrompt).addClass("empty");
 	
 	// When you click on #search
-	$("#searchFieldFull").focus(function(){
+	$("#searchField").focus(function(){
 		
 		// If the value is equal to "Search..."
-		if($(this).val() === "Search...") {
+		if($(this).val() === searchPrompt) {
 			// remove all the text and the class of .empty
 			$(this).val("").removeClass("empty");
 		}
@@ -34,139 +28,188 @@ jQuery(document).ready(function() {
 	});
 	
 	// When the focus on #search is lost
-	$("#searchFieldFull").blur(function(){
+	$("#searchField").blur(function(){
 		
 		// If the input field is empty
 		if($(this).val() === "") {
 			// Add the text "Search..." and a class of .empty
-			$(this).val("Search...").addClass("empty");
+			$(this).val(searchPrompt).addClass("empty");
 		}
 		
 	});
 
 	// dynamic search binding (keyup-based)
 	// note: returns all results, not just "top" results, so maybe a variant is needed for "drop down"-type results presentation
-	$('#searchFieldFull').keyup(function() {
+	$('#searchField').keyup(function() {
 		
-		var searchStr = $('#searchFieldFull').val();
+		var searchStr = $('#searchField').val();
+		var searchResults = $('#searchResults');
+		if (searchStr.length > 0) {
+			$('#resetsearch').css('opacity','1.0');
+		} else {
+			$('#resetsearch').css('opacity','0.5');
+		}
 		if (searchStr.length > 1) {
 			$.getJSON('/search/ing/'+searchStr,function(msg){
 
-				$('#searchResultsFull').empty();
+				searchResults.empty();
 
 				if (msg.length>0) {
 
 					
-					$('#searchResultsFull').append($('<ul>'));
+					searchResults.append($('<ul>'));
 
-					for (var i = 0; i < msg.length; i++) {
-						$('#searchResultsFull').append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> ('+msg[i].context+')</li>'));
+					for (var i = 0; i < 10; i++) {
+						if (i < msg.length) {
+							searchResults.append($('<li><a tabindex="-1" href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+' ('+msg[i].context+')</a></li>'));
+						}
+
 					}
-
-					$('#searchResultsFull').append($('</ul>'));
+					if (msg.length > 10) {
+						searchResults.append($('<li class="divider"></li><li><a tabindex="-1" href="/tree/index.html?q='+encodeURIComponent(searchStr)+'"><em>... and '+(msg.length-10)+' more</em></a></li>'));
+					}
+					searchResults.append($('</ul>'));
+					searchResults.show();
 				}
-				else {
-					$('#searchResultsFull').append($('<p><em>No matches. Try searching on the first few letters of a product or category.</em></p>'));
+				else if (searchStr.length > 0) {
+					searchResults.append($('<li><em>No matches. Try searching on the first few letters of a product or category.</em></li>'));
+					searchResults.show();
+				} else {
+					searchResults.hide();
 				}
 			});
-		} else {
-			$('#searchResultsFull').empty();
+		}
+		else {
+			searchResults.hide();
 		}
 	});
 
+	// impose clickaway functionality
+	$('body').click(function(e) {
+	    if (!$(e.target).is('#searchResults')) {
+	        $('#searchResults').hide();
+	    }
+	});
+
+	// reset switch
+	$('#resetsearch').click( function() {
+		$('#searchResults').hide();
+		$('#searchField').val('');
+		$('#resetsearch').css('opacity','0.5');
+	});
 
 
+	// == PRICE FORM STUFF ==
 
+	$("#pIngredient").val(searchPrompt).addClass("empty");
+	
+	// When you click on #search
+	$("#pIngredient").focus(function(){
+		
+		// If the value is equal to "Search..."
+		if($(this).val() === searchPrompt) {
+			// remove all the text and the class of .empty
+			$(this).val("").removeClass("empty");
+		}
+		
+	});
 
-	// lastly, check the query string for an incoming GET
-	if (getUrlVars().q) {
-		$('#searchFieldFull').val(getUrlVars().q);
-		$('#searchFieldFull').keyup();
-	}
-
-
-	// PRICE FORM STUFF
-
+	// When the focus on #search is lost
+	$("#pIngredient").blur(function(){
+		
+		// If the input field is empty
+		if($(this).val() === "") {
+			// Add the text "Search..." and a class of .empty
+			$(this).val(searchPrompt).addClass("empty");
+		}
+		
+	});
 
 	// dynamic search binding (keyup-based)
 	// note: returns all results, not just "top" results, so maybe a variant is needed for "drop down"-type results presentation
 	$('#pIngredient').keyup(function() {
 		
 		var searchStr = $('#pIngredient').val();
+		var searchResults = $('#pIngredientMatches');
 		var link;
 		if (searchStr.length > 1) {
 			$.getJSON('/search/product/'+searchStr,function(msg){
 
-				$('#pIngredientMatches').empty();
+				searchResults.empty();
 
 				if (msg.length>0) {
 
 					
-					$('#pIngredientMatches').append($('<ul>'));
+					searchResults.append($('<ul>'));
 
 					for (var i = 0; i < msg.length; i++) {
-						link = $('<li data-name="'+msg[i].name+'" data-iid="'+msg[i].iid+'">'+msg[i].name+' ('+msg[i].context+')</li>');
-						$('#pIngredientMatches').append(link);
+						link = $('<li><a href="#" tabindex="-1" data-name="'+msg[i].name+'" data-iid="'+msg[i].iid+'">'+msg[i].name+' ('+msg[i].context+')</a></li>');
+						searchResults.append(link);
 					}
 
-					$('#pIngredientMatches').append($('</ul>'));
+					searchResults.append($('</ul>'));
+					searchResults.show();
 
-					$("#pIngredientMatches li").click(function(){
+					$("#pIngredientMatches li a").click(function(){
 						$('#pIngredientIID').val($(this).data('iid'));
 						$('#pIngredient').val('');
 						$('#pIngredientDisplay').val($(this).data('name'));
-						$('#pIngredientMatches').empty();
+						searchResults.empty().hide();
 					});
 
 				}
 				else {
-					$('#pIngredientMatches').append($('<p><em>No matches. Try searching on the first few letters of a product or category.</em></p>'));
+					searchResults.append($('<p><em>No matches. Try searching on the first few letters of a product or category.</em></p>'));
+					searchResults.show();
 				}
 			});
 		} else {
-			$('#pIngredientMatches').empty();
+			searchResults.empty().hide();
 		}
 	});
 
 	$('#pRegionSearch').keyup(function() {
 			
 			var searchStr = $('#pRegionSearch').val();
+			var searchResults = $('#pRegionMatches');
 			var link;
 			if (searchStr.length > 1) {
 				$.getJSON('/search/region/'+searchStr,function(msg){
 
-					$('#pRegionMatches').empty();
+					searchResults.empty();
 
 					if (msg.length>0) {
 
-						$('#pRegionMatches').append($('<ul>'));
+						searchResults.append($('<ul>'));
 
 						for (var i = 0; i < msg.length; i++) {
 							if (msg[i][1].length > 0) {
-								link = $('<li data-region="'+msg[i][0]+'" data-iso="'+msg[i][2]+'" data-currency="'+msg[i][3]+'">'+msg[i][0]+' ('+msg[i][1]+')</li>');
+								link = $('<li><a href="#" tab-index="-1" data-region="'+msg[i][0]+'" data-iso="'+msg[i][2]+'" data-currency="'+msg[i][3]+'">'+msg[i][0]+' ('+msg[i][1]+')</a></li>');
 							} else {
-								link = $('<li data-region="'+msg[i][0]+'" data-iso="'+msg[i][2]+'" data-currency="'+msg[i][3]+'">'+msg[i][0]+'</li>');
+								link = $('<li><a href="#" tab-index="-1" data-region="'+msg[i][0]+'" data-iso="'+msg[i][2]+'" data-currency="'+msg[i][3]+'">'+msg[i][0]+'</a></li>');
 							}
-							$('#pRegionMatches').append(link);
+							searchResults.append(link);
 						}
 
-						$('#pRegionMatches').append($('</ul>'));
+						searchResults.append($('</ul>'));
+						searchResults.show();
 
-						$("#pRegionMatches li").click(function(){
+						$("#pRegionMatches li a").click(function(){
 							$('#pRegion').val($(this).data('region'));
 							$('#pCurrencyDisplay').val($(this).data('currency')+' ('+$(this).data('iso')+')');
 							$('#pCurrency').val($(this).data('iso'));
 							$('#pRegionSearch').val('');
-							$('#pRegionMatches').empty();
+							searchResults.empty().hide();
 						});
 
 					}
 					else {
-						$('#pRegionMatches').append($('<p><em>No matches. Try searching on the first few letters of a country or state.</em></p>'));
+						searchResults.append($('<p><em>No matches. Try searching on the first few letters of a country or state.</em></p>'));
+						searchResults.show();
 					}
 				});
 			} else {
-				$('#pRegionMatches').empty();
+				searchResults.empty().hide();
 			}
 		});
 
