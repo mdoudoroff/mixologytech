@@ -1,6 +1,11 @@
 header {
   padding-top: 9px;
-  height: 120px;
+}
+#masthead {
+  min-height: 120px;
+}
+#adbox {
+  min-height: 99px;
 }
 header .app {
   width: 63px;
@@ -24,11 +29,17 @@ header .app {
 }
 #resetsearch {
   position: relative;
-  top: 10px;
-  line-height: 20px;
-  height: 20px;
-  margin-left: 2px;
+  left: -22px;
+  top: 2px;
 }
 #resetsearch {
   opacity: 0.5;
+}
+footer {
+  margin-top: 36px;
+  border-top: 1px solid #d4d4d4;
+  padding-top: 9px;
+}
+#closingMetadata {
+  text-align: right;
 }

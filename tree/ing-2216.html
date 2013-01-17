@@ -39,11 +39,11 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   
   <header class="row">
-      <div class="span7">
+      <div class="span7" id="masthead">
         <img id="dbicon" src="http://mixologytech.com/gfx/icon.ingr-database.png" />
         <p><strong>MixologyTech Ingredients Database<br />Web Edition</strong><br />A work in progress. <a href="index.html">Learn more</a></p>
       </div>
-      <div class="span5">
+      <div class="span5" id="adbox">
           <div class="app"><a href="http://mixologytech.com/mybar/index.html"><img src="http://mixologytech.com/gfx/icon-mybar-256.png" id="mybaricon" /><br />My Bar</a></div>
           <div class="app"><a href="http://mixologytech.com/ingrapp/index.html"><img src="http://mixologytech.com/gfx/icon-ingr-256.png" id="baringredientsicon" /><br />Bar Ingredients</a></div>
           Get this entire database in your pocket with these apps for iOS:
@@ -63,14 +63,18 @@
      
           <!-- Be sure to leave the brand out there if you want it shown -->
           <!--<a class="brand" href="#">Project name</a>-->
-
+          <ul class="nav">
+            <li><a href="index.html" ><i class="icon-home"></i></a></li>
+          </ul>
           <form action="index.html" id="searchForm" class="navbar-search pull-left">
-            <input type="search" name="q" id="searchField" class="search-query" />
+            <input type="search" name="q" id="searchField" class="search-query" /><a id="resetsearch" href="#" ><i class="icon-remove"></i></a>
             <div class="dropdown">
               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" id="searchResults"></ul>
             </div>
           </form>
-          <a id="resetsearch" href="#" ><i class="icon-remove"></i></a>
+          <ul class="nav">
+            <li></li>
+          </ul>
 
           <!-- Everything you want hidden at 940px or less, place within here -->
           <div class="nav-collapse collapse">
@@ -98,7 +102,7 @@
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
 <tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $19.0</td><td data-currency="USD" data-rlow="19.0" data-rhigh="19.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --><div class="span12"><div id="integration" style="clear:both;"><br style="clear:both;">
-<div id="photos"><a href="http://ingr-photos.s3.amazonaws.com/2216-20125529-045516.jpg"><img src="http://ingr-photos.s3.amazonaws.com/2216-20125529-045516.jpg" height="256" class="img-polaroid"></a><a href="http://ingr-photos.s3.amazonaws.com/2216-20125529-045546.jpg"><img src="http://ingr-photos.s3.amazonaws.com/2216-20125529-045546.jpg" height="256" class="img-polaroid"></a><a href="http://ingr-photos.s3.amazonaws.com/2216-20125629-045607.jpg"><img src="http://ingr-photos.s3.amazonaws.com/2216-20125629-045607.jpg" height="256" class="img-polaroid"></a><br style="clear:both;"></div></div><p class="lastupdated">Last updated: 2011 July 14 10:12AM </p></div><!-- end integration block --></article>
+<div id="photos"><a href="http://ingr-photos.s3.amazonaws.com/2216-20125529-045516.jpg"><img src="http://ingr-photos.s3.amazonaws.com/2216-20125529-045516.jpg" height="256" class="img-polaroid"></a><a href="http://ingr-photos.s3.amazonaws.com/2216-20125529-045546.jpg"><img src="http://ingr-photos.s3.amazonaws.com/2216-20125529-045546.jpg" height="256" class="img-polaroid"></a><a href="http://ingr-photos.s3.amazonaws.com/2216-20125629-045607.jpg"><img src="http://ingr-photos.s3.amazonaws.com/2216-20125629-045607.jpg" height="256" class="img-polaroid"></a><br style="clear:both;"></div></div></div><!-- end integration block --><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></article>
  
   <footer class="row">
     <div class="span12">

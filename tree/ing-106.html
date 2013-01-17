@@ -39,11 +39,11 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   
   <header class="row">
-      <div class="span7">
+      <div class="span7" id="masthead">
         <img id="dbicon" src="http://mixologytech.com/gfx/icon.ingr-database.png" />
         <p><strong>MixologyTech Ingredients Database<br />Web Edition</strong><br />A work in progress. <a href="index.html">Learn more</a></p>
       </div>
-      <div class="span5">
+      <div class="span5" id="adbox">
           <div class="app"><a href="http://mixologytech.com/mybar/index.html"><img src="http://mixologytech.com/gfx/icon-mybar-256.png" id="mybaricon" /><br />My Bar</a></div>
           <div class="app"><a href="http://mixologytech.com/ingrapp/index.html"><img src="http://mixologytech.com/gfx/icon-ingr-256.png" id="baringredientsicon" /><br />Bar Ingredients</a></div>
           Get this entire database in your pocket with these apps for iOS:
@@ -63,14 +63,18 @@
      
           <!-- Be sure to leave the brand out there if you want it shown -->
           <!--<a class="brand" href="#">Project name</a>-->
-
+          <ul class="nav">
+            <li><a href="index.html" ><i class="icon-home"></i></a></li>
+          </ul>
           <form action="index.html" id="searchForm" class="navbar-search pull-left">
-            <input type="search" name="q" id="searchField" class="search-query" />
+            <input type="search" name="q" id="searchField" class="search-query" /><a id="resetsearch" href="#" ><i class="icon-remove"></i></a>
             <div class="dropdown">
               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" id="searchResults"></ul>
             </div>
           </form>
-          <a id="resetsearch" href="#" ><i class="icon-remove"></i></a>
+          <ul class="nav">
+            <li></li>
+          </ul>
 
           <!-- Everything you want hidden at 940px or less, place within here -->
           <div class="nav-collapse collapse">
@@ -90,7 +94,7 @@
 <li class="active">fruit, fresh</li>
 </ul></section></div></div><!-- end title block --><div class="span6"><div id="details"><div id="novelDescription" class="local"><h3>description</h3><p>Fresh fruit is a generic category for a fruit garnish left to the resources, interpretation and imagination of the bartender.</p>
 </div><dl><dt>substitute</dt><dd>other fresh seasonal fruit (imperfect substitute).</dd><dt>origin</dt><dd></dd></dl></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>sub-branches</h3><ul><li class="generic"><a href="ing-91.html">apple</a> (4)</li><li class="generic"><a href="ing-93.html">banana</a> (1)</li><li class="generic"><a href="ing-1629.html">chile pepper</a> (2)</li><li class="generic"><a href="ing-1377.html">citrus fruit</a> (38)</li><li class="generic"><a href="ing-102.html">cucumber slice</a> (1)</li><li class="generic"><a href="ing-1165.html">currant</a> (1)</li><li class="generic"><a href="ing-109.html">grape</a> (1)</li><li class="generic"><a href="ing-599.html">kiwi fruit</a> (1)</li><li class="generic"><a href="ing-4913.html">melon</a> (4)</li><li class="generic"><a href="ing-121.html">peach</a> (2)</li><li class="generic"><a href="ing-1572.html">pear</a> (1)</li><li class="generic"><a href="ing-122.html">pineapple</a> (4)</li></ul></div><div id="children" class="local"><h3>examples</h3><ul><li class="generic"><a href="ing-92.html">apricot</a> </li><li class="generic"><a href="ing-1124.html">berry</a> </li><li class="generic"><a href="ing-94.html">black cherry</a> </li><li class="generic"><a href="ing-1276.html">blackberry</a> </li><li class="generic"><a href="ing-1189.html">blueberry</a> </li><li class="generic"><a href="ing-522.html">cranberry, whole</a> </li><li class="generic"><a href="ing-1683.html">feijoa</a> </li><li class="generic"><a href="ing-1568.html">fig</a> </li><li class="generic"><a href="ing-5325.html">flag</a> </li><li class="generic"><a href="ing-5173.html">goji berry</a> </li><li class="generic"><a href="ing-1576.html">gooseberry</a> </li><li class="generic"><a href="ing-1340.html">Lychee</a> </li><li class="generic"><a href="ing-114.html">mango</a> </li><li class="generic"><a href="ing-116.html">nectarine</a> </li><li class="generic"><a href="ing-120.html">passion fruit</a> </li><li class="generic"><a href="ing-123.html">plum</a> </li><li class="generic"><a href="ing-1552.html">pomegranate</a> </li><li class="generic"><a href="ing-124.html">prune</a> </li><li class="generic"><a href="ing-1682.html">pumpkin</a> </li><li class="generic"><a href="ing-126.html">raspberries</a> </li><li class="generic"><a href="ing-545.html">strawberry</a> </li><li class="generic"><a href="ing-374.html">tamarind</a> </li><li class="generic"><a href="ing-1695.html">tomato</a> </li><li class="generic"><a href="ing-128.html">twist</a> </li></ul></div></div></div><!-- end xref block (right column) --><div class="span12"><div id="integration" style="clear:both;"><br style="clear:both;">
-<div id="photos"><a href="http://ingr-photos.s3.amazonaws.com/112-20113424-053449.jpg"><img src="http://ingr-photos.s3.amazonaws.com/112-20113424-053449.jpg" height="256" class="img-polaroid"></a><br style="clear:both;"></div></div><p class="lastupdated">Last updated: 2011 July 14 10:12AM </p></div><!-- end integration block --></article>
+<div id="photos"><a href="http://ingr-photos.s3.amazonaws.com/112-20113424-053449.jpg"><img src="http://ingr-photos.s3.amazonaws.com/112-20113424-053449.jpg" height="256" class="img-polaroid"></a><br style="clear:both;"></div></div></div><!-- end integration block --><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></article>
  
   <footer class="row">
     <div class="span12">

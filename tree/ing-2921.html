@@ -39,11 +39,11 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   
   <header class="row">
-      <div class="span7">
+      <div class="span7" id="masthead">
         <img id="dbicon" src="http://mixologytech.com/gfx/icon.ingr-database.png" />
         <p><strong>MixologyTech Ingredients Database<br />Web Edition</strong><br />A work in progress. <a href="index.html">Learn more</a></p>
       </div>
-      <div class="span5">
+      <div class="span5" id="adbox">
           <div class="app"><a href="http://mixologytech.com/mybar/index.html"><img src="http://mixologytech.com/gfx/icon-mybar-256.png" id="mybaricon" /><br />My Bar</a></div>
           <div class="app"><a href="http://mixologytech.com/ingrapp/index.html"><img src="http://mixologytech.com/gfx/icon-ingr-256.png" id="baringredientsicon" /><br />Bar Ingredients</a></div>
           Get this entire database in your pocket with these apps for iOS:
@@ -63,14 +63,18 @@
      
           <!-- Be sure to leave the brand out there if you want it shown -->
           <!--<a class="brand" href="#">Project name</a>-->
-
+          <ul class="nav">
+            <li><a href="index.html" ><i class="icon-home"></i></a></li>
+          </ul>
           <form action="index.html" id="searchForm" class="navbar-search pull-left">
-            <input type="search" name="q" id="searchField" class="search-query" />
+            <input type="search" name="q" id="searchField" class="search-query" /><a id="resetsearch" href="#" ><i class="icon-remove"></i></a>
             <div class="dropdown">
               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" id="searchResults"></ul>
             </div>
           </form>
-          <a id="resetsearch" href="#" ><i class="icon-remove"></i></a>
+          <ul class="nav">
+            <li></li>
+          </ul>
 
           <!-- Everything you want hidden at 940px or less, place within here -->
           <div class="nav-collapse collapse">
@@ -94,7 +98,7 @@
 <li class="active">Lustau Light Fino Sherry Jarana</li>
 </ul></section></div></div><!-- end title block --><div class="span6"><div id="details"><div id="novelDescription" class="local"><h3>description</h3><p>Lustau Light Fino Sherry Jarana is a proprietary example of fino sherry.</p>
 <p>Fino sherry is generic for a dry style of sherry.</p>
-</div><dl><dt>flavors</dt><dd><a href="flavor-acid.html">acid</a>, <a href="flavor-fruity.html">fruity</a></dd><dt>substitute</dt><dd>other sherry, or other fortified wine</dd><dt>origin</dt><dd>Spain</dd></dl></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --><div class="span12"><div id="integration" style="clear:both;"></div><p class="lastupdated">Last updated: 2011 August 30 05:44PM </p></div><!-- end integration block --></article>
+</div><dl><dt>flavors</dt><dd><a href="flavor-acid.html">acid</a>, <a href="flavor-fruity.html">fruity</a></dd><dt>substitute</dt><dd>other sherry, or other fortified wine</dd><dt>origin</dt><dd>Spain</dd></dl></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --><div class="span12"><div id="integration" style="clear:both;"></div></div><!-- end integration block --><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 August 30 05:44PM </small></div></article>
  
   <footer class="row">
     <div class="span12">
