@@ -1,3 +1,4 @@
+@import url("../js/polymaps/lib/colorbrewer/colorbrewer.css");
 header {
   padding-top: 9px;
 }
@@ -42,4 +43,24 @@ footer {
 }
 #closingMetadata {
   text-align: right;
+}
+#map {
+  background: #ddd;
+  height: 300px;
+}
+.layer path {
+  fill: #fff;
+  fill-opacity: 1.00;
+  stroke: #ccc;
+  stroke-width: 0.1;
+}
+#topphotos {
+  height: 190px;
+  overflow: hidden;
+}
+#topphotos img {
+  display: inline-block;
+  height: 180px;
+  margin-right: 9px;
+  margin-bottom: 9px;
 }
