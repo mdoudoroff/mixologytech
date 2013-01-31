@@ -48,7 +48,9 @@ jQuery(document).ready(function() {
 	$('#searchField').keyup(function() {
 		
 		var searchStr = $('#searchField').val();
+		var searchStrLeadTerm = searchStr.toLowerCase().split(' ')[0];
 		var searchResults = $('#searchResultsFull');
+		var counter = 0;
 		if (searchStr.length > 0) {
 			$('#resetsearch').css('opacity','1.0');
 		} else {
@@ -61,39 +63,53 @@ jQuery(document).ready(function() {
 
 				if (msg.length>0) {
 
-					searchResults.append($('<ul>'));
+					searchResults.append('<p class="text-success">' + msg.length+' unique matches for “'+searchStr+'”</p>');
 
+					searchResults.append($('<ul class="unstyled">'));
+
+					// first, show matches that begin with the first search term
 					for (var i = 0; i < msg.length; i++) {
-						if (i < msg.length) {
-							searchResults.append($('<li><a tabindex="-1" href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+' ('+msg[i].context+')</a></li>'));
+						if (msg[i].name.toLowerCase().indexOf(searchStrLeadTerm)===0) {
+							counter += 1;
+							searchResults.append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> ('+msg[i].context+')</li>'));
 						}
+					}
 
+					// divider, if necessary
+					if (counter > 0) {
+						searchResults.append($('</ul><br /><ul class="unstyled">'));
+					}
+
+					// then list the rest, space allowing
+					for (i = 0; i < msg.length; i++) {
+						searchResults.append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> ('+msg[i].context+')</li>'));
 					}
 					searchResults.append($('</ul>'));
+					searchResults.show();
 				}
-				else if (searchStr.length > 0) {
-					searchResults.append($('<li><em>No matches. Try searching on the first few letters of a product or category.</em></li>'));
-				} else {
-					searchResults.empty();
+				else {
+					searchResults.append($('<p class="text-error"><em>No matches. Try searching on the first few letters of a product or category.</em></p>'));
+					searchResults.show();
 				}
 			});
 		}
 		else {
 			searchResults.empty();
+			searchResults.hide();
 		}
 	});
 
 
 	// reset switch
 	$('#resetsearch').click( function() {
-		$('#searchResultsFull').empty();
+		$('#searchResultsFull').empty().hide();
 		$('#searchField').val('');
 		$('#resetsearch').css('opacity','0.5');
 	});
 
 	// lastly, check the query string for an incoming GET
 	if (getUrlVars().q) {
-		$('#searchField').val(getUrlVars().q);
+		$('#searchField').val(getUrlVars().q.replace('+',' '));
 		$('#searchField').keyup();
 	}
 

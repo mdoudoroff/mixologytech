@@ -3376,7 +3376,9 @@ jQuery(document).ready(function() {
 	$('#searchField').keyup(function() {
 		
 		var searchStr = $('#searchField').val();
+		var searchStrLeadTerm = searchStr.toLowerCase().split(' ')[0];
 		var searchResults = $('#searchResults');
+		var counter = 0;
 		if (searchStr.length > 0) {
 			$('#resetsearch').css('opacity','1.0');
 		} else {
@@ -3389,23 +3391,35 @@ jQuery(document).ready(function() {
 
 				if (msg.length>0) {
 
-					
-					searchResults.append($('<ul>'));
-
-					for (var i = 0; i < 10; i++) {
-						if (i < msg.length) {
+					// first, show matches that begin with the first search term
+					for (var i = 0; i < msg.length; i++) {
+						if (msg[i].name.toLowerCase().indexOf(searchStrLeadTerm)===0) {
+							counter += 1;
 							searchResults.append($('<li><a tabindex="-1" href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+' ('+msg[i].context+')</a></li>'));
 						}
+					}
 
+					// divider, if necessary
+					if (counter > 0 && counter < 10) {
+						searchResults.append($('<li class="divider"></li>'));
+					}
+
+					// then list the rest, space allowing
+					for (i = 0; i < msg.length; i++) {
+						if (counter > 10) {
+							break;
+						}
+						searchResults.append($('<li><a tabindex="-1" href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+' ('+msg[i].context+')</a></li>'));
+						counter += 1;
 					}
 					if (msg.length > 10) {
 						searchResults.append($('<li class="divider"></li><li><a tabindex="-1" href="/tree/index.html?q='+encodeURIComponent(searchStr)+'"><em>... and '+(msg.length-10)+' more</em></a></li>'));
 					}
-					searchResults.append($('</ul>'));
+
 					searchResults.show();
 				}
 				else if (searchStr.length > 0) {
-					searchResults.append($('<li><em>No matches. Try searching on the first few letters of a product or category.</em></li>'));
+					searchResults.append($('<li><a href=""><em>No matches. Try searching on the first few letters of a product or category.</em></a></li>'));
 					searchResults.show();
 				} else {
 					searchResults.hide();
