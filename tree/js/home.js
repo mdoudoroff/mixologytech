@@ -82,7 +82,9 @@ jQuery(document).ready(function() {
 
 					// then list the rest, space allowing
 					for (i = 0; i < msg.length; i++) {
-						searchResults.append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> ('+msg[i].context+')</li>'));
+						if (msg[i].name.toLowerCase().indexOf(searchStrLeadTerm)!==0) {
+							searchResults.append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> ('+msg[i].context+')</li>'));
+						}
 					}
 					searchResults.append($('</ul>'));
 					searchResults.show();
