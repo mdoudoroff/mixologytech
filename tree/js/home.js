@@ -65,6 +65,8 @@ jQuery(document).ready(function() {
 
 					searchResults.append('<p class="text-success">' + msg.length+' unique matches for “'+searchStr+'”</p>');
 
+					searchResults.append('<p>Matches that start with “' + searchStr +'”</p>');
+
 					searchResults.append($('<ul class="unstyled">'));
 
 					// first, show matches that begin with the first search term
@@ -79,6 +81,8 @@ jQuery(document).ready(function() {
 					if (counter > 0) {
 						searchResults.append($('</ul><br /><ul class="unstyled">'));
 					}
+
+					searchResults.append('<p>Matches that contain with “' + searchStr +'”</p>');
 
 					// then list the rest, space allowing
 					for (i = 0; i < msg.length; i++) {
