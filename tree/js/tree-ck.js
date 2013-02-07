@@ -3469,11 +3469,11 @@ jQuery(window).load(function() {
 		.center({lat: 40, lon: 0})
 		.zoomRange([1, 7])
 		.zoom(2)
-		.add(po.interact())
+		//.add(po.interact())
 		;
 
-	//map.add(po.image()
-	//	.url("http://s3.amazonaws.com/com.modestmaps.bluemarble/{Z}-r{Y}-c{X}.jpg"));
+	map.add(po.image()
+		.url("http://s3.amazonaws.com/com.modestmaps.bluemarble/{Z}-r{Y}-c{X}.jpg"));
 
 	//map.add(po.geoJson()
 	//	.url("world.json")
