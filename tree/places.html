@@ -1,0 +1,451 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Bar Ingredients - places</title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+  
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/detail.css">
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/modernizr-custom.js"></script>
+
+</head>
+<body>
+
+  <div id="container" class="container">
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <header class="row">
+      <div class="span12" id="masthead">
+        <img id="dbicon" src="http://mixologytech.com/gfx/icon.ingr-database.png" />
+        <p><strong>Bar Ingredients</strong><br />A work in progress. <a href="index.html">Learn more</a></p>
+      </div>
+  </header>
+  <nav class="row">
+    <div class="navbar span12">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+     
+          <!-- Be sure to leave the brand out there if you want it shown -->
+          <!--<a class="brand" href="#">Project name</a>-->
+          <ul class="nav">
+            <li><a href="index.html" ><i class="icon-home"></i></a></li>
+          </ul>
+          <form action="index.html" id="searchForm" class="navbar-search pull-left">
+            <input type="search" name="q" id="searchField" class="search-query" /><a id="resetsearch" href="#" ><i class="icon-remove"></i></a>
+            <div class="dropdown">
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" id="searchResults"></ul>
+            </div>
+          </form>
+          
+
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <!-- .nav, .navbar-search, .navbar-form, etc -->
+            <ul class="nav">
+              <li><a href="flavors.html">Flavors</a></li>
+              <li><a href="places.html">Places</a></li>
+            </ul>
+
+          </div>
+
+
+        </div>
+      </div>
+  </nav>
+<article class="row"><div class="span12"><h1>Places</h1><div class="row"><div class="span12">
+<script>
+var originAggregate = {"Canada": 0.08, "Serbia and Montenegro": 0.01, "Lithuania": 0.0, "Argentina": 0.0, "Slovenia": 0.0, "Guatemala": 0.01, "Jordan": 0.0, "St. Lucia": 0.01, "Dominica": 0.0, "Netherlands": 0.11, "Scandinavia": 0.01, "United States Virgin Islands": 0.02, "Jalisco": 0.29, "Antigua": 0.0, "New Zealand": 0.01, "Jamaica": 0.03, "Albania": 0.0, "England": 0.1, "Australia": 0.03, "India": 0.01, "Turkey": 0.0, "Lowland Scotch Region": 0.01, "Czech Republic": 0.02, "France": 0.46, "Bermuda": 0.01, "Slovakia": 0.0, "Peru": 0.03, "Norway": 0.0, "Korea": 0.0, "Cuba": 0.02, "Oregon": 0.0, "China": 0.0, "Armenia": 0.01, "Dominican Republic": 0.02, "Finland": 0.01, "Highland Scotch Region": 0.19, "Cayman Islands": 0.0, "United States": 1.0, "Sweden": 0.03, "Vietnam": 0.0, "St. Martin": 0.01, "Russia": 0.03, "Bulgaria": 0.0, "Mauritius": 0.0, "Campbeltown Scotch Region": 0.01, "Portugal": 0.05, "South Africa": 0.01, "St. Vincent and the Grenadines": 0.0, "Fiji": 0.0, "Austria": 0.05, "Latvia": 0.0, "Hungary": 0.01, "Bosnia-Herzegovina": 0.0, "Brazil": 0.04, "Chihuahua": 0.01, "Panama": 0.01, "Guyana": 0.03, "Scotland": 0.11, "Costa Rica": 0.01, "Bahamas": 0.0, "Great Britain": 0.01, "British Virgin Islands": 0.0, "Ireland": 0.08, "Ecuador": 0.0, "Europe": 0.0, "Belarus": 0.0, "St. Kitts and Nevis": 0.01, "Newfoundland": 0.0, "Sardinia": 0.0, "Chile": 0.01, "Puerto Rico": 0.02, "Belgium": 0.02, "Thailand": 0.0, "Haiti": 0.01, "Iraq": 0.0, "Georgia": 0.0, "Denmark": 0.01, "Poland": 0.04, "Madeira Islands": 0.0, "Basque Country": 0.0, "Croatia": 0.01, "Switzerland": 0.03, "Grenada": 0.0, "Armagnac": 0.03, "Estonia": 0.01, "Uruguay": 0.0, "Lebanon": 0.0, "Central America": 0.01, "Cognac": 0.12, "Spain": 0.09, "Nicaragua": 0.01, "Barbados": 0.03, "Italy": 0.2, "Anguilla": 0.0, "Venezuela": 0.02, "Israel": 0.0, "Islay Scotch Region": 0.05, "Iceland": 0.0, "South America": 0.01, "Germany": 0.1, "Martinique": 0.05, "Philippines": 0.0, "Island Scotch Region": 0.03, "Tahiti": 0.0, "Trinidad and Tobago": 0.01, "Oaxaca": 0.05, "Japan": 0.07, "Syria": 0.0, "Guadeloupe": 0.0, "Mexico": 0.08, "Eastern Europe": 0.01, "Greece": 0.01, "Cura\u00e7ao": 0.0};
+</script><div id="map"></div></div></div></article><article class="row"><div class="span4">
+<h2>Alphabetical</h2>
+<a href="place-albania.html">Albania</a> (1)<br />
+<a href="place-anguilla.html">Anguilla</a> (3)<br />
+<a href="place-antigua.html">Antigua</a> (1)<br />
+<a href="place-argentina.html">Argentina</a> (3)<br />
+<a href="place-armagnac.html">Armagnac</a> (25)<br />
+<a href="place-armenia.html">Armenia</a> (7)<br />
+<a href="place-australia.html">Australia</a> (31)<br />
+<a href="place-austria.html">Austria</a> (50)<br />
+<a href="place-bahamas.html">Bahamas</a> (2)<br />
+<a href="place-barbados.html">Barbados</a> (27)<br />
+<a href="place-basque_country.html">Basque Country</a> (3)<br />
+<a href="place-belarus.html">Belarus</a> (2)<br />
+<a href="place-belgium.html">Belgium</a> (21)<br />
+<a href="place-bermuda.html">Bermuda</a> (5)<br />
+<a href="place-bosnia-herzegovina.html">Bosnia-Herzegovina</a> (2)<br />
+<a href="place-brazil.html">Brazil</a> (43)<br />
+<a href="place-british_virgin_islands.html">British Virgin Islands</a> (1)<br />
+<a href="place-bulgaria.html">Bulgaria</a> (1)<br />
+<a href="place-campbeltown_scotch_region.html">Campbeltown Scotch Region</a> (7)<br />
+<a href="place-canada.html">Canada</a> (75)<br />
+<a href="place-cayman_islands.html">Cayman Islands</a> (2)<br />
+<a href="place-chihuahua.html">Chihuahua</a> (6)<br />
+<a href="place-chile.html">Chile</a> (8)<br />
+<a href="place-china.html">China</a> (4)<br />
+<a href="place-cognac.html">Cognac</a> (115)<br />
+<a href="place-costa_rica.html">Costa Rica</a> (10)<br />
+<a href="place-croatia.html">Croatia</a> (6)<br />
+<a href="place-cuba.html">Cuba</a> (19)<br />
+<a href="place-curacao.html">Curaçao</a> (3)<br />
+<a href="place-czech_republic.html">Czech Republic</a> (20)<br />
+<a href="place-denmark.html">Denmark</a> (14)<br />
+<a href="place-dominica.html">Dominica</a> (1)<br />
+<a href="place-dominican_republic.html">Dominican Republic</a> (24)<br />
+<a href="place-ecuador.html">Ecuador</a> (4)<br />
+<a href="place-england.html">England</a> (95)<br />
+<a href="place-estonia.html">Estonia</a> (5)<br />
+<a href="place-fiji.html">Fiji</a> (3)<br />
+<a href="place-finland.html">Finland</a> (10)<br />
+<a href="place-france.html">France</a> (451)<br />
+<a href="place-georgia.html">Georgia</a> (2)<br />
+<a href="place-germany.html">Germany</a> (98)<br />
+<a href="place-great_britain.html">Great Britain</a> (13)<br />
+<a href="place-greece.html">Greece</a> (13)<br />
+<a href="place-grenada.html">Grenada</a> (1)<br />
+<a href="place-guadeloupe.html">Guadeloupe</a> (3)<br />
+<a href="place-guatemala.html">Guatemala</a> (14)<br />
+<a href="place-guyana.html">Guyana</a> (27)<br />
+<a href="place-haiti.html">Haiti</a> (7)<br />
+<a href="place-highland_scotch_region.html">Highland Scotch Region</a> (183)<br />
+<a href="place-hungary.html">Hungary</a> (8)<br />
+<a href="place-iceland.html">Iceland</a> (1)<br />
+<a href="place-india.html">India</a> (11)<br />
+<a href="place-iraq.html">Iraq</a> (1)<br />
+<a href="place-ireland.html">Ireland</a> (76)<br />
+<a href="place-island_scotch_region.html">Island Scotch Region</a> (26)<br />
+<a href="place-islay_scotch_region.html">Islay Scotch Region</a> (46)<br />
+<a href="place-israel.html">Israel</a> (1)<br />
+<a href="place-italy.html">Italy</a> (190)<br />
+<a href="place-jalisco.html">Jalisco</a> (282)<br />
+<a href="place-jamaica.html">Jamaica</a> (33)<br />
+<a href="place-japan.html">Japan</a> (69)<br />
+<a href="place-jordan.html">Jordan</a> (2)<br />
+<a href="place-korea.html">Korea</a> (4)<br />
+<a href="place-latvia.html">Latvia</a> (1)<br />
+<a href="place-lebanon.html">Lebanon</a> (3)<br />
+<a href="place-lithuania.html">Lithuania</a> (1)<br />
+<a href="place-lowland_scotch_region.html">Lowland Scotch Region</a> (8)<br />
+<a href="place-madeira_islands.html">Madeira Islands</a> (4)<br />
+<a href="place-martinique.html">Martinique</a> (52)<br />
+<a href="place-mauritius.html">Mauritius</a> (2)<br />
+<a href="place-mexico.html">Mexico</a> (78)<br />
+<a href="place-netherlands.html">Netherlands</a> (106)<br />
+<a href="place-new_zealand.html">New Zealand</a> (6)<br />
+<a href="place-newfoundland.html">Newfoundland</a> (2)<br />
+<a href="place-nicaragua.html">Nicaragua</a> (7)<br />
+<a href="place-norway.html">Norway</a> (2)<br />
+<a href="place-oaxaca.html">Oaxaca</a> (44)<br />
+<a href="place-oregon.html">Oregon</a> (1)<br />
+<a href="place-panama.html">Panama</a> (14)<br />
+<a href="place-peru.html">Peru</a> (31)<br />
+<a href="place-philippines.html">Philippines</a> (4)<br />
+<a href="place-poland.html">Poland</a> (38)<br />
+<a href="place-portugal.html">Portugal</a> (47)<br />
+<a href="place-puerto_rico.html">Puerto Rico</a> (23)<br />
+<a href="place-russia.html">Russia</a> (26)<br />
+<a href="place-sardinia.html">Sardinia</a> (1)<br />
+<a href="place-scotland.html">Scotland</a> (111)<br />
+<a href="place-serbia_and_montenegro.html">Serbia and Montenegro</a> (5)<br />
+<a href="place-slovakia.html">Slovakia</a> (1)<br />
+<a href="place-slovenia.html">Slovenia</a> (1)<br />
+<a href="place-south_africa.html">South Africa</a> (9)<br />
+<a href="place-spain.html">Spain</a> (83)<br />
+<a href="place-st._kitts_and_nevis.html">St. Kitts and Nevis</a> (6)<br />
+<a href="place-st._lucia.html">St. Lucia</a> (8)<br />
+<a href="place-st._martin.html">St. Martin</a> (5)<br />
+<a href="place-st._vincent_and_the_grenadines.html">St. Vincent and the Grenadines</a> (1)<br />
+<a href="place-sweden.html">Sweden</a> (33)<br />
+<a href="place-switzerland.html">Switzerland</a> (25)<br />
+<a href="place-syria.html">Syria</a> (1)<br />
+<a href="place-tahiti.html">Tahiti</a> (1)<br />
+<a href="place-thailand.html">Thailand</a> (1)<br />
+<a href="place-trinidad_and_tobago.html">Trinidad and Tobago</a> (14)<br />
+<a href="place-turkey.html">Turkey</a> (3)<br />
+<a href="place-united_states.html">United States</a> (972)<br />
+<a href="place-united_states_virgin_islands.html">United States Virgin Islands</a> (18)<br />
+<a href="place-uruguay.html">Uruguay</a> (1)<br />
+<a href="place-venezuela.html">Venezuela</a> (16)<br />
+<a href="place-vietnam.html">Vietnam</a> (1)<br /></div><div class="span4">
+<h2>By category</h2>
+<h3>Africa</h3>
+<a href="production-madeira_islands.html">Madeira Islands</a> (4)<br />
+<a href="production-south_africa.html">South Africa</a> (9)<br />
+<h3>Asia</h3>
+<a href="production-china.html">China</a> (4)<br />
+<a href="production-india.html">India</a> (11)<br />
+<a href="production-iraq.html">Iraq</a> (1)<br />
+<a href="production-israel.html">Israel</a> (1)<br />
+<a href="production-japan.html">Japan</a> (69)<br />
+<a href="production-jordan.html">Jordan</a> (2)<br />
+<a href="production-korea.html">Korea</a> (4)<br />
+<a href="production-lebanon.html">Lebanon</a> (3)<br />
+<a href="production-mauritius.html">Mauritius</a> (2)<br />
+<a href="production-philippines.html">Philippines</a> (4)<br />
+<a href="production-syria.html">Syria</a> (1)<br />
+<a href="production-thailand.html">Thailand</a> (1)<br />
+<a href="production-turkey.html">Turkey</a> (3)<br />
+<a href="production-vietnam.html">Vietnam</a> (1)<br />
+<h3>Europe</h3>
+<a href="production-albania.html">Albania</a> (1)<br />
+<a href="production-armagnac.html">Armagnac</a> (25)<br />
+<a href="production-armenia.html">Armenia</a> (7)<br />
+<a href="production-austria.html">Austria</a> (50)<br />
+<a href="production-basque_country.html">Basque Country</a> (3)<br />
+<a href="production-belarus.html">Belarus</a> (2)<br />
+<a href="production-belgium.html">Belgium</a> (21)<br />
+<a href="production-bosnia-herzegovina.html">Bosnia-Herzegovina</a> (2)<br />
+<a href="production-bulgaria.html">Bulgaria</a> (1)<br />
+<a href="production-campbeltown_scotch_region.html">Campbeltown Scotch Region</a> (7)<br />
+<a href="production-cognac.html">Cognac</a> (115)<br />
+<a href="production-croatia.html">Croatia</a> (6)<br />
+<a href="production-czech_republic.html">Czech Republic</a> (20)<br />
+<a href="production-denmark.html">Denmark</a> (14)<br />
+<a href="production-eastern_europe.html">Eastern Europe</a> (10)<br />
+<a href="production-england.html">England</a> (95)<br />
+<a href="production-estonia.html">Estonia</a> (5)<br />
+<a href="production-finland.html">Finland</a> (10)<br />
+<a href="production-france.html">France</a> (451)<br />
+<a href="production-georgia.html">Georgia</a> (2)<br />
+<a href="production-germany.html">Germany</a> (98)<br />
+<a href="production-great_britain.html">Great Britain</a> (13)<br />
+<a href="production-greece.html">Greece</a> (13)<br />
+<a href="production-highland_scotch_region.html">Highland Scotch Region</a> (183)<br />
+<a href="production-hungary.html">Hungary</a> (8)<br />
+<a href="production-iceland.html">Iceland</a> (1)<br />
+<a href="production-ireland.html">Ireland</a> (76)<br />
+<a href="production-island_scotch_region.html">Island Scotch Region</a> (26)<br />
+<a href="production-islay_scotch_region.html">Islay Scotch Region</a> (46)<br />
+<a href="production-italy.html">Italy</a> (190)<br />
+<a href="production-latvia.html">Latvia</a> (1)<br />
+<a href="production-lithuania.html">Lithuania</a> (1)<br />
+<a href="production-lowland_scotch_region.html">Lowland Scotch Region</a> (8)<br />
+<a href="production-martinique.html">Martinique</a> (52)<br />
+<a href="production-netherlands.html">Netherlands</a> (106)<br />
+<a href="production-norway.html">Norway</a> (2)<br />
+<a href="production-poland.html">Poland</a> (38)<br />
+<a href="production-portugal.html">Portugal</a> (47)<br />
+<a href="production-russia.html">Russia</a> (26)<br />
+<a href="production-sardinia.html">Sardinia</a> (1)<br />
+<a href="production-scandinavia.html">Scandinavia</a> (5)<br />
+<a href="production-scotland.html">Scotland</a> (111)<br />
+<a href="production-serbia_and_montenegro.html">Serbia and Montenegro</a> (5)<br />
+<a href="production-slovakia.html">Slovakia</a> (1)<br />
+<a href="production-slovenia.html">Slovenia</a> (1)<br />
+<a href="production-spain.html">Spain</a> (83)<br />
+<a href="production-sweden.html">Sweden</a> (33)<br />
+<a href="production-switzerland.html">Switzerland</a> (25)<br />
+<h3><a href="production-french_polynesia.html">French Polynesia</a> (0)</h3>
+<a href="production-tahiti.html">Tahiti</a> (1)<br />
+<h3>North America</h3>
+<a href="production-anguilla.html">Anguilla</a> (3)<br />
+<a href="production-antigua.html">Antigua</a> (1)<br />
+<a href="production-bahamas.html">Bahamas</a> (2)<br />
+<a href="production-barbados.html">Barbados</a> (27)<br />
+<a href="production-bermuda.html">Bermuda</a> (5)<br />
+<a href="production-british_virgin_islands.html">British Virgin Islands</a> (1)<br />
+<a href="production-canada.html">Canada</a> (75)<br />
+<a href="production-cayman_islands.html">Cayman Islands</a> (2)<br />
+<a href="production-central_america.html">Central America</a> (8)<br />
+<a href="production-chihuahua.html">Chihuahua</a> (6)<br />
+<a href="production-costa_rica.html">Costa Rica</a> (10)<br />
+<a href="production-cuba.html">Cuba</a> (19)<br />
+<a href="production-curacao.html">Curaçao</a> (3)<br />
+<a href="production-dominica.html">Dominica</a> (1)<br />
+<a href="production-dominican_republic.html">Dominican Republic</a> (24)<br />
+<a href="production-ecuador.html">Ecuador</a> (4)<br />
+<a href="production-grenada.html">Grenada</a> (1)<br />
+<a href="production-guadeloupe.html">Guadeloupe</a> (3)<br />
+<a href="production-guatemala.html">Guatemala</a> (14)<br />
+<a href="production-guyana.html">Guyana</a> (27)<br />
+<a href="production-haiti.html">Haiti</a> (7)<br />
+<a href="production-jalisco.html">Jalisco</a> (282)<br />
+<a href="production-jamaica.html">Jamaica</a> (33)<br />
+<a href="production-mexico.html">Mexico</a> (78)<br />
+<a href="production-newfoundland.html">Newfoundland</a> (2)<br />
+<a href="production-nicaragua.html">Nicaragua</a> (7)<br />
+<a href="production-oaxaca.html">Oaxaca</a> (44)<br />
+<a href="production-oregon.html">Oregon</a> (1)<br />
+<a href="production-panama.html">Panama</a> (14)<br />
+<a href="production-puerto_rico.html">Puerto Rico</a> (23)<br />
+<a href="production-st._kitts_and_nevis.html">St. Kitts and Nevis</a> (6)<br />
+<a href="production-st._lucia.html">St. Lucia</a> (8)<br />
+<a href="production-st._martin.html">St. Martin</a> (5)<br />
+<a href="production-st._vincent_and_the_grenadines.html">St. Vincent and the Grenadines</a> (1)<br />
+<a href="production-trinidad_and_tobago.html">Trinidad and Tobago</a> (14)<br />
+<a href="production-united_states.html">United States</a> (972)<br />
+<a href="production-united_states_virgin_islands.html">United States Virgin Islands</a> (18)<br />
+<h3>South America</h3>
+<a href="production-argentina.html">Argentina</a> (3)<br />
+<a href="production-brazil.html">Brazil</a> (43)<br />
+<a href="production-chile.html">Chile</a> (8)<br />
+<a href="production-peru.html">Peru</a> (31)<br />
+<a href="production-uruguay.html">Uruguay</a> (1)<br />
+<a href="production-venezuela.html">Venezuela</a> (16)<br /></div><div class="span4">
+<h2>By popularity</h2>
+<a href="production-united_states.html">United States</a> (972)<br />
+<a href="production-france.html">France</a> (451)<br />
+<a href="production-jalisco.html">Jalisco</a> (282)<br />
+<a href="production-italy.html">Italy</a> (190)<br />
+<a href="production-highland_scotch_region.html">Highland Scotch Region</a> (183)<br />
+<a href="production-cognac.html">Cognac</a> (115)<br />
+<a href="production-scotland.html">Scotland</a> (111)<br />
+<a href="production-netherlands.html">Netherlands</a> (106)<br />
+<a href="production-germany.html">Germany</a> (98)<br />
+<a href="production-england.html">England</a> (95)<br />
+<a href="production-spain.html">Spain</a> (83)<br />
+<a href="production-mexico.html">Mexico</a> (78)<br />
+<a href="production-ireland.html">Ireland</a> (76)<br />
+<a href="production-canada.html">Canada</a> (75)<br />
+<a href="production-japan.html">Japan</a> (69)<br />
+<a href="production-martinique.html">Martinique</a> (52)<br />
+<a href="production-austria.html">Austria</a> (50)<br />
+<a href="production-portugal.html">Portugal</a> (47)<br />
+<a href="production-islay_scotch_region.html">Islay Scotch Region</a> (46)<br />
+<a href="production-oaxaca.html">Oaxaca</a> (44)<br />
+<a href="production-brazil.html">Brazil</a> (43)<br />
+<a href="production-poland.html">Poland</a> (38)<br />
+<a href="production-jamaica.html">Jamaica</a> (33)<br />
+<a href="production-sweden.html">Sweden</a> (33)<br />
+<a href="production-peru.html">Peru</a> (31)<br />
+<a href="production-australia.html">Australia</a> (31)<br />
+<a href="production-barbados.html">Barbados</a> (27)<br />
+<a href="production-guyana.html">Guyana</a> (27)<br />
+<a href="production-russia.html">Russia</a> (26)<br />
+<a href="production-island_scotch_region.html">Island Scotch Region</a> (26)<br />
+<a href="production-switzerland.html">Switzerland</a> (25)<br />
+<a href="production-armagnac.html">Armagnac</a> (25)<br />
+<a href="production-dominican_republic.html">Dominican Republic</a> (24)<br />
+<a href="production-puerto_rico.html">Puerto Rico</a> (23)<br />
+<a href="production-belgium.html">Belgium</a> (21)<br />
+<a href="production-czech_republic.html">Czech Republic</a> (20)<br />
+<a href="production-cuba.html">Cuba</a> (19)<br />
+<a href="production-united_states_virgin_islands.html">United States Virgin Islands</a> (18)<br />
+<a href="production-venezuela.html">Venezuela</a> (16)<br />
+<a href="production-trinidad_and_tobago.html">Trinidad and Tobago</a> (14)<br />
+<a href="production-guatemala.html">Guatemala</a> (14)<br />
+<a href="production-panama.html">Panama</a> (14)<br />
+<a href="production-denmark.html">Denmark</a> (14)<br />
+<a href="production-great_britain.html">Great Britain</a> (13)<br />
+<a href="production-greece.html">Greece</a> (13)<br />
+<a href="production-india.html">India</a> (11)<br />
+<a href="production-costa_rica.html">Costa Rica</a> (10)<br />
+<a href="production-finland.html">Finland</a> (10)<br />
+<a href="production-south_africa.html">South Africa</a> (9)<br />
+<a href="production-st._lucia.html">St. Lucia</a> (8)<br />
+<a href="production-chile.html">Chile</a> (8)<br />
+<a href="production-hungary.html">Hungary</a> (8)<br />
+<a href="production-lowland_scotch_region.html">Lowland Scotch Region</a> (8)<br />
+<a href="production-haiti.html">Haiti</a> (7)<br />
+<a href="production-nicaragua.html">Nicaragua</a> (7)<br />
+<a href="production-armenia.html">Armenia</a> (7)<br />
+<a href="production-campbeltown_scotch_region.html">Campbeltown Scotch Region</a> (7)<br />
+<a href="production-st._kitts_and_nevis.html">St. Kitts and Nevis</a> (6)<br />
+<a href="production-croatia.html">Croatia</a> (6)<br />
+<a href="production-new_zealand.html">New Zealand</a> (6)<br />
+<a href="production-chihuahua.html">Chihuahua</a> (6)<br />
+<a href="production-bermuda.html">Bermuda</a> (5)<br />
+<a href="production-st._martin.html">St. Martin</a> (5)<br />
+<a href="production-estonia.html">Estonia</a> (5)<br />
+<a href="production-serbia_and_montenegro.html">Serbia and Montenegro</a> (5)<br />
+<a href="production-ecuador.html">Ecuador</a> (4)<br />
+<a href="production-china.html">China</a> (4)<br />
+<a href="production-korea.html">Korea</a> (4)<br />
+<a href="production-philippines.html">Philippines</a> (4)<br />
+<a href="production-madeira_islands.html">Madeira Islands</a> (4)<br />
+<a href="production-anguilla.html">Anguilla</a> (3)<br />
+<a href="production-curacao.html">Curaçao</a> (3)<br />
+<a href="production-guadeloupe.html">Guadeloupe</a> (3)<br />
+<a href="production-argentina.html">Argentina</a> (3)<br />
+<a href="production-basque_country.html">Basque Country</a> (3)<br />
+<a href="production-lebanon.html">Lebanon</a> (3)<br />
+<a href="production-turkey.html">Turkey</a> (3)<br />
+<a href="production-fiji.html">Fiji</a> (3)<br />
+<a href="production-newfoundland.html">Newfoundland</a> (2)<br />
+<a href="production-bahamas.html">Bahamas</a> (2)<br />
+<a href="production-cayman_islands.html">Cayman Islands</a> (2)<br />
+<a href="production-belarus.html">Belarus</a> (2)<br />
+<a href="production-bosnia-herzegovina.html">Bosnia-Herzegovina</a> (2)<br />
+<a href="production-georgia.html">Georgia</a> (2)<br />
+<a href="production-norway.html">Norway</a> (2)<br />
+<a href="production-mauritius.html">Mauritius</a> (2)<br />
+<a href="production-jordan.html">Jordan</a> (2)<br />
+<a href="production-antigua.html">Antigua</a> (1)<br />
+<a href="production-british_virgin_islands.html">British Virgin Islands</a> (1)<br />
+<a href="production-dominica.html">Dominica</a> (1)<br />
+<a href="production-grenada.html">Grenada</a> (1)<br />
+<a href="production-st._vincent_and_the_grenadines.html">St. Vincent and the Grenadines</a> (1)<br />
+<a href="production-oregon.html">Oregon</a> (1)<br />
+<a href="production-uruguay.html">Uruguay</a> (1)<br />
+<a href="production-albania.html">Albania</a> (1)<br />
+<a href="production-bulgaria.html">Bulgaria</a> (1)<br />
+<a href="production-latvia.html">Latvia</a> (1)<br />
+<a href="production-lithuania.html">Lithuania</a> (1)<br />
+<a href="production-slovakia.html">Slovakia</a> (1)<br />
+<a href="production-slovenia.html">Slovenia</a> (1)<br />
+<a href="production-iceland.html">Iceland</a> (1)<br />
+<a href="production-israel.html">Israel</a> (1)<br />
+<a href="production-iraq.html">Iraq</a> (1)<br />
+<a href="production-syria.html">Syria</a> (1)<br />
+<a href="production-thailand.html">Thailand</a> (1)<br />
+<a href="production-vietnam.html">Vietnam</a> (1)<br />
+<a href="production-tahiti.html">Tahiti</a> (1)<br />
+<a href="production-sardinia.html">Sardinia</a> (1)<br /></div></article> 
+  <footer class="row">
+    <div class="span12">
+      <small>
+      <p>We endeavor to keep this information correct and up-do-date. Sometimes we make a mistake or fall behind. Please submit corrections, augmentations, and feedback to <a href="mailto:&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x6d;&#x61;&#x72;&#x74;&#x69;&#x6e;&#64;&#109;&#105;&#120;&#111;&#108;&#111;&#103;&#121;&#x74;&#101;&#x63;&#104;&#46;&#99;&#111;&#x6d;">by email</a>.</p>
+      <p>Copyright 2012 MixologyTech, a business of Martin Doudoroff LLC. All rights reserved, except snapshots of bottles and other ingredients are under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 license</a> and may be reused by anyone under those terms.</p>
+      </small>
+    </div>
+  </footer>
+
+  </div>
+
+  <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+  <script src="js/tree-ck.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>

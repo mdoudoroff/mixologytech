@@ -3472,8 +3472,8 @@ jQuery(window).load(function() {
 		//.add(po.interact())
 		;
 
-	map.add(po.image()
-		.url("http://s3.amazonaws.com/com.modestmaps.bluemarble/{Z}-r{Y}-c{X}.jpg"));
+	//map.add(po.image()
+	//	.url("http://s3.amazonaws.com/com.modestmaps.bluemarble/{Z}-r{Y}-c{X}.jpg"));
 
 	//map.add(po.geoJson()
 	//	.url("world.json")
@@ -3482,13 +3482,21 @@ jQuery(window).load(function() {
 	//	);
 	//	//.on("load", load));
 
+	// load the primary map elements (countries)
 	map.add(po.geoJson()
-		.url("world-large-filtered.json")
+		.url("countries.json")
 		.tile(false)
 		.zoom(3)
 		.on("load", load)
 		);
 
+	// load the secondary map elements (regions)
+	map.add(po.geoJson()
+		.url("other-regions.json")
+		.tile(false)
+		.zoom(3)
+		.on("load", loadregions)
+		);
 
 	//map.add(po.geoJson()
 	//	.features(geoJSONFeatures['features'])
@@ -3504,7 +3512,7 @@ jQuery(window).load(function() {
 
 	
 
-	/** Set feature class and add tooltip on tile load. */
+	// set attributes on primary map elements (countries)
 	function load(e) {
 	  for (var i = 0; i < e.features.length; i++) {
 		var feature = e.features[i];
@@ -3525,7 +3533,39 @@ jQuery(window).load(function() {
 	  }
 	}
 
+	// set attributes on primary map elements (countries)
+	function loadregions(e) {
+	  for (var i = 0; i < e.features.length; i++) {
+		var feature = e.features[i];
+		var n = feature.data.properties.name;
 
+		if (activeMapRegions.indexOf(n) > -1) {
+			console.log('SHOWN:',n);
+			n$(feature.element).attr("style", 'fill:rgb(0,255,0); opacity:0.5;');
+		} else {
+			n$(feature.element).attr("style", 'display:none;');
+			console.log('hidden:',n);
+		}
+
+		/*
+		var v = originAggregate[n];
+		if (v !== undefined) {
+			used.push(n);
+		}
+		if (v === 1.0) {
+			v = 0.99;
+		}
+		n$(feature.element)
+			//.attr("class", isNaN(v) ? null : "q" + ~~(v * 9) + "-" + 9)
+			//.attr("onclick", 'window.location="http://apple.com";')
+			.attr("style", 'fill:rgb(0,255,0); opacity:0.5;')
+		  .add("svg:title")
+			//.text(n + (isNaN(v) ? "" : ":  " + percent(v)));
+			.text(n + (isNaN(v) ? "" : " (region):  " + v));
+
+		*/
+	  }
+	}
 	
 	//console.log('initial',map.extent());
 	//console.log(boundsSW,boundsNE);

@@ -53,6 +53,9 @@ footer {
   background: #ddd;
   height: 300px;
 }
+#map.specialregion {
+  fill: #00ff00;
+}
 .layer path {
   fill: #fff;
   fill-opacity: 1.00;
