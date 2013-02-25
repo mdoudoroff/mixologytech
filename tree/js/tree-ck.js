@@ -3445,11 +3445,18 @@ jQuery(document).ready(function() {
 		$('#resetsearch').css('opacity','0.5');
 	});
 
+	// if no pictures, hide the pictures area
+	if (photoList.length < 1) {
+		$('#topphotos').hide();
+	}
+
 });
 
 
 jQuery(window).load(function() {
-	// map!
+
+	// ================= map! =================
+
 	var po = org.polymaps;
 
 	/* Country name -> population (July 2010 Est.). */
@@ -3542,6 +3549,7 @@ jQuery(window).load(function() {
 		if (activeMapRegions.indexOf(n) > -1) {
 			console.log('SHOWN:',n);
 			n$(feature.element).attr("style", 'fill:rgb(0,255,0); opacity:0.5;');
+			n$(feature.element).add("svg:title").text(n);
 		} else {
 			n$(feature.element).attr("style", 'display:none;');
 			console.log('hidden:',n);
@@ -3584,7 +3592,6 @@ jQuery(window).load(function() {
 	//  return (v * 100).toPrecision(Math.min(2, 2 - Math.log(v) / Math.LN2)) + "%";
 	//}
 
-
 	// zoom to the feature's extent
 	//var neighborhood = $.getJSON('world.json', function(data) {
 	//	return data;
@@ -3594,6 +3601,41 @@ jQuery(window).load(function() {
 	//var extent = geoff.extent().encloseGeometry(geoJSONFeatures);
 	//map.extent(extent.toArray());
 	//map.zoom(Math.floor(map.zoom()));
+
+
+
+
+	// ================= photos! =================
+
+    var j = photoList.length;
+    var i = 0;
+    var img;
+    function loadImage() {
+    	if (i >= j) return;
+    	console.log(photoList[i])
+
+    	img = $('<img src="http://ingr-photos.s3.amazonaws.com/'+photoList[i]+'" height="180" class="img-polaroid">');
+
+    	img.error(function() {
+    			i++;
+				loadImage();
+  			})
+    	.load(function() {
+			$(this).hide();      
+            $('#topphotos').append(this);
+            $(this).fadeIn();
+
+            i++;
+			loadImage();  
+    	});
+
+  	
+    }
+    loadImage();
+	//for (var i=0; i <= j; i++) {
+//		var img = $('<img src="http://ingr-photos.s3.amazonaws.com/'+photoList[i]+'" height="180" class="img-polaroid">');
+		
+//	}
 
 });
 
