@@ -127,7 +127,7 @@ jQuery(window).load(function() {
 
 	// ================= map! =================
 
-	if (! jQuery.isEmptyObject(originAggregate)) {
+	if (! jQuery.isEmptyObject(originAggregate) || ! jQuery.isEmptyObject(activeMapRegions)) {
 
 		var po = org.polymaps;
 
@@ -257,7 +257,7 @@ jQuery(window).load(function() {
 
 		//console.log(map.extent());
 
-		//map.zoom(Math.floor(map.zoom()));
+		map.zoom(Math.floor(map.zoom()));
 
 		/** Formats a given number as a percentage, e.g., 10% or 0.02%. */
 		//function percent(v) {
@@ -287,6 +287,10 @@ jQuery(window).load(function() {
 	    var i = 0;
 	    var img;
 	    function loadImage() {
+	    	if (i > 6) {
+	    		$("#topphotos").append('<span>More...</span>');
+	    		return;
+	    	}
 	    	if (i >= j) return;
 	    	console.log(photoList[i])
 
