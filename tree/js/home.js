@@ -73,7 +73,7 @@ jQuery(document).ready(function() {
 					for (var i = 0; i < msg.length; i++) {
 						if (msg[i].name.toLowerCase().indexOf(searchStrLeadTerm)===0) {
 							counter += 1;
-							searchResults.append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> ('+msg[i].context+')</li>'));
+							searchResults.append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> <span class="context">'+msg[i].context+'</span></li>'));
 						}
 					}
 
@@ -87,7 +87,7 @@ jQuery(document).ready(function() {
 					// then list the rest, space allowing
 					for (i = 0; i < msg.length; i++) {
 						if (msg[i].name.toLowerCase().indexOf(searchStrLeadTerm)!==0) {
-							searchResults.append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> ('+msg[i].context+')</li>'));
+							searchResults.append($('<li><a href="/tree/ing-'+msg[i].iid+'.html">'+msg[i].name+'</a> <span class="context">'+msg[i].context+'</span></li>'));
 						}
 					}
 					searchResults.append($('</ul>'));
