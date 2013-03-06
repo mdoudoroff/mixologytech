@@ -3485,21 +3485,14 @@ jQuery(window).load(function() {
 			//.add(po.interact())
 			;
 
-		//map.add(po.image()
-		//	.url("http://s3.amazonaws.com/com.modestmaps.bluemarble/{Z}-r{Y}-c{X}.jpg"));
-
-		//map.add(po.geoJson()
-		//	.url("world.json")
-		//	.tile(false)
-		//	.zoom(3)
-		//	);
-		//	//.on("load", load));
+		map.add(po.image()
+			.url("http://s3.amazonaws.com/com.modestmaps.bluemarble/{Z}-r{Y}-c{X}.jpg"));
 
 		// load the primary map elements (countries)
 		map.add(po.geoJson()
 			.url("countries.json")
 			.tile(false)
-			.zoom(3)
+			//.zoom(3)
 			.on("load", load)
 			);
 
@@ -3507,7 +3500,7 @@ jQuery(window).load(function() {
 		map.add(po.geoJson()
 			.url("other-regions.json")
 			.tile(false)
-			.zoom(3)
+			//.zoom(3)
 			.on("load", loadregions)
 			);
 
@@ -3539,6 +3532,7 @@ jQuery(window).load(function() {
 			}
 			n$(feature.element)
 				.attr("class", isNaN(v) ? null : "q" + ~~(v * 9) + "-" + 9)
+				.attr('style', 'opacity:0.5;')
 				//.attr("onclick", 'window.location="http://apple.com";')
 			  .add("svg:title")
 				//.text(n + (isNaN(v) ? "" : ":  " + percent(v)));
@@ -3554,7 +3548,8 @@ jQuery(window).load(function() {
 
 			if (activeMapRegions.indexOf(n) > -1) {
 				console.log('SHOWN:',n);
-				n$(feature.element).attr("style", 'fill:rgb(0,255,0); opacity:0.5;');
+				//n$(feature.element).attr("style", 'fill:rgb(0,255,0); opacity:0.5;');
+				n$(feature.element).attr("style", 'stroke:rgb(255,255,0); stroke-width:2; fill:none;');
 				n$(feature.element).add("svg:title").text(n);
 			} else {
 				n$(feature.element).attr("style", 'display:none;');
@@ -3581,17 +3576,26 @@ jQuery(window).load(function() {
 		  }
 		}
 		
-		//console.log('initial',map.extent());
-		//console.log(boundsSW,boundsNE);
-		map.resize();
+		console.log('initial',map.extent());
+		console.log(boundsSW,boundsNE);
+
+		//map.resize();
+
 		//map.extent([{lon:-170,lat:-20},{lon:153,lat:71}]);
+
 		map.extent([{lon:boundsSW.x,lat:boundsSW.y},{lon:boundsNE.x,lat:boundsNE.y}]);
-		//console.log('after',map.extent());
+		console.log('after',map.extent());
+
 		//map.extent([map.pointLocation({y:boundsSW.y,x:boundsSW.x}), map.pointLocation({y:boundsNE.y,x:boundsNE.x})]);
 
-		//console.log(map.extent());
 
-		map.zoom(Math.floor(map.zoom()));
+		// correct zoom (go no closer than zoom level 6)
+		map.zoom(Math.floor(map.zoom())-1);
+		//if (map.zoom()>6.0) {
+		//	map.zoom(6);
+		//} else {
+		//	map.zoom(Math.floor(map.zoom()));
+		//}
 
 		/** Formats a given number as a percentage, e.g., 10% or 0.02%. */
 		//function percent(v) {
