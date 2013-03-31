@@ -160,7 +160,12 @@ var boundsNE= { x:179.78, y:71.41};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>New York</td><td>4 oz</td><td><abbr title="United States dollar">USD</abbr> $25.9</td><td data-currency="USD" data-rlow="25.9" data-rhigh="25.9"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 04 11:28PM </small></div></div> 
+<tr><td>New York</td><td>4 oz</td><td><abbr title="United States dollar">USD</abbr> $25.9</td><td data-currency="USD" data-rlow="25.9" data-rhigh="25.9"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vermouth, red": [1.0, 453, 2], "aperitif/digestif bitters": [1.0, 21, 3], "Campari": [1.0, 28, 3], "Carpano Antica Formula": [1.0, 1709, 2], "cherry, brandied": [1.0, 95, 0], "Elijah Craig Kentucky Straight Bourbon": [1.0, 1661, 5], "chile pepper": [1.0, 1629, 0], "Marie Brizard Banane": [1.0, 3106, 3], "Bourbon whiskey": [1.0, 415, 5], "banana liqueur": [1.0, 550, 3], "Ron Zacapa Centenario 23": [1.0, 1511, 5], "rum, Guatemala": [1.0, 1510, 5]};
+var flavorAffinities = {"sweet": [1.0, 209, 0], "acid": [0.4, 197, 0], "cherry": [0.2, 10, 5], "oak": [0.4, 240, 0], "tropical fruit": [0.4, 247, 5], "wood": [0.4, 239, 0], "herbal": [0.8, 78, 1], "bitter": [0.4, 200, 0], "banana": [0.4, 4, 5], "rum": [0.4, 156, 0], "corn": [0.4, 190, 0], "brandy": [0.2, 152, 0], "fruit": [1.0, 1, 5], "vegetal": [0.2, 163, 1], "spice": [0.4, 102, 2], "vanilla": [0.2, 136, 2], "whiskey": [0.4, 161, 0], "grain": [0.4, 189, 0], "chile pepper": [0.2, 172, 1], "medicinal": [0.4, 203, 0], "tannin": [0.4, 210, 0], "berries": [0.2, 5, 5], "wine": [0.4, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 04 11:28PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -176,6 +181,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

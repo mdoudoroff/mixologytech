@@ -159,7 +159,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-180.0, y:41.19};
 var boundsNE= { x:180.0, y:81.74};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 28 01:58PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"chocolate, shaved": [1.0, 1209, 0], "coffee-flavored liqueur": [1.0, 233, 3], "chocolate-flavored liqueur": [1.0, 232, 3], "Godiva White Chocolate Liqueur": [1.0, 1210, 3], "almond-flavored liqueur": [1.0, 1043, 3], "amaretto": [1.0, 231, 3], "Kahlua": [1.0, 240, 3], "Disaronno Originale": [1.0, 1357, 3], "cream": [1.0, 305, 2]};
+var flavorAffinities = {"coffee": [0.25, 141, 4], "sweet": [0.875, 209, 0], "almond": [0.375, 138, 4], "chocolate": [0.625, 111, 4], "nutty": [1.0, 137, 4], "cream": [0.125, 179, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 28 01:58PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -175,6 +180,7 @@ var boundsNE= { x:180.0, y:81.74};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

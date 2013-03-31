@@ -160,7 +160,12 @@ var boundsNE= { x:-52.62, y:83.12};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>Illinois</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $17.0-20.0</td><td data-currency="USD" data-rlow="17.0" data-rhigh="20.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<tr><td>Illinois</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $17.0-20.0</td><td data-currency="USD" data-rlow="17.0" data-rhigh="20.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"orange bitters": [0.5, 37, 1], "cherry, Maraschino": [0.5, 96, 0], "Liqueur d'Or": [0.5, 212, 3], "quinquina": [0.5, 446, 2], "goldwasser": [0.5, 204, 3], "Noilly Prat Original Dry": [0.5, 537, 2], "Dubonnet": [0.5, 437, 2], "vermouth, dry": [1.0, 452, 2]};
+var flavorAffinities = {"clove": [0.125, 113, 2], "almond": [0.125, 138, 4], "cherry": [0.125, 10, 5], "orange": [0.125, 30, 5], "citrus": [0.125, 24, 5], "sweet": [0.375, 209, 0], "anise": [0.125, 104, 2], "acid": [0.625, 197, 0], "nutty": [0.125, 137, 4], "fruit": [0.875, 1, 5], "quinine": [0.25, 90, 1], "cinnamon": [0.125, 112, 2], "wine": [0.625, 162, 0], "herbal": [1.0, 78, 1], "berries": [0.125, 5, 5], "bitter": [0.125, 200, 0], "spice": [0.125, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -176,6 +181,7 @@ var boundsNE= { x:-52.62, y:83.12};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

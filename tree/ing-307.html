@@ -156,7 +156,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-61.8, y:-21.37};
 var boundsNE= { x:55.85, y:42.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 17 12:57PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"gin": [1.0, 556, 4], "orgeat": [1.0, 342, 2]};
+var flavorAffinities = {"alcohol": [1.0, 198, 0], "juniper": [1.0, 121, 2], "citrus": [1.0, 24, 5], "sweet": [1.0, 209, 0], "almond": [1.0, 138, 4], "marzipan": [1.0, 144, 4], "nutty": [1.0, 137, 4], "fruit": [1.0, 1, 5], "floral": [1.0, 67, 3], "herbal": [1.0, 78, 1], "spice": [1.0, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 17 12:57PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -172,6 +177,7 @@ var boundsNE= { x:55.85, y:42.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

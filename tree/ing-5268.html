@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 07 04:39PM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"whisky, Japanese": [0.5, 420, 5], "lime juice": [1.0, 328, 2], "bell pepper": [0.5, 1599, 0], "Aviation Gin": [0.5, 1489, 4], "absinthe": [0.5, 15, 4], "grapefruit juice": [0.5, 316, 2], "Suntory Yamazaki 12 Years Old": [1.0, 1528, 5], "cane syrup (filtered)": [0.5, 283, 2], "lemon juice": [0.5, 324, 2], "\u00c9mile Pernot Vieux Pontarlier": [1.0, 3098, 4], "gin": [0.5, 556, 4], "egg white": [1.0, 475, 0], "simple syrup": [1.0, 363, 2]};
+var flavorAffinities = {"bell pepper": [0.2, 168, 1], "sweet": [0.6, 209, 0], "lime": [0.4, 29, 5], "lemon": [0.2, 28, 5], "alcohol": [1.0, 198, 0], "anise": [0.6, 104, 2], "oak": [0.6, 240, 0], "grapefruit": [0.2, 26, 5], "wood": [0.6, 239, 0], "herbal": [1.0, 78, 1], "bitter": [0.6, 200, 0], "juniper": [0.4, 121, 2], "citrus": [0.8, 24, 5], "fruit": [0.8, 1, 5], "floral": [0.4, 67, 3], "vegetal": [0.2, 163, 1], "spice": [1.0, 102, 2], "smoky": [0.6, 206, 0], "whiskey": [0.6, 161, 0], "sour": [0.8, 208, 0], "grain": [0.6, 189, 0], "chile pepper": [0.2, 172, 1], "tannin": [0.6, 210, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 07 04:39PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

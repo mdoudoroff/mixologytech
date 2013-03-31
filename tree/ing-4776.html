@@ -156,7 +156,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 April 10 04:40PM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Violet petal flavored liqueur": [1.0, 1042, 3], "water": [1.0, 383, 2], "vodka": [1.0, 267, 4], "orange wheel": [1.0, 1070, 0], "Gordon\u2019s Gin": [1.0, 262, 4], "quinquina": [1.0, 446, 2], "Forbidden Fruit": [1.0, 160, 3], "peach bitters": [1.0, 38, 1], "liqueurs, fruit-flavored": [1.0, 1008, 3], "Cr\u00e8me Yvette": [1.0, 133, 3], "gin": [1.0, 556, 4], "Dubonnet": [1.0, 437, 2], "liqueurs": [1.0, 1040, 3]};
+var flavorAffinities = {"sweet": [1.0, 209, 0], "almond": [0.2, 138, 4], "honey": [0.2, 222, 0], "quinine": [0.4, 90, 1], "violet": [0.4, 77, 3], "acid": [0.4, 197, 0], "clove": [0.2, 113, 2], "alcohol": [0.6, 198, 0], "anise": [0.2, 104, 2], "nutty": [0.2, 137, 4], "orange": [0.2, 30, 5], "bitter": [0.2, 200, 0], "juniper": [0.4, 121, 2], "citrus": [0.4, 24, 5], "herbal": [1.0, 78, 1], "brandy": [0.2, 152, 0], "fruit": [1.0, 1, 5], "floral": [0.8, 67, 3], "spice": [0.6, 102, 2], "sour": [0.2, 208, 0], "cinnamon": [0.2, 112, 2], "wine": [0.4, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 April 10 04:40PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -172,6 +177,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -156,7 +156,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-179.14, y:18.91};
 var boundsNE= { x:179.78, y:71.41};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Martini & Rossi sweet vermouth": [0.2, 1192, 2], "raspberry syrup": [0.2, 354, 2], "Burgundy": [0.4, 428, 2], "lemon juice": [0.8, 324, 2], "Cognac": [0.4, 63, 5], "claret": [0.2, 435, 2], "aromatic bitters": [0.2, 22, 1], "cura\u00e7ao": [0.2, 159, 3], "sugar": [0.4, 370, 0], "lime": [0.2, 112, 0], "Angostura bitters": [0.2, 19, 1], "lemon": [0.2, 111, 0], "maraschino liqueur": [0.4, 170, 3], "rum, Virgin Islands": [0.2, 472, 5], "cayenne pepper": [0.2, 285, 0], "rum, Martinique": [0.2, 406, 5], "gin": [0.2, 556, 4], "Demerara rum, 151-proof": [0.2, 1429, 5], "brandies": [0.8, 1046, 5], "lime juice": [0.2, 328, 2], "rum": [0.2, 396, 5], "ginger-flavored liqueur": [1.0, 202, 3], "sugar, lump": [0.2, 1101, 0], "rock candy syrup": [0.6, 356, 2], "gomme syrup": [0.2, 314, 2], "powdered sugar": [0.2, 631, 0], "boiling water": [0.2, 1219, 2], "gin, London dry": [0.2, 257, 4], "vermouth, red": [0.6, 453, 2], "orange juice": [0.4, 340, 2], "lemon twist": [0.4, 1058, 0], "syrup": [0.2, 372, 2], "egg yolk": [0.2, 476, 0], "peppermint-flavored liqueur": [0.2, 218, 3], "Canadian Club": [0.8, 560, 5], "nutmeg": [0.2, 338, 0], "Canadian whiskey": [0.2, 416, 5], "Port": [0.2, 442, 2], "rye whiskey": [0.4, 421, 5]};
+var flavorAffinities = {"anise": [0.08695652173913043, 104, 2], "sweet": [0.8695652173913043, 209, 0], "ginger": [0.21739130434782608, 118, 2], "acid": [0.34782608695652173, 197, 0], "mint": [0.043478260869565216, 87, 1], "lime": [0.08695652173913043, 29, 5], "molasses": [0.043478260869565216, 227, 0], "lemon": [0.30434782608695654, 28, 5], "alcohol": [0.13043478260869565, 198, 0], "cherry": [0.08695652173913043, 10, 5], "rye": [0.08695652173913043, 194, 0], "oak": [0.30434782608695654, 240, 0], "wood": [0.4782608695652174, 239, 0], "sugarcane juice": [0.043478260869565216, 178, 1], "orange": [0.13043478260869565, 30, 5], "nutmeg": [0.043478260869565216, 126, 2], "bitter": [0.08695652173913043, 200, 0], "lemon essence": [0.08695652173913043, 62, 0], "cinnamon": [0.08695652173913043, 112, 2], "juniper": [0.08695652173913043, 121, 2], "rum": [0.17391304347826086, 156, 0], "citrus": [0.5217391304347826, 24, 5], "clove": [0.08695652173913043, 113, 2], "herbal": [0.391304347826087, 78, 1], "brandy": [0.08695652173913043, 152, 0], "fruit": [1.0, 1, 5], "floral": [0.08695652173913043, 67, 3], "vegetal": [0.08695652173913043, 163, 1], "raspberry": [0.043478260869565216, 20, 5], "spice": [0.6521739130434783, 102, 2], "piquant": [0.043478260869565216, 110, 0], "whiskey": [0.30434782608695654, 161, 0], "sour": [0.4782608695652174, 208, 0], "grain": [0.391304347826087, 189, 0], "chile pepper": [0.043478260869565216, 172, 1], "tannin": [0.30434782608695654, 210, 0], "berries": [0.13043478260869565, 5, 5], "wine": [0.21739130434782608, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -172,6 +177,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

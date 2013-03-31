@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Irish whiskey": [1.0, 419, 5], "B\u00e9n\u00e9dictine": [1.0, 191, 3], "monastic liqueur": [0.5, 469, 3], "Cointreau": [1.0, 152, 3], "triple sec": [0.5, 185, 3]};
+var flavorAffinities = {"wood": [0.3333333333333333, 239, 0], "alcohol": [0.5, 198, 0], "orange": [0.5, 30, 5], "citrus": [0.5, 24, 5], "sweet": [1.0, 209, 0], "oak": [0.3333333333333333, 240, 0], "whiskey": [0.3333333333333333, 161, 0], "fruit": [0.5, 1, 5], "grain": [0.3333333333333333, 189, 0], "barley": [0.3333333333333333, 191, 0], "herbal": [0.5, 78, 1], "vegetal": [0.3333333333333333, 163, 1], "tannin": [0.3333333333333333, 210, 0], "spice": [0.3333333333333333, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-177.96, y:-52.6};
 var boundsNE= { x:178.84, y:-8.57};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"strawberry": [1.0, 545, 0], "Cognac": [1.0, 63, 5], "orange-flavored liqueur with an aged brandy base": [1.0, 1730, 3], "Grand Marnier": [1.0, 163, 3]};
+var flavorAffinities = {"wood": [0.3333333333333333, 239, 0], "alcohol": [0.6666666666666666, 198, 0], "citrus": [0.6666666666666666, 24, 5], "sweet": [0.6666666666666666, 209, 0], "strawberry": [0.3333333333333333, 22, 5], "brandy": [1.0, 152, 0], "fruit": [1.0, 1, 5], "orange": [0.6666666666666666, 30, 5], "berries": [0.3333333333333333, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:178.84, y:-8.57};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

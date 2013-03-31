@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:11.11, y:55.34};
 var boundsNE= { x:24.16, y:68.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 September 15 09:59AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vodka": [1.0, 267, 4], "tinctures & extracts": [1.0, 1100, 0], "Aftelier Perfumes Black Pepper": [1.0, 5236, 0]};
+var flavorAffinities = {"pepper": [1.0, 128, 2], "alcohol": [1.0, 198, 0], "spice": [1.0, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 September 15 09:59AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:24.16, y:68.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

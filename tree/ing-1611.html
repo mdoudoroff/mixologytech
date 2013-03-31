@@ -151,7 +151,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"cherry, Maraschino": [1.0, 96, 0], "orange wheel": [1.0, 1070, 0], "Cognac": [1.0, 63, 5], "Canadian whiskey": [1.0, 416, 5], "lemon juice": [1.0, 324, 2]};
+var flavorAffinities = {"wood": [0.6666666666666666, 239, 0], "lemon": [0.3333333333333333, 28, 5], "nutty": [0.3333333333333333, 137, 4], "citrus": [0.6666666666666666, 24, 5], "sweet": [0.3333333333333333, 209, 0], "almond": [0.3333333333333333, 138, 4], "oak": [0.3333333333333333, 240, 0], "fruit": [1.0, 1, 5], "whiskey": [0.3333333333333333, 161, 0], "brandy": [0.3333333333333333, 152, 0], "sour": [0.6666666666666666, 208, 0], "grain": [0.3333333333333333, 189, 0], "cherry": [0.3333333333333333, 10, 5], "orange": [0.3333333333333333, 30, 5], "tannin": [0.3333333333333333, 210, 0], "berries": [0.3333333333333333, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -167,6 +172,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

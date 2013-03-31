@@ -164,7 +164,12 @@ var boundsNE= { x:179.78, y:71.41};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $43.0</td><td data-currency="USD" data-rlow="43.0" data-rhigh="43.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 21 10:21AM </small></div></div> 
+<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $43.0</td><td data-currency="USD" data-rlow="43.0" data-rhigh="43.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"grapefruit twist": [0.6666666666666666, 1073, 0], "orange twist": [0.3333333333333333, 1068, 0], "Noilly Prat Original Dry": [0.3333333333333333, 537, 2], "lemon juice": [0.6666666666666666, 324, 2], "Cognac": [0.3333333333333333, 63, 5], "rye whiskey": [0.3333333333333333, 421, 5], "Gran Duque d\u2019Alba": [0.3333333333333333, 3633, 5], "aromatic bitters": [0.6666666666666666, 22, 1], "Angostura bitters": [0.3333333333333333, 19, 1], "grapefruit juice": [1.0, 316, 2], "aperitif/digestif bitters": [0.3333333333333333, 21, 3], "sherry, Pedro Xim\u00e9nez": [0.3333333333333333, 1283, 2], "pisco": [0.6666666666666666, 78, 5], "Peychaud\u2019s Aromatic Cocktail Bitters": [0.3333333333333333, 41, 1], "Cherry Heering": [0.3333333333333333, 149, 3], "genever": [0.3333333333333333, 256, 4], "syrup": [0.6666666666666666, 372, 2], "Wild Turkey straight rye whiskey": [0.3333333333333333, 1200, 5], "Bols Genever": [0.3333333333333333, 1490, 4], "Spanish brandy": [0.3333333333333333, 66, 5], "raspberries": [0.3333333333333333, 126, 0], "amaro": [0.3333333333333333, 526, 3], "cherry liqueur": [0.3333333333333333, 150, 3], "Pierre Ferrand Cognac Ambre": [0.3333333333333333, 2441, 5], "Aperol": [0.6666666666666666, 1307, 3], "vermouth, red": [0.3333333333333333, 453, 2], "Carpano Punt e Mes": [0.3333333333333333, 445, 2], "lemon twist": [0.3333333333333333, 1058, 0], "Lustau Pedro Xim\u00e9nez San Emilio": [0.3333333333333333, 2926, 2], "cherry, brandied": [0.6666666666666666, 95, 0], "simple syrup": [0.6666666666666666, 363, 2], "vermouth, dry": [0.3333333333333333, 452, 2]};
+var flavorAffinities = {"anise": [0.16, 104, 2], "sweet": [0.48, 209, 0], "acid": [0.24, 197, 0], "clove": [0.16, 113, 2], "lemon": [0.12, 28, 5], "alcohol": [0.16, 198, 0], "cherry": [0.2, 10, 5], "rye": [0.08, 194, 0], "oak": [0.08, 240, 0], "orange essence": [0.04, 65, 0], "grapefruit": [0.12, 26, 5], "orange": [0.12, 30, 5], "bitter": [0.32, 200, 0], "lemon essence": [0.04, 62, 0], "citrus": [0.44, 24, 5], "grapefruit essence": [0.08, 61, 0], "herbal": [0.48, 78, 1], "brandy": [0.24, 152, 0], "fruit": [1.0, 1, 5], "raspberry": [0.04, 20, 5], "spice": [0.24, 102, 2], "wood": [0.24, 239, 0], "malt": [0.08, 192, 0], "whiskey": [0.08, 161, 0], "sour": [0.36, 208, 0], "grain": [0.16, 189, 0], "cinnamon": [0.16, 112, 2], "medicinal": [0.16, 203, 0], "tannin": [0.08, 210, 0], "berries": [0.24, 5, 5], "wine": [0.16, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 21 10:21AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -180,6 +185,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

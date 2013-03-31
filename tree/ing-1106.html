@@ -158,7 +158,12 @@ var activeMapRegions = ["Puerto Rico"];
 var boundsSW = { x:-179.14, y:14.55};
 var boundsNE= { x:179.78, y:18.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-2004.html">Bacardi 1873 Solera</a></li><li><a href="ing-603.html">Bacardi 8 Años</a></li><li><a href="ing-1348.html">Bacardi Añejo</a></li><li><a href="ing-1838.html">Bacardi Select</a></li><li><a href="ing-388.html">Bacardi Superior</a></li><li><a href="ing-4282.html">Bacardi Superior Limited Edition</a></li><li><a href="ing-3551.html">Ron Casa Bacardi Reserva Especial</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-2004.html">Bacardi 1873 Solera</a></li><li><a href="ing-603.html">Bacardi 8 Años</a></li><li><a href="ing-1348.html">Bacardi Añejo</a></li><li><a href="ing-1838.html">Bacardi Select</a></li><li><a href="ing-388.html">Bacardi Superior</a></li><li><a href="ing-4282.html">Bacardi Superior Limited Edition</a></li><li><a href="ing-3551.html">Ron Casa Bacardi Reserva Especial</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"orange juice": [0.5, 340, 2], "Plymouth Gin": [0.5, 261, 4], "pisco": [0.5, 78, 5], "orgeat": [0.5, 342, 2], "lemon juice": [0.5, 324, 2], "sherry, cream": [0.5, 1029, 2], "sherry": [1.0, 1028, 2], "gin": [0.5, 556, 4]};
+var flavorAffinities = {"acid": [0.42857142857142855, 197, 0], "lemon": [0.14285714285714285, 28, 5], "alcohol": [0.42857142857142855, 198, 0], "juniper": [0.2857142857142857, 121, 2], "orange": [0.14285714285714285, 30, 5], "citrus": [0.42857142857142855, 24, 5], "sweet": [0.14285714285714285, 209, 0], "sour": [0.2857142857142857, 208, 0], "almond": [0.14285714285714285, 138, 4], "marzipan": [0.14285714285714285, 144, 4], "nutty": [0.14285714285714285, 137, 4], "fruit": [1.0, 1, 5], "floral": [0.2857142857142857, 67, 3], "herbal": [0.2857142857142857, 78, 1], "spice": [0.2857142857142857, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:179.78, y:18.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

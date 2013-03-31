@@ -163,7 +163,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-61.8, y:-21.37};
 var boundsNE= { x:55.85, y:42.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="xrefs" class="local"><h3>cross references</h3><ul><li class="proprietary"><a href="ing-219.html">Pernod</a> (pastis)</li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 November 30 02:18PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="xrefs" class="local"><h3>cross references</h3><ul><li class="proprietary"><a href="ing-219.html">Pernod</a> (pastis)</li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [1.0, 19, 1], "gin": [1.0, 556, 4], "gomme syrup": [1.0, 314, 2], "aromatic bitters": [1.0, 22, 1], "orange bitters": [1.0, 37, 1]};
+var flavorAffinities = {"clove": [0.75, 113, 2], "alcohol": [0.25, 198, 0], "juniper": [0.25, 121, 2], "orange": [0.25, 30, 5], "citrus": [0.25, 24, 5], "sweet": [0.25, 209, 0], "anise": [0.75, 104, 2], "herbal": [1.0, 78, 1], "fruit": [0.25, 1, 5], "cinnamon": [0.75, 112, 2], "floral": [0.25, 67, 3], "bitter": [0.75, 200, 0], "spice": [1.0, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 November 30 02:18PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -179,6 +184,7 @@ var boundsNE= { x:55.85, y:42.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

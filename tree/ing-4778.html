@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-68.37, y:12.03};
 var boundsNE= { x:7.2, y:53.58};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1925.html">Bols Cherry</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 April 11 12:11PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1925.html">Bols Cherry</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"cherry, Maraschino": [1.0, 96, 0], "orange twist": [1.0, 1068, 0], "quinquina": [1.0, 446, 2], "Lillet Blanc": [1.0, 480, 2], "Canadian Club": [1.0, 560, 5], "Canadian whiskey": [1.0, 416, 5]};
+var flavorAffinities = {"wood": [0.5, 239, 0], "orange": [0.5, 30, 5], "berries": [0.25, 5, 5], "nutty": [0.25, 137, 4], "citrus": [0.5, 24, 5], "sweet": [0.25, 209, 0], "sour": [0.25, 208, 0], "almond": [0.25, 138, 4], "oak": [0.5, 240, 0], "whiskey": [0.5, 161, 0], "orange essence": [0.25, 65, 0], "fruit": [1.0, 1, 5], "quinine": [0.5, 90, 1], "cherry": [0.25, 10, 5], "herbal": [0.5, 78, 1], "grain": [0.5, 189, 0], "tannin": [0.5, 210, 0], "acid": [0.5, 197, 0], "wine": [0.5, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 April 11 12:11PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:7.2, y:53.58};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

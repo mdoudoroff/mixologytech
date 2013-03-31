@@ -158,7 +158,12 @@ var activeMapRegions = ["England"];
 var boundsSW = { x:-5.66, y:50.02};
 var boundsNE= { x:1.75, y:54.19};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 07 04:46PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"apple liqueur": [1.0, 510, 3], "Sch\u00f6nauer Apfel Schnapps": [1.0, 5153, 3], "lemon twist": [1.0, 1058, 0], "Maker\u2019s Mark": [1.0, 1198, 5], "lemon juice": [1.0, 324, 2], "Bourbon whiskey": [1.0, 415, 5], "Jerry Thomas\u2019 Own Decanter Bitters": [1.0, 1456, 1]};
+var flavorAffinities = {"wood": [0.5, 239, 0], "clove": [0.25, 113, 2], "lemon": [0.5, 28, 5], "apple": [0.5, 2, 5], "citrus": [0.5, 24, 5], "sweet": [0.5, 209, 0], "sour": [0.5, 208, 0], "anise": [0.25, 104, 2], "oak": [0.5, 240, 0], "whiskey": [0.5, 161, 0], "fruit": [1.0, 1, 5], "grain": [0.5, 189, 0], "cinnamon": [0.25, 112, 2], "herbal": [0.25, 78, 1], "tannin": [0.5, 210, 0], "bitter": [0.25, 200, 0], "corn": [0.5, 190, 0], "lemon essence": [0.25, 62, 0], "spice": [0.25, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 07 04:46PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:1.75, y:54.19};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

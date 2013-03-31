@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 03:09PM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Oban 14 Year": [1.0, 1183, 5], "kirsch": [1.0, 69, 5], "cinnamon stick": [1.0, 1160, 0], "orange-flavored liqueur with an aged brandy base": [1.0, 1730, 3], "orange twist": [1.0, 1068, 0], "quinquina": [1.0, 446, 2], "Famous Grouse": [1.0, 1300, 5], "port, ruby": [1.0, 617, 2], "scotch whisky, single-malt": [1.0, 424, 5], "lemon juice": [1.0, 324, 2], "nutmeg": [1.0, 338, 0], "scotch whisky, blended": [1.0, 482, 5], "egg white": [1.0, 475, 0], "cherry, brandied": [1.0, 95, 0], "Grand Marnier": [1.0, 163, 3], "Dubonnet": [1.0, 437, 2], "syrup": [1.0, 372, 2]};
+var flavorAffinities = {"sweet": [0.5555555555555556, 209, 0], "quinine": [0.2222222222222222, 90, 1], "acid": [0.3333333333333333, 197, 0], "lemon": [0.1111111111111111, 28, 5], "alcohol": [0.3333333333333333, 198, 0], "cherry": [0.2222222222222222, 10, 5], "oak": [0.4444444444444444, 240, 0], "orange essence": [0.1111111111111111, 65, 0], "wood": [0.4444444444444444, 239, 0], "orange": [0.3333333333333333, 30, 5], "nutmeg": [0.1111111111111111, 126, 2], "citrus": [0.4444444444444444, 24, 5], "peat": [0.2222222222222222, 231, 0], "herbal": [0.2222222222222222, 78, 1], "brandy": [0.3333333333333333, 152, 0], "fruit": [1.0, 1, 5], "spice": [0.3333333333333333, 102, 2], "smoky": [0.4444444444444444, 206, 0], "whiskey": [0.4444444444444444, 161, 0], "sour": [0.2222222222222222, 208, 0], "grain": [0.4444444444444444, 189, 0], "cinnamon": [0.1111111111111111, 112, 2], "tannin": [0.4444444444444444, 210, 0], "berries": [0.2222222222222222, 5, 5], "scotch": [0.4444444444444444, 158, 0], "wine": [0.3333333333333333, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 03:09PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

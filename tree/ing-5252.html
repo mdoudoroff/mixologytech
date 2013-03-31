@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:6.6, y:35.49};
 var boundsNE= { x:18.52, y:41.9};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 11:25AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"lime juice": [1.0, 328, 2], "vodka": [1.0, 267, 4], "star anise": [1.0, 1254, 0], "grapefruit juice": [1.0, 316, 2], "Smirnoff Black Label": [1.0, 2254, 4], "simple syrup": [1.0, 363, 2]};
+var flavorAffinities = {"alcohol": [1.0, 198, 0], "citrus": [1.0, 24, 5], "sweet": [0.5, 209, 0], "anise": [0.5, 104, 2], "fruit": [1.0, 1, 5], "grapefruit": [0.5, 26, 5], "sour": [1.0, 208, 0], "lime": [0.5, 29, 5], "spice": [0.5, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 11:25AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:18.52, y:41.9};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

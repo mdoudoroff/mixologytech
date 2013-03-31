@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:19.63, y:34.82};
 var boundsNE= { x:28.24, y:41.71};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1959.html">Metaxa 5 Star</a></li><li><a href="ing-2025.html">Metaxa 7 Star</a></li><li><a href="ing-2029.html">Metaxa Grande Fine</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 17 12:58PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1959.html">Metaxa 5 Star</a></li><li><a href="ing-2025.html">Metaxa 7 Star</a></li><li><a href="ing-2029.html">Metaxa Grande Fine</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"coffee": [0.3333333333333333, 299, 2], "simple syrup": [0.3333333333333333, 363, 2], "grenadine": [0.3333333333333333, 317, 2], "herbal liqueur": [0.3333333333333333, 5693, 3], "raspberry syrup": [0.3333333333333333, 354, 2], "Cognac": [0.3333333333333333, 63, 5], "lemon juice": [0.6666666666666666, 324, 2], "Galliano": [1.0, 201, 3], "soda water": [0.3333333333333333, 1693, 2], "Canadian whiskey": [0.3333333333333333, 416, 5], "cr\u00e8me de cacao, white": [0.3333333333333333, 234, 3], "cr\u00e8me de menthe": [0.3333333333333333, 197, 3], "amaretto": [0.3333333333333333, 231, 3], "ouzo": [0.3333333333333333, 215, 4], "whipped cream": [0.3333333333333333, 130, 0], "berry": [0.3333333333333333, 1124, 0]};
+var flavorAffinities = {"sweet": [1.0, 209, 0], "almond": [0.1, 138, 4], "mint": [0.1, 87, 1], "cream": [0.1, 179, 0], "lemon": [0.2, 28, 5], "alcohol": [0.1, 198, 0], "anise": [0.1, 104, 2], "oak": [0.1, 240, 0], "sparkling": [0.1, 234, 0], "nutty": [0.3, 137, 4], "wood": [0.2, 239, 0], "herbal": [0.5, 78, 1], "coffee": [0.1, 141, 4], "citrus": [0.2, 24, 5], "pomegranate": [0.1, 52, 5], "chocolate": [0.1, 111, 4], "brandy": [0.1, 152, 0], "fruit": [0.4, 1, 5], "raspberry": [0.1, 20, 5], "spice": [0.1, 102, 2], "whiskey": [0.1, 161, 0], "sour": [0.2, 208, 0], "grain": [0.1, 189, 0], "tannin": [0.1, 210, 0], "berries": [0.1, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 17 12:58PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:28.24, y:41.71};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -158,7 +158,12 @@ var activeMapRegions = ["Puerto Rico"];
 var boundsSW = { x:-67.94, y:17.95};
 var boundsNE= { x:-65.29, y:18.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-4271.html">Bacardi Apple</a></li><li><a href="ing-4242.html">Bacardi Dragon Berry</a></li><li><a href="ing-1878.html">Bacardi O</a></li><li><a href="ing-3520.html">Bacardi Razz</a></li><li><a href="ing-4272.html">Bacardi Torched Cherry</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-4271.html">Bacardi Apple</a></li><li><a href="ing-4242.html">Bacardi Dragon Berry</a></li><li><a href="ing-1878.html">Bacardi O</a></li><li><a href="ing-3520.html">Bacardi Razz</a></li><li><a href="ing-4272.html">Bacardi Torched Cherry</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [0.3333333333333333, 19, 1], "lime juice": [0.3333333333333333, 328, 2], "cherry, Maraschino": [0.3333333333333333, 96, 0], "cranberry juice": [1.0, 303, 2], "triple sec": [1.0, 185, 3], "lemon juice": [0.3333333333333333, 324, 2], "lemon wheel": [0.3333333333333333, 1056, 0], "aromatic bitters": [0.3333333333333333, 22, 1], "Champagne": [0.3333333333333333, 432, 2], "pineapple juice": [0.3333333333333333, 350, 2]};
+var flavorAffinities = {"sweet": [0.5833333333333334, 209, 0], "almond": [0.08333333333333333, 138, 4], "acid": [0.08333333333333333, 197, 0], "lime": [0.08333333333333333, 29, 5], "clove": [0.16666666666666666, 113, 2], "lemon": [0.16666666666666666, 28, 5], "alcohol": [0.25, 198, 0], "cherry": [0.08333333333333333, 10, 5], "anise": [0.16666666666666666, 104, 2], "tropical fruit": [0.08333333333333333, 247, 5], "nutty": [0.08333333333333333, 137, 4], "orange": [0.25, 30, 5], "bitter": [0.4166666666666667, 200, 0], "tart": [0.25, 211, 0], "citrus": [0.5, 24, 5], "cranberry": [0.25, 11, 5], "herbal": [0.16666666666666666, 78, 1], "fruit": [1.0, 1, 5], "spice": [0.16666666666666666, 102, 2], "sour": [0.25, 208, 0], "cinnamon": [0.16666666666666666, 112, 2], "pineapple": [0.08333333333333333, 50, 5], "berries": [0.3333333333333333, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:-65.29, y:18.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

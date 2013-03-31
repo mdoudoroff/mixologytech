@@ -158,7 +158,12 @@ var activeMapRegions = ["Scotland"];
 var boundsSW = { x:-7.54, y:54.69};
 var boundsNE= { x:-0.77, y:60.81};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1861.html">Johnnie Walker Blue</a></li><li><a href="ing-3825.html">Johnnie Walker Double Black</a></li><li><a href="ing-2149.html">Johnnie Walker Gold</a></li><li><a href="ing-1890.html">Johnnie Walker Green</a></li><li><a href="ing-5058.html">Johnnie Walker Premier</a></li><li><a href="ing-1887.html">Johnnie Walker Red</a></li><li><a href="ing-3737.html">Johnnie Walker Swing</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 January 25 03:52PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1861.html">Johnnie Walker Blue</a></li><li><a href="ing-3825.html">Johnnie Walker Double Black</a></li><li><a href="ing-2149.html">Johnnie Walker Gold</a></li><li><a href="ing-1890.html">Johnnie Walker Green</a></li><li><a href="ing-5058.html">Johnnie Walker Premier</a></li><li><a href="ing-1887.html">Johnnie Walker Red</a></li><li><a href="ing-3737.html">Johnnie Walker Swing</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"quinquina": [1.0, 446, 2], "Lillet Blanc": [1.0, 480, 2], "Cointreau": [1.0, 152, 3], "orange juice": [1.0, 340, 2], "triple sec": [1.0, 185, 3]};
+var flavorAffinities = {"alcohol": [0.4, 198, 0], "citrus": [0.8, 24, 5], "sweet": [0.4, 209, 0], "fruit": [1.0, 1, 5], "orange": [0.8, 30, 5], "sour": [0.2, 208, 0], "quinine": [0.4, 90, 1], "herbal": [0.4, 78, 1], "acid": [0.4, 197, 0], "wine": [0.4, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 January 25 03:52PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:-0.77, y:60.81};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

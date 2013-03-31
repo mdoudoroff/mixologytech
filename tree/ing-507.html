@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"lime juice": [1.0, 328, 2], "tequila": [1.0, 4, 4], "vodka, chile pepper-flavored": [1.0, 494, 4], "squeeze of lime": [1.0, 1066, 0], "cocktail onion": [1.0, 1, 0]};
+var flavorAffinities = {"alcohol": [0.5, 198, 0], "onion": [0.5, 228, 0], "citrus": [1.0, 24, 5], "smoky": [0.5, 206, 0], "sour": [1.0, 208, 0], "fruit": [1.0, 1, 5], "chile pepper": [0.5, 172, 1], "onion brine": [0.5, 229, 0], "agave": [0.5, 166, 1], "herbal": [0.5, 78, 1], "vegetal": [1.0, 163, 1], "lime": [1.0, 29, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

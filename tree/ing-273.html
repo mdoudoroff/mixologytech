@@ -153,7 +153,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"pimento dram": [0.25, 220, 3], "orange bitters": [0.25, 37, 1], "cinnamon stick": [0.25, 1160, 0], "aromatic bitters": [0.25, 22, 1], "lemon juice": [0.5, 324, 2], "soda water": [0.25, 1693, 2], "scotch whisky, blended": [0.25, 482, 5], "Calvados": [0.5, 61, 5], "seltzer": [0.25, 566, 2], "St. Elizabeth Allspice Dram": [0.5, 1485, 3], "Angostura bitters": [0.25, 19, 1], "lemon": [0.25, 111, 0], "Havana Club A\u00f1ejo 7 A\u00f1os": [0.25, 2206, 5], "sugar": [1.0, 370, 0], "Pommeau": [0.25, 2929, 2], "rum, aged Martinique": [0.25, 1426, 5], "gin": [1.0, 556, 4], "syrup": [0.25, 372, 2], "Cl\u00e9ment VSOP": [0.25, 1400, 5], "brandies": [0.75, 1046, 5], "rum": [0.25, 396, 5], "ginger ale": [0.25, 312, 2], "rum, Cuban": [0.25, 1108, 5], "nutmeg": [0.5, 338, 0], "applejack": [0.5, 57, 5], "maple syrup": [0.25, 333, 2], "lemon twist": [0.25, 1058, 0], "Chivas Regal 12 Year Old": [0.25, 2093, 5], "egg (raw)": [0.5, 308, 0], "apple brandy": [0.5, 553, 5], "vermouth, dry": [0.25, 452, 2]};
+var flavorAffinities = {"armagnac": [0.14285714285714285, 150, 0], "apple": [0.42857142857142855, 2, 5], "sweet": [0.6428571428571429, 209, 0], "ginger": [0.07142857142857142, 118, 2], "acid": [0.14285714285714285, 197, 0], "maple": [0.07142857142857142, 225, 0], "allspice": [0.21428571428571427, 103, 2], "clove": [0.21428571428571427, 113, 2], "lemon": [0.2857142857142857, 28, 5], "alcohol": [0.2857142857142857, 198, 0], "anise": [0.21428571428571427, 104, 2], "oak": [0.14285714285714285, 240, 0], "sparkling": [0.21428571428571427, 234, 0], "wood": [0.5714285714285714, 239, 0], "sugarcane juice": [0.14285714285714285, 178, 1], "herbal": [0.5714285714285714, 78, 1], "nutmeg": [0.14285714285714285, 126, 2], "bitter": [0.21428571428571427, 200, 0], "lemon essence": [0.07142857142857142, 62, 0], "juniper": [0.2857142857142857, 121, 2], "rum": [0.35714285714285715, 156, 0], "citrus": [0.35714285714285715, 24, 5], "orange": [0.07142857142857142, 30, 5], "brandy": [0.42857142857142855, 152, 0], "fruit": [0.9285714285714286, 1, 5], "floral": [0.2857142857142857, 67, 3], "vegetal": [0.14285714285714285, 163, 1], "spice": [1.0, 102, 2], "smoky": [0.14285714285714285, 206, 0], "whiskey": [0.2857142857142857, 161, 0], "sour": [0.2857142857142857, 208, 0], "grain": [0.14285714285714285, 189, 0], "cinnamon": [0.2857142857142857, 112, 2], "tannin": [0.14285714285714285, 210, 0], "scotch": [0.14285714285714285, 158, 0], "wine": [0.07142857142857142, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -169,6 +174,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

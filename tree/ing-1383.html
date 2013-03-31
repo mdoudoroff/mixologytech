@@ -160,7 +160,12 @@ var activeMapRegions = ["Jalisco"];
 var boundsSW = { x:-105.65, y:18.72};
 var boundsNE= { x:-101.77, y:20.63};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Del Maguey Mescal Vida": [1.0, 2949, 4], "grapefruit twist": [1.0, 1073, 0], "aperitif/digestif bitters": [1.0, 21, 3], "mezcal": [1.0, 3, 4], "lemon twist": [1.0, 1058, 0], "sherry, Pedro Xim\u00e9nez": [1.0, 1283, 2], "Aperol": [1.0, 1307, 3], "lemon juice": [1.0, 324, 2], "cherry liqueur": [1.0, 150, 3], "cinnamon": [1.0, 291, 0], "egg (raw)": [1.0, 308, 0], "Toro Albal\u00e1 Pedro Xim\u00e9nez": [1.0, 5263, 2], "Cherry Heering": [1.0, 149, 3], "cream": [1.0, 305, 2]};
+var flavorAffinities = {"grapefruit essence": [0.125, 61, 0], "spice": [0.125, 102, 2], "berries": [0.25, 5, 5], "cream": [0.125, 179, 0], "lemon": [0.25, 28, 5], "citrus": [0.5, 24, 5], "cherry": [0.25, 10, 5], "smoky": [0.25, 206, 0], "sour": [0.375, 208, 0], "herbal": [0.5, 78, 1], "fruit": [1.0, 1, 5], "sweet": [0.5, 209, 0], "cinnamon": [0.125, 112, 2], "agave": [0.25, 166, 1], "orange": [0.125, 30, 5], "vegetal": [0.25, 163, 1], "acid": [0.25, 197, 0], "bitter": [0.25, 200, 0], "lemon essence": [0.125, 62, 0], "medicinal": [0.25, 203, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -176,6 +181,7 @@ var boundsNE= { x:-101.77, y:20.63};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

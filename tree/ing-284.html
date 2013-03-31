@@ -158,7 +158,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-61.8, y:-21.37};
 var boundsNE= { x:55.85, y:42.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"tea": [0.5, 376, 2], "orange flower water": [1.0, 339, 2], "milk": [0.5, 334, 2], "boiling water": [0.5, 1219, 2], "lemon twist": [0.5, 1058, 0]};
+var flavorAffinities = {"lemon": [0.3333333333333333, 28, 5], "orange": [0.6666666666666666, 30, 5], "citrus": [1.0, 24, 5], "tea": [0.3333333333333333, 93, 1], "fruit": [1.0, 1, 5], "herbal": [0.3333333333333333, 78, 1], "sour": [0.3333333333333333, 208, 0], "floral": [0.6666666666666666, 67, 3], "milk": [0.3333333333333333, 183, 0], "lemon essence": [0.3333333333333333, 62, 0], "cream": [0.3333333333333333, 179, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:55.85, y:42.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

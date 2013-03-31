@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-61.8, y:-21.37};
 var boundsNE= { x:55.85, y:42.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"kirsch": [0.2, 69, 5], "orange wheel": [0.4, 1070, 0], "raspberry syrup": [0.2, 354, 2], "Burgundy": [0.2, 428, 2], "fruit, fresh": [0.2, 106, 0], "claret": [0.4, 435, 2], "seltzer": [0.4, 566, 2], "cura\u00e7ao": [0.4, 159, 3], "Champagne": [0.4, 432, 2], "Chartreuse, yellow": [0.4, 527, 3], "lime": [0.4, 112, 0], "B\u00e9n\u00e9dictine": [0.4, 191, 3], "pineapple juice": [0.2, 350, 2], "peach": [0.2, 121, 0], "maraschino liqueur": [0.6, 170, 3], "eau de vie": [0.2, 70, 5], "sugar": [1.0, 370, 0], "apricot eau de vie": [0.2, 1232, 5], "orange": [0.2, 118, 0], "gin": [0.2, 556, 4], "Old Tom gin": [0.2, 259, 4], "pineapple slice": [0.4, 1107, 0], "verbena": [0.2, 1138, 0], "raspberries": [0.4, 126, 0], "mint sprig": [0.4, 1105, 0], "powdered sugar": [0.2, 631, 0], "sherry": [0.2, 1028, 2], "lemon twist": [0.2, 1058, 0], "monastic liqueur": [0.4, 469, 3], "berry": [0.2, 1124, 0], "pineapple": [0.2, 122, 0], "Port": [0.2, 442, 2]};
+var flavorAffinities = {"sweet": [0.6551724137931034, 209, 0], "acid": [0.2413793103448276, 197, 0], "mint": [0.06896551724137931, 87, 1], "lime": [0.06896551724137931, 29, 5], "lemon": [0.034482758620689655, 28, 5], "alcohol": [0.2413793103448276, 198, 0], "peach": [0.034482758620689655, 48, 5], "cherry": [0.13793103448275862, 10, 5], "sparkling": [0.06896551724137931, 234, 0], "tropical fruit": [0.13793103448275862, 247, 5], "wood": [0.10344827586206896, 239, 0], "orange": [0.1724137931034483, 30, 5], "lemon essence": [0.034482758620689655, 62, 0], "juniper": [0.06896551724137931, 121, 2], "citrus": [0.27586206896551724, 24, 5], "verbena": [0.034482758620689655, 66, 0], "herbal": [0.3448275862068966, 78, 1], "fruit": [1.0, 1, 5], "floral": [0.06896551724137931, 67, 3], "raspberry": [0.10344827586206896, 20, 5], "spearmint": [0.06896551724137931, 89, 1], "spice": [0.2413793103448276, 102, 2], "apricot": [0.034482758620689655, 3, 5], "peppermint": [0.06896551724137931, 88, 1], "sour": [0.20689655172413793, 208, 0], "grain": [0.10344827586206896, 189, 0], "pineapple": [0.13793103448275862, 50, 5], "berries": [0.2413793103448276, 5, 5], "wine": [0.034482758620689655, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:55.85, y:42.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

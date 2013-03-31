@@ -149,16 +149,21 @@
 <li class="active">slivovitz</li>
 </ul></section></div></div></div><!-- end title block --><div class="row"><div class="span12">
 <div id="topphotos"><script>
-var photoList = ["5118-20120301-030355.jpg", "83-20123817-203801.jpg", "5784-20135608-085656.jpg"]
+var photoList = ["83-20123817-203801.jpg", "5784-20135608-085656.jpg", "5118-20120301-030355.jpg"]
 </script></div></div></div><div class="row"><div class="span6"><div id="details"><div id="novelDescription" class="local"><h3>description</h3><p>Slivovitz is generic for specific Hungarian, Romanian, Serbian, Montenegrin, and other Eastern European varieties of unsweetened, unaged plum eau de vie.</p>
 </div><dl><dt>flavors</dt><dd><a href="flavor-plum.html">plum</a>, <a href="flavor-fruit.html">fruit</a>, <a href="flavor-alcohol.html">alcohol</a></dd><dt>substitute</dt><dd>other plum eau de vie or other comparable fruit eau de vie (to somewhat different effect)</dd><dt>places (country/region of production)</dt><dd><a href="place-eastern_europe.html">Eastern Europe</a>, <a href="place-serbia_and_montenegro.html">Serbia and Montenegro</a>, <a href="place-czech_republic.html">Czech Republic</a>, <a href="place-serbia_and_montenegro.html">Serbia and Montenegro</a>, <a href="place-oregon.html">Oregon (United States)</a>, <a href="place-hungary.html">Hungary</a></dd></dl>
 <script>
-var originAggregate = {"Serbia and Montenegro": 0.67, "United States": 0.33, "Czech Republic": 0.33, "Hungary": 0.33};
+var originAggregate = {"Serbia and Montenegro": 0.67, "Hungary": 0.33, "United States": 0.33, "Czech Republic": 0.33};
 var activeMapRegions = [];
 var boundsSW = { x:12.08, y:41.87};
 var boundsNE= { x:22.98, y:46.17};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-5253.html">Clear Creek Slivovitz Plum Brandy</a> </li><li class="stub"><a href="ing-3253.html">Jelínek Silver Slivovitz</a> </li><li class="stub"><a href="ing-5784.html">Manastirka Slivovitz</a> </li><li class="stub"><a href="ing-3305.html">Maraska Slivovica</a> </li><li class="stub"><a href="ing-5118.html">Zwack Slivovitz</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 September 27 11:06PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-5253.html">Clear Creek Slivovitz Plum Brandy</a> </li><li class="stub"><a href="ing-3253.html">Jelínek Silver Slivovitz</a> </li><li class="stub"><a href="ing-5784.html">Manastirka Slivovitz</a> </li><li class="stub"><a href="ing-3305.html">Maraska Slivovica</a> </li><li class="stub"><a href="ing-5118.html">Zwack Slivovitz</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"aperitif/digestif bitters": [1.0, 21, 3], "orange juice": [1.0, 340, 2], "rum": [1.0, 396, 5], "maraschino liqueur": [1.0, 170, 3], "Cointreau": [1.0, 152, 3], "sugar": [1.0, 370, 0], "triple sec": [1.0, 185, 3], "lemon juice": [1.0, 324, 2], "Amer Picon": [1.0, 17, 3]};
+var flavorAffinities = {"wood": [0.16666666666666666, 239, 0], "lemon": [0.16666666666666666, 28, 5], "alcohol": [0.3333333333333333, 198, 0], "rum": [0.16666666666666666, 156, 0], "citrus": [0.8333333333333334, 24, 5], "cherry": [0.16666666666666666, 10, 5], "sour": [0.3333333333333333, 208, 0], "orange": [0.6666666666666666, 30, 5], "fruit": [1.0, 1, 5], "grain": [0.16666666666666666, 189, 0], "sweet": [1.0, 209, 0], "herbal": [0.3333333333333333, 78, 1], "medicinal": [0.3333333333333333, 203, 0], "berries": [0.16666666666666666, 5, 5], "bitter": [0.3333333333333333, 200, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 September 27 11:06PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:22.98, y:46.17};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

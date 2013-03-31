@@ -165,7 +165,12 @@ var boundsNE= { x:18.52, y:41.9};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>France</td><td>750 ml</td><td><abbr title="Euro">EUR</abbr> €29.0</td><td data-currency="EUR" data-rlow="29.0" data-rhigh="29.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 December 30 04:37PM </small></div></div> 
+<tr><td>France</td><td>750 ml</td><td><abbr title="Euro">EUR</abbr> €29.0</td><td data-currency="EUR" data-rlow="29.0" data-rhigh="29.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"grapefruit twist": [1.0, 1073, 0], "Dolin Dry": [1.0, 1707, 2], "Bitter Truth Lemon Bitters, The": [1.0, 3156, 1], "pear eau de vie": [1.0, 77, 5], "Clear Creek Williams Pear Brandy": [1.0, 1672, 5], "vermouth, dry": [1.0, 452, 2], "Nonino Gioiello Castango": [1.0, 5259, 3], "fruit bitters": [1.0, 3175, 1], "honey-flavored liqueur": [1.0, 1418, 3]};
+var flavorAffinities = {"grapefruit essence": [0.2, 61, 0], "clove": [0.4, 113, 2], "alcohol": [0.4, 198, 0], "citrus": [0.2, 24, 5], "sweet": [0.4, 209, 0], "sour": [0.2, 208, 0], "anise": [0.4, 104, 2], "pear": [0.4, 49, 5], "honey": [0.4, 222, 0], "herbal": [0.8, 78, 1], "fruit": [1.0, 1, 5], "cinnamon": [0.4, 112, 2], "wine": [0.4, 162, 0], "floral": [0.4, 67, 3], "acid": [0.4, 197, 0], "bitter": [0.4, 200, 0], "spice": [0.8, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 December 30 04:37PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -181,6 +186,7 @@ var boundsNE= { x:18.52, y:41.9};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -156,7 +156,12 @@ var activeMapRegions = [];
 var boundsSW = { x:112.92, y:-54.75};
 var boundsNE= { x:159.11, y:-9.29};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-4633.html">R. L. Buller & Son Fine Muscat</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 March 08 05:04PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-4633.html">R. L. Buller & Son Fine Muscat</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [0.5, 19, 1], "maple syrup": [0.5, 333, 2], "lemon": [0.5, 111, 0], "raisins": [0.5, 125, 0], "aromatic bitters": [0.5, 22, 1], "brandies": [0.5, 1046, 5], "sugar": [1.0, 370, 0], "water": [1.0, 383, 2], "lemon juice": [0.5, 324, 2], "mint sprig": [0.5, 1105, 0], "nutmeg": [0.5, 338, 0], "butter": [0.5, 282, 0], "almond, whole": [0.5, 521, 0], "orange": [0.5, 118, 0], "egg (raw)": [0.5, 308, 0], "cream": [0.5, 305, 2], "wine": [0.5, 454, 2]};
+var flavorAffinities = {"sweet": [0.6, 209, 0], "almond": [0.2, 138, 4], "acid": [0.2, 197, 0], "mint": [0.2, 87, 1], "maple": [0.2, 225, 0], "cream": [0.4, 179, 0], "clove": [0.4, 113, 2], "lemon": [0.4, 28, 5], "anise": [0.4, 104, 2], "nutty": [0.2, 137, 4], "orange": [0.2, 30, 5], "bitter": [0.4, 200, 0], "citrus": [0.6, 24, 5], "herbal": [0.6, 78, 1], "fruit": [1.0, 1, 5], "spearmint": [0.2, 89, 1], "spice": [0.6, 102, 2], "butter": [0.2, 181, 0], "raisin": [0.2, 55, 5], "peppermint": [0.2, 88, 1], "sour": [0.6, 208, 0], "nutmeg": [0.2, 126, 2], "cinnamon": [0.4, 112, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 March 08 05:04PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -172,6 +177,7 @@ var boundsNE= { x:159.11, y:-9.29};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

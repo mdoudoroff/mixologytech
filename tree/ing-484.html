@@ -156,7 +156,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-179.14, y:-54.75};
 var boundsNE= { x:179.78, y:71.41};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="posstub"><a href="ing-1851.html">Bols Butterscotch</a> </li><li class="posstub"><a href="ing-1970.html">DeKuyper Buttershots Schnapps</a> </li><li class="posstub"><a href="ing-2123.html">Du Bouchett Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-1918.html">Gaetano Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-2110.html">Hiram Walker Butterscotch</a> </li><li class="stub"><a href="ing-4309.html">Ice Hole Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-1936.html">Leroux Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-2111.html">Mohawk Butterscotch Schnapps</a> </li><li class="stub"><a href="ing-5980.html">Mothers Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-2031.html">Mr. Boston Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-1898.html">Newport Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-2030.html">Phillips Butterscotch Schnapps</a> </li><li class="stub"><a href="ing-4611.html">VOK Butterscotch Schnapps</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="posstub"><a href="ing-1851.html">Bols Butterscotch</a> </li><li class="posstub"><a href="ing-1970.html">DeKuyper Buttershots Schnapps</a> </li><li class="posstub"><a href="ing-2123.html">Du Bouchett Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-1918.html">Gaetano Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-2110.html">Hiram Walker Butterscotch</a> </li><li class="stub"><a href="ing-4309.html">Ice Hole Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-1936.html">Leroux Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-2111.html">Mohawk Butterscotch Schnapps</a> </li><li class="stub"><a href="ing-5980.html">Mothers Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-2031.html">Mr. Boston Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-1898.html">Newport Butterscotch Schnapps</a> </li><li class="posstub"><a href="ing-2030.html">Phillips Butterscotch Schnapps</a> </li><li class="stub"><a href="ing-4611.html">VOK Butterscotch Schnapps</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"J\u00e4germeister": [1.0, 209, 3], "aperitif/digestif bitters": [1.0, 21, 3], "Irish cream": [1.0, 248, 3], "Baileys Irish Cream": [1.0, 1477, 3], "cinnamon schnapps liqueur": [1.0, 196, 3], "raisins": [1.0, 125, 0]};
+var flavorAffinities = {"sweet": [1.0, 209, 0], "raisin": [0.2, 55, 5], "irish whiskey": [0.4, 155, 0], "fruit": [0.2, 1, 5], "cinnamon": [0.2, 112, 2], "herbal": [0.4, 78, 1], "medicinal": [0.4, 203, 0], "cream": [0.4, 179, 0], "bitter": [0.4, 200, 0], "spice": [0.4, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -172,6 +177,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

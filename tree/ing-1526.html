@@ -162,7 +162,12 @@ var boundsNE= { x:-81.97, y:39.09};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $33.0</td><td data-currency="USD" data-rlow="33.0" data-rhigh="33.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1885.html">Sazerac Rye 18 Year Old</a></li><li><a href="ing-1974.html">Thomas H. Handy Rye</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 12 04:48PM </small></div></div> 
+<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $33.0</td><td data-currency="USD" data-rlow="33.0" data-rhigh="33.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1885.html">Sazerac Rye 18 Year Old</a></li><li><a href="ing-1974.html">Thomas H. Handy Rye</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vermouth, red": [0.5, 453, 2], "Angostura bitters": [0.5, 19, 1], "B\u00e9n\u00e9dictine": [0.5, 191, 3], "Carpano Antica Formula": [0.5, 1709, 2], "monastic liqueur": [0.5, 469, 3], "Cognac": [0.5, 63, 5], "Peychaud\u2019s Aromatic Cocktail Bitters": [0.5, 41, 1], "aromatic bitters": [1.0, 22, 1], "Hine Rare VSOP": [0.5, 2616, 5]};
+var flavorAffinities = {"wood": [0.25, 239, 0], "clove": [0.5, 113, 2], "berries": [0.125, 5, 5], "cherry": [0.125, 10, 5], "sweet": [0.25, 209, 0], "vanilla": [0.125, 136, 2], "anise": [0.5, 104, 2], "brandy": [0.25, 152, 0], "fruit": [0.375, 1, 5], "cinnamon": [0.5, 112, 2], "wine": [0.25, 162, 0], "herbal": [1.0, 78, 1], "acid": [0.25, 197, 0], "bitter": [0.5, 200, 0], "spice": [0.875, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 12 04:48PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -178,6 +183,7 @@ var boundsNE= { x:-81.97, y:39.09};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

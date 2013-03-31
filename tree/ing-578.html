@@ -162,7 +162,12 @@ var boundsNE= { x:-0.77, y:60.81};
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
 <tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $37.0</td><td data-currency="USD" data-rlow="37.0" data-rhigh="37.0"></td></tr>
-<tr><td>France</td><td>700 ml</td><td><abbr title="Euro">EUR</abbr> €36.0</td><td data-currency="EUR" data-rlow="36.0" data-rhigh="36.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<tr><td>France</td><td>700 ml</td><td><abbr title="Euro">EUR</abbr> €36.0</td><td data-currency="EUR" data-rlow="36.0" data-rhigh="36.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vermouth, white": [0.5, 451, 2], "lime juice": [0.5, 328, 2], "Chartreuse, yellow": [0.5, 527, 3], "lavender": [0.5, 1396, 0], "monastic liqueur": [0.5, 469, 3], "Plymouth Sloe Gin": [0.5, 2466, 3], "quinquina": [0.5, 446, 2], "sloe gin": [0.5, 181, 3], "falernum": [0.5, 309, 2], "Dolin Dry": [0.5, 1707, 2], "vermouth, dry": [0.5, 452, 2], "Lillet Rouge": [1.0, 439, 2], "John D. Taylor\u2019s Velvet Falernum": [0.5, 1337, 2], "simple syrup": [0.5, 363, 2], "Dolin Blanc": [0.5, 1706, 2], "rose syrup": [0.5, 1700, 2]};
+var flavorAffinities = {"allspice": [0.16666666666666666, 103, 2], "sweet": [0.6666666666666666, 209, 0], "almond": [0.16666666666666666, 138, 4], "lavender": [0.08333333333333333, 74, 3], "ginger": [0.16666666666666666, 118, 2], "quinine": [0.25, 90, 1], "acid": [0.5833333333333334, 197, 0], "lime": [0.25, 29, 5], "clove": [0.16666666666666666, 113, 2], "nutty": [0.16666666666666666, 137, 4], "sloe": [0.16666666666666666, 21, 5], "orange": [0.16666666666666666, 30, 5], "citrus": [0.4166666666666667, 24, 5], "herbal": [0.75, 78, 1], "fruit": [1.0, 1, 5], "floral": [0.16666666666666666, 67, 3], "spice": [0.25, 102, 2], "vanilla": [0.16666666666666666, 136, 2], "sour": [0.08333333333333333, 208, 0], "berries": [0.16666666666666666, 5, 5], "plum": [0.16666666666666666, 51, 5], "wine": [0.5833333333333334, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -178,6 +183,7 @@ var boundsNE= { x:-0.77, y:60.81};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

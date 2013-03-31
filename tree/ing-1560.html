@@ -160,7 +160,12 @@ var activeMapRegions = ["Piemonte"];
 var boundsSW = { x:6.64, y:44.13};
 var boundsNE= { x:9.28, y:44.14};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 September 26 06:21PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Del Maguey Mescal Vida": [1.0, 2949, 4], "orange bitters": [1.0, 37, 1], "elderflower liqueur": [1.0, 1257, 3], "grapefruit twist": [1.0, 1073, 0], "Jose Cuervo Platino": [1.0, 1447, 4], "mezcal": [1.0, 3, 4], "orange twist": [1.0, 1068, 0], "St. Germain": [1.0, 1258, 3], "tequila blanco (100%)": [1.0, 8, 4], "gin": [1.0, 556, 4], "grapefruit juice": [1.0, 316, 2], "Tanqueray London Dry Gin": [1.0, 1185, 4]};
+var flavorAffinities = {"clove": [0.14285714285714285, 113, 2], "alcohol": [0.2857142857142857, 198, 0], "juniper": [0.2857142857142857, 121, 2], "orange": [0.2857142857142857, 30, 5], "citrus": [0.5714285714285714, 24, 5], "sweet": [0.2857142857142857, 209, 0], "sour": [0.42857142857142855, 208, 0], "anise": [0.14285714285714285, 104, 2], "agave": [0.5714285714285714, 166, 1], "floral": [0.5714285714285714, 67, 3], "orange essence": [0.14285714285714285, 65, 0], "fruit": [0.5714285714285714, 1, 5], "cinnamon": [0.14285714285714285, 112, 2], "grapefruit essence": [0.14285714285714285, 61, 0], "herbal": [1.0, 78, 1], "vegetal": [0.5714285714285714, 163, 1], "elderflower": [0.2857142857142857, 70, 3], "grapefruit": [0.14285714285714285, 26, 5], "bitter": [0.14285714285714285, 200, 0], "smoky": [0.5714285714285714, 206, 0], "spice": [0.42857142857142855, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 September 26 06:21PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -176,6 +181,7 @@ var boundsNE= { x:9.28, y:44.14};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

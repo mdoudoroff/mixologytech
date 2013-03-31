@@ -164,7 +164,12 @@ var boundsNE= { x:179.78, y:71.41};
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
 <tr><td>Illinois</td><td>1750 ml</td><td><abbr title="United States dollar">USD</abbr> $15.0-35.0</td><td data-currency="USD" data-rlow="15.0" data-rhigh="35.0"></td></tr>
 <tr><td>Illinois</td><td>375 ml</td><td><abbr title="United States dollar">USD</abbr> $15.0-35.0</td><td data-currency="USD" data-rlow="15.0" data-rhigh="35.0"></td></tr>
-<tr><td>France</td><td>700 ml</td><td><abbr title="Euro">EUR</abbr> €27.0</td><td data-currency="EUR" data-rlow="27.0" data-rhigh="27.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 28 01:17PM </small></div></div> 
+<tr><td>France</td><td>700 ml</td><td><abbr title="Euro">EUR</abbr> €27.0</td><td data-currency="EUR" data-rlow="27.0" data-rhigh="27.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Coca Cola": [1.0, 294, 2], "cola": [1.0, 302, 2]};
+var flavorAffinities = {"sweet": [1.0, 209, 0], "vanilla": [1.0, 136, 2], "kola nut": [1.0, 122, 2], "sparkling": [1.0, 234, 0], "spice": [1.0, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 28 01:17PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -180,6 +185,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

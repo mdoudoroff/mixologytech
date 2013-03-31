@@ -161,7 +161,12 @@ var boundsNE= { x:179.78, y:71.41};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $30.0</td><td data-currency="USD" data-rlow="30.0" data-rhigh="30.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $30.0</td><td data-currency="USD" data-rlow="30.0" data-rhigh="30.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"apple liqueur": [0.5, 510, 3], "orange bitters": [0.5, 37, 1], "bell pepper": [0.5, 1599, 0], "Sch\u00f6nauer Apfel Schnapps": [0.5, 5153, 3], "Regans\u2019 No. 6 Orange Bitters": [0.5, 1265, 1], "cider": [0.5, 289, 2], "shiso leaf": [0.5, 5268, 0], "cane syrup (filtered)": [0.5, 283, 2], "lemon juice": [0.5, 324, 2], "simple syrup": [0.5, 363, 2], "grapefruit juice": [1.0, 316, 2]};
+var flavorAffinities = {"clove": [0.25, 113, 2], "lemon": [0.125, 28, 5], "apple": [0.375, 2, 5], "orange": [0.25, 30, 5], "cardamom": [0.125, 108, 2], "sweet": [0.5, 209, 0], "sour": [0.375, 208, 0], "anise": [0.25, 104, 2], "bell pepper": [0.125, 168, 1], "chile pepper": [0.125, 172, 1], "citrus": [0.625, 24, 5], "fruit": [1.0, 1, 5], "cinnamon": [0.25, 112, 2], "herbal": [0.375, 78, 1], "vegetal": [0.125, 163, 1], "grapefruit": [0.25, 26, 5], "bitter": [0.25, 200, 0], "shiso": [0.125, 96, 1], "spice": [0.25, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -177,6 +182,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

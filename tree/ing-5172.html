@@ -155,7 +155,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 02 05:04PM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Ardbeg 10 Years Old": [1.0, 2032, 5], "elderflower liqueur": [1.0, 1257, 3], "honey syrup": [1.0, 1441, 2], "scotch whisky, single-malt": [1.0, 424, 5], "St. Germain": [1.0, 1258, 3], "chamomile tea": [1.0, 1615, 2]};
+var flavorAffinities = {"chamomile": [0.3333333333333333, 68, 3], "tannin": [0.6666666666666666, 210, 0], "sweet": [1.0, 209, 0], "peat": [0.6666666666666666, 231, 0], "oak": [0.6666666666666666, 240, 0], "honey": [0.3333333333333333, 222, 0], "whiskey": [0.6666666666666666, 161, 0], "wood": [0.6666666666666666, 239, 0], "grain": [0.6666666666666666, 189, 0], "floral": [1.0, 67, 3], "elderflower": [0.6666666666666666, 70, 3], "scotch": [0.6666666666666666, 158, 0], "smoky": [0.6666666666666666, 206, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 02 05:04PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -171,6 +176,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

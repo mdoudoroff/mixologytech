@@ -153,7 +153,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 29 06:48PM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"kirsch": [0.16666666666666666, 69, 5], "parfait amour": [0.16666666666666666, 216, 3], "cura\u00e7ao": [0.5, 159, 3], "cream": [0.3333333333333333, 305, 2], "B\u00e9n\u00e9dictine": [0.5, 191, 3], "lemon": [0.3333333333333333, 111, 0], "pineapple juice": [0.16666666666666666, 350, 2], "absinthe": [0.16666666666666666, 15, 4], "maraschino liqueur": [1.0, 170, 3], "cr\u00e8me de noyeau": [0.16666666666666666, 237, 3], "sugar": [1.0, 370, 0], "cr\u00e8me de rose": [0.3333333333333333, 131, 3], "cr\u00e8me de cacao, white": [0.16666666666666666, 234, 3], "orange": [0.16666666666666666, 118, 0], "sherry": [0.16666666666666666, 1028, 2], "lime": [0.16666666666666666, 112, 0], "brandies": [0.8333333333333334, 1046, 5], "anisette": [0.16666666666666666, 189, 3], "rum, Jamaican": [0.16666666666666666, 405, 5], "cura\u00e7ao, white": [0.16666666666666666, 1329, 3], "vermouth, red": [0.3333333333333333, 453, 2], "lemon twist": [0.3333333333333333, 1058, 0], "egg yolk": [0.8333333333333334, 476, 0], "monastic liqueur": [0.16666666666666666, 469, 3], "Port": [0.16666666666666666, 442, 2]};
+var flavorAffinities = {"anise": [0.07407407407407407, 104, 2], "marshmallow": [0.037037037037037035, 226, 0], "apricot pits": [0.037037037037037035, 105, 2], "sweet": [1.0, 209, 0], "almond": [0.037037037037037035, 138, 4], "acid": [0.14814814814814814, 197, 0], "cream": [0.07407407407407407, 179, 0], "lemon": [0.14814814814814814, 28, 5], "alcohol": [0.2222222222222222, 198, 0], "cherry": [0.25925925925925924, 10, 5], "jellybean": [0.037037037037037035, 224, 0], "tropical fruit": [0.037037037037037035, 247, 5], "nutty": [0.07407407407407407, 137, 4], "wood": [0.2222222222222222, 239, 0], "orange": [0.18518518518518517, 30, 5], "lime": [0.037037037037037035, 29, 5], "bitter": [0.037037037037037035, 200, 0], "lemon essence": [0.07407407407407407, 62, 0], "rose": [0.07407407407407407, 76, 3], "rum": [0.037037037037037035, 156, 0], "citrus": [0.4074074074074074, 24, 5], "chocolate": [0.037037037037037035, 111, 4], "herbal": [0.25925925925925924, 78, 1], "fruit": [0.8518518518518519, 1, 5], "floral": [0.07407407407407407, 67, 3], "spice": [0.37037037037037035, 102, 2], "vanilla": [0.037037037037037035, 136, 2], "pungent": [0.037037037037037035, 204, 0], "sour": [0.2222222222222222, 208, 0], "grain": [0.2222222222222222, 189, 0], "pineapple": [0.037037037037037035, 50, 5], "berries": [0.25925925925925924, 5, 5], "wine": [0.1111111111111111, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 29 06:48PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -169,6 +174,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -160,7 +160,12 @@ var activeMapRegions = ["Cognac"];
 var boundsSW = { x:-1.21, y:44.99};
 var boundsNE= { x:0.69, y:45.23};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 March 06 09:31AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"grapefruit juice": [1.0, 316, 2], "cherry, Maraschino": [1.0, 96, 0], "orange-flavored liqueur with an aged brandy base": [1.0, 1730, 3], "peach": [1.0, 121, 0], "rum": [1.0, 396, 5], "quinquina": [1.0, 446, 2], "Swedish Punch/Punsch": [1.0, 253, 3], "Lillet Blanc": [1.0, 480, 2], "apricot liqueur": [1.0, 138, 3], "Peychaud\u2019s Aromatic Cocktail Bitters": [1.0, 41, 1], "liqueurs, fruit-flavored": [1.0, 1008, 3], "Southern Comfort": [1.0, 183, 3], "lemon juice": [1.0, 324, 2], "cura\u00e7ao": [1.0, 159, 3], "cr\u00e8me de cacao, white": [1.0, 234, 3], "banana liqueur": [1.0, 550, 3], "Grand Marnier": [1.0, 163, 3], "cr\u00e8me de menthe": [1.0, 197, 3], "aromatic bitters": [1.0, 22, 1]};
+var flavorAffinities = {"sweet": [0.7857142857142857, 209, 0], "almond": [0.07142857142857142, 138, 4], "quinine": [0.14285714285714285, 90, 1], "acid": [0.14285714285714285, 197, 0], "mint": [0.07142857142857142, 87, 1], "clove": [0.14285714285714285, 113, 2], "lemon": [0.07142857142857142, 28, 5], "alcohol": [0.21428571428571427, 198, 0], "peach": [0.14285714285714285, 48, 5], "cherry": [0.14285714285714285, 10, 5], "anise": [0.14285714285714285, 104, 2], "tropical fruit": [0.07142857142857142, 247, 5], "nutty": [0.14285714285714285, 137, 4], "grapefruit": [0.07142857142857142, 26, 5], "orange": [0.2857142857142857, 30, 5], "bitter": [0.14285714285714285, 200, 0], "banana": [0.07142857142857142, 4, 5], "rum": [0.14285714285714285, 156, 0], "citrus": [0.42857142857142855, 24, 5], "chocolate": [0.07142857142857142, 111, 4], "herbal": [0.35714285714285715, 78, 1], "brandy": [0.14285714285714285, 152, 0], "fruit": [1.0, 1, 5], "spice": [0.14285714285714285, 102, 2], "apricot": [0.07142857142857142, 3, 5], "smoky": [0.07142857142857142, 206, 0], "sour": [0.14285714285714285, 208, 0], "cinnamon": [0.14285714285714285, 112, 2], "berries": [0.14285714285714285, 5, 5], "wine": [0.14285714285714285, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 March 06 09:31AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -176,6 +181,7 @@ var boundsNE= { x:0.69, y:45.23};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

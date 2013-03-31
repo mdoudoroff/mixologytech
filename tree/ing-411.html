@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-61.91, y:10.06};
 var boundsNE= { x:-60.53, y:11.18};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="proprietary"><a href="ing-1331.html">10 Cane Rum</a> </li><li class="proprietary"><a href="ing-2846.html">Angostura 1824</a> </li><li class="proprietary"><a href="ing-2847.html">Angostura 1919</a> </li><li class="stub"><a href="ing-4934.html">Angostura 5 Year</a> </li><li class="stub"><a href="ing-3523.html">Angostura 7 Year</a> </li><li class="stub"><a href="ing-5917.html">Angostura Reserva</a> </li><li class="proprietary"><a href="ing-2848.html">Angostura Royal Oak</a> </li><li class="proprietary"><a href="ing-2849.html">Angostura White Oak</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 April 25 08:59AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="proprietary"><a href="ing-1331.html">10 Cane Rum</a> </li><li class="proprietary"><a href="ing-2846.html">Angostura 1824</a> </li><li class="proprietary"><a href="ing-2847.html">Angostura 1919</a> </li><li class="stub"><a href="ing-4934.html">Angostura 5 Year</a> </li><li class="stub"><a href="ing-3523.html">Angostura 7 Year</a> </li><li class="stub"><a href="ing-5917.html">Angostura Reserva</a> </li><li class="proprietary"><a href="ing-2848.html">Angostura Royal Oak</a> </li><li class="proprietary"><a href="ing-2849.html">Angostura White Oak</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"coffee": [1.0, 299, 2], "amaretto": [1.0, 231, 3], "whipped cream": [1.0, 130, 0]};
+var flavorAffinities = {"nutty": [1.0, 137, 4], "coffee": [0.5, 141, 4], "almond": [0.5, 138, 4], "sweet": [0.5, 209, 0], "cream": [0.5, 179, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 April 25 08:59AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:-60.53, y:11.18};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

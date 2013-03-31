@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:14.12, y:48.99};
 var boundsNE= { x:24.14, y:54.34};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 January 17 05:27AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Plymouth Gin": [1.0, 261, 4], "gin": [1.0, 556, 4], "quinquina": [1.0, 446, 2], "Lillet Blanc": [1.0, 480, 2], "lemon twist": [1.0, 1058, 0]};
+var flavorAffinities = {"spice": [0.5, 102, 2], "lemon": [0.25, 28, 5], "alcohol": [0.5, 198, 0], "juniper": [0.5, 121, 2], "orange": [0.25, 30, 5], "citrus": [0.5, 24, 5], "sour": [0.25, 208, 0], "herbal": [1.0, 78, 1], "fruit": [0.75, 1, 5], "quinine": [0.5, 90, 1], "floral": [0.5, 67, 3], "acid": [0.5, 197, 0], "lemon essence": [0.25, 62, 0], "wine": [0.5, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 January 17 05:27AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:24.14, y:54.34};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -158,7 +158,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-180.0, y:41.19};
 var boundsNE= { x:180.0, y:81.74};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 28 01:58PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"aperitif/digestif bitters": [1.0, 21, 3], "lemon wedge": [1.0, 1060, 0], "Campari": [1.0, 28, 3], "blood orange wheel": [1.0, 1072, 0], "sweet tea": [1.0, 1208, 2], "lemon juice": [1.0, 324, 2]};
+var flavorAffinities = {"lemon": [0.6666666666666666, 28, 5], "citrus": [1.0, 24, 5], "sweet": [0.6666666666666666, 209, 0], "fruit": [1.0, 1, 5], "orange": [0.3333333333333333, 30, 5], "sour": [1.0, 208, 0], "tea": [0.3333333333333333, 93, 1], "herbal": [1.0, 78, 1], "medicinal": [0.6666666666666666, 203, 0], "bitter": [0.6666666666666666, 200, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 28 01:58PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:180.0, y:81.74};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

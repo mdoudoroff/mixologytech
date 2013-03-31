@@ -157,7 +157,12 @@ var activeMapRegions = ["England"];
 var boundsSW = { x:-5.66, y:50.02};
 var boundsNE= { x:1.75, y:54.19};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 April 10 04:08PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vodka": [1.0, 267, 4], "passion fruit nectar": [0.5, 344, 2], "pineapple juice": [1.0, 350, 2], "absinthe": [0.5, 15, 4], "maraschino liqueur": [0.5, 170, 3], "cura\u00e7ao, blue-colored": [0.5, 1113, 3], "Lillet Blanc": [0.5, 480, 2], "Cointreau": [0.5, 152, 3], "Noilly Prat Original Dry": [0.5, 537, 2], "triple sec": [1.0, 185, 3], "quinquina": [1.0, 446, 2], "lemon juice": [0.5, 324, 2], "lemon wheel": [0.5, 1056, 0], "grenadine": [0.5, 317, 2], "Cura\u00e7ao, red-colored": [0.5, 1123, 3], "cr\u00e8me de prunelle": [0.5, 158, 3], "egg white": [0.5, 475, 0], "Dubonnet": [0.5, 437, 2], "vermouth, dry": [1.0, 452, 2]};
+var flavorAffinities = {"sweet": [0.4, 209, 0], "quinine": [0.2, 90, 1], "acid": [0.35, 197, 0], "passion fruit": [0.05, 47, 5], "lemon": [0.1, 28, 5], "alcohol": [0.4, 198, 0], "cherry": [0.05, 10, 5], "anise": [0.05, 104, 2], "tropical fruit": [0.15, 247, 5], "wood": [0.05, 239, 0], "orange": [0.3, 30, 5], "bitter": [0.05, 200, 0], "citrus": [0.4, 24, 5], "pomegranate": [0.05, 52, 5], "herbal": [0.4, 78, 1], "fruit": [1.0, 1, 5], "spice": [0.05, 102, 2], "prune": [0.05, 53, 5], "plum": [0.05, 51, 5], "raisin": [0.05, 55, 5], "sour": [0.1, 208, 0], "grain": [0.05, 189, 0], "pineapple": [0.1, 50, 5], "berries": [0.05, 5, 5], "wine": [0.35, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 April 10 04:08PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:1.75, y:54.19};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

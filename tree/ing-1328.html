@@ -160,7 +160,12 @@ var activeMapRegions = [];
 var boundsSW = { x:6.6, y:35.49};
 var boundsNE= { x:18.52, y:41.9};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 February 13 05:45PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [1.0, 19, 1], "aromatic bitters": [1.0, 22, 1], "Cognac": [1.0, 63, 5], "orange twist": [1.0, 1068, 0]};
+var flavorAffinities = {"clove": [1.0, 113, 2], "anise": [1.0, 104, 2], "citrus": [0.5, 24, 5], "sour": [0.5, 208, 0], "orange essence": [0.5, 65, 0], "fruit": [0.5, 1, 5], "orange": [0.5, 30, 5], "brandy": [0.5, 152, 0], "wood": [0.5, 239, 0], "cinnamon": [1.0, 112, 2], "herbal": [1.0, 78, 1], "bitter": [1.0, 200, 0], "spice": [1.0, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 February 13 05:45PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -176,6 +181,7 @@ var boundsNE= { x:18.52, y:41.9};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

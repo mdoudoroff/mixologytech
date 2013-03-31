@@ -155,7 +155,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-61.8, y:-21.37};
 var boundsNE= { x:55.85, y:42.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 10:44AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [1.0, 19, 1], "maple syrup": [1.0, 333, 2], "Plymouth Sloe Gin": [1.0, 2466, 3], "sloe gin": [1.0, 181, 3], "cinnamon": [1.0, 291, 0], "aromatic bitters": [1.0, 22, 1], "Laird\u2019s 100-Proof Bonded Apple Brandy": [1.0, 1323, 5], "apple brandy, American": [1.0, 56, 5], "apple fan": [1.0, 5301, 0]};
+var flavorAffinities = {"wood": [0.4, 239, 0], "clove": [0.4, 113, 2], "apple": [0.6, 2, 5], "sloe": [0.4, 21, 5], "sweet": [0.6, 209, 0], "plum": [0.4, 51, 5], "anise": [0.4, 104, 2], "whiskey": [0.4, 161, 0], "brandy": [0.4, 152, 0], "fruit": [1.0, 1, 5], "cinnamon": [0.6, 112, 2], "herbal": [0.4, 78, 1], "berries": [0.4, 5, 5], "bitter": [0.4, 200, 0], "maple": [0.2, 225, 0], "spice": [0.6, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 10:44AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -171,6 +176,7 @@ var boundsNE= { x:55.85, y:42.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

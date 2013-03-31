@@ -153,7 +153,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="generic"><a href="ing-1579.html">almond flour</a> </li><li class="generic"><a href="ing-89.html">almond, slivered</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 15 08:35AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="generic"><a href="ing-1579.html">almond flour</a> </li><li class="generic"><a href="ing-89.html">almond, slivered</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"kirsch": [0.14285714285714285, 69, 5], "cinnamon stick": [0.14285714285714285, 1160, 0], "claret": [0.14285714285714285, 435, 2], "aromatic bitters": [0.14285714285714285, 22, 1], "Champagne": [0.14285714285714285, 432, 2], "milk": [0.2857142857142857, 334, 2], "orange peel, grated": [0.14285714285714285, 119, 0], "clove": [0.14285714285714285, 293, 0], "grape": [0.14285714285714285, 109, 0], "cr\u00e8me de noyeau": [0.14285714285714285, 237, 3], "sugar": [0.7142857142857143, 370, 0], "cr\u00e8me de cacao, white": [0.14285714285714285, 234, 3], "orange": [0.14285714285714285, 118, 0], "sherry": [0.14285714285714285, 1028, 2], "peach kernel": [0.14285714285714285, 4976, 0], "brandies": [0.14285714285714285, 1046, 5], "orange flower water": [0.42857142857142855, 339, 2], "vanilla extract": [0.2857142857142857, 380, 0], "raisins": [0.2857142857142857, 125, 0], "wine, Muscatel": [0.14285714285714285, 458, 2], "water": [1.0, 383, 2], "gin": [0.2857142857142857, 556, 4], "lemon": [0.14285714285714285, 111, 0], "almond extract": [0.2857142857142857, 1702, 0], "lemon twist": [0.14285714285714285, 1058, 0], "wine, white": [0.14285714285714285, 468, 2], "peach liqueur": [0.14285714285714285, 174, 3], "vermouth, dry": [0.2857142857142857, 452, 2], "wine": [0.14285714285714285, 454, 2]};
+var flavorAffinities = {"apricot pits": [0.05, 105, 2], "sweet": [0.45, 209, 0], "almond": [0.2, 138, 4], "acid": [0.4, 197, 0], "milk": [0.1, 183, 0], "cream": [0.1, 179, 0], "clove": [0.1, 113, 2], "grape": [0.05, 16, 5], "alcohol": [0.15, 198, 0], "peach": [0.05, 48, 5], "cherry": [0.05, 10, 5], "anise": [0.05, 104, 2], "musty": [0.05, 202, 0], "nutty": [0.25, 137, 4], "orange essence": [0.05, 65, 0], "orange": [0.25, 30, 5], "bitter": [0.1, 200, 0], "lemon essence": [0.05, 62, 0], "juniper": [0.1, 121, 2], "citrus": [0.35, 24, 5], "chocolate": [0.05, 111, 4], "herbal": [0.25, 78, 1], "fruit": [1.0, 1, 5], "floral": [0.25, 67, 3], "lemon": [0.1, 28, 5], "spice": [0.4, 102, 2], "vanilla": [0.1, 136, 2], "raisin": [0.1, 55, 5], "sour": [0.2, 208, 0], "cinnamon": [0.1, 112, 2], "berries": [0.1, 5, 5], "wine": [0.1, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 15 08:35AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -169,6 +174,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

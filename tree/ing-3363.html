@@ -163,7 +163,12 @@ var boundsNE= { x:-60.83, y:14.49};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>United Kingdom</td><td>700 ml</td><td><abbr title="British pound">GBP</abbr> £28.3</td><td data-currency="GBP" data-rlow="28.3" data-rhigh="28.3"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 08:24AM </small></div></div> 
+<tr><td>United Kingdom</td><td>700 ml</td><td><abbr title="British pound">GBP</abbr> £28.3</td><td data-currency="GBP" data-rlow="28.3" data-rhigh="28.3"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [1.0, 19, 1], "coconut": [1.0, 98, 0], "monastic liqueur": [1.0, 469, 3], "water": [1.0, 383, 2], "aromatic bitters": [1.0, 22, 1], "lime wheel": [1.0, 1065, 0], "Chartreuse, yellow": [1.0, 527, 3]};
+var flavorAffinities = {"clove": [0.5, 113, 2], "citrus": [0.25, 24, 5], "sweet": [0.5, 209, 0], "sour": [0.25, 208, 0], "anise": [0.5, 104, 2], "coconut": [0.25, 140, 4], "nutty": [0.25, 137, 4], "fruit": [0.25, 1, 5], "cinnamon": [0.5, 112, 2], "herbal": [1.0, 78, 1], "lime": [0.25, 29, 5], "bitter": [0.5, 200, 0], "spice": [0.75, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 08:24AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -179,6 +184,7 @@ var boundsNE= { x:-60.83, y:14.49};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -163,7 +163,12 @@ var boundsNE= { x:-116.48, y:46.15};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $42.0</td><td data-currency="USD" data-rlow="42.0" data-rhigh="42.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 21 10:21AM </small></div></div> 
+<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $42.0</td><td data-currency="USD" data-rlow="42.0" data-rhigh="42.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Bols Genever": [0.5, 1490, 4], "lime juice": [0.5, 328, 2], "Zwack Unicum": [0.5, 46, 3], "pineapple juice": [1.0, 350, 2], "aperitif/digestif bitters": [0.5, 21, 3], "honey syrup": [0.5, 1441, 2], "maraschino liqueur": [0.5, 170, 3], "Genevieve": [0.5, 2843, 4], "Cr\u00e8me Yvette": [0.5, 133, 3], "lavender": [0.5, 1396, 0], "orchid blossom": [0.5, 508, 0], "Mo\u00ebt & Chandon Imp\u00e9rial": [0.5, 1556, 2], "lemon juice": [1.0, 324, 2], "gin": [0.5, 556, 4], "cherry, brandied": [0.5, 95, 0], "genever": [0.5, 256, 4], "Rothman & Winter Cr\u00e8me de Violette": [0.5, 1811, 3], "Champagne": [0.5, 432, 2], "Luxardo Maraschino": [1.0, 1368, 3], "Violet petal flavored liqueur": [1.0, 1042, 3]};
+var flavorAffinities = {"sweet": [1.0, 209, 0], "lavender": [0.09090909090909091, 74, 3], "honey": [0.09090909090909091, 222, 0], "violet": [0.36363636363636365, 77, 3], "acid": [0.18181818181818182, 197, 0], "lime": [0.09090909090909091, 29, 5], "lemon": [0.18181818181818182, 28, 5], "alcohol": [0.36363636363636365, 198, 0], "cherry": [0.36363636363636365, 10, 5], "tropical fruit": [0.18181818181818182, 247, 5], "wood": [0.2727272727272727, 239, 0], "herbal": [0.36363636363636365, 78, 1], "bitter": [0.18181818181818182, 200, 0], "juniper": [0.18181818181818182, 121, 2], "citrus": [0.2727272727272727, 24, 5], "brandy": [0.09090909090909091, 152, 0], "fruit": [1.0, 1, 5], "floral": [0.6363636363636364, 67, 3], "spice": [0.18181818181818182, 102, 2], "malt": [0.18181818181818182, 192, 0], "sour": [0.2727272727272727, 208, 0], "grain": [0.45454545454545453, 189, 0], "pineapple": [0.18181818181818182, 50, 5], "medicinal": [0.18181818181818182, 203, 0], "berries": [0.36363636363636365, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 21 10:21AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -179,6 +184,7 @@ var boundsNE= { x:-116.48, y:46.15};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -156,7 +156,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-141.01, y:41.67};
 var boundsNE= { x:-52.62, y:83.12};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"lime juice": [1.0, 328, 2], "cura\u00e7ao, blue-colored": [1.0, 1113, 3], "peach liqueur": [1.0, 174, 3], "lime twist": [1.0, 1063, 0], "triple sec": [1.0, 185, 3]};
+var flavorAffinities = {"alcohol": [0.4, 198, 0], "peach": [0.2, 48, 5], "citrus": [0.8, 24, 5], "sweet": [0.6, 209, 0], "fruit": [1.0, 1, 5], "sour": [0.4, 208, 0], "lime essence": [0.2, 63, 0], "orange": [0.4, 30, 5], "lime": [0.4, 29, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -172,6 +177,7 @@ var boundsNE= { x:-52.62, y:83.12};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

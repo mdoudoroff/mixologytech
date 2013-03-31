@@ -163,7 +163,12 @@ var boundsNE= { x:-101.77, y:20.63};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $32.0</td><td data-currency="USD" data-rlow="32.0" data-rhigh="32.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 21 09:44AM </small></div></div> 
+<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $32.0</td><td data-currency="USD" data-rlow="32.0" data-rhigh="32.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [0.3333333333333333, 19, 1], "orange bitters": [0.3333333333333333, 37, 1], "rum, Dominican": [0.3333333333333333, 1110, 5], "orange-flavored liqueur with an aged brandy base": [0.3333333333333333, 1730, 3], "ginger beer": [0.3333333333333333, 313, 2], "mezcal": [0.3333333333333333, 3, 4], "lime juice": [0.3333333333333333, 328, 2], "Sombra Blanco": [0.3333333333333333, 2950, 4], "orange twist": [0.3333333333333333, 1068, 0], "egg white": [0.3333333333333333, 475, 0], "monastic liqueur": [0.6666666666666666, 469, 3], "Matusalem Gran Reserva Rum": [0.3333333333333333, 1666, 5], "lemon juice": [1.0, 324, 2], "lemon wheel": [0.3333333333333333, 1056, 0], "candied ginger": [0.3333333333333333, 625, 0], "aromatic bitters": [0.3333333333333333, 22, 1], "B\u00e9n\u00e9dictine": [0.3333333333333333, 191, 3], "Grand Marnier": [0.3333333333333333, 163, 3], "simple syrup": [0.3333333333333333, 363, 2], "Chartreuse, yellow": [0.3333333333333333, 527, 3], "cr\u00e8me de cassis": [0.3333333333333333, 157, 3]};
+var flavorAffinities = {"sweet": [0.9, 209, 0], "ginger": [0.2, 118, 2], "currant": [0.1, 13, 5], "lime": [0.1, 29, 5], "clove": [0.3, 113, 2], "lemon": [0.4, 28, 5], "alcohol": [0.2, 198, 0], "anise": [0.3, 104, 2], "sparkling": [0.1, 234, 0], "orange essence": [0.1, 65, 0], "agave": [0.2, 166, 1], "herbal": [0.9, 78, 1], "bitter": [0.3, 200, 0], "black currant": [0.1, 7, 5], "rum": [0.2, 156, 0], "citrus": [0.9, 24, 5], "orange": [0.4, 30, 5], "brandy": [0.2, 152, 0], "fruit": [1.0, 1, 5], "vegetal": [0.2, 163, 1], "spice": [0.7, 102, 2], "piquant": [0.1, 110, 0], "smoky": [0.2, 206, 0], "sour": [0.6, 208, 0], "cinnamon": [0.3, 112, 2], "berries": [0.1, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 21 09:44AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -179,6 +184,7 @@ var boundsNE= { x:-101.77, y:20.63};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

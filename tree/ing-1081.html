@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [1.0, 19, 1], "cherry, Maraschino": [1.0, 96, 0], "rye whiskey": [1.0, 421, 5], "aromatic bitters": [1.0, 22, 1]};
+var flavorAffinities = {"wood": [0.5, 239, 0], "clove": [1.0, 113, 2], "anise": [1.0, 104, 2], "nutty": [0.5, 137, 4], "sweet": [0.5, 209, 0], "rye": [0.5, 194, 0], "oak": [0.5, 240, 0], "whiskey": [0.5, 161, 0], "fruit": [0.5, 1, 5], "almond": [0.5, 138, 4], "cinnamon": [1.0, 112, 2], "cherry": [0.5, 10, 5], "herbal": [1.0, 78, 1], "grain": [0.5, 189, 0], "tannin": [0.5, 210, 0], "berries": [0.5, 5, 5], "bitter": [1.0, 200, 0], "spice": [1.0, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

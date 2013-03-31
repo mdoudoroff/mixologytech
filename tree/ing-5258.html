@@ -160,7 +160,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-31.28, y:30.03};
 var boundsNE= { x:-6.21, y:42.07};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 02:59PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Hennessy Black": [0.3333333333333333, 3035, 5], "Elijah Craig Kentucky Straight Bourbon": [0.3333333333333333, 1661, 5], "strawberry": [0.3333333333333333, 545, 0], "lemon juice": [0.3333333333333333, 324, 2], "Cognac": [0.3333333333333333, 63, 5], "soda water": [0.3333333333333333, 1693, 2], "egg (raw)": [0.3333333333333333, 308, 0], "Bourbon whiskey": [0.3333333333333333, 415, 5], "nutmeg": [0.6666666666666666, 338, 0], "simple syrup": [1.0, 363, 2], "cucumber slice": [0.3333333333333333, 102, 0], "egg yolk": [0.3333333333333333, 476, 0], "cream": [0.3333333333333333, 305, 2]};
+var flavorAffinities = {"wood": [1.0, 239, 0], "cream": [0.25, 179, 0], "lemon": [0.25, 28, 5], "strawberry": [0.25, 22, 5], "citrus": [0.25, 24, 5], "sweet": [0.75, 209, 0], "corn": [0.5, 190, 0], "sour": [0.25, 208, 0], "oak": [0.5, 240, 0], "sparkling": [0.25, 234, 0], "whiskey": [0.5, 161, 0], "brandy": [0.5, 152, 0], "fruit": [0.5, 1, 5], "cucumber": [0.25, 174, 1], "nutmeg": [0.5, 126, 2], "vegetal": [0.25, 163, 1], "tannin": [0.5, 210, 0], "berries": [0.25, 5, 5], "grain": [0.5, 189, 0], "spice": [0.5, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 02:59PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -176,6 +181,7 @@ var boundsNE= { x:-6.21, y:42.07};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -165,7 +165,12 @@ var boundsNE= { x:55.85, y:42.44};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>France</td><td>750 ml</td><td><abbr title="Euro">EUR</abbr> €18.0</td><td data-currency="EUR" data-rlow="18.0" data-rhigh="18.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 04 11:39PM </small></div></div> 
+<tr><td>France</td><td>750 ml</td><td><abbr title="Euro">EUR</abbr> €18.0</td><td data-currency="EUR" data-rlow="18.0" data-rhigh="18.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Hendrick\u2019s gin": [1.0, 578, 4], "elderflower liqueur": [1.0, 1257, 3], "grapefruit twist": [1.0, 1073, 0], "Old Tom gin": [1.0, 259, 4], "Ransom Old Tom Gin": [1.0, 1731, 4], "lavender": [1.0, 1396, 0], "St. Germain": [1.0, 1258, 3], "falernum": [1.0, 309, 2], "Dolin Dry": [1.0, 1707, 2], "celery bitters": [1.0, 30, 1], "gin": [1.0, 556, 4], "John D. Taylor\u2019s Velvet Falernum": [1.0, 1337, 2], "vermouth, dry": [1.0, 452, 2], "Bitter Truth Celery Bitters, The": [1.0, 1370, 1]};
+var flavorAffinities = {"allspice": [0.25, 103, 2], "sweet": [0.5, 209, 0], "almond": [0.25, 138, 4], "lavender": [0.125, 74, 3], "ginger": [0.25, 118, 2], "acid": [0.25, 197, 0], "lime": [0.25, 29, 5], "clove": [0.5, 113, 2], "alcohol": [0.5, 198, 0], "anise": [0.25, 104, 2], "celery": [0.25, 171, 1], "nutty": [0.25, 137, 4], "herbal": [1.0, 78, 1], "bitter": [0.25, 200, 0], "juniper": [0.5, 121, 2], "citrus": [0.375, 24, 5], "grapefruit essence": [0.125, 61, 0], "fruit": [0.625, 1, 5], "floral": [0.875, 67, 3], "vegetal": [0.25, 163, 1], "elderflower": [0.25, 70, 3], "spice": [1.0, 102, 2], "vanilla": [0.25, 136, 2], "sour": [0.125, 208, 0], "cinnamon": [0.25, 112, 2], "wine": [0.25, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 04 11:39PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -181,6 +186,7 @@ var boundsNE= { x:55.85, y:42.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

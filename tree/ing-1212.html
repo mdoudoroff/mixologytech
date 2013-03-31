@@ -158,7 +158,12 @@ var activeMapRegions = [];
 var boundsSW = { x:2.52, y:49.51};
 var boundsNE= { x:6.36, y:51.43};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1211.html">Godiva Milk Chocolate Liqueur</a></li><li><a href="ing-1213.html">Godiva Mocha Liqueur</a></li><li><a href="ing-1210.html">Godiva White Chocolate Liqueur</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 08:20AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1211.html">Godiva Milk Chocolate Liqueur</a></li><li><a href="ing-1213.html">Godiva Mocha Liqueur</a></li><li><a href="ing-1210.html">Godiva White Chocolate Liqueur</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"blood orange juice": [1.0, 277, 2], "Bourbon whiskey": [1.0, 415, 5], "Old Grand-Dad Bonded": [1.0, 2277, 5], "orange twist": [1.0, 1068, 0]};
+var flavorAffinities = {"wood": [1.0, 239, 0], "citrus": [1.0, 24, 5], "corn": [1.0, 190, 0], "sour": [1.0, 208, 0], "oak": [1.0, 240, 0], "whiskey": [1.0, 161, 0], "orange essence": [0.5, 65, 0], "fruit": [1.0, 1, 5], "grain": [1.0, 189, 0], "orange": [1.0, 30, 5], "tannin": [1.0, 210, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 08:20AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:6.36, y:51.43};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

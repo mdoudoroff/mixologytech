@@ -1,5 +1,5 @@
 
-
+// @codekit-prepend "d3.layout.cloud.js";
 // @codekit-prepend "polymaps/lib/nns/nns.js";
 // @codekit-prepend "polymaps/polymaps.js";
 // @codekit-prepend "polymaps/geoff.js";
@@ -151,8 +151,8 @@ jQuery(window).load(function() {
 			//.add(po.interact())
 			;
 
-		map.add(po.image()
-			.url("http://s3.amazonaws.com/com.modestmaps.bluemarble/{Z}-r{Y}-c{X}.jpg"));
+		//map.add(po.image()
+		//	.url("http://s3.amazonaws.com/com.modestmaps.bluemarble/{Z}-r{Y}-c{X}.jpg"));
 
 		// load the primary map elements (countries)
 		map.add(po.geoJson()
@@ -316,6 +316,137 @@ jQuery(window).load(function() {
 	    loadImage();
 	}
     
+
+    // ============= AFFINITIES! ================
+
+    // blue    orange  green   red     purple  brown   pink    gray    lt green  lt blue
+	// #1f77b4 #ff7f0e #2ca02c #d62728 #9467bd #8c564b #e377c2 #7f7f7f #bcbd22   #17becf
+	var ordinalColorMapping = {
+		0:'#7f7f7f',     // garnishes, whatevah (default)
+		1:'#d62728',    // bitters
+		2:'#2ca02c',    // mixers/non-alcoholic modifiers/bottled cocktails
+		3:'#1f77b4',   // liqueurs
+		4:'#17becf',     // white spirits
+		5:'#8c564b'     // brown spirits
+	};
+
+	var flavorOrdinalColorMapping = {
+		0:'#7f7f7f',     // (default)
+		1:'#2ca02c',	// vegetal/herbal
+		2:'#ff7f0e',    // spice
+		3:'#e377c2',    // floral
+		4:'#8c564b',    // nutty
+		5:'#d62728',    // fruity
+	};
+
+	var divwidth = $('#affinities').width();
+
+	//var fill = d3.scale.category20();
+	var ingFill = function(i) {return ordinalColorMapping[i]};
+	var flavFill = function(i) {return flavorOrdinalColorMapping[i]};
+
+    if (ingredientAffinities) {
+
+    	var terms = Object.keys(ingredientAffinities);
+
+		function drawIA(words) {
+			d3.select("#affinities").append("svg")
+				.attr("width", divwidth)
+				.attr("height", 600)
+				
+				.append("g")
+				.attr("transform", "translate("+divwidth/2+","+300+")")
+				
+				.selectAll("text")
+				.data(words)
+
+				.enter().append("text")
+				.style("font-size", function(d) { return d.size + "px"; })
+				.style("font-family", "Helvetica")
+				.style("font-weight", "bold")
+				.style("cursor", 'pointer')
+				.style("fill", function(d, i) { return ingFill(d.groupIdx); })
+				.attr("text-anchor", "middle")
+				.on("click", function(d) {
+					window.location = "ing-"+d.iid+".html";
+				})
+				.attr("transform", function(d) {
+					return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+				})
+				.text(function(d) { return d.text; });
+			}
+
+    	
+
+		d3.layout.cloud().size([divwidth, 600])
+			.words(terms.map(function(d) {
+				return {text: d, size: 10 + ingredientAffinities[d][0] * 90, iid:ingredientAffinities[d][1], groupIdx:ingredientAffinities[d][2]};
+			}))
+			//.words(terms.map(function(d) {
+			//        return {text: d, size: 10 + Math.random() * 90};
+			//      }))
+			.rotate(function() { return ~~(Math.random() * 2) * 0; })
+			.font("Helvetica")
+			.fontWeight('bold')
+			.fontSize(function(d) { return d.size; })
+			.on("end", drawIA)
+			.start();
+
+
+
+    }
+
+    
+    if (flavorAffinities) {
+
+    	var terms = Object.keys(flavorAffinities);
+
+		function drawFA(words) {
+			d3.select("#affinities").append("svg")
+				.attr("width", divwidth)
+				.attr("height", 600)
+				
+				.append("g")
+				.attr("transform", "translate("+divwidth/2+","+300+")")
+				
+				.selectAll("text")
+				.data(words)
+
+				.enter().append("text")
+				.style("font-size", function(d) { return d.size + "px"; })
+				.style("font-family", "Helvetica")
+				.style("font-weight", "bold")
+				.style("cursor", 'pointer')
+				.style("fill", function(d, i) { return flavFill(d.groupIdx); })
+				.attr("text-anchor", "middle")
+				.on("click", function(d) {
+					window.location = "ing-"+d.iid+".html";
+				})
+				.attr("transform", function(d) {
+					return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+				})
+				.text(function(d) { return d.text; });
+			}
+
+    	
+
+		d3.layout.cloud().size([divwidth, 600])
+			.words(terms.map(function(d) {
+				return {text: d, size: 10 + flavorAffinities[d][0] * 90, iid:flavorAffinities[d][1], groupIdx:flavorAffinities[d][2]};
+			}))
+			//.words(terms.map(function(d) {
+			//        return {text: d, size: 10 + Math.random() * 90};
+			//      }))
+			.rotate(function() { return ~~(Math.random() * 2) * 0; })
+			.font("Helvetica")
+			.fontWeight('bold')
+			.fontSize(function(d) { return d.size; })
+			.on("end", drawFA)
+			.start();
+
+
+
+    }
 
 });
 

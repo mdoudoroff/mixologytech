@@ -154,7 +154,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-179.14, y:18.91};
 var boundsNE= { x:179.78, y:71.41};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vodka": [1.0, 267, 4], "anchovy": [0.3333333333333333, 90, 0], "celery salt": [0.3333333333333333, 286, 0], "lemon wedge": [0.3333333333333333, 1060, 0], "Worcestershire sauce": [0.3333333333333333, 385, 0], "pepper": [0.3333333333333333, 348, 0], "Tabasco sauce": [0.3333333333333333, 373, 0], "celery": [0.3333333333333333, 629, 0], "lemon juice": [0.3333333333333333, 324, 2], "olive": [0.3333333333333333, 117, 0], "prepared horseradish": [0.3333333333333333, 1196, 0], "salt": [0.3333333333333333, 359, 0], "hot sauce": [0.6666666666666666, 1034, 0], "tomato juice": [0.6666666666666666, 377, 2]};
+var flavorAffinities = {"brine": [0.2, 215, 0], "vinegar": [0.2, 238, 0], "pepper": [0.2, 128, 2], "lemon": [0.4, 28, 5], "alcohol": [0.6, 198, 0], "tomato": [0.4, 237, 0], "citrus": [0.4, 24, 5], "piquant": [0.6, 110, 0], "sour": [1.0, 208, 0], "pungent": [0.2, 204, 0], "celery seed": [0.2, 109, 2], "celery": [0.2, 171, 1], "fruit": [0.4, 1, 5], "salty": [0.8, 205, 0], "chile pepper": [0.6, 172, 1], "fishy": [0.2, 219, 0], "herbal": [0.4, 78, 1], "vegetal": [0.8, 163, 1], "acid": [0.4, 197, 0], "olive brine": [0.2, 216, 0], "spice": [0.6, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -170,6 +175,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

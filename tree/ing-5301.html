@@ -154,7 +154,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 11 10:43AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [0.5, 19, 1], "maple syrup": [0.5, 333, 2], "elderflower liqueur": [0.5, 1257, 3], "sloe gin": [0.5, 181, 3], "quinquina": [0.5, 446, 2], "Beaujolais Nouveau": [0.5, 5243, 2], "Plymouth Sloe Gin": [0.5, 2466, 3], "St. Germain": [0.5, 1258, 3], "Lillet Rouge": [0.5, 439, 2], "cinnamon": [0.5, 291, 0], "aromatic bitters": [0.5, 22, 1], "Laird\u2019s 100-Proof Bonded Apple Brandy": [1.0, 1323, 5], "apple brandy, American": [0.5, 56, 5]};
+var flavorAffinities = {"apple": [0.375, 2, 5], "sweet": [0.625, 209, 0], "quinine": [0.25, 90, 1], "acid": [0.375, 197, 0], "maple": [0.125, 225, 0], "clove": [0.25, 113, 2], "anise": [0.25, 104, 2], "sloe": [0.25, 21, 5], "wood": [0.375, 239, 0], "orange": [0.125, 30, 5], "bitter": [0.25, 200, 0], "citrus": [0.125, 24, 5], "herbal": [0.5, 78, 1], "brandy": [0.375, 152, 0], "fruit": [1.0, 1, 5], "floral": [0.25, 67, 3], "elderflower": [0.25, 70, 3], "spice": [0.375, 102, 2], "plum": [0.25, 51, 5], "whiskey": [0.375, 161, 0], "cinnamon": [0.375, 112, 2], "berries": [0.25, 5, 5], "wine": [0.25, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 11 10:43AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -170,6 +175,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

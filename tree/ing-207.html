@@ -156,7 +156,12 @@ var activeMapRegions = ["England"];
 var boundsSW = { x:-5.66, y:50.02};
 var boundsNE= { x:1.75, y:54.19};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [0.5, 19, 1], "orange bitters": [0.16666666666666666, 37, 1], "orange-flavored liqueur with an aged brandy base": [0.16666666666666666, 1730, 3], "orange juice": [0.16666666666666666, 340, 2], "lime juice": [0.16666666666666666, 328, 2], "Calvados": [0.6666666666666666, 61, 5], "tequila": [0.16666666666666666, 4, 4], "orange twist": [0.16666666666666666, 1068, 0], "brandies": [0.3333333333333333, 1046, 5], "gin": [0.16666666666666666, 556, 4], "rum": [0.3333333333333333, 396, 5], "Cointreau": [0.5, 152, 3], "aromatic bitters": [0.16666666666666666, 22, 1], "applejack": [0.16666666666666666, 57, 5], "Grand Marnier": [0.16666666666666666, 163, 3], "apple brandy": [0.5, 553, 5], "genever": [0.16666666666666666, 256, 4], "gin, London dry": [1.0, 257, 4], "triple sec": [0.16666666666666666, 185, 3], "vermouth, dry": [0.5, 452, 2]};
+var flavorAffinities = {"armagnac": [0.19047619047619047, 150, 0], "apple": [0.38095238095238093, 2, 5], "sweet": [0.2857142857142857, 209, 0], "acid": [0.14285714285714285, 197, 0], "lime": [0.047619047619047616, 29, 5], "clove": [0.23809523809523808, 113, 2], "alcohol": [0.6666666666666666, 198, 0], "anise": [0.23809523809523808, 104, 2], "orange essence": [0.047619047619047616, 65, 0], "agave": [0.047619047619047616, 166, 1], "herbal": [0.7619047619047619, 78, 1], "bitter": [0.23809523809523808, 200, 0], "juniper": [0.3333333333333333, 121, 2], "rum": [0.09523809523809523, 156, 0], "citrus": [0.47619047619047616, 24, 5], "orange": [0.42857142857142855, 30, 5], "brandy": [0.47619047619047616, 152, 0], "fruit": [1.0, 1, 5], "floral": [0.3333333333333333, 67, 3], "vegetal": [0.047619047619047616, 163, 1], "spice": [0.5714285714285714, 102, 2], "wood": [0.38095238095238093, 239, 0], "malt": [0.047619047619047616, 192, 0], "whiskey": [0.047619047619047616, 161, 0], "sour": [0.14285714285714285, 208, 0], "grain": [0.047619047619047616, 189, 0], "cinnamon": [0.23809523809523808, 112, 2], "smoky": [0.047619047619047616, 206, 0], "wine": [0.14285714285714285, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -172,6 +177,7 @@ var boundsNE= { x:1.75, y:54.19};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -153,7 +153,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vodka": [0.3333333333333333, 267, 4], "cinnamon stick": [0.6666666666666666, 1160, 0], "allspice": [0.6666666666666666, 88, 0], "Marie Brizard Orange Cura\u00e7ao": [0.3333333333333333, 2895, 3], "orange twist": [0.3333333333333333, 1068, 0], "pepper": [0.6666666666666666, 348, 0], "ginger": [0.3333333333333333, 1341, 0], "lemon juice": [0.3333333333333333, 324, 2], "Macchu Pisco": [0.3333333333333333, 2855, 5], "brown sugar": [0.3333333333333333, 281, 0], "aromatic bitters": [0.3333333333333333, 22, 1], "cura\u00e7ao": [0.3333333333333333, 159, 3], "grapefruit juice": [0.3333333333333333, 316, 2], "clove": [1.0, 293, 0], "honey syrup": [0.3333333333333333, 1441, 2], "pisco": [0.3333333333333333, 78, 5], "Peychaud\u2019s Aromatic Cocktail Bitters": [0.3333333333333333, 41, 1], "sugar": [0.3333333333333333, 370, 0], "vanilla ice cream": [0.3333333333333333, 381, 2], "Matusalem Gran Reserva Rum": [0.3333333333333333, 1666, 5], "Clear Creek Williams Pear Brandy": [0.3333333333333333, 1672, 5], "lime juice": [0.3333333333333333, 328, 2], "rum, Dominican": [0.3333333333333333, 1110, 5], "vanilla bean": [0.3333333333333333, 379, 0], "water": [0.3333333333333333, 383, 2], "riesling": [0.3333333333333333, 448, 2], "butter": [0.3333333333333333, 282, 0], "maple syrup": [0.3333333333333333, 333, 2], "Smirnoff Black Label": [0.3333333333333333, 2254, 4], "Borsci Sambuca": [0.3333333333333333, 5252, 3], "pear eau de vie": [0.3333333333333333, 77, 5], "sambuca": [0.3333333333333333, 224, 3], "simple syrup": [0.3333333333333333, 363, 2], "sorrel flower tea": [0.3333333333333333, 5278, 2]};
+var flavorAffinities = {"sweet": [0.625, 209, 0], "ginger": [0.0625, 118, 2], "honey": [0.0625, 222, 0], "acid": [0.0625, 197, 0], "maple": [0.0625, 225, 0], "cream": [0.125, 179, 0], "molasses": [0.0625, 227, 0], "lemon": [0.0625, 28, 5], "alcohol": [0.5, 198, 0], "cherry": [0.0625, 10, 5], "anise": [0.125, 104, 2], "licorice": [0.125, 123, 2], "elderberry": [0.125, 14, 5], "orange essence": [0.0625, 65, 0], "grapefruit": [0.0625, 26, 5], "orange": [0.1875, 30, 5], "lime": [0.0625, 29, 5], "bitter": [0.125, 200, 0], "pepper": [0.125, 128, 2], "rum": [0.125, 156, 0], "citrus": [0.375, 24, 5], "pear": [0.125, 49, 5], "clove": [0.4375, 113, 2], "herbal": [0.125, 78, 1], "fruit": [0.9375, 1, 5], "floral": [0.0625, 67, 3], "spice": [1.0, 102, 2], "butter": [0.0625, 181, 0], "vanilla": [0.125, 136, 2], "pungent": [0.125, 204, 0], "sour": [0.25, 208, 0], "nutmeg": [0.125, 126, 2], "cinnamon": [0.375, 112, 2], "berries": [0.1875, 5, 5], "wine": [0.0625, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -169,6 +174,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

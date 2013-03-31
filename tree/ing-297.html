@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="proprietary"><a href="ing-1415.html">Coco Lopez Coconut Cream</a> </li><li class="stub"><a href="ing-5540.html">Coco Reál Cream of Coconut</a> </li><li class="stub"><a href="ing-4172.html">Goya Cream of Coconut</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="proprietary"><a href="ing-1415.html">Coco Lopez Coconut Cream</a> </li><li class="stub"><a href="ing-5540.html">Coco Reál Cream of Coconut</a> </li><li class="stub"><a href="ing-4172.html">Goya Cream of Coconut</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [0.2857142857142857, 19, 1], "lime juice": [0.14285714285714285, 328, 2], "cherry, Maraschino": [1.0, 96, 0], "cr\u00e8me de cacao, white": [0.14285714285714285, 234, 3], "pineapple juice": [0.42857142857142855, 350, 2], "rum": [1.0, 396, 5], "maraschino liqueur": [0.2857142857142857, 170, 3], "lemon wedge": [0.14285714285714285, 1060, 0], "aromatic bitters": [0.2857142857142857, 22, 1], "vodka": [0.14285714285714285, 267, 4], "cura\u00e7ao": [0.14285714285714285, 159, 3], "grenadine": [0.14285714285714285, 317, 2], "lemon juice": [0.14285714285714285, 324, 2], "Cognac": [0.14285714285714285, 63, 5], "pineapple cube": [0.5714285714285714, 1168, 0], "apricot liqueur": [0.14285714285714285, 138, 3], "gin": [0.14285714285714285, 556, 4], "lime wheel": [0.14285714285714285, 1065, 0], "lime": [0.14285714285714285, 112, 0]};
+var flavorAffinities = {"sweet": [0.5416666666666666, 209, 0], "almond": [0.2916666666666667, 138, 4], "lime": [0.125, 29, 5], "clove": [0.16666666666666666, 113, 2], "lemon": [0.08333333333333333, 28, 5], "alcohol": [0.125, 198, 0], "cherry": [0.375, 10, 5], "anise": [0.16666666666666666, 104, 2], "tropical fruit": [0.2916666666666667, 247, 5], "nutty": [0.3333333333333333, 137, 4], "wood": [0.125, 239, 0], "orange": [0.041666666666666664, 30, 5], "bitter": [0.16666666666666666, 200, 0], "juniper": [0.041666666666666664, 121, 2], "rum": [0.2916666666666667, 156, 0], "citrus": [0.25, 24, 5], "pomegranate": [0.041666666666666664, 52, 5], "chocolate": [0.041666666666666664, 111, 4], "herbal": [0.20833333333333334, 78, 1], "brandy": [0.041666666666666664, 152, 0], "fruit": [1.0, 1, 5], "floral": [0.041666666666666664, 67, 3], "spice": [0.20833333333333334, 102, 2], "apricot": [0.041666666666666664, 3, 5], "sour": [0.20833333333333334, 208, 0], "grain": [0.08333333333333333, 189, 0], "cinnamon": [0.16666666666666666, 112, 2], "pineapple": [0.2916666666666667, 50, 5], "berries": [0.375, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

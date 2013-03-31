@@ -164,7 +164,12 @@ var boundsNE= { x:-6.06, y:55.7};
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
 <tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $52.0</td><td data-currency="USD" data-rlow="52.0" data-rhigh="52.0"></td></tr>
-<tr><td>France</td><td>700 ml</td><td><abbr title="Euro">EUR</abbr> €39.0</td><td data-currency="EUR" data-rlow="39.0" data-rhigh="39.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 September 15 10:58AM </small></div></div> 
+<tr><td>France</td><td>700 ml</td><td><abbr title="Euro">EUR</abbr> €39.0</td><td data-currency="EUR" data-rlow="39.0" data-rhigh="39.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"lime juice": [0.5, 328, 2], "vodka": [0.5, 267, 4], "Grey Goose vodka": [0.5, 612, 4], "lemon twist": [0.5, 1058, 0], "Mozart Black Chocolate Pure 87": [0.5, 1366, 3], "pastis": [0.5, 217, 3], "Bitter Truth Aromatic Bitters, The": [0.5, 1369, 1], "chocolate-flavored liqueur": [0.5, 232, 3], "mint leaf": [1.0, 1104, 0], "Chartreuse, green": [0.5, 195, 3], "aromatic bitters": [0.5, 22, 1], "egg white": [0.5, 475, 0], "monastic liqueur": [0.5, 469, 3], "grapefruit juice": [0.5, 316, 2], "Pernod": [0.5, 219, 3]};
+var flavorAffinities = {"clove": [0.3333333333333333, 113, 2], "mint": [0.3333333333333333, 87, 1], "lemon": [0.16666666666666666, 28, 5], "alcohol": [0.3333333333333333, 198, 0], "citrus": [0.5, 24, 5], "sweet": [1.0, 209, 0], "sour": [0.5, 208, 0], "anise": [0.6666666666666666, 104, 2], "peppermint": [0.3333333333333333, 88, 1], "chocolate": [0.3333333333333333, 111, 4], "lime": [0.16666666666666666, 29, 5], "nutty": [0.3333333333333333, 137, 4], "fruit": [0.5, 1, 5], "cinnamon": [0.3333333333333333, 112, 2], "lemon essence": [0.16666666666666666, 62, 0], "herbal": [1.0, 78, 1], "sassafras": [0.16666666666666666, 132, 2], "grapefruit": [0.16666666666666666, 26, 5], "bitter": [0.3333333333333333, 200, 0], "spearmint": [0.3333333333333333, 89, 1], "spice": [0.8333333333333334, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 September 15 10:58AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -180,6 +185,7 @@ var boundsNE= { x:-6.06, y:55.7};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

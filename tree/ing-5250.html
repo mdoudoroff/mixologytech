@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-61.8, y:-21.37};
 var boundsNE= { x:55.85, y:42.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 11:21AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"coffee-flavored liqueur": [0.25, 233, 3], "soda water": [0.25, 1693, 2], "aromatic bitters": [0.25, 22, 1], "Appleton Estate Reserve": [0.25, 1506, 5], "cream": [0.25, 305, 2], "Angostura bitters": [0.25, 19, 1], "pineapple juice": [0.25, 350, 2], "mezcal": [0.25, 3, 4], "Wray & Nephew White Overproof Rum": [0.25, 1361, 5], "42 Below Kiwifruit": [0.25, 3763, 4], "Illy Illyquore": [0.25, 4139, 3], "lime juice": [1.0, 328, 2], "ginger beer": [0.25, 313, 2], "El Dorado 15 Year Special Reserve": [0.25, 2791, 5], "rum, Jamaican": [0.75, 405, 5], "orgeat": [0.5, 342, 2], "Appleton V/X": [0.25, 1287, 5], "egg white": [0.25, 475, 0], "cucumber slice": [0.25, 102, 0], "Sombra Blanco": [0.25, 2950, 4], "agave syrup": [0.25, 1338, 2], "rum, Demerara": [0.25, 401, 5], "orange juice": [0.25, 340, 2], "vodka, flavored": [0.25, 268, 4], "simple syrup": [0.5, 363, 2]};
+var flavorAffinities = {"sweet": [0.7777777777777778, 209, 0], "almond": [0.2222222222222222, 138, 4], "ginger": [0.1111111111111111, 118, 2], "cream": [0.1111111111111111, 179, 0], "molasses": [0.2222222222222222, 227, 0], "alcohol": [0.2222222222222222, 198, 0], "anise": [0.2222222222222222, 104, 2], "sparkling": [0.2222222222222222, 234, 0], "tropical fruit": [0.1111111111111111, 247, 5], "nutty": [0.4444444444444444, 137, 4], "agave": [0.2222222222222222, 166, 1], "herbal": [0.4444444444444444, 78, 1], "lime": [0.4444444444444444, 29, 5], "bitter": [0.2222222222222222, 200, 0], "kiwi": [0.1111111111111111, 40, 5], "coffee": [0.2222222222222222, 141, 4], "rum": [0.8888888888888888, 156, 0], "citrus": [0.7777777777777778, 24, 5], "marzipan": [0.2222222222222222, 144, 4], "clove": [0.2222222222222222, 113, 2], "chocolate": [0.2222222222222222, 111, 4], "orange": [0.1111111111111111, 30, 5], "fruit": [1.0, 1, 5], "cucumber": [0.1111111111111111, 174, 1], "vegetal": [0.4444444444444444, 163, 1], "spice": [0.3333333333333333, 102, 2], "smoky": [0.2222222222222222, 206, 0], "pungent": [0.6666666666666666, 204, 0], "sour": [0.5555555555555556, 208, 0], "cinnamon": [0.2222222222222222, 112, 2], "pineapple": [0.1111111111111111, 50, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 11:21AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:55.85, y:42.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

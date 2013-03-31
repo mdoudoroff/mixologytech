@@ -151,7 +151,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 April 18 03:04PM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Violet petal flavored liqueur": [0.5, 1042, 3], "cherry, Maraschino": [0.5, 96, 0], "orange wheel": [0.5, 1070, 0], "Gordon\u2019s Gin": [0.5, 262, 4], "orange juice": [0.5, 340, 2], "rum": [0.5, 396, 5], "quinquina": [0.5, 446, 2], "Cointreau": [0.5, 152, 3], "Forbidden Fruit": [0.5, 160, 3], "triple sec": [0.5, 185, 3], "liqueurs, fruit-flavored": [0.5, 1008, 3], "Cr\u00e8me Yvette": [0.5, 133, 3], "Calvados": [0.5, 61, 5], "apricot liqueur": [0.5, 138, 3], "gin": [1.0, 556, 4], "Dubonnet": [0.5, 437, 2], "gin, London dry": [1.0, 257, 4]};
+var flavorAffinities = {"armagnac": [0.09090909090909091, 150, 0], "apple": [0.09090909090909091, 2, 5], "sweet": [0.7272727272727273, 209, 0], "almond": [0.09090909090909091, 138, 4], "honey": [0.09090909090909091, 222, 0], "quinine": [0.18181818181818182, 90, 1], "violet": [0.18181818181818182, 77, 3], "acid": [0.18181818181818182, 197, 0], "alcohol": [0.6363636363636364, 198, 0], "cherry": [0.09090909090909091, 10, 5], "nutty": [0.09090909090909091, 137, 4], "wood": [0.09090909090909091, 239, 0], "herbal": [0.6363636363636364, 78, 1], "juniper": [0.45454545454545453, 121, 2], "rum": [0.09090909090909091, 156, 0], "citrus": [0.45454545454545453, 24, 5], "orange": [0.36363636363636365, 30, 5], "brandy": [0.18181818181818182, 152, 0], "fruit": [1.0, 1, 5], "floral": [0.6363636363636364, 67, 3], "spice": [0.45454545454545453, 102, 2], "apricot": [0.09090909090909091, 3, 5], "sour": [0.18181818181818182, 208, 0], "berries": [0.09090909090909091, 5, 5], "wine": [0.18181818181818182, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 April 18 03:04PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -167,6 +172,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

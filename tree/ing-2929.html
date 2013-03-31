@@ -156,7 +156,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-61.8, y:-21.37};
 var boundsNE= { x:55.85, y:42.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-5255.html">Christian Drouin Pommeau</a> </li><li class="stub"><a href="ing-2930.html">Pommeau de Normandie Famile L. Dupont</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 August 30 06:22PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-5255.html">Christian Drouin Pommeau</a> </li><li class="stub"><a href="ing-2930.html">Pommeau de Normandie Famile L. Dupont</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"pimento dram": [1.0, 220, 3], "maple syrup": [1.0, 333, 2], "apple cider": [1.0, 273, 2], "cinnamon stick": [1.0, 1160, 0], "Chivas Regal 12 Year Old": [1.0, 2093, 5], "scotch whisky, blended": [1.0, 482, 5], "St. Elizabeth Allspice Dram": [1.0, 1485, 3]};
+var flavorAffinities = {"wood": [0.6666666666666666, 239, 0], "allspice": [0.6666666666666666, 103, 2], "sweet": [1.0, 209, 0], "smoky": [0.6666666666666666, 206, 0], "oak": [0.6666666666666666, 240, 0], "whiskey": [0.6666666666666666, 161, 0], "fruit": [0.3333333333333333, 1, 5], "grain": [0.6666666666666666, 189, 0], "cinnamon": [0.3333333333333333, 112, 2], "tannin": [0.6666666666666666, 210, 0], "spice": [1.0, 102, 2], "scotch": [0.6666666666666666, 158, 0], "maple": [0.3333333333333333, 225, 0], "apple": [0.3333333333333333, 2, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 August 30 06:22PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -172,6 +177,7 @@ var boundsNE= { x:55.85, y:42.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

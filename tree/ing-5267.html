@@ -158,7 +158,12 @@ var activeMapRegions = ["New York"];
 var boundsSW = { x:-79.76, y:40.52};
 var boundsNE= { x:-71.9, y:45.01};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 26 05:15PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"maple syrup": [1.0, 333, 2], "Rittenhouse 100-proof Bonded Rye": [1.0, 1291, 5], "nutmeg": [1.0, 338, 0], "rye whiskey": [1.0, 421, 5], "egg (raw)": [1.0, 308, 0], "Laird\u2019s 100-Proof Bonded Apple Brandy": [1.0, 1323, 5], "apple brandy, American": [1.0, 56, 5]};
+var flavorAffinities = {"wood": [1.0, 239, 0], "apple": [0.5, 2, 5], "sweet": [0.25, 209, 0], "rye": [0.5, 194, 0], "oak": [0.5, 240, 0], "whiskey": [1.0, 161, 0], "brandy": [0.5, 152, 0], "fruit": [0.5, 1, 5], "grain": [0.5, 189, 0], "nutmeg": [0.25, 126, 2], "tannin": [0.5, 210, 0], "maple": [0.25, 225, 0], "spice": [0.25, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 26 05:15PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:-71.9, y:45.01};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

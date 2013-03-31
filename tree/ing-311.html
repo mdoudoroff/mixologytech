@@ -153,7 +153,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"cinnamon stick": [0.25, 1160, 0], "ale": [0.5, 9, 2], "Cognac": [0.75, 63, 5], "brown sugar": [0.75, 281, 0], "egg (raw)": [0.5, 308, 0], "Anis del Mono": [0.5, 188, 3], "cream": [0.25, 305, 2], "clove": [0.25, 293, 0], "anisette": [0.5, 189, 3], "sugar": [0.25, 370, 0], "Madeira": [0.25, 440, 2], "syrup": [0.25, 372, 2], "brandies": [0.25, 1046, 5], "Scotch whisky": [0.25, 422, 5], "rum": [0.25, 396, 5], "mace": [0.25, 1247, 0], "sherry": [0.25, 1028, 2], "egg white": [0.25, 475, 0], "gin, London dry": [0.25, 257, 4], "vermouth, red": [0.25, 453, 2], "lemon twist": [0.25, 1058, 0], "Scotch ale": [0.25, 1235, 2], "egg yolk": [0.75, 476, 0], "nutmeg": [1.0, 338, 0], "cinnamon": [0.25, 291, 0], "Port": [0.25, 442, 2]};
+var flavorAffinities = {"sweet": [0.6875, 209, 0], "sparkling": [0.1875, 234, 0], "yeast": [0.1875, 243, 0], "acid": [0.25, 197, 0], "cream": [0.0625, 179, 0], "clove": [0.0625, 113, 2], "lemon": [0.0625, 28, 5], "alcohol": [0.0625, 198, 0], "hops": [0.1875, 84, 1], "anise": [0.25, 104, 2], "oak": [0.0625, 240, 0], "fruit": [0.3125, 1, 5], "wood": [0.25, 239, 0], "herbal": [0.3125, 78, 1], "nutmeg": [0.3125, 126, 2], "lemon essence": [0.0625, 62, 0], "juniper": [0.0625, 121, 2], "rum": [0.0625, 156, 0], "citrus": [0.0625, 24, 5], "peat": [0.0625, 231, 0], "brandy": [0.1875, 152, 0], "molasses": [0.1875, 227, 0], "floral": [0.0625, 67, 3], "spice": [1.0, 102, 2], "smoky": [0.125, 206, 0], "mace": [0.0625, 125, 2], "whiskey": [0.0625, 161, 0], "sour": [0.0625, 208, 0], "grain": [0.25, 189, 0], "cinnamon": [0.125, 112, 2], "tannin": [0.0625, 210, 0], "scotch": [0.0625, 158, 0], "wine": [0.1875, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -169,6 +174,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

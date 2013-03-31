@@ -162,7 +162,12 @@ var boundsNE= { x:-28.88, y:5.24};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>New York</td><td>1000 ml</td><td><abbr title="United States dollar">USD</abbr> $26.0</td><td data-currency="USD" data-rlow="26.0" data-rhigh="26.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 08:28AM </small></div></div> 
+<tr><td>New York</td><td>1000 ml</td><td><abbr title="United States dollar">USD</abbr> $26.0</td><td data-currency="USD" data-rlow="26.0" data-rhigh="26.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"pimento dram": [0.5, 220, 3], "lime juice": [1.0, 328, 2], "spring water (effervescent)": [0.5, 1119, 2], "sherry, Pedro Xim\u00e9nez": [0.5, 1283, 2], "Lillet Blanc": [0.5, 480, 2], "San Pellegrino": [0.5, 1529, 2], "quinquina": [0.5, 446, 2], "grapefruit": [0.5, 1033, 0], "nutmeg": [0.5, 338, 0], "Cl\u00e9ment VSOP": [0.5, 1400, 5], "rum, aged Martinique": [0.5, 1426, 5], "St. Elizabeth Allspice Dram": [0.5, 1485, 3], "Lustau Pedro Xim\u00e9nez San Emilio": [0.5, 2926, 2]};
+var flavorAffinities = {"allspice": [0.3333333333333333, 103, 2], "quinine": [0.3333333333333333, 90, 1], "rum": [0.3333333333333333, 156, 0], "citrus": [0.5, 24, 5], "sweet": [0.3333333333333333, 209, 0], "sour": [0.5, 208, 0], "lime": [0.3333333333333333, 29, 5], "orange": [0.16666666666666666, 30, 5], "fruit": [1.0, 1, 5], "nutmeg": [0.16666666666666666, 126, 2], "sugarcane juice": [0.3333333333333333, 178, 1], "wine": [0.3333333333333333, 162, 0], "herbal": [0.3333333333333333, 78, 1], "vegetal": [0.3333333333333333, 163, 1], "acid": [0.6666666666666666, 197, 0], "spice": [0.5, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 08:28AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -178,6 +183,7 @@ var boundsNE= { x:-28.88, y:5.24};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

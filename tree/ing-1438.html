@@ -158,7 +158,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-179.14, y:18.91};
 var boundsNE= { x:179.78, y:71.41};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-5066.html">B.G. Reynolds’ Don’s Mix</a> </li><li class="stub"><a href="ing-3823.html">Trader Tiki’s Don’s Mix</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-5066.html">B.G. Reynolds’ Don’s Mix</a> </li><li class="stub"><a href="ing-3823.html">Trader Tiki’s Don’s Mix</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [1.0, 19, 1], "lime juice": [1.0, 328, 2], "rum, Demerara": [1.0, 401, 5], "absinthe": [1.0, 15, 4], "rum": [1.0, 396, 5], "grenadine": [1.0, 317, 2], "Bacardi 8 A\u00f1os": [1.0, 603, 5], "\u00c9mile Pernot Vieux Pontarlier": [1.0, 3098, 4], "rum, Jamaican": [1.0, 405, 5], "mint sprig": [1.0, 1105, 0], "Lemon Hart 151-proof Demerara Rum": [1.0, 1428, 5], "rum, molasses-based": [1.0, 2469, 5], "aromatic bitters": [1.0, 22, 1], "falernum": [1.0, 309, 2], "Appleton Estate Reserve": [1.0, 1506, 5], "John D. Taylor\u2019s Velvet Falernum": [1.0, 1337, 2]};
+var flavorAffinities = {"allspice": [0.2857142857142857, 103, 2], "sweet": [0.42857142857142855, 209, 0], "almond": [0.2857142857142857, 138, 4], "ginger": [0.2857142857142857, 118, 2], "mint": [0.14285714285714285, 87, 1], "lime": [0.42857142857142855, 29, 5], "clove": [0.5714285714285714, 113, 2], "alcohol": [0.2857142857142857, 198, 0], "anise": [0.5714285714285714, 104, 2], "fruit": [0.5714285714285714, 1, 5], "nutty": [0.2857142857142857, 137, 4], "herbal": [0.7142857142857143, 78, 1], "bitter": [0.5714285714285714, 200, 0], "rum": [1.0, 156, 0], "citrus": [0.42857142857142855, 24, 5], "pomegranate": [0.14285714285714285, 52, 5], "molasses": [0.2857142857142857, 227, 0], "spearmint": [0.14285714285714285, 89, 1], "spice": [0.8571428571428571, 102, 2], "vanilla": [0.2857142857142857, 136, 2], "pungent": [0.2857142857142857, 204, 0], "peppermint": [0.14285714285714285, 88, 1], "sour": [0.14285714285714285, 208, 0], "cinnamon": [0.2857142857142857, 112, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

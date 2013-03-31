@@ -159,7 +159,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-84.95, y:19.83};
 var boundsNE= { x:-74.13, y:23.27};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-2204.html">Havana Club Añejo 3 Años</a></li><li><a href="ing-3154.html">Havana Club Añejo Blanco</a></li><li><a href="ing-2971.html">Havana Club Añejo Especial</a></li><li><a href="ing-2205.html">Havana Club Añejo Reserva</a></li><li><a href="ing-3176.html">Havana Club Selección de Maestros</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 08:22AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-2204.html">Havana Club Añejo 3 Años</a></li><li><a href="ing-3154.html">Havana Club Añejo Blanco</a></li><li><a href="ing-2971.html">Havana Club Añejo Especial</a></li><li><a href="ing-2205.html">Havana Club Añejo Reserva</a></li><li><a href="ing-3176.html">Havana Club Selección de Maestros</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"apple cider": [1.0, 273, 2], "syrup": [1.0, 372, 2], "lemon juice": [1.0, 324, 2]};
+var flavorAffinities = {"lemon": [0.5, 28, 5], "apple": [0.5, 2, 5], "citrus": [0.5, 24, 5], "sweet": [0.5, 209, 0], "fruit": [1.0, 1, 5], "sour": [0.5, 208, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 08:22AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -175,6 +180,7 @@ var boundsNE= { x:-74.13, y:23.27};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

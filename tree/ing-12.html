@@ -156,7 +156,12 @@ var activeMapRegions = ["England"];
 var boundsSW = { x:-179.14, y:18.91};
 var boundsNE= { x:179.78, y:54.19};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="generic"><a href="ing-1151.html">Irish porter</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="generic"><a href="ing-1151.html">Irish porter</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"brandies": [0.2857142857142857, 1046, 5], "rum": [0.14285714285714285, 396, 5], "ale": [0.2857142857142857, 9, 2], "gin": [0.14285714285714285, 556, 4], "ginger": [0.14285714285714285, 1341, 0], "sugar": [0.8571428571428571, 370, 0], "water": [0.2857142857142857, 383, 2], "lemon twist": [0.2857142857142857, 1058, 0], "nutmeg": [1.0, 338, 0], "brown sugar": [0.14285714285714285, 281, 0], "boiling water": [0.14285714285714285, 1219, 2], "egg (raw)": [0.14285714285714285, 308, 0], "orange": [0.14285714285714285, 118, 0], "soda water": [0.2857142857142857, 1693, 2], "Champagne": [0.14285714285714285, 432, 2], "syrup": [0.14285714285714285, 372, 2]};
+var flavorAffinities = {"grain": [0.2222222222222222, 189, 0], "lemon": [0.2222222222222222, 28, 5], "juniper": [0.1111111111111111, 121, 2], "ginger": [0.1111111111111111, 118, 2], "rum": [0.1111111111111111, 156, 0], "hops": [0.2222222222222222, 84, 1], "sweet": [0.8888888888888888, 209, 0], "sour": [0.3333333333333333, 208, 0], "fruit": [0.4444444444444444, 1, 5], "citrus": [0.3333333333333333, 24, 5], "floral": [0.1111111111111111, 67, 3], "alcohol": [0.1111111111111111, 198, 0], "molasses": [0.1111111111111111, 227, 0], "nutmeg": [0.7777777777777778, 126, 2], "sparkling": [0.4444444444444444, 234, 0], "orange": [0.1111111111111111, 30, 5], "herbal": [0.3333333333333333, 78, 1], "yeast": [0.2222222222222222, 243, 0], "acid": [0.1111111111111111, 197, 0], "lemon essence": [0.2222222222222222, 62, 0], "spice": [1.0, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -172,6 +177,7 @@ var boundsNE= { x:179.78, y:54.19};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

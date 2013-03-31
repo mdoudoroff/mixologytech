@@ -159,7 +159,12 @@ var activeMapRegions = ["Basque Country"];
 var boundsSW = { x:-61.8, y:-21.37};
 var boundsNE= { x:55.85, y:43.4};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1118.html">Izarra, green</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 November 01 04:47PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1118.html">Izarra, green</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vodka": [0.2, 267, 4], "orange-flavored liqueur with an aged brandy base": [0.2, 1730, 3], "rum": [0.2, 396, 5], "quinquina": [0.2, 446, 2], "Armagnac": [0.6, 58, 5], "Calvados": [0.2, 61, 5], "lemon juice": [0.2, 324, 2], "Cognac": [0.2, 63, 5], "gin": [1.0, 556, 4], "applejack": [0.2, 57, 5], "Grand Marnier": [0.2, 163, 3], "Dubonnet": [0.2, 437, 2], "vermouth, dry": [0.2, 452, 2]};
+var flavorAffinities = {"wood": [0.75, 239, 0], "orange": [0.25, 30, 5], "lemon": [0.125, 28, 5], "armagnac": [0.125, 150, 0], "alcohol": [1.0, 198, 0], "juniper": [0.625, 121, 2], "rum": [0.125, 156, 0], "citrus": [0.375, 24, 5], "sweet": [0.25, 209, 0], "sour": [0.125, 208, 0], "acid": [0.375, 197, 0], "whiskey": [0.125, 161, 0], "brandy": [1.0, 152, 0], "fruit": [1.0, 1, 5], "quinine": [0.25, 90, 1], "wine": [0.375, 162, 0], "floral": [0.625, 67, 3], "herbal": [1.0, 78, 1], "spice": [0.625, 102, 2], "apple": [0.25, 2, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 November 01 04:47PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -175,6 +180,7 @@ var boundsNE= { x:55.85, y:43.4};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

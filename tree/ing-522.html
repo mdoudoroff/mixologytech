@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Lustau East India Solera Sherry": [1.0, 1659, 2], "orange wheel": [1.0, 1070, 0], "lemon": [0.5, 111, 0], "ginger beer": [0.5, 313, 2], "orange juice": [0.5, 340, 2], "rum": [0.5, 396, 5], "Beefeater London Dry Gin": [1.0, 605, 4], "lemon wedge": [1.0, 1060, 0], "lemon twist": [0.5, 1058, 0], "pineapple spear": [0.5, 1214, 0], "sugar": [1.0, 370, 0], "water": [0.5, 383, 2], "sherry, oloroso": [0.5, 2923, 2], "lemon juice": [0.5, 324, 2], "berry": [0.5, 1124, 0], "cranberry, whole": [1.0, 522, 0], "gin": [0.5, 556, 4], "simple syrup": [1.0, 363, 2], "ginger ale": [0.5, 312, 2]};
+var flavorAffinities = {"orange": [0.21428571428571427, 30, 5], "berries": [0.14285714285714285, 5, 5], "lemon": [0.35714285714285715, 28, 5], "alcohol": [0.21428571428571427, 198, 0], "juniper": [0.21428571428571427, 121, 2], "rum": [0.07142857142857142, 156, 0], "citrus": [0.5714285714285714, 24, 5], "sweet": [0.2857142857142857, 209, 0], "sour": [0.5714285714285714, 208, 0], "pineapple": [0.07142857142857142, 50, 5], "sparkling": [0.14285714285714285, 234, 0], "tropical fruit": [0.07142857142857142, 247, 5], "herbal": [0.21428571428571427, 78, 1], "fruit": [1.0, 1, 5], "ginger": [0.14285714285714285, 118, 2], "cranberry": [0.14285714285714285, 11, 5], "floral": [0.21428571428571427, 67, 3], "acid": [0.21428571428571427, 197, 0], "lemon essence": [0.07142857142857142, 62, 0], "spice": [0.35714285714285715, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

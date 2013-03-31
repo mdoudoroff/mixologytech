@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:122.94, y:24.21};
 var boundsNE= { x:153.99, y:45.46};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"elderflower liqueur": [0.5, 1257, 3], "aperitif/digestif bitters": [0.5, 21, 3], "Cynar": [0.5, 1294, 3], "B\u00e4renj\u00e4ger Honey Liqueur": [0.5, 1419, 3], "quinquina": [0.5, 446, 2], "lemon twist": [1.0, 1058, 0], "monastic liqueur": [0.5, 469, 3], "St. Germain": [1.0, 1258, 3], "honey-flavored liqueur": [0.5, 1418, 3], "Dubonnet": [0.5, 437, 2], "Chartreuse, yellow": [0.5, 527, 3]};
+var flavorAffinities = {"acid": [0.2222222222222222, 197, 0], "lemon": [0.2222222222222222, 28, 5], "citrus": [0.2222222222222222, 24, 5], "sweet": [1.0, 209, 0], "sour": [0.2222222222222222, 208, 0], "honey": [0.2222222222222222, 222, 0], "herbal": [0.6666666666666666, 78, 1], "fruit": [0.4444444444444444, 1, 5], "quinine": [0.2222222222222222, 90, 1], "floral": [0.5555555555555556, 67, 3], "medicinal": [0.2222222222222222, 203, 0], "elderflower": [0.3333333333333333, 70, 3], "wine": [0.2222222222222222, 162, 0], "bitter": [0.2222222222222222, 200, 0], "lemon essence": [0.2222222222222222, 62, 0], "spice": [0.3333333333333333, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:153.99, y:45.46};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

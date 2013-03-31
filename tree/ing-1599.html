@@ -153,7 +153,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"lime juice": [1.0, 328, 2], "Partida Blanco": [0.5, 2952, 4], "Gran Centenario Plata": [0.5, 1446, 4], "strawberry": [1.0, 545, 0], "cane syrup (filtered)": [0.5, 283, 2], "shiso leaf": [0.5, 5268, 0], "monastic liqueur": [0.5, 469, 3], "pomegranate syrup": [0.5, 1536, 2], "lemon juice": [0.5, 324, 2], "Chartreuse, green": [0.5, 195, 3], "agave syrup": [0.5, 1338, 2], "tequila blanco (100%)": [1.0, 8, 4], "gin": [1.0, 556, 4], "Aviation Gin": [0.5, 1489, 4], "Al Wadi Pomegranate Molasses": [0.5, 5238, 2], "grapefruit juice": [0.5, 316, 2], "Tanqueray London Dry Gin": [0.5, 1185, 4]};
+var flavorAffinities = {"grapefruit": [0.09090909090909091, 26, 5], "lemon": [0.09090909090909091, 28, 5], "alcohol": [0.36363636363636365, 198, 0], "smoky": [0.36363636363636365, 206, 0], "strawberry": [0.18181818181818182, 22, 5], "citrus": [0.36363636363636365, 24, 5], "sweet": [0.5454545454545454, 209, 0], "pomegranate": [0.18181818181818182, 52, 5], "sour": [0.5454545454545454, 208, 0], "lime": [0.18181818181818182, 29, 5], "floral": [0.36363636363636365, 67, 3], "juniper": [0.36363636363636365, 121, 2], "fruit": [0.7272727272727273, 1, 5], "agave": [0.36363636363636365, 166, 1], "herbal": [1.0, 78, 1], "vegetal": [0.45454545454545453, 163, 1], "berries": [0.18181818181818182, 5, 5], "shiso": [0.09090909090909091, 96, 1], "spice": [0.45454545454545453, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -169,6 +174,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

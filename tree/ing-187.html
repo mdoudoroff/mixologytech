@@ -150,14 +150,19 @@
 var photoList = ["3266-20125201-125200.jpg"]
 </script></div></div></div><div class="row"><div class="span6"><div id="details"><div id="syn" class="local"><h3>synonyms</h3><p>advokaat, avocat, advocat, advokat</p>
 </div><div id="novelDescription" class="local"><h3>description</h3><p>Advocaat is generic for Dutch/Belgian liqueur of egg yolk, spices, sugar, and either brandy or neutral spirits, depending on the brand. The most famed brand is Warnink’s.</p>
-</div><dl><dt>flavors</dt><dd><a href="flavor-sweet.html">sweet</a>, <a href="flavor-egg nog.html">egg nog</a>, <a href="flavor-cream.html">cream</a></dd><dt>substitute</dt><dd>Rompope, Vov</dd><dt>places (country/region of production)</dt><dd><a href="place-belgium.html">Belgium</a>, <a href="place-australia.html">Australia</a>, <a href="place-netherlands.html">Netherlands</a></dd></dl>
+</div><dl><dt>flavors</dt><dd><a href="flavor-sweet.html">sweet</a>, <a href="flavor-egg nog.html">egg nog</a>, <a href="flavor-cream.html">cream</a></dd><dt>substitute</dt><dd>Rompope, Vov</dd><dt>places (country/region of production)</dt><dd><a href="place-belgium.html">Belgium</a>, <a href="place-netherlands.html">Netherlands</a>, <a href="place-australia.html">Australia</a></dd></dl>
 <script>
 var originAggregate = {"Belgium": 0.67, "Netherlands": 0.33, "Australia": 0.67};
 var activeMapRegions = [];
 var boundsSW = { x:-68.37, y:-54.75};
 var boundsNE= { x:159.11, y:53.58};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-5737.html">Advocat FX de Beukelaer</a> </li><li class="stub"><a href="ing-3266.html">Bols Advocaat</a> </li><li class="stub"><a href="ing-5752.html">Filliers Advokaat</a> </li><li class="stub"><a href="ing-4607.html">VOK Advokaat</a> </li><li class="stub"><a href="ing-4612.html">VOK Cherry Advokaat</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 05 02:02PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-5737.html">Advocat FX de Beukelaer</a> </li><li class="stub"><a href="ing-3266.html">Bols Advocaat</a> </li><li class="stub"><a href="ing-5752.html">Filliers Advokaat</a> </li><li class="stub"><a href="ing-4607.html">VOK Advokaat</a> </li><li class="stub"><a href="ing-4612.html">VOK Cherry Advokaat</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"rum": [1.0, 396, 5], "milk": [0.5, 334, 2], "cinnamon": [0.5, 291, 0], "orange juice": [0.5, 340, 2], "sugar": [0.5, 370, 0]};
+var flavorAffinities = {"rum": [1.0, 156, 0], "citrus": [0.5, 24, 5], "sweet": [0.5, 209, 0], "fruit": [0.5, 1, 5], "sour": [0.5, 208, 0], "cinnamon": [0.5, 112, 2], "orange": [0.5, 30, 5], "spice": [0.5, 102, 2], "milk": [0.5, 183, 0], "cream": [0.5, 179, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 05 02:02PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:159.11, y:53.58};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

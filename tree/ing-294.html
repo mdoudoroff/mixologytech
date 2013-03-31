@@ -159,7 +159,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-179.14, y:18.91};
 var boundsNE= { x:179.78, y:71.41};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 11:28AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Bacardi, Carta de Oro": [0.3333333333333333, 1223, 5], "lime twist": [0.3333333333333333, 1063, 0], "lime wedge": [0.3333333333333333, 1064, 0], "Tennessee whiskey": [0.3333333333333333, 425, 5], "Flor de Ca\u00f1a Extra Dry 4": [0.3333333333333333, 2606, 5], "sloe gin": [0.3333333333333333, 181, 3], "rum, molasses-based": [0.3333333333333333, 2469, 5], "lime shell": [0.3333333333333333, 1062, 0], "Bourbon whiskey": [0.3333333333333333, 415, 5], "Jack Daniels Tennessee Whiskey": [0.3333333333333333, 504, 5], "rum, Cuban": [0.6666666666666666, 1108, 5], "lime": [1.0, 112, 0]};
+var flavorAffinities = {"wood": [0.42857142857142855, 239, 0], "sloe": [0.14285714285714285, 21, 5], "citrus": [0.8571428571428571, 24, 5], "sweet": [0.14285714285714285, 209, 0], "plum": [0.14285714285714285, 51, 5], "sour": [0.8571428571428571, 208, 0], "oak": [0.42857142857142855, 240, 0], "rum": [0.7142857142857143, 156, 0], "whiskey": [0.42857142857142855, 161, 0], "fruit": [1.0, 1, 5], "grain": [0.42857142857142855, 189, 0], "lime essence": [0.2857142857142857, 63, 0], "tannin": [0.42857142857142855, 210, 0], "berries": [0.14285714285714285, 5, 5], "corn": [0.42857142857142855, 190, 0], "lime": [0.8571428571428571, 29, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 11:28AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -175,6 +180,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

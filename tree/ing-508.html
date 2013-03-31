@@ -153,7 +153,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Zwack Unicum": [0.5, 46, 3], "lavender": [0.5, 1396, 0], "lemon juice": [0.5, 324, 2], "Cognac": [1.0, 63, 5], "gin, London dry": [0.5, 257, 4], "Champagne": [0.5, 432, 2], "cream": [0.5, 305, 2], "Violet petal flavored liqueur": [0.5, 1042, 3], "pineapple juice": [0.5, 350, 2], "aperitif/digestif bitters": [0.5, 21, 3], "honey syrup": [0.5, 1441, 2], "plum eau de vie": [0.5, 79, 5], "Cr\u00e8me Yvette": [0.5, 133, 3], "blueberry": [0.5, 1189, 0], "lime juice": [1.0, 328, 2], "Clear Creek Slivovitz Plum Brandy": [0.5, 5253, 5], "Mo\u00ebt & Chandon Imp\u00e9rial": [1.0, 1556, 2], "Okolehao": [0.5, 394, 3], "cr\u00e8me de violette": [1.0, 132, 3], "egg white": [0.5, 475, 0], "Hine Rare VSOP": [0.5, 2616, 5], "liqueurs, spirit-flavored": [0.5, 1011, 3]};
+var flavorAffinities = {"sweet": [0.9, 209, 0], "lavender": [0.1, 74, 3], "honey": [0.1, 222, 0], "violet": [0.4, 77, 3], "acid": [0.3, 197, 0], "lime": [0.2, 29, 5], "lemon": [0.1, 28, 5], "alcohol": [0.3, 198, 0], "tropical fruit": [0.1, 247, 5], "wood": [0.3, 239, 0], "herbal": [0.3, 78, 1], "cream": [0.1, 179, 0], "bitter": [0.2, 200, 0], "blueberry": [0.1, 9, 5], "juniper": [0.1, 121, 2], "citrus": [0.3, 24, 5], "brandy": [0.3, 152, 0], "fruit": [1.0, 1, 5], "floral": [0.6, 67, 3], "spice": [0.1, 102, 2], "plum": [0.2, 51, 5], "sour": [0.3, 208, 0], "pineapple": [0.1, 50, 5], "medicinal": [0.2, 203, 0], "berries": [0.1, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -169,6 +174,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

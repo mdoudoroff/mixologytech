@@ -153,7 +153,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 08 09:08AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Ardbeg 10 Years Old": [1.0, 2032, 5], "elderflower liqueur": [1.0, 1257, 3], "honey syrup": [1.0, 1441, 2], "pisco": [1.0, 78, 5], "scotch whisky, single-malt": [1.0, 424, 5], "Compass Box Asyla": [1.0, 2811, 5], "St. Germain": [1.0, 1258, 3], "scotch whisky, blended": [1.0, 482, 5], "lemon wedge studded with cloves": [1.0, 5172, 0]};
+var flavorAffinities = {"wood": [1.0, 239, 0], "lemon": [0.25, 28, 5], "alcohol": [0.25, 198, 0], "tannin": [1.0, 210, 0], "citrus": [0.25, 24, 5], "sweet": [0.75, 209, 0], "peat": [0.5, 231, 0], "sour": [0.25, 208, 0], "oak": [1.0, 240, 0], "honey": [0.25, 222, 0], "whiskey": [1.0, 161, 0], "fruit": [0.5, 1, 5], "grain": [1.0, 189, 0], "floral": [0.5, 67, 3], "elderflower": [0.5, 70, 3], "scotch": [1.0, 158, 0], "smoky": [1.0, 206, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 08 09:08AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -169,6 +174,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

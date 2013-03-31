@@ -161,7 +161,12 @@ var boundsNE= { x:15.02, y:54.89};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $22.0</td><td data-currency="USD" data-rlow="22.0" data-rhigh="22.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 08:42AM </small></div></div> 
+<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $22.0</td><td data-currency="USD" data-rlow="22.0" data-rhigh="22.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"lime juice": [0.5, 328, 2], "Aviation Gin": [0.5, 1489, 4], "Fever Tree Bitter Lemon Soda": [0.5, 5270, 2], "lemon twist": [0.5, 1058, 0], "Regans\u2019 No. 6 Orange Bitters": [0.5, 1265, 1], "cider": [0.5, 289, 2], "Flor de Ca\u00f1a Extra Dry 4": [0.5, 2606, 5], "lemon juice": [0.5, 324, 2], "orange bitters": [0.5, 37, 1], "Jerry Thomas\u2019 Own Decanter Bitters": [0.5, 1456, 1], "rum, molasses-based": [0.5, 2469, 5], "Bourbon whiskey": [0.5, 415, 5], "gin": [0.5, 556, 4], "simple syrup": [1.0, 363, 2], "grapefruit juice": [0.5, 316, 2], "lemon soda": [0.5, 1161, 2], "Maker\u2019s Mark": [0.5, 1198, 5]};
+var flavorAffinities = {"apple": [0.1111111111111111, 2, 5], "sweet": [0.2222222222222222, 209, 0], "lime": [0.1111111111111111, 29, 5], "clove": [0.3333333333333333, 113, 2], "lemon": [0.4444444444444444, 28, 5], "alcohol": [0.2222222222222222, 198, 0], "anise": [0.3333333333333333, 104, 2], "oak": [0.2222222222222222, 240, 0], "sparkling": [0.2222222222222222, 234, 0], "cardamom": [0.1111111111111111, 108, 2], "grapefruit": [0.1111111111111111, 26, 5], "orange": [0.2222222222222222, 30, 5], "bitter": [0.4444444444444444, 200, 0], "lemon essence": [0.1111111111111111, 62, 0], "juniper": [0.2222222222222222, 121, 2], "rum": [0.2222222222222222, 156, 0], "citrus": [0.8888888888888888, 24, 5], "corn": [0.2222222222222222, 190, 0], "herbal": [0.5555555555555556, 78, 1], "fruit": [1.0, 1, 5], "floral": [0.2222222222222222, 67, 3], "spice": [0.5555555555555556, 102, 2], "wood": [0.2222222222222222, 239, 0], "whiskey": [0.2222222222222222, 161, 0], "sour": [0.5555555555555556, 208, 0], "grain": [0.2222222222222222, 189, 0], "cinnamon": [0.3333333333333333, 112, 2], "tannin": [0.2222222222222222, 210, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 08:42AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -177,6 +182,7 @@ var boundsNE= { x:15.02, y:54.89};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

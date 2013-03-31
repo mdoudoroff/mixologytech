@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [0.3333333333333333, 19, 1], "brandies": [0.6666666666666666, 1046, 5], "clove": [0.3333333333333333, 293, 0], "cinnamon stick": [0.3333333333333333, 1160, 0], "lemon": [1.0, 111, 0], "Scotch whisky": [0.3333333333333333, 422, 5], "rum": [0.6666666666666666, 396, 5], "egg yolk": [0.3333333333333333, 476, 0], "pineapple": [0.3333333333333333, 122, 0], "kirsch": [0.3333333333333333, 69, 5], "coriander seed": [0.3333333333333333, 4907, 0], "sugar": [1.0, 370, 0], "honey": [0.6666666666666666, 321, 2], "rum, Jamaican": [0.6666666666666666, 405, 5], "nutmeg": [0.6666666666666666, 338, 0], "green tea": [0.3333333333333333, 1135, 2], "boiling water": [0.3333333333333333, 1219, 2], "aromatic bitters": [0.3333333333333333, 22, 1], "liqueurs": [0.3333333333333333, 1040, 3], "Batavia arak": [0.3333333333333333, 389, 5]};
+var flavorAffinities = {"tea": [0.14285714285714285, 93, 1], "honey": [0.2857142857142857, 222, 0], "clove": [0.42857142857142855, 113, 2], "lemon": [0.42857142857142855, 28, 5], "alcohol": [0.14285714285714285, 198, 0], "cherry": [0.14285714285714285, 10, 5], "anise": [0.2857142857142857, 104, 2], "oak": [0.14285714285714285, 240, 0], "tropical fruit": [0.14285714285714285, 247, 5], "wood": [0.14285714285714285, 239, 0], "sweet": [0.5714285714285714, 209, 0], "herbal": [0.42857142857142855, 78, 1], "nutmeg": [0.2857142857142857, 126, 2], "bitter": [0.2857142857142857, 200, 0], "rum": [0.7142857142857143, 156, 0], "citrus": [0.42857142857142855, 24, 5], "fruit": [0.7142857142857143, 1, 5], "spice": [1.0, 102, 2], "coriander": [0.14285714285714285, 114, 2], "smoky": [0.2857142857142857, 206, 0], "pungent": [0.2857142857142857, 204, 0], "whiskey": [0.14285714285714285, 161, 0], "sour": [0.42857142857142855, 208, 0], "grain": [0.14285714285714285, 189, 0], "cinnamon": [0.42857142857142855, 112, 2], "pineapple": [0.14285714285714285, 50, 5], "tannin": [0.14285714285714285, 210, 0], "berries": [0.14285714285714285, 5, 5], "scotch": [0.14285714285714285, 158, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

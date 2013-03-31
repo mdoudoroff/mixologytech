@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vodka": [1.0, 267, 4], "Grey Goose vodka": [1.0, 612, 4], "banana slice": [1.0, 1173, 0], "chocolate-flavored liqueur": [1.0, 232, 3], "Godiva White Chocolate Liqueur": [1.0, 1210, 3], "banana liqueur": [1.0, 550, 3], "strawberry syrup": [1.0, 369, 2]};
+var flavorAffinities = {"alcohol": [0.5, 198, 0], "strawberry": [0.25, 22, 5], "sweet": [1.0, 209, 0], "chocolate": [0.5, 111, 4], "tropical fruit": [0.5, 247, 5], "nutty": [0.5, 137, 4], "fruit": [0.75, 1, 5], "berries": [0.25, 5, 5], "banana": [0.5, 4, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

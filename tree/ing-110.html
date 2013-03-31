@@ -154,7 +154,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"lime juice": [1.0, 328, 2], "rum": [1.0, 396, 5], "Peychaud\u2019s Aromatic Cocktail Bitters": [1.0, 41, 1], "rum, Jamaican": [1.0, 405, 5], "apricot eau de vie": [1.0, 1232, 5], "aromatic bitters": [1.0, 22, 1], "cura\u00e7ao": [1.0, 159, 3], "simple syrup": [1.0, 363, 2], "gin, London dry": [1.0, 257, 4], "lime": [1.0, 112, 0]};
+var flavorAffinities = {"clove": [0.4, 113, 2], "berries": [0.2, 5, 5], "alcohol": [0.6, 198, 0], "juniper": [0.2, 121, 2], "rum": [0.4, 156, 0], "citrus": [0.6, 24, 5], "sweet": [0.4, 209, 0], "sour": [0.4, 208, 0], "anise": [0.4, 104, 2], "pungent": [0.2, 204, 0], "apricot": [0.2, 3, 5], "herbal": [0.6, 78, 1], "orange": [0.2, 30, 5], "fruit": [1.0, 1, 5], "cinnamon": [0.4, 112, 2], "cherry": [0.2, 10, 5], "floral": [0.2, 67, 3], "lime": [0.4, 29, 5], "bitter": [0.4, 200, 0], "spice": [0.6, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -170,6 +175,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

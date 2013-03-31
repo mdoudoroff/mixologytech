@@ -158,7 +158,12 @@ var activeMapRegions = [];
 var boundsSW = { x:35.11, y:33.08};
 var boundsNE= { x:36.58, y:33.43};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-5238.html">Al Wadi Pomegranate Molasses</a> </li><li class="stub"><a href="ing-3671.html">Bottle Green Pomegranate & Elderflower Cordial</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-5238.html">Al Wadi Pomegranate Molasses</a> </li><li class="stub"><a href="ing-3671.html">Bottle Green Pomegranate & Elderflower Cordial</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"brandies": [0.3333333333333333, 1046, 5], "lime juice": [0.3333333333333333, 328, 2], "bell pepper": [0.3333333333333333, 1599, 0], "lemon": [0.3333333333333333, 111, 0], "Gran Centenario Plata": [0.3333333333333333, 1446, 4], "orange juice": [1.0, 340, 2], "Rittenhouse 100-proof Bonded Rye": [0.3333333333333333, 1291, 5], "Beefeater London Dry Gin": [0.3333333333333333, 605, 4], "wine, red": [0.3333333333333333, 459, 2], "\u00c9mile Pernot Vieux Pontarlier": [0.3333333333333333, 3098, 4], "strawberry": [0.6666666666666666, 545, 0], "lemon juice": [0.3333333333333333, 324, 2], "rye whiskey": [0.3333333333333333, 421, 5], "tequila blanco (100%)": [0.3333333333333333, 8, 4], "orange": [0.3333333333333333, 118, 0], "gin": [0.3333333333333333, 556, 4], "simple syrup": [0.6666666666666666, 363, 2], "absinthe": [0.3333333333333333, 15, 4]};
+var flavorAffinities = {"bell pepper": [0.1, 168, 1], "anise": [0.2, 104, 2], "sweet": [0.2, 209, 0], "acid": [0.1, 197, 0], "lime": [0.1, 29, 5], "lemon": [0.2, 28, 5], "alcohol": [0.4, 198, 0], "strawberry": [0.2, 22, 5], "rye": [0.2, 194, 0], "oak": [0.2, 240, 0], "agave": [0.2, 166, 1], "herbal": [0.6, 78, 1], "bitter": [0.2, 200, 0], "juniper": [0.2, 121, 2], "citrus": [0.7, 24, 5], "orange": [0.4, 30, 5], "fruit": [1.0, 1, 5], "floral": [0.2, 67, 3], "vegetal": [0.3, 163, 1], "spice": [0.4, 102, 2], "wood": [0.2, 239, 0], "smoky": [0.2, 206, 0], "whiskey": [0.2, 161, 0], "sour": [0.7, 208, 0], "grain": [0.2, 189, 0], "chile pepper": [0.1, 172, 1], "tannin": [0.2, 210, 0], "berries": [0.2, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:36.58, y:33.43};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

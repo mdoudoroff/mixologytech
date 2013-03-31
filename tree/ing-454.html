@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 11 08:55AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"honey": [0.3333333333333333, 321, 2], "fruit, fresh": [0.3333333333333333, 106, 0], "Cognac": [0.3333333333333333, 63, 5], "soda water": [0.6666666666666666, 1693, 2], "egg white": [0.3333333333333333, 475, 0], "cura\u00e7ao": [0.3333333333333333, 159, 3], "Anis del Mono": [0.3333333333333333, 188, 3], "grape": [0.3333333333333333, 109, 0], "sugar": [1.0, 370, 0], "almond, whole": [0.3333333333333333, 521, 0], "orange": [0.3333333333333333, 118, 0], "ginger ale": [0.3333333333333333, 312, 2], "Old Tom gin": [0.3333333333333333, 259, 4], "anisette": [0.3333333333333333, 189, 3], "grenadine": [0.3333333333333333, 317, 2], "lemon wedge": [0.3333333333333333, 1060, 0], "wine, Muscatel": [0.3333333333333333, 458, 2], "water": [0.6666666666666666, 383, 2], "orgeat": [0.3333333333333333, 342, 2], "lemon": [0.3333333333333333, 111, 0], "gin, London dry": [0.3333333333333333, 257, 4], "lemon twist": [1.0, 1058, 0], "egg yolk": [0.3333333333333333, 476, 0], "raisins": [0.3333333333333333, 125, 0], "lemon juice": [0.6666666666666666, 324, 2], "cinnamon": [0.3333333333333333, 291, 0]};
+var flavorAffinities = {"sweet": [0.6428571428571429, 209, 0], "almond": [0.14285714285714285, 138, 4], "ginger": [0.07142857142857142, 118, 2], "honey": [0.07142857142857142, 222, 0], "acid": [0.07142857142857142, 197, 0], "lemon": [0.5, 28, 5], "alcohol": [0.21428571428571427, 198, 0], "anise": [0.14285714285714285, 104, 2], "musty": [0.07142857142857142, 202, 0], "sparkling": [0.21428571428571427, 234, 0], "nutty": [0.14285714285714285, 137, 4], "wood": [0.07142857142857142, 239, 0], "orange": [0.14285714285714285, 30, 5], "lemon essence": [0.21428571428571427, 62, 0], "juniper": [0.14285714285714285, 121, 2], "citrus": [0.7142857142857143, 24, 5], "pomegranate": [0.07142857142857142, 52, 5], "marzipan": [0.07142857142857142, 144, 4], "herbal": [0.14285714285714285, 78, 1], "brandy": [0.07142857142857142, 152, 0], "fruit": [1.0, 1, 5], "floral": [0.14285714285714285, 67, 3], "grape": [0.07142857142857142, 16, 5], "spice": [0.42857142857142855, 102, 2], "raisin": [0.07142857142857142, 55, 5], "sour": [0.5714285714285714, 208, 0], "cinnamon": [0.07142857142857142, 112, 2], "berries": [0.07142857142857142, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 11 08:55AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

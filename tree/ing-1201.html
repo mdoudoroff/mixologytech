@@ -154,7 +154,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"lime juice": [1.0, 328, 2], "aperitif/digestif bitters": [1.0, 21, 3], "orange twist": [1.0, 1068, 0], "tequila reposado (100%)": [1.0, 7, 4], "triple sec": [1.0, 185, 3], "Peychaud\u2019s Aromatic Cocktail Bitters": [1.0, 41, 1], "Partida Reposado Tequila": [1.0, 1319, 4], "tonic water": [1.0, 378, 2], "aromatic bitters": [1.0, 22, 1], "gin": [1.0, 556, 4], "vodka, citrus-flavored": [1.0, 486, 4], "Aperol": [1.0, 1307, 3]};
+var flavorAffinities = {"sweet": [0.375, 209, 0], "quinine": [0.125, 90, 1], "lime": [0.25, 29, 5], "clove": [0.25, 113, 2], "lemon": [0.125, 28, 5], "alcohol": [0.375, 198, 0], "cherry": [0.125, 10, 5], "anise": [0.25, 104, 2], "sparkling": [0.125, 234, 0], "orange essence": [0.125, 65, 0], "agave": [0.25, 166, 1], "herbal": [1.0, 78, 1], "bitter": [0.5, 200, 0], "juniper": [0.125, 121, 2], "citrus": [0.625, 24, 5], "orange": [0.375, 30, 5], "fruit": [0.75, 1, 5], "floral": [0.125, 67, 3], "vegetal": [0.25, 163, 1], "spice": [0.375, 102, 2], "smoky": [0.25, 206, 0], "sour": [0.25, 208, 0], "cinnamon": [0.25, 112, 2], "medicinal": [0.25, 203, 0], "berries": [0.125, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -170,6 +175,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -158,7 +158,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-179.14, y:18.91};
 var boundsNE= { x:179.78, y:71.41};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 11 08:21AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"pineapple juice": [0.5, 350, 2], "absinthe": [0.5, 15, 4], "jasmine tea": [0.5, 1548, 2], "lemon juice": [0.5, 324, 2], "St. George Absinthe": [0.5, 1476, 4], "Krogstad Aquavit": [0.5, 1632, 4], "cucumber slice": [1.0, 102, 0], "aquavit": [0.5, 254, 4]};
+var flavorAffinities = {"caraway": [0.5, 107, 2], "star anise": [0.25, 135, 2], "alcohol": [1.0, 198, 0], "citrus": [0.25, 24, 5], "tea": [0.25, 93, 1], "sour": [0.25, 208, 0], "anise": [0.5, 104, 2], "jasmine": [0.25, 73, 3], "tropical fruit": [0.25, 247, 5], "herbal": [0.75, 78, 1], "fruit": [0.5, 1, 5], "cucumber": [0.5, 174, 1], "pineapple": [0.25, 50, 5], "floral": [0.25, 67, 3], "vegetal": [0.5, 163, 1], "lemon": [0.25, 28, 5], "bitter": [0.5, 200, 0], "spice": [1.0, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 11 08:21AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -158,7 +158,12 @@ var activeMapRegions = [];
 var boundsSW = { x:6.6, y:35.49};
 var boundsNE= { x:18.52, y:41.9};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"orange-flavored liqueur with an aged brandy base": [1.0, 1730, 3], "aperitif/digestif bitters": [1.0, 21, 3], "Rittenhouse 100-proof Bonded Rye": [1.0, 1291, 5], "orange twist": [1.0, 1068, 0], "grenadine": [1.0, 317, 2], "apple brandy, American": [1.0, 56, 5], "quinquina": [1.0, 446, 2], "Linie Aquavit": [1.0, 2854, 4], "rye whiskey": [1.0, 421, 5], "Grand Marnier": [1.0, 163, 3], "Laird\u2019s 100-Proof Bonded Apple Brandy": [1.0, 1323, 5], "aquavit": [1.0, 254, 4], "Dubonnet": [1.0, 437, 2], "Fernet Branca": [1.0, 32, 3]};
+var flavorAffinities = {"apple": [0.25, 2, 5], "sweet": [0.625, 209, 0], "quinine": [0.25, 90, 1], "acid": [0.25, 197, 0], "alcohol": [0.5, 198, 0], "menthol": [0.125, 64, 0], "rye": [0.25, 194, 0], "oak": [0.25, 240, 0], "saffron": [0.125, 131, 2], "gentian": [0.125, 83, 1], "orange essence": [0.125, 65, 0], "wood": [0.5, 239, 0], "herbal": [0.5, 78, 1], "bitter": [0.25, 200, 0], "citrus": [0.375, 24, 5], "pomegranate": [0.125, 52, 5], "orange": [0.375, 30, 5], "brandy": [0.5, 152, 0], "fruit": [1.0, 1, 5], "floral": [0.125, 67, 3], "spice": [0.375, 102, 2], "eucalyptus": [0.125, 248, 1], "caraway": [0.25, 107, 2], "whiskey": [0.5, 161, 0], "sour": [0.125, 208, 0], "grain": [0.25, 189, 0], "medicinal": [0.25, 203, 0], "tannin": [0.25, 210, 0], "wine": [0.25, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:18.52, y:41.9};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

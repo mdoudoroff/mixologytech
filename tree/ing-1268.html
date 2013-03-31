@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Bols Genever": [1.0, 1490, 4], "flower": [1.0, 105, 0], "mezcal": [1.0, 3, 4], "Ilegal Mezcal Reposado": [1.0, 4477, 4], "Cl\u00e9ment Cr\u00e9ole Shrubb": [1.0, 1343, 3], "Rothman & Winter Orchard Apricot": [1.0, 1808, 3], "Irish whiskey": [1.0, 419, 5], "lemon juice": [1.0, 324, 2], "Batavia-Arrack van Oosten": [1.0, 1330, 5], "nutmeg": [1.0, 338, 0], "apricot liqueur": [1.0, 138, 3], "genever": [1.0, 256, 4], "orange-flavored liqueur": [1.0, 1251, 3], "simple syrup": [1.0, 363, 2], "Batavia arak": [1.0, 389, 5]};
+var flavorAffinities = {"sweet": [1.0, 209, 0], "lemon": [0.2, 28, 5], "alcohol": [0.8, 198, 0], "oak": [0.2, 240, 0], "wood": [0.2, 239, 0], "barley": [0.2, 191, 0], "agave": [0.4, 166, 1], "orange": [0.4, 30, 5], "grain": [0.6, 189, 0], "rum": [0.6, 156, 0], "citrus": [0.6, 24, 5], "herbal": [0.4, 78, 1], "fruit": [1.0, 1, 5], "vegetal": [0.6, 163, 1], "spice": [0.4, 102, 2], "apricot": [0.4, 3, 5], "malt": [0.4, 192, 0], "whiskey": [0.2, 161, 0], "sour": [0.2, 208, 0], "nutmeg": [0.2, 126, 2], "tannin": [0.2, 210, 0], "smoky": [0.8, 206, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

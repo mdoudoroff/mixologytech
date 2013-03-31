@@ -158,7 +158,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-179.14, y:18.91};
 var boundsNE= { x:179.78, y:71.41};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-4883.html">Jero Sweet and Sour Mix</a> </li><li class="stub"><a href="ing-5571.html">Rose’s Sweet & Sour Mix</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 17 04:55PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-4883.html">Jero Sweet and Sour Mix</a> </li><li class="stub"><a href="ing-5571.html">Rose’s Sweet & Sour Mix</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vodka": [0.3333333333333333, 267, 4], "coffee-flavored liqueur": [0.16666666666666666, 233, 3], "Champagne": [0.16666666666666666, 432, 2], "cream": [0.3333333333333333, 305, 2], "cranberry juice": [0.16666666666666666, 303, 2], "liqueurs, fruit-flavored": [0.16666666666666666, 1008, 3], "Southern Comfort": [0.16666666666666666, 183, 3], "gin": [0.16666666666666666, 556, 4], "brandies": [0.16666666666666666, 1046, 5], "lime juice": [0.16666666666666666, 328, 2], "Galliano": [0.3333333333333333, 201, 3], "rum": [1.0, 396, 5], "grenadine": [0.3333333333333333, 317, 2], "herbal liqueur": [0.16666666666666666, 5693, 3], "Okolehao": [0.16666666666666666, 394, 3], "cherry liqueur": [0.16666666666666666, 150, 3], "pineapple juice": [0.16666666666666666, 350, 2], "orange juice": [0.5, 340, 2], "Hawaiian Punch": [0.16666666666666666, 320, 2], "fruit juice": [0.16666666666666666, 1049, 2], "liqueurs, spirit-flavored": [0.16666666666666666, 1011, 3], "simple syrup": [0.16666666666666666, 363, 2], "Kahlua": [0.3333333333333333, 240, 3]};
+var flavorAffinities = {"sweet": [1.0, 209, 0], "acid": [0.0625, 197, 0], "cream": [0.125, 179, 0], "alcohol": [0.1875, 198, 0], "peach": [0.0625, 48, 5], "cherry": [0.0625, 10, 5], "tropical fruit": [0.0625, 247, 5], "nutty": [0.1875, 137, 4], "orange": [0.1875, 30, 5], "lime": [0.0625, 29, 5], "bitter": [0.0625, 200, 0], "tart": [0.0625, 211, 0], "coffee": [0.1875, 141, 4], "juniper": [0.0625, 121, 2], "rum": [0.375, 156, 0], "citrus": [0.25, 24, 5], "pomegranate": [0.125, 52, 5], "cranberry": [0.0625, 11, 5], "chocolate": [0.1875, 111, 4], "herbal": [0.25, 78, 1], "fruit": [0.875, 1, 5], "floral": [0.0625, 67, 3], "spice": [0.0625, 102, 2], "sour": [0.25, 208, 0], "pineapple": [0.0625, 50, 5], "berries": [0.125, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 17 04:55PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

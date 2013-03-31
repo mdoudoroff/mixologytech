@@ -12,6 +12,10 @@ jQuery(document).ready(function() {
 
 		$('.AgAvgNewBarcodes').text(data.averageNewBarcodes);
 
+		$('.AgTotalProprietary').text(data.grandTotalProprietaryEntries);
+
+		$('.AgTotalPropWithBarcodes').text(data.totalProprietaryEntriesWithUPCs);
+
 	});
 
 

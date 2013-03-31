@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"brandies": [0.25, 1046, 5], "kirsch": [0.5, 69, 5], "apricot kernel": [0.5, 4906, 0], "peach": [0.25, 121, 0], "orange twist": [0.25, 1068, 0], "wine, white": [0.25, 468, 2], "anisette": [0.25, 189, 3], "clove": [0.5, 293, 0], "peach bitters": [0.25, 38, 1], "liqueurs, fruit-flavored": [0.25, 1008, 3], "Southern Comfort": [0.25, 183, 3], "lemon juice": [0.25, 324, 2], "Cognac": [1.0, 63, 5], "brown sugar": [0.25, 281, 0], "boiling water": [0.25, 1219, 2], "apricot liqueur": [0.25, 138, 3], "gin": [1.0, 556, 4], "Champagne": [0.25, 432, 2], "vermouth, dry": [0.75, 452, 2]};
+var flavorAffinities = {"sweet": [0.38461538461538464, 209, 0], "almond": [0.23076923076923078, 138, 4], "acid": [0.38461538461538464, 197, 0], "clove": [0.23076923076923078, 113, 2], "lemon": [0.07692307692307693, 28, 5], "alcohol": [0.46153846153846156, 198, 0], "peach": [0.15384615384615385, 48, 5], "cherry": [0.15384615384615385, 10, 5], "anise": [0.15384615384615385, 104, 2], "fruit": [1.0, 1, 5], "nutty": [0.23076923076923078, 137, 4], "orange essence": [0.07692307692307693, 65, 0], "wood": [0.3076923076923077, 239, 0], "orange": [0.07692307692307693, 30, 5], "bitter": [0.23076923076923078, 200, 0], "juniper": [0.3076923076923077, 121, 2], "citrus": [0.15384615384615385, 24, 5], "herbal": [0.6153846153846154, 78, 1], "brandy": [0.3076923076923077, 152, 0], "molasses": [0.07692307692307693, 227, 0], "floral": [0.3076923076923077, 67, 3], "spice": [0.6153846153846154, 102, 2], "apricot": [0.07692307692307693, 3, 5], "sour": [0.15384615384615385, 208, 0], "cinnamon": [0.07692307692307693, 112, 2], "berries": [0.15384615384615385, 5, 5], "wine": [0.23076923076923078, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

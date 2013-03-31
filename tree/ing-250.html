@@ -160,7 +160,12 @@ var boundsNE= { x:-0.77, y:60.81};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>France</td><td>700 ml</td><td><abbr title="Euro">EUR</abbr> €31.0</td><td data-currency="EUR" data-rlow="31.0" data-rhigh="31.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<tr><td>France</td><td>700 ml</td><td><abbr title="Euro">EUR</abbr> €31.0</td><td data-currency="EUR" data-rlow="31.0" data-rhigh="31.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"tonic": [1.0, 2837, 0], "squeeze of lime": [1.0, 1066, 0], "Chivas Regal 12 Year Old": [1.0, 2093, 5], "Schweppes Bitter Lemon": [1.0, 360, 2], "scotch whisky, blended": [1.0, 482, 5], "cr\u00e8me de menthe": [1.0, 197, 3], "lemon soda": [1.0, 1161, 2]};
+var flavorAffinities = {"wood": [0.6666666666666666, 239, 0], "mint": [0.3333333333333333, 87, 1], "lemon": [0.6666666666666666, 28, 5], "citrus": [1.0, 24, 5], "sweet": [0.3333333333333333, 209, 0], "smoky": [0.6666666666666666, 206, 0], "oak": [0.6666666666666666, 240, 0], "scotch": [0.6666666666666666, 158, 0], "fruit": [1.0, 1, 5], "whiskey": [0.6666666666666666, 161, 0], "sour": [0.6666666666666666, 208, 0], "grain": [0.6666666666666666, 189, 0], "sparkling": [0.6666666666666666, 234, 0], "herbal": [0.3333333333333333, 78, 1], "tannin": [0.6666666666666666, 210, 0], "bitter": [0.3333333333333333, 200, 0], "lime": [0.3333333333333333, 29, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -176,6 +181,7 @@ var boundsNE= { x:-0.77, y:60.81};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

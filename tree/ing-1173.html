@@ -153,7 +153,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 20 02:43PM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vodka": [0.2857142857142857, 267, 4], "orange wheel": [0.14285714285714285, 1070, 0], "apple": [0.14285714285714285, 91, 0], "coconut": [0.14285714285714285, 98, 0], "chocolate-flavored liqueur": [0.14285714285714285, 232, 3], "lemon juice": [0.42857142857142855, 324, 2], "Grey Goose vodka": [0.14285714285714285, 612, 4], "soda water": [0.14285714285714285, 1693, 2], "Champagne": [0.14285714285714285, 432, 2], "cream": [0.14285714285714285, 305, 2], "pineapple spear": [0.14285714285714285, 1214, 0], "sugar": [0.2857142857142857, 370, 0], "liqueurs, fruit-flavored": [0.14285714285714285, 1008, 3], "rum, Martinique": [0.14285714285714285, 406, 5], "lime shell": [0.14285714285714285, 1062, 0], "Southern Comfort": [0.14285714285714285, 183, 3], "brandies": [0.14285714285714285, 1046, 5], "lime juice": [0.42857142857142855, 328, 2], "coconut milk": [0.14285714285714285, 296, 2], "Galliano": [0.2857142857142857, 201, 3], "rum": [0.2857142857142857, 396, 5], "grenadine": [0.14285714285714285, 317, 2], "herbal liqueur": [0.14285714285714285, 5693, 3], "lemon wedge": [0.2857142857142857, 1060, 0], "chocolate syrup": [0.14285714285714285, 1172, 2], "Godiva White Chocolate Liqueur": [0.14285714285714285, 1210, 3], "applejack": [0.14285714285714285, 57, 5], "strawberry syrup": [0.14285714285714285, 369, 2], "orange juice": [0.2857142857142857, 340, 2], "nutmeg": [0.14285714285714285, 338, 0], "banana liqueur": [1.0, 550, 3]};
+var flavorAffinities = {"coconut": [0.07407407407407407, 140, 4], "apple": [0.07407407407407407, 2, 5], "sweet": [0.7037037037037037, 209, 0], "acid": [0.037037037037037035, 197, 0], "cream": [0.037037037037037035, 179, 0], "lemon": [0.18518518518518517, 28, 5], "alcohol": [0.1111111111111111, 198, 0], "peach": [0.037037037037037035, 48, 5], "whiskey": [0.037037037037037035, 161, 0], "sparkling": [0.037037037037037035, 234, 0], "tropical fruit": [0.2962962962962963, 247, 5], "nutty": [0.14814814814814814, 137, 4], "wood": [0.037037037037037035, 239, 0], "sugarcane juice": [0.037037037037037035, 178, 1], "orange": [0.1111111111111111, 30, 5], "lime": [0.14814814814814814, 29, 5], "banana": [0.25925925925925924, 4, 5], "rum": [0.1111111111111111, 156, 0], "citrus": [0.4444444444444444, 24, 5], "lime essence": [0.037037037037037035, 63, 0], "pomegranate": [0.037037037037037035, 52, 5], "chocolate": [0.07407407407407407, 111, 4], "herbal": [0.1111111111111111, 78, 1], "brandy": [0.037037037037037035, 152, 0], "fruit": [1.0, 1, 5], "vegetal": [0.037037037037037035, 163, 1], "spice": [0.037037037037037035, 102, 2], "strawberry": [0.037037037037037035, 22, 5], "sour": [0.4444444444444444, 208, 0], "nutmeg": [0.037037037037037035, 126, 2], "pineapple": [0.037037037037037035, 50, 5], "berries": [0.037037037037037035, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 20 02:43PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -169,6 +174,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

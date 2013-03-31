@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-179.14, y:12.03};
 var boundsNE= { x:179.78, y:71.41};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-4495.html">Absolut Orient Apple</a> </li><li class="stub"><a href="ing-3746.html">Rökk Apple Vodka</a> </li><li class="stub"><a href="ing-3663.html">Smirnoff Green Apple Twist</a> </li><li class="stub"><a href="ing-4303.html">UV Apple</a> </li><li class="stub"><a href="ing-621.html">Van Gogh Wild Appel Vodka</a> </li><li class="posstub"><a href="ing-2617.html">Vox Green Apple</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-4495.html">Absolut Orient Apple</a> </li><li class="stub"><a href="ing-3746.html">Rökk Apple Vodka</a> </li><li class="stub"><a href="ing-3663.html">Smirnoff Green Apple Twist</a> </li><li class="stub"><a href="ing-4303.html">UV Apple</a> </li><li class="stub"><a href="ing-621.html">Van Gogh Wild Appel Vodka</a> </li><li class="posstub"><a href="ing-2617.html">Vox Green Apple</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"lime juice": [0.6666666666666666, 328, 2], "simple syrup": [0.6666666666666666, 363, 2], "honeydew melon": [0.3333333333333333, 4914, 0], "cranberry juice": [0.3333333333333333, 303, 2], "liqueurs, herbal or spice-flavored": [0.3333333333333333, 1009, 3], "sake": [0.3333333333333333, 449, 2], "cr\u00e8me de noyeau": [0.6666666666666666, 237, 3], "Champagne": [0.3333333333333333, 432, 2], "mint leaf": [0.3333333333333333, 1104, 0], "lemon juice": [1.0, 324, 2], "soda water": [0.3333333333333333, 1693, 2], "Cuarenta y Tres liqueur": [0.3333333333333333, 607, 3], "amaretto": [0.3333333333333333, 231, 3], "apple": [0.3333333333333333, 91, 0]};
+var flavorAffinities = {"apple": [0.1111111111111111, 2, 5], "apricot pits": [0.2222222222222222, 105, 2], "sweet": [0.8888888888888888, 209, 0], "almond": [0.3333333333333333, 138, 4], "acid": [0.1111111111111111, 197, 0], "mint": [0.1111111111111111, 87, 1], "lime": [0.2222222222222222, 29, 5], "lemon": [0.3333333333333333, 28, 5], "sparkling": [0.1111111111111111, 234, 0], "nutty": [0.3333333333333333, 137, 4], "melon": [0.1111111111111111, 43, 5], "bitter": [0.1111111111111111, 200, 0], "tart": [0.1111111111111111, 211, 0], "citrus": [0.5555555555555556, 24, 5], "herbal": [0.2222222222222222, 78, 1], "fruit": [1.0, 1, 5], "spearmint": [0.1111111111111111, 89, 1], "spice": [0.3333333333333333, 102, 2], "vanilla": [0.1111111111111111, 136, 2], "peppermint": [0.1111111111111111, 88, 1], "sour": [0.5555555555555556, 208, 0], "cranberry": [0.1111111111111111, 11, 5], "berries": [0.1111111111111111, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

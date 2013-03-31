@@ -160,7 +160,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-18.17, y:27.64};
 var boundsNE= { x:4.34, y:43.73};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 08:28AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Fee Brothers Peach Bitters": [0.25, 2839, 1], "orange bitters": [0.25, 37, 1], "Mount Gay Extra Old": [0.25, 2890, 5], "peach bitters": [0.25, 38, 1], "rye whiskey": [0.25, 421, 5], "aromatic bitters": [0.5, 22, 1], "Mathilde Pear Liqueur": [0.25, 5257, 3], "Grand Marnier": [0.25, 163, 3], "Angostura bitters": [0.25, 19, 1], "B\u00e9n\u00e9dictine": [0.25, 191, 3], "aperitif/digestif bitters": [0.5, 21, 3], "orange twist": [0.25, 1068, 0], "Krogstad Aquavit": [0.25, 1632, 4], "Marie Brizard Creme de Cacao Dark": [0.25, 2059, 3], "aquavit": [0.25, 254, 4], "Fee Brothers Rhubarb Bitters": [0.25, 1455, 1], "quinquina": [0.25, 446, 2], "Wild Turkey straight rye whiskey": [0.25, 1200, 5], "cr\u00e8me de cacao, white": [0.25, 234, 3], "tequila reposado (100%)": [0.25, 7, 4], "Compass Box Asyla": [0.25, 2811, 5], "Dubonnet": [0.25, 437, 2], "Aperol": [0.25, 1307, 3], "Partida Reposado Tequila": [0.25, 1319, 4], "orange-flavored liqueur with an aged brandy base": [0.25, 1730, 3], "Cynar": [0.25, 1294, 3], "lemon twist": [1.0, 1058, 0], "monastic liqueur": [0.25, 469, 3], "pear liqueur": [0.25, 1809, 3], "rum, Barbados": [0.25, 399, 5], "scotch whisky, blended": [0.25, 482, 5]};
+var flavorAffinities = {"anise": [0.4117647058823529, 104, 2], "star anise": [0.058823529411764705, 135, 2], "sweet": [0.7058823529411765, 209, 0], "almond": [0.11764705882352941, 138, 4], "quinine": [0.11764705882352941, 90, 1], "acid": [0.11764705882352941, 197, 0], "clove": [0.4117647058823529, 113, 2], "lemon": [0.23529411764705882, 28, 5], "alcohol": [0.23529411764705882, 198, 0], "rye": [0.11764705882352941, 194, 0], "oak": [0.23529411764705882, 240, 0], "nutty": [0.23529411764705882, 137, 4], "orange essence": [0.058823529411764705, 65, 0], "wood": [0.23529411764705882, 239, 0], "orange": [0.29411764705882354, 30, 5], "bitter": [0.6470588235294118, 200, 0], "lemon essence": [0.23529411764705882, 62, 0], "rum": [0.11764705882352941, 156, 0], "citrus": [0.5294117647058824, 24, 5], "sour": [0.29411764705882354, 208, 0], "chocolate": [0.11764705882352941, 111, 4], "herbal": [1.0, 78, 1], "brandy": [0.11764705882352941, 152, 0], "fruit": [0.7647058823529411, 1, 5], "vegetal": [0.11764705882352941, 163, 1], "spice": [0.5882352941176471, 102, 2], "caraway": [0.11764705882352941, 107, 2], "smoky": [0.23529411764705882, 206, 0], "whiskey": [0.23529411764705882, 161, 0], "agave": [0.11764705882352941, 166, 1], "grain": [0.23529411764705882, 189, 0], "cinnamon": [0.4117647058823529, 112, 2], "medicinal": [0.23529411764705882, 203, 0], "tannin": [0.23529411764705882, 210, 0], "scotch": [0.11764705882352941, 158, 0], "wine": [0.11764705882352941, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 October 05 08:28AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -176,6 +181,7 @@ var boundsNE= { x:4.34, y:43.73};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -151,7 +151,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vodka": [0.8333333333333334, 267, 4], "orange twist": [0.16666666666666666, 1068, 0], "Worcestershire sauce": [0.8333333333333334, 385, 0], "fennel seed": [0.16666666666666666, 1566, 0], "lemon juice": [0.8333333333333334, 324, 2], "aromatic bitters": [0.16666666666666666, 22, 1], "St. George Absinthe": [0.16666666666666666, 1476, 4], "prepared horseradish": [0.5, 1196, 0], "lime": [0.16666666666666666, 112, 0], "Angostura bitters": [0.16666666666666666, 19, 1], "lemon": [0.16666666666666666, 111, 0], "absinthe": [0.16666666666666666, 15, 4], "triple sec": [0.16666666666666666, 185, 3], "Tabasco sauce": [0.3333333333333333, 373, 0], "Bloody Mary mix": [0.16666666666666666, 278, 2], "aquavit": [0.16666666666666666, 254, 4], "celery salt": [1.0, 286, 0], "cocktail onion": [0.16666666666666666, 1, 0], "pepper": [0.6666666666666666, 348, 0], "lemon wedge": [0.6666666666666666, 1060, 0], "beef bouillon": [0.3333333333333333, 275, 0], "Cointreau": [0.16666666666666666, 152, 3], "tomato juice": [0.6666666666666666, 377, 2], "asparagus": [0.16666666666666666, 5242, 0], "hot sauce": [0.8333333333333334, 1034, 0], "Krogstad Aquavit": [0.16666666666666666, 1632, 4], "salt": [0.6666666666666666, 359, 0], "clam juice": [0.16666666666666666, 292, 2]};
+var flavorAffinities = {"clams": [0.043478260869565216, 188, 0], "star anise": [0.043478260869565216, 135, 2], "sweet": [0.08695652173913043, 209, 0], "celery seed": [0.2608695652173913, 109, 2], "salty": [0.6521739130434783, 205, 0], "acid": [0.21739130434782608, 197, 0], "lime": [0.043478260869565216, 29, 5], "clove": [0.08695652173913043, 113, 2], "lemon": [0.43478260869565216, 28, 5], "alcohol": [0.4782608695652174, 198, 0], "anise": [0.21739130434782608, 104, 2], "orange essence": [0.043478260869565216, 65, 0], "herbal": [0.391304347826087, 78, 1], "bitter": [0.17391304347826086, 200, 0], "cinnamon": [0.08695652173913043, 112, 2], "pepper": [0.17391304347826086, 128, 2], "citrus": [0.6086956521739131, 24, 5], "orange": [0.13043478260869565, 30, 5], "fruit": [0.6086956521739131, 1, 5], "fishy": [0.043478260869565216, 219, 0], "vegetal": [0.30434782608695654, 163, 1], "spice": [1.0, 102, 2], "tomato": [0.21739130434782608, 237, 0], "vinegar": [0.08695652173913043, 238, 0], "caraway": [0.08695652173913043, 107, 2], "onion": [0.043478260869565216, 228, 0], "piquant": [0.30434782608695654, 110, 0], "pungent": [0.17391304347826086, 204, 0], "beef broth": [0.08695652173913043, 214, 0], "sour": [0.8260869565217391, 208, 0], "chile pepper": [0.30434782608695654, 172, 1], "onion brine": [0.043478260869565216, 229, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -167,6 +172,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

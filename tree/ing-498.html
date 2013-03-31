@@ -148,7 +148,7 @@
 <li class="active">vodka, vanilla-flavored</li>
 </ul></section></div></div></div><!-- end title block --><div class="row"><div class="span12">
 <div id="topphotos"><script>
-var photoList = ["2302-20115406-125415.jpg", "5718-20135630-025603.jpg", "594-20121401-031430.jpg", "4584-20122503-102528.jpg"]
+var photoList = ["5718-20135630-025603.jpg", "4584-20122503-102528.jpg", "2302-20115406-125415.jpg", "594-20121401-031430.jpg"]
 </script></div></div></div><div class="row"><div class="span6"><div id="details"><div id="novelDescription" class="local"><h3>description</h3><p>Vanilla-flavored vodka is generic for vodka which, after distillation is imbued, by infusion, maceration, aging, or secondary distillations, with natural or artificial vanilla flavoring. Noted brand is Stoli Vanil</p>
 </div><dl><dt>flavors</dt><dd><a href="flavor-vanilla.html">vanilla</a>, <a href="flavor-alcohol.html">alcohol</a>, <a href="flavor-spice.html">spice</a></dd><dt>substitute</dt><dd>other flavored vodka</dd><dt>places (country/region of production)</dt><dd><a href="place-united_states.html">United States</a>, <a href="place-sweden.html">Sweden</a>, <a href="place-netherlands.html">Netherlands</a>, <a href="place-england.html">England (United Kingdom)</a>, <a href="place-poland.html">Poland</a>, <a href="place-missouri.html">Missouri (United States)</a>, <a href="place-russia.html">Russia</a></dd></dl>
 <script>
@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-180.0, y:12.03};
 var boundsNE= { x:180.0, y:71.41};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-5718.html">360 Madagascar Vanilla</a> </li><li class="posstub"><a href="ing-2302.html">Absolut Vanilia</a> </li><li class="stub"><a href="ing-3390.html">Cariel Vanilla Vodka</a> </li><li class="stub"><a href="ing-5582.html">Corsair Vanilla Bean</a> </li><li class="stub"><a href="ing-4246.html">Creamed Smirnoff</a> </li><li class="stub"><a href="ing-4838.html">Pinnacle Vanilla Vodka</a> </li><li class="stub"><a href="ing-3637.html">Smirnoff Vanilla Twist</a> </li><li class="stub"><a href="ing-4730.html">Sobieski Vanilia</a> </li><li class="proprietary"><a href="ing-594.html">Stolichnaya Vanil</a> </li><li class="stub"><a href="ing-5027.html">Svedka Vanilla</a> </li><li class="stub"><a href="ing-4584.html">Three Olives Vanilla Flavored Vodka</a> </li><li class="stub"><a href="ing-2619.html">Vincent Van Gogh Vodka Vanilla</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="stub"><a href="ing-5718.html">360 Madagascar Vanilla</a> </li><li class="posstub"><a href="ing-2302.html">Absolut Vanilia</a> </li><li class="stub"><a href="ing-3390.html">Cariel Vanilla Vodka</a> </li><li class="stub"><a href="ing-5582.html">Corsair Vanilla Bean</a> </li><li class="stub"><a href="ing-4246.html">Creamed Smirnoff</a> </li><li class="stub"><a href="ing-4838.html">Pinnacle Vanilla Vodka</a> </li><li class="stub"><a href="ing-3637.html">Smirnoff Vanilla Twist</a> </li><li class="stub"><a href="ing-4730.html">Sobieski Vanilia</a> </li><li class="proprietary"><a href="ing-594.html">Stolichnaya Vanil</a> </li><li class="stub"><a href="ing-5027.html">Svedka Vanilla</a> </li><li class="stub"><a href="ing-4584.html">Three Olives Vanilla Flavored Vodka</a> </li><li class="stub"><a href="ing-2619.html">Vincent Van Gogh Vodka Vanilla</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"chocolate, shaved": [1.0, 1209, 0], "coffee-flavored liqueur": [1.0, 233, 3], "chocolate-flavored liqueur": [1.0, 232, 3], "Godiva White Chocolate Liqueur": [1.0, 1210, 3], "almond-flavored liqueur": [1.0, 1043, 3], "amaretto": [1.0, 231, 3], "Kahlua": [1.0, 240, 3], "Disaronno Originale": [1.0, 1357, 3], "cream": [1.0, 305, 2]};
+var flavorAffinities = {"coffee": [0.25, 141, 4], "sweet": [0.875, 209, 0], "almond": [0.375, 138, 4], "chocolate": [0.625, 111, 4], "nutty": [1.0, 137, 4], "cream": [0.125, 179, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:180.0, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

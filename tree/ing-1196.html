@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vodka": [1.0, 267, 4], "celery salt": [1.0, 286, 0], "lemon wedge": [1.0, 1060, 0], "Worcestershire sauce": [1.0, 385, 0], "pepper": [1.0, 348, 0], "hot sauce": [1.0, 1034, 0], "celery": [1.0, 629, 0], "lemon juice": [1.0, 324, 2], "beef bouillon": [0.3333333333333333, 275, 0], "salt": [1.0, 359, 0], "clam juice": [0.3333333333333333, 292, 2], "tomato juice": [1.0, 377, 2]};
+var flavorAffinities = {"tomato": [0.3333333333333333, 237, 0], "pepper": [0.3333333333333333, 128, 2], "clams": [0.1111111111111111, 188, 0], "lemon": [0.6666666666666666, 28, 5], "alcohol": [0.3333333333333333, 198, 0], "citrus": [0.6666666666666666, 24, 5], "piquant": [0.3333333333333333, 110, 0], "sour": [1.0, 208, 0], "pungent": [0.3333333333333333, 204, 0], "celery seed": [0.3333333333333333, 109, 2], "beef broth": [0.1111111111111111, 214, 0], "celery": [0.3333333333333333, 171, 1], "fruit": [0.6666666666666666, 1, 5], "salty": [1.0, 205, 0], "chile pepper": [0.3333333333333333, 172, 1], "fishy": [0.1111111111111111, 187, 0], "herbal": [0.3333333333333333, 78, 1], "vegetal": [0.6666666666666666, 163, 1], "acid": [0.3333333333333333, 197, 0], "spice": [1.0, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

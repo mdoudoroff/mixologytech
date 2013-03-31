@@ -158,7 +158,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-68.37, y:12.03};
 var boundsNE= { x:7.2, y:53.58};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"lime juice": [0.6666666666666666, 328, 2], "simple syrup": [0.3333333333333333, 363, 2], "Champagne": [0.3333333333333333, 432, 2], "cranberry juice": [0.3333333333333333, 303, 2], "liqueurs, herbal or spice-flavored": [0.3333333333333333, 1009, 3], "cr\u00e8me de noyeau": [0.6666666666666666, 237, 3], "lemon juice": [1.0, 324, 2], "soda water": [0.3333333333333333, 1693, 2], "Cuarenta y Tres liqueur": [0.3333333333333333, 607, 3], "amaretto": [0.3333333333333333, 231, 3]};
+var flavorAffinities = {"acid": [0.14285714285714285, 197, 0], "lemon": [0.42857142857142855, 28, 5], "tart": [0.14285714285714285, 211, 0], "citrus": [0.7142857142857143, 24, 5], "apricot pits": [0.2857142857142857, 105, 2], "sweet": [1.0, 209, 0], "sour": [0.7142857142857143, 208, 0], "almond": [0.42857142857142855, 138, 4], "sparkling": [0.14285714285714285, 234, 0], "lime": [0.2857142857142857, 29, 5], "nutty": [0.42857142857142855, 137, 4], "fruit": [1.0, 1, 5], "cranberry": [0.14285714285714285, 11, 5], "herbal": [0.14285714285714285, 78, 1], "berries": [0.14285714285714285, 5, 5], "bitter": [0.14285714285714285, 200, 0], "vanilla": [0.14285714285714285, 136, 2], "spice": [0.42857142857142855, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:7.2, y:53.58};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

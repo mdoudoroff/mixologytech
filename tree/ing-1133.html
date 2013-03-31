@@ -154,7 +154,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"pineapple syrup": [0.2, 351, 2], "lemon juice": [0.2, 324, 2], "Cognac": [0.2, 63, 5], "wine, sparkling": [0.2, 465, 2], "cura\u00e7ao": [0.4, 159, 3], "Champagne": [0.8, 432, 2], "B\u00e9n\u00e9dictine": [0.2, 191, 3], "grape": [0.2, 109, 0], "whiskey": [0.2, 1015, 5], "maraschino liqueur": [0.6, 170, 3], "rum, Virgin Islands": [0.2, 472, 5], "orange": [1.0, 118, 0], "Madeira": [0.2, 440, 2], "claret": [0.2, 435, 2], "brandies": [0.4, 1046, 5], "lemon balm": [0.2, 1134, 0], "wine, Tokay": [0.4, 466, 2], "Chateau Lafitte": [0.2, 1129, 2], "sugar, lump": [0.4, 1101, 0], "rum, Jamaican": [0.2, 405, 5], "gomme syrup": [0.4, 314, 2], "powdered sugar": [0.2, 631, 0], "Cura\u00e7ao, red-colored": [0.2, 1123, 3], "lemon": [0.8, 111, 0], "Bordeaux": [0.2, 1128, 2], "monastic liqueur": [0.4, 469, 3], "strawberry": [0.4, 545, 0], "Chartreuse, green": [0.2, 195, 3], "pineapple": [0.8, 122, 0], "Bourbon whiskey": [0.2, 415, 5], "rye whiskey": [0.2, 421, 5]};
+var flavorAffinities = {"sweet": [0.5428571428571428, 209, 0], "acid": [0.3142857142857143, 197, 0], "grape": [0.02857142857142857, 16, 5], "alcohol": [0.08571428571428572, 198, 0], "whiskey": [0.08571428571428572, 161, 0], "cherry": [0.08571428571428572, 10, 5], "rye": [0.02857142857142857, 194, 0], "oak": [0.08571428571428572, 240, 0], "tropical fruit": [0.14285714285714285, 247, 5], "wood": [0.2, 239, 0], "orange": [0.22857142857142856, 30, 5], "rum": [0.05714285714285714, 156, 0], "citrus": [0.37142857142857144, 24, 5], "corn": [0.02857142857142857, 190, 0], "herbal": [0.11428571428571428, 78, 1], "brandy": [0.02857142857142857, 152, 0], "fruit": [1.0, 1, 5], "lemon": [0.14285714285714285, 28, 5], "spice": [0.08571428571428572, 102, 2], "pungent": [0.02857142857142857, 204, 0], "strawberry": [0.05714285714285714, 22, 5], "sour": [0.2857142857142857, 208, 0], "grain": [0.17142857142857143, 189, 0], "pineapple": [0.14285714285714285, 50, 5], "tannin": [0.08571428571428572, 210, 0], "berries": [0.17142857142857143, 5, 5], "wine": [0.08571428571428572, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -170,6 +175,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

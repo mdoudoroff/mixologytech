@@ -158,7 +158,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-179.14, y:18.91};
 var boundsNE= { x:179.78, y:71.41};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Fee Brothers Aromatic Bitters": [1.0, 1272, 1], "rice syrup": [1.0, 5152, 2], "Elijah Craig Kentucky Straight Bourbon": [1.0, 1661, 5], "nutmeg": [1.0, 338, 0], "aromatic bitters": [1.0, 22, 1], "Bourbon whiskey": [1.0, 415, 5], "Baekseju": [1.0, 5151, 2]};
+var flavorAffinities = {"clove": [0.5, 113, 2], "sake": [0.25, 157, 0], "sweet": [0.25, 209, 0], "corn": [0.75, 190, 0], "anise": [0.5, 104, 2], "oak": [0.5, 240, 0], "whiskey": [0.5, 161, 0], "wood": [0.5, 239, 0], "grain": [0.75, 189, 0], "cinnamon": [0.5, 112, 2], "ginseng": [0.25, 119, 2], "herbal": [0.75, 78, 1], "nutmeg": [0.25, 126, 2], "tannin": [0.5, 210, 0], "bitter": [0.5, 200, 0], "spice": [1.0, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -158,7 +158,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-179.14, y:18.91};
 var boundsNE= { x:179.78, y:71.41};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"brandies": [0.5, 1046, 5], "Angostura bitters": [0.5, 19, 1], "maraschino liqueur": [0.5, 170, 3], "Peychaud\u2019s Aromatic Cocktail Bitters": [0.5, 41, 1], "grenadine": [0.5, 317, 2], "soda water": [0.5, 1693, 2], "aromatic bitters": [1.0, 22, 1], "Bourbon whiskey": [0.5, 415, 5], "cura\u00e7ao": [0.5, 159, 3], "simple syrup": [0.5, 363, 2]};
+var flavorAffinities = {"wood": [0.5, 239, 0], "clove": [1.0, 113, 2], "alcohol": [0.25, 198, 0], "orange": [0.25, 30, 5], "citrus": [0.25, 24, 5], "sweet": [1.0, 209, 0], "pomegranate": [0.25, 52, 5], "anise": [1.0, 104, 2], "oak": [0.25, 240, 0], "sparkling": [0.25, 234, 0], "whiskey": [0.25, 161, 0], "fruit": [1.0, 1, 5], "grain": [0.5, 189, 0], "cinnamon": [1.0, 112, 2], "cherry": [0.5, 10, 5], "herbal": [1.0, 78, 1], "tannin": [0.25, 210, 0], "berries": [0.5, 5, 5], "bitter": [1.0, 200, 0], "corn": [0.25, 190, 0], "spice": [1.0, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:179.78, y:71.41};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

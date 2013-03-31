@@ -156,7 +156,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-61.8, y:-21.37};
 var boundsNE= { x:55.85, y:42.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 January 24 05:56PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"orange bitters": [0.25, 37, 1], "cherry, Maraschino": [0.25, 96, 0], "Seagram\u2019s V.O.": [0.25, 423, 5], "Noilly Prat Original Dry": [0.25, 537, 2], "whiskey": [0.25, 1015, 5], "Canadian whiskey": [0.25, 416, 5], "gin": [0.25, 556, 4], "vermouth, dry": [1.0, 452, 2], "rye whiskey": [0.25, 421, 5]};
+var flavorAffinities = {"rye": [0.14285714285714285, 194, 0], "sweet": [0.14285714285714285, 209, 0], "almond": [0.14285714285714285, 138, 4], "acid": [0.7142857142857143, 197, 0], "clove": [0.14285714285714285, 113, 2], "alcohol": [0.14285714285714285, 198, 0], "cherry": [0.14285714285714285, 10, 5], "anise": [0.14285714285714285, 104, 2], "oak": [0.5714285714285714, 240, 0], "nutty": [0.14285714285714285, 137, 4], "wood": [0.5714285714285714, 239, 0], "orange": [0.14285714285714285, 30, 5], "bitter": [0.14285714285714285, 200, 0], "juniper": [0.14285714285714285, 121, 2], "citrus": [0.14285714285714285, 24, 5], "herbal": [1.0, 78, 1], "fruit": [1.0, 1, 5], "floral": [0.14285714285714285, 67, 3], "spice": [0.2857142857142857, 102, 2], "whiskey": [0.5714285714285714, 161, 0], "grain": [0.5714285714285714, 189, 0], "cinnamon": [0.14285714285714285, 112, 2], "tannin": [0.5714285714285714, 210, 0], "berries": [0.14285714285714285, 5, 5], "wine": [0.7142857142857143, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 January 24 05:56PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -172,6 +177,7 @@ var boundsNE= { x:55.85, y:42.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -165,7 +165,12 @@ var boundsNE= { x:179.78, y:18.44};
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
 <tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $24.0</td><td data-currency="USD" data-rlow="24.0" data-rhigh="24.0"></td></tr>
-<tr><td>France</td><td>1000 ml</td><td><abbr title="Euro">EUR</abbr> €55.0</td><td data-currency="EUR" data-rlow="55.0" data-rhigh="55.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 01 04:17PM </small></div></div> 
+<tr><td>France</td><td>1000 ml</td><td><abbr title="Euro">EUR</abbr> €55.0</td><td data-currency="EUR" data-rlow="55.0" data-rhigh="55.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"lime juice": [1.0, 328, 2], "squeeze of lime": [1.0, 1066, 0]};
+var flavorAffinities = {"citrus": [1.0, 24, 5], "sour": [1.0, 208, 0], "fruit": [1.0, 1, 5], "lime": [1.0, 29, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2013 February 01 04:17PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -181,6 +186,7 @@ var boundsNE= { x:179.78, y:18.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

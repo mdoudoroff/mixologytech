@@ -162,7 +162,12 @@ var boundsNE= { x:18.52, y:41.9};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $22.0-23.0</td><td data-currency="USD" data-rlow="22.0" data-rhigh="23.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 18 05:25PM </small></div></div> 
+<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $22.0-23.0</td><td data-currency="USD" data-rlow="22.0" data-rhigh="23.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [0.5, 19, 1], "whisky, Japanese": [0.5, 420, 5], "coffee": [0.5, 299, 2], "Hine Rare VSOP": [0.5, 2616, 5], "syrup": [0.5, 372, 2], "Nikka Taketsura 12 Year": [0.5, 5274, 5], "lemon juice": [1.0, 324, 2], "Cognac": [0.5, 63, 5], "nutmeg": [0.5, 338, 0], "prepared condiments": [0.5, 1053, 0], "aromatic bitters": [0.5, 22, 1], "Bourbon whiskey": [0.5, 415, 5], "simple syrup": [0.5, 363, 2], "St. Dalfour Royal Fig": [0.5, 5266, 0], "Bulleit Bourbon": [0.5, 1297, 5]};
+var flavorAffinities = {"sweet": [0.3333333333333333, 209, 0], "clove": [0.3333333333333333, 113, 2], "lemon": [0.3333333333333333, 28, 5], "anise": [0.3333333333333333, 104, 2], "oak": [0.6666666666666666, 240, 0], "nutty": [0.16666666666666666, 137, 4], "wood": [1.0, 239, 0], "fig": [0.16666666666666666, 38, 5], "herbal": [0.3333333333333333, 78, 1], "nutmeg": [0.16666666666666666, 126, 2], "bitter": [0.3333333333333333, 200, 0], "coffee": [0.16666666666666666, 141, 4], "citrus": [0.3333333333333333, 24, 5], "corn": [0.3333333333333333, 190, 0], "brandy": [0.3333333333333333, 152, 0], "fruit": [0.5, 1, 5], "spice": [0.5, 102, 2], "smoky": [0.3333333333333333, 206, 0], "whiskey": [0.6666666666666666, 161, 0], "sour": [0.3333333333333333, 208, 0], "grain": [0.6666666666666666, 189, 0], "cinnamon": [0.3333333333333333, 112, 2], "tannin": [0.6666666666666666, 210, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 18 05:25PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -178,6 +183,7 @@ var boundsNE= { x:18.52, y:41.9};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -156,7 +156,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-61.8, y:-21.37};
 var boundsNE= { x:55.85, y:42.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 September 27 11:06PM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"brandies": [0.6666666666666666, 1046, 5], "lime juice": [0.3333333333333333, 328, 2], "rum, Jamaican": [0.3333333333333333, 405, 5], "raspberries": [0.6666666666666666, 126, 0], "orange juice": [0.6666666666666666, 340, 2], "lemon twist": [0.3333333333333333, 1058, 0], "maraschino liqueur": [0.3333333333333333, 170, 3], "orgeat": [0.3333333333333333, 342, 2], "pastis": [0.3333333333333333, 217, 3], "wine, red": [0.3333333333333333, 459, 2], "raspberry sherbet": [0.3333333333333333, 4924, 2], "monastic liqueur": [0.3333333333333333, 469, 3], "soda water": [1.0, 1693, 2], "grenadine": [0.3333333333333333, 317, 2], "lemon juice": [0.6666666666666666, 324, 2], "Chartreuse, green": [0.3333333333333333, 195, 3], "cura\u00e7ao": [0.3333333333333333, 159, 3], "gin": [0.6666666666666666, 556, 4], "cr\u00e8me de menthe": [0.3333333333333333, 197, 3], "Champagne": [0.6666666666666666, 432, 2], "milk": [0.3333333333333333, 334, 2]};
+var flavorAffinities = {"sweet": [0.5, 209, 0], "almond": [0.0625, 138, 4], "acid": [0.1875, 197, 0], "mint": [0.0625, 87, 1], "milk": [0.0625, 183, 0], "cream": [0.0625, 179, 0], "lemon": [0.1875, 28, 5], "alcohol": [0.1875, 198, 0], "cherry": [0.0625, 10, 5], "anise": [0.0625, 104, 2], "sparkling": [0.1875, 234, 0], "nutty": [0.0625, 137, 4], "wood": [0.0625, 239, 0], "orange": [0.1875, 30, 5], "lime": [0.0625, 29, 5], "lemon essence": [0.0625, 62, 0], "juniper": [0.125, 121, 2], "rum": [0.0625, 156, 0], "citrus": [0.5, 24, 5], "pomegranate": [0.0625, 52, 5], "marzipan": [0.0625, 144, 4], "herbal": [0.3125, 78, 1], "fruit": [1.0, 1, 5], "floral": [0.125, 67, 3], "raspberry": [0.1875, 20, 5], "spice": [0.25, 102, 2], "pungent": [0.0625, 204, 0], "sour": [0.375, 208, 0], "grain": [0.0625, 189, 0], "berries": [0.25, 5, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 September 27 11:06PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -172,6 +177,7 @@ var boundsNE= { x:55.85, y:42.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

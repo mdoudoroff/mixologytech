@@ -153,7 +153,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"brandies": [0.5, 1046, 5], "cherry, Maraschino": [0.5, 96, 0], "lemon": [0.5, 111, 0], "vanilla extract": [0.5, 380, 0], "almond, whole": [1.0, 521, 0], "Cointreau": [0.5, 152, 3], "sugar": [0.5, 370, 0], "triple sec": [0.5, 185, 3], "Cognac": [1.0, 63, 5], "egg (raw)": [0.5, 308, 0], "peach nectar": [0.5, 346, 2], "cr\u00e8me de cacao, white": [0.5, 234, 3], "sherry": [0.5, 1028, 2], "apricot syrup": [0.5, 568, 2], "cura\u00e7ao": [0.5, 159, 3], "milk": [1.0, 334, 2], "egg white": [0.5, 475, 0]};
+var flavorAffinities = {"wood": [0.25, 239, 0], "acid": [0.125, 197, 0], "cream": [0.25, 179, 0], "alcohol": [0.375, 198, 0], "peach": [0.125, 48, 5], "citrus": [0.5, 24, 5], "apricot": [0.125, 3, 5], "vanilla": [0.125, 136, 2], "almond": [0.375, 138, 4], "cherry": [0.125, 10, 5], "sour": [0.125, 208, 0], "chocolate": [0.125, 111, 4], "nutty": [0.5, 137, 4], "brandy": [0.25, 152, 0], "fruit": [1.0, 1, 5], "sweet": [0.875, 209, 0], "orange": [0.375, 30, 5], "lemon": [0.125, 28, 5], "berries": [0.125, 5, 5], "milk": [0.25, 183, 0], "spice": [0.125, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -169,6 +174,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

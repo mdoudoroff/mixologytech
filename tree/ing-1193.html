@@ -158,7 +158,12 @@ var activeMapRegions = [];
 var boundsSW = { x:-61.8, y:-21.37};
 var boundsNE= { x:55.85, y:42.44};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"vermouth, red": [0.5, 453, 2], "orange bitters": [0.5, 37, 1], "cherry, Maraschino": [0.5, 96, 0], "Angostura bitters": [0.5, 19, 1], "orange juice": [0.5, 340, 2], "Scotch whisky": [0.5, 422, 5], "lemon twist": [1.0, 1058, 0], "grenadine": [0.5, 317, 2], "sugar, lump": [0.5, 1101, 0], "water": [0.5, 383, 2], "vodka": [0.5, 267, 4], "rum, Jamaican dark": [0.5, 1149, 5], "lemon juice": [0.5, 324, 2], "Cognac": [0.5, 63, 5], "orgeat": [0.5, 342, 2], "aromatic bitters": [0.5, 22, 1], "Bourbon whiskey": [0.5, 415, 5], "gin": [0.5, 556, 4], "Champagne": [0.5, 432, 2], "cherry liqueur": [0.5, 150, 3]};
+var flavorAffinities = {"sweet": [0.45454545454545453, 209, 0], "almond": [0.18181818181818182, 138, 4], "acid": [0.18181818181818182, 197, 0], "clove": [0.2727272727272727, 113, 2], "lemon": [0.2727272727272727, 28, 5], "alcohol": [0.18181818181818182, 198, 0], "cherry": [0.18181818181818182, 10, 5], "anise": [0.2727272727272727, 104, 2], "oak": [0.18181818181818182, 240, 0], "nutty": [0.18181818181818182, 137, 4], "wood": [0.2727272727272727, 239, 0], "orange": [0.18181818181818182, 30, 5], "bitter": [0.2727272727272727, 200, 0], "corn": [0.09090909090909091, 190, 0], "lemon essence": [0.18181818181818182, 62, 0], "juniper": [0.09090909090909091, 121, 2], "rum": [0.09090909090909091, 156, 0], "citrus": [0.5454545454545454, 24, 5], "pomegranate": [0.09090909090909091, 52, 5], "marzipan": [0.09090909090909091, 144, 4], "herbal": [0.45454545454545453, 78, 1], "brandy": [0.09090909090909091, 152, 0], "fruit": [1.0, 1, 5], "floral": [0.09090909090909091, 67, 3], "spice": [0.45454545454545453, 102, 2], "smoky": [0.09090909090909091, 206, 0], "pungent": [0.09090909090909091, 204, 0], "whiskey": [0.18181818181818182, 161, 0], "sour": [0.36363636363636365, 208, 0], "grain": [0.18181818181818182, 189, 0], "cinnamon": [0.2727272727272727, 112, 2], "tannin": [0.18181818181818182, 210, 0], "berries": [0.18181818181818182, 5, 5], "scotch": [0.09090909090909091, 158, 0], "wine": [0.09090909090909091, 162, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -174,6 +179,7 @@ var boundsNE= { x:55.85, y:42.44};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

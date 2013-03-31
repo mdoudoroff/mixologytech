@@ -162,7 +162,12 @@ var boundsNE= { x:18.52, y:41.9};
 <div id="priceAggregate" class="local"><h3>pricing*</h3>
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
-<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $21.0</td><td data-currency="USD" data-rlow="21.0" data-rhigh="21.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1588.html">Luxardo Amaro Abano</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<tr><td>New York</td><td>750 ml</td><td><abbr title="United States dollar">USD</abbr> $21.0</td><td data-currency="USD" data-rlow="21.0" data-rhigh="21.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="brandsiblings" class="local"><h3>brand siblings</h3><ul><li><a href="ing-1588.html">Luxardo Amaro Abano</a></li><ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"wine, ros\u00e9": [0.5, 462, 2], "aperitif/digestif bitters": [0.5, 21, 3], "Rittenhouse 100-proof Bonded Rye": [0.5, 1291, 5], "orange twist": [1.0, 1068, 0], "Mo\u00ebt & Chandon Imp\u00e9rial": [0.5, 1556, 2], "rye whiskey": [0.5, 421, 5], "Amaro Ciociaro": [1.0, 1678, 3], "Champagne": [0.5, 432, 2]};
+var flavorAffinities = {"wood": [0.4, 239, 0], "orange": [0.4, 30, 5], "citrus": [0.4, 24, 5], "sweet": [0.6, 209, 0], "sour": [0.4, 208, 0], "rye": [0.4, 194, 0], "oak": [0.4, 240, 0], "whiskey": [0.4, 161, 0], "orange essence": [0.4, 65, 0], "fruit": [1.0, 1, 5], "grain": [0.4, 189, 0], "herbal": [0.6, 78, 1], "medicinal": [0.6, 203, 0], "tannin": [0.4, 210, 0], "acid": [0.6, 197, 0], "bitter": [0.6, 200, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -178,6 +183,7 @@ var boundsNE= { x:18.52, y:41.9};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

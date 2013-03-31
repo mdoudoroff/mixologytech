@@ -152,7 +152,12 @@ var photoList = [];</script></div></div></div><div class="row"><div class="span6
 <script>
 var originAggregate = {};
 var activeMapRegions = [];
-</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="generic"><a href="ing-1699.html">Asian pear</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 18 06:10PM </small></div></div> 
+</script></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"><div id="children" class="local"><h3>examples</h3><ul><li class="generic"><a href="ing-1699.html">Asian pear</a> </li></ul></div></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"lime juice": [1.0, 328, 2], "cherry, Maraschino": [0.5, 96, 0], "orange wheel": [0.5, 1070, 0], "rum": [0.5, 396, 5], "herbal liqueur": [0.5, 5693, 3], "sugar": [0.5, 370, 0], "Galliano": [0.5, 201, 3], "soda water": [0.5, 1693, 2], "Poire Williams": [0.5, 80, 5]};
+var flavorAffinities = {"orange": [0.2, 30, 5], "alcohol": [0.2, 198, 0], "rum": [0.2, 156, 0], "citrus": [0.6, 24, 5], "sweet": [0.8, 209, 0], "sour": [0.6, 208, 0], "almond": [0.2, 138, 4], "pear": [0.2, 49, 5], "sparkling": [0.2, 234, 0], "nutty": [0.2, 137, 4], "fruit": [1.0, 1, 5], "cherry": [0.2, 10, 5], "herbal": [0.4, 78, 1], "berries": [0.2, 5, 5], "lime": [0.4, 29, 5]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 May 18 06:10PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -168,6 +173,7 @@ var activeMapRegions = [];
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

@@ -164,7 +164,12 @@ var boundsNE= { x:153.99, y:45.46};
 <table class="table">
 <tr><th>Region</th><th>Vol/Qty</th><th>Observed prices</th><th>Converted</th></tr>
 <tr><td>New York</td><td>1000 ml</td><td><abbr title="United States dollar">USD</abbr> $22.0</td><td data-currency="USD" data-rlow="22.0" data-rhigh="22.0"></td></tr>
-<tr><td>France</td><td>700 ml</td><td><abbr title="Euro">EUR</abbr> €22.0</td><td data-currency="EUR" data-rlow="22.0" data-rhigh="22.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 February 20 02:41PM </small></div></div> 
+<tr><td>France</td><td>700 ml</td><td><abbr title="Euro">EUR</abbr> €22.0</td><td data-currency="EUR" data-rlow="22.0" data-rhigh="22.0"></td></tr></table></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"banana liqueur": [1.0, 550, 3], "vodka": [1.0, 267, 4], "coconut liqueur": [1.0, 563, 3], "Malibu": [1.0, 165, 3], "half & half": [1.0, 319, 2]};
+var flavorAffinities = {"coconut": [0.6666666666666666, 140, 4], "alcohol": [0.3333333333333333, 198, 0], "sweet": [1.0, 209, 0], "tropical fruit": [0.3333333333333333, 247, 5], "nutty": [0.6666666666666666, 137, 4], "fruit": [0.3333333333333333, 1, 5], "banana": [0.3333333333333333, 4, 5], "cream": [0.3333333333333333, 179, 0]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2012 February 20 02:41PM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -180,6 +185,7 @@ var boundsNE= { x:153.99, y:45.46};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->

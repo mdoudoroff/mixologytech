@@ -157,7 +157,12 @@ var activeMapRegions = [];
 var boundsSW = { x:6.6, y:35.49};
 var boundsNE= { x:18.52, y:41.9};
 </script>
-<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;"></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
+<div id="map"></div></div></div><!-- end details block (left column) --><div class="span6"><div id="xrefs"></div></div><!-- end xref block (right column) --></div><div class="row"><div class="span12"><div id="integration" style="clear:both;">
+<div id="affinities"><h3>Affinities</h3>
+<script>
+var ingredientAffinities = {"Angostura bitters": [0.3333333333333333, 19, 1], "Martini & Rossi Dry Vermouth": [0.3333333333333333, 1656, 2], "orange juice": [0.3333333333333333, 340, 2], "lemon twist": [0.3333333333333333, 1058, 0], "aromatic bitters": [0.3333333333333333, 22, 1], "lemon juice": [0.3333333333333333, 324, 2], "gin, lemon flavored": [0.3333333333333333, 557, 4], "apricot liqueur": [0.3333333333333333, 138, 3], "gin": [0.3333333333333333, 556, 4], "gin, London dry": [0.3333333333333333, 257, 4], "vermouth, dry": [1.0, 452, 2]};
+var flavorAffinities = {"clove": [0.2222222222222222, 113, 2], "acid": [0.4444444444444444, 197, 0], "lemon": [0.3333333333333333, 28, 5], "alcohol": [0.3333333333333333, 198, 0], "juniper": [0.3333333333333333, 121, 2], "orange": [0.1111111111111111, 30, 5], "citrus": [0.4444444444444444, 24, 5], "sweet": [0.2222222222222222, 209, 0], "sour": [0.3333333333333333, 208, 0], "anise": [0.2222222222222222, 104, 2], "herbal": [1.0, 78, 1], "fruit": [1.0, 1, 5], "cinnamon": [0.2222222222222222, 112, 2], "apricot": [0.1111111111111111, 3, 5], "floral": [0.3333333333333333, 67, 3], "gin": [0.1111111111111111, 154, 0], "wine": [0.4444444444444444, 162, 0], "bitter": [0.2222222222222222, 200, 0], "lemon essence": [0.1111111111111111, 62, 0], "spice": [0.5555555555555556, 102, 2]};
+</script></div></div></div><!-- end integration block --><div class="row"><div class="span12" id="closingMetadata"><small class="muted">Last updated: 2011 July 14 10:12AM </small></div></div> 
   <footer class="row">
     <div class="span12">
       <small>
@@ -173,6 +178,7 @@ var boundsNE= { x:18.52, y:41.9};
 
   <!-- scripts concatenated and minified via build script -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
   <script src="js/tree-ck.js"></script>
   <!-- end scripts -->
