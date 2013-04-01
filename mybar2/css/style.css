@@ -73,6 +73,12 @@ footer {
 }
 figure {
   text-align: center;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+figure img {
+  width: 100%;
 }
 #sinceOverlay {
   position: absolute;
