@@ -63,13 +63,6 @@ footer {
   stroke: #ccc;
   stroke-width: 0.1;
 }
-#topphotos {
-  height: 190px;
-  overflow: hidden;
-}
-#topphotos img {
-  display: inline-block;
-  height: 180px;
-  margin-right: 9px;
-  margin-bottom: 9px;
+.thumbnail p {
+  text-align: center;
 }

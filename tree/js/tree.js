@@ -111,13 +111,34 @@ jQuery(document).ready(function() {
 		$('#resetsearch').css('opacity','0.5');
 	});
 
-	// if no pictures, hide the pictures area
-	if (photoList) {
-		if (photoList.length < 1) {
-			$('#topphotos').hide();
-		}
-	} else {
+	// pictures
+	if (leafPhotos.length<1 && examplePhotos.length<1) {
 		$('#topphotos').hide();
+	} else if (leafPhotos.length>0) {
+		var piccount = 0;
+		var piclist = $('<ul class="thumbnails"></ul>')
+		for (var i=0;i<leafPhotos.length;i++) {
+			piccount+=1;
+			if (piccount <= 3) {
+				var img = $('<li class="span2"><a href="http://ingr-photos.s3.amazonaws.com/'+leafPhotos[i]+'" class="thumbnail"><img src="http://ingr-photos.s3.amazonaws.com/'+leafPhotos[i]+'" height="180" /></a></li>');	
+				piclist.append(img);
+			}
+		}
+		$('#topphotos').append(piclist);
+	} else if (examplePhotos.length>0) {
+		var piccount = 0;
+		var piclist = $('<ul class="thumbnails"></ul>')
+		for (var i=0;i<examplePhotos.length;i++) {
+			piccount+=1;
+			if (piccount <= 3) {
+
+				var d = examplePhotos[i]
+
+				var img = $('<li class="span2"><a href="ing-'+d.id+'.html" class="thumbnail"><img src="http://ingr-photos.s3.amazonaws.com/'+d.fn+'" height="180" /><p>'+d.name+'</p></a></li>');	
+				piclist.append(img);
+			}
+		}
+		$('#topphotos').append(piclist);
 	}
 
 });
@@ -213,13 +234,13 @@ jQuery(window).load(function() {
 			var n = feature.data.properties.name;
 
 			if (activeMapRegions.indexOf(n) > -1) {
-				console.log('SHOWN:',n);
+				//console.log('SHOWN:',n);
 				//n$(feature.element).attr("style", 'fill:rgb(0,255,0); opacity:0.5;');
 				n$(feature.element).attr("style", 'stroke:rgb(255,255,0); stroke-width:2; fill:none;');
 				n$(feature.element).add("svg:title").text(n);
 			} else {
 				n$(feature.element).attr("style", 'display:none;');
-				console.log('hidden:',n);
+				//console.log('hidden:',n);
 			}
 
 			/*
@@ -242,15 +263,15 @@ jQuery(window).load(function() {
 		  }
 		}
 		
-		console.log('initial',map.extent());
-		console.log(boundsSW,boundsNE);
+		//console.log('initial',map.extent());
+		//console.log(boundsSW,boundsNE);
 
 		//map.resize();
 
 		//map.extent([{lon:-170,lat:-20},{lon:153,lat:71}]);
 
 		map.extent([{lon:boundsSW.x,lat:boundsSW.y},{lon:boundsNE.x,lat:boundsNE.y}]);
-		console.log('after',map.extent());
+		//console.log('after',map.extent());
 
 		//map.extent([map.pointLocation({y:boundsSW.y,x:boundsSW.x}), map.pointLocation({y:boundsNE.y,x:boundsNE.x})]);
 
@@ -280,41 +301,6 @@ jQuery(window).load(function() {
 	}
 
 
-
-
-
-
-	// ================= photos! =================
-
-	if (photoList.length > 1) {
-		var j = photoList.length;
-	    var i = 0;
-	    var img;
-	    function loadImage() {
-	    	if (i > 6) {
-	    		$("#topphotos").append('<span>More...</span>');
-	    		return;
-	    	}
-	    	if (i >= j) return;
-	    	console.log(photoList[i])
-
-	    	img = $('<img src="http://ingr-photos.s3.amazonaws.com/'+photoList[i]+'" height="180" class="img-polaroid">');
-
-	    	img.error(function() {
-	    			i++;
-					loadImage();
-	  			})
-	    	.load(function() {
-				$(this).hide();      
-	            $('#topphotos').append(this);
-	            $(this).fadeIn();
-
-	            i++;
-				loadImage();  
-	    	});	  	
-	    }
-	    loadImage();
-	}
     
 
     // ============= AFFINITIES! ================
@@ -420,7 +406,7 @@ jQuery(window).load(function() {
 				.style("fill", function(d, i) { return flavFill(d.groupIdx); })
 				.attr("text-anchor", "middle")
 				.on("click", function(d) {
-					window.location = "ing-"+d.iid+".html";
+					window.location = "flavor-"+d.iid+".html";
 				})
 				.attr("transform", function(d) {
 					return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
