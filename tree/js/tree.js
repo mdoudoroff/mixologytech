@@ -116,29 +116,25 @@ jQuery(document).ready(function() {
 		$('#topphotos').hide();
 	} else if (leafPhotos.length>0) {
 		var piccount = 0;
-		var piclist = $('<ul class="thumbnails"></ul>')
 		for (var i=0;i<leafPhotos.length;i++) {
 			piccount+=1;
 			if (piccount <= 3) {
-				var img = $('<li class="span2"><a href="http://ingr-photos.s3.amazonaws.com/'+leafPhotos[i]+'" class="thumbnail"><img src="http://ingr-photos.s3.amazonaws.com/'+leafPhotos[i]+'" height="180" /></a></li>');	
-				piclist.append(img);
+				var img = $('<div class="polaroid"><a href="http://ingr-photos.s3.amazonaws.com/'+leafPhotos[i]+'"><img src="http://ingr-photos.s3.amazonaws.com/'+leafPhotos[i]+'" height="180" /></a></div>');
+				$('#topphotos').append(img);
 			}
 		}
-		$('#topphotos').append(piclist);
 	} else if (examplePhotos.length>0) {
 		var piccount = 0;
-		var piclist = $('<ul class="thumbnails"></ul>')
 		for (var i=0;i<examplePhotos.length;i++) {
 			piccount+=1;
 			if (piccount <= 3) {
 
 				var d = examplePhotos[i]
 
-				var img = $('<li class="span2"><a href="ing-'+d.id+'.html" class="thumbnail"><img src="http://ingr-photos.s3.amazonaws.com/'+d.fn+'" height="180" /><p>'+d.name+'</p></a></li>');	
-				piclist.append(img);
+				var img = $('<div class="polaroid"><a href="ing-'+d.id+'.html"><img src="http://ingr-photos.s3.amazonaws.com/'+d.fn+'" height="180" /><p>'+d.name+'</p></a></div>');
+				$('#topphotos').append(img);
 			}
 		}
-		$('#topphotos').append(piclist);
 	}
 
 });
