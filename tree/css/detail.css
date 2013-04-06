@@ -86,10 +86,10 @@ footer {
 .polaroid p {
   position: absolute;
   text-align: center;
-  width: 180px;
   height: 34px;
   padding-top: 4px;
   left: 4px;
+  right: 4px;
   bottom: -9px;
   line-height: 14px;
   overflow: hidden;
@@ -114,4 +114,21 @@ footer {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a8ffffff', endColorstr='#ffffff', GradientType=0);
   /* IE6-9 */
 
+}
+#morepics {
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  height: 240px;
+  width: 90px;
+  padding: 4px;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
 }

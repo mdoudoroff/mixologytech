@@ -3856,31 +3856,52 @@ jQuery(document).ready(function() {
 	});
 
 	// pictures
-	if (leafPhotos.length<1 && examplePhotos.length<1) {
-		$('#topphotos').hide();
-	} else if (leafPhotos.length>0) {
-		var piccount = 0;
+	var availablePictures = [];
+	var picsToLoad;
+
+	// if leaf photos, normalize
+	if (leafPhotos.length>0) {
 		for (var i=0;i<leafPhotos.length;i++) {
-			piccount+=1;
-			if (piccount <= 3) {
-				var img = $('<div class="polaroid"><a href="http://ingr-photos.s3.amazonaws.com/'+leafPhotos[i]+'"><img src="http://ingr-photos.s3.amazonaws.com/'+leafPhotos[i]+'" height="180" /></a></div>');
-				$('#topphotos').append(img);
-			}
+			availablePictures.append({fn:leafPhotos[i],id:'',name:''});			
 		}
 	} else if (examplePhotos.length>0) {
-		var piccount = 0;
-		for (var i=0;i<examplePhotos.length;i++) {
-			piccount+=1;
-			if (piccount <= 3) {
-
-				var d = examplePhotos[i]
-
-				var img = $('<div class="polaroid"><a href="ing-'+d.id+'.html"><img src="http://ingr-photos.s3.amazonaws.com/'+d.fn+'" height="180" /><p>'+d.name+'</p></a></div>');
-				$('#topphotos').append(img);
-			}
-		}
+		availablePictures = examplePhotos;
 	}
 
+	if (availablePictures.length<1) {
+		$('#topphotos').hide();
+	} else {
+
+
+		var loadmorepics = $('<div id="morepics">Load more<br/><span id="availpics">'+(availablePictures.length)+'</span> available</div>');
+		$('#topphotos').append(loadmorepics);
+
+		function loadPics() {
+			picsToLoad = 5;
+			while (picsToLoad > 0 && availablePictures.length > 0) {
+				var d = availablePictures.shift();
+				if (d.name.length>0) {
+					var img = $('<div class="polaroid"><a href="ing-'+d.id+'.html"><img src="http://ingr-photos.s3.amazonaws.com/'+d.fn+'" height="180" /><p>'+d.name+'</p></a></div>');
+				} else {
+					var img = $('<div class="polaroid"><a href="http://ingr-photos.s3.amazonaws.com/'+d.fn+'"><img src="http://ingr-photos.s3.amazonaws.com/'+d.fn+'" height="180" /></a></div>');
+				}
+				
+				$('#morepics').before(img);
+				picsToLoad -= 1;				
+			}
+			if (availablePictures.length >= 1) {
+				$('#availpics').text(availablePictures.length);
+			}
+			else {
+				$('#morepics').hide();
+			}
+
+		}	
+
+		loadmorepics.click(loadPics);
+		loadPics();
+
+	}
 });
 
 
