@@ -1,9 +1,14 @@
+/*jshint devel:true */
+/*global leafPhotos */
+/*global examplePhotos */
+/*global ingredientAffinities */
+/*global flavorAffinities */
+/*global originAggregate */
+/*global map_ids */
 
 // @codekit-prepend "d3.layout.cloud.js";
-// @codekit-prepend "polymaps/lib/nns/nns.js";
-// @codekit-prepend "polymaps/polymaps.js";
-// @codekit-prepend "polymaps/geoff.js";
 // @codekit-prepend "tsv.js";
+// @codekit-prepend "map.js";
 
 var searchPrompt = 'Search by ingredient name...';
 
@@ -118,7 +123,7 @@ jQuery(document).ready(function() {
 	// if leaf photos, normalize
 	if (leafPhotos.length>0) {
 		for (var i=0;i<leafPhotos.length;i++) {
-			availablePictures.append({fn:leafPhotos[i],id:'',name:''});			
+			availablePictures.push({fn:leafPhotos[i],id:'',name:''});			
 		}
 	} else if (examplePhotos.length>0) {
 		availablePictures = examplePhotos;
@@ -158,6 +163,11 @@ jQuery(document).ready(function() {
 		loadPics();
 
 	}
+
+	console.log(typeof map_ids);
+	if (typeof map_ids === 'object' && map_ids.length>0) {
+		buildMap(map_ids);
+	}
 });
 
 
@@ -165,158 +175,8 @@ jQuery(window).load(function() {
 
 	// ================= map! =================
 
-	if (! jQuery.isEmptyObject(originAggregate) || ! jQuery.isEmptyObject(activeMapRegions)) {
-
-		var po = org.polymaps;
-
-		/* Country name -> population (July 2010 Est.). */
-		//var population = tsv("population.tsv")
-		//	.key(function(l) { return l[1]; })
-		//	.value(function(l) { return l[2].replace(/,/g, ""); })
-		//	.map();
-
-		/* Country name -> internet users (2008). */
-		//var internet = tsv("internet.tsv")
-		//	.key(function(l) { return l[1]; })
-		//	.value(function(l) { return l[2].replace(/,/g, ""); })
-		//	.map();
-
-		var map = po.map()
-			.container(document.getElementById("map").appendChild(po.svg("svg")))
-			.center({lat: 40, lon: 0})
-			.zoomRange([1, 7])
-			.zoom(2)
-			//.add(po.interact())
-			;
-
-		//map.add(po.image()
-		//	.url("http://s3.amazonaws.com/com.modestmaps.bluemarble/{Z}-r{Y}-c{X}.jpg"));
-
-		// load the primary map elements (countries)
-		map.add(po.geoJson()
-			.url("countries.json")
-			.tile(false)
-			//.zoom(3)
-			.on("load", load)
-			);
-
-		// load the secondary map elements (regions)
-		map.add(po.geoJson()
-			.url("other-regions.json")
-			.tile(false)
-			//.zoom(3)
-			.on("load", loadregions)
-			);
-
-		//map.add(po.geoJson()
-		//	.features(geoJSONFeatures['features'])
-		//	.tile(false)
-		//	.zoom(3)
-		//	.on("load", load));
-
-
-		//map.add(po.compass()
-		//	.pan("none"));
-
-		map.container().setAttribute("class", "Oranges");
-
-		
-
-		// set attributes on primary map elements (countries)
-		function load(e) {
-		  for (var i = 0; i < e.features.length; i++) {
-			var feature = e.features[i];
-			var n = feature.data.properties.name;
-			var v = originAggregate[n];
-			if (v !== undefined) {
-				used.push(n);
-			}
-			if (v === 1.0) {
-				v = 0.99;
-			}
-			n$(feature.element)
-				.attr("class", isNaN(v) ? null : "q" + ~~(v * 9) + "-" + 9)
-				.attr('style', 'opacity:0.5;')
-				//.attr("onclick", 'window.location="http://apple.com";')
-			  .add("svg:title")
-				//.text(n + (isNaN(v) ? "" : ":  " + percent(v)));
-				.text(n + (isNaN(v) ? "" : ":  " + v));
-		  }
-		}
-
-		// set attributes on primary map elements (countries)
-		function loadregions(e) {
-		  for (var i = 0; i < e.features.length; i++) {
-			var feature = e.features[i];
-			var n = feature.data.properties.name;
-
-			if (activeMapRegions.indexOf(n) > -1) {
-				//console.log('SHOWN:',n);
-				//n$(feature.element).attr("style", 'fill:rgb(0,255,0); opacity:0.5;');
-				n$(feature.element).attr("style", 'stroke:rgb(255,255,0); stroke-width:2; fill:none;');
-				n$(feature.element).add("svg:title").text(n);
-			} else {
-				n$(feature.element).attr("style", 'display:none;');
-				//console.log('hidden:',n);
-			}
-
-			/*
-			var v = originAggregate[n];
-			if (v !== undefined) {
-				used.push(n);
-			}
-			if (v === 1.0) {
-				v = 0.99;
-			}
-			n$(feature.element)
-				//.attr("class", isNaN(v) ? null : "q" + ~~(v * 9) + "-" + 9)
-				//.attr("onclick", 'window.location="http://apple.com";')
-				.attr("style", 'fill:rgb(0,255,0); opacity:0.5;')
-			  .add("svg:title")
-				//.text(n + (isNaN(v) ? "" : ":  " + percent(v)));
-				.text(n + (isNaN(v) ? "" : " (region):  " + v));
-
-			*/
-		  }
-		}
-		
-		//console.log('initial',map.extent());
-		//console.log(boundsSW,boundsNE);
-
-		//map.resize();
-
-		//map.extent([{lon:-170,lat:-20},{lon:153,lat:71}]);
-
-		map.extent([{lon:boundsSW.x,lat:boundsSW.y},{lon:boundsNE.x,lat:boundsNE.y}]);
-		//console.log('after',map.extent());
-
-		//map.extent([map.pointLocation({y:boundsSW.y,x:boundsSW.x}), map.pointLocation({y:boundsNE.y,x:boundsNE.x})]);
-
-
-		// correct zoom (go no closer than zoom level 6)
-		map.zoom(Math.floor(map.zoom())-1);
-		//if (map.zoom()>6.0) {
-		//	map.zoom(6);
-		//} else {
-		//	map.zoom(Math.floor(map.zoom()));
-		//}
-
-		/** Formats a given number as a percentage, e.g., 10% or 0.02%. */
-		//function percent(v) {
-		//  return (v * 100).toPrecision(Math.min(2, 2 - Math.log(v) / Math.LN2)) + "%";
-		//}
-
-		// zoom to the feature's extent
-		//var neighborhood = $.getJSON('world.json', function(data) {
-		//	return data;
-		//});
-		//console.log(neighborhood.type);
-		//var neighborhood = {"type":"Feature","properties":{"OBJECTID":20.000000,"NEIGHBORHO":"Mission"},"geometry":{"type":"Polygon","coordinates":[[[-122.424756,37.747849],[-122.424949,37.749725],[-122.425578,37.756617],[-122.426761,37.769577],[-122.426329,37.769601],[-122.423302,37.772048],[-122.423269,37.772074],[-122.422690,37.770624],[-122.421172,37.770221],[-122.419768,37.770073],[-122.415771,37.769625],[-122.412755,37.769588],[-122.408760,37.769225],[-122.407029,37.768911],[-122.405280,37.767914],[-122.405032,37.766635],[-122.405014,37.765952],[-122.404982,37.764670],[-122.405465,37.762525],[-122.406285,37.760887],[-122.406249,37.759519],[-122.405147,37.758511],[-122.403943,37.757761],[-122.403271,37.756746],[-122.402891,37.754529],[-122.403019,37.751107],[-122.403576,37.749388],[-122.404159,37.749379],[-122.405767,37.749097],[-122.407579,37.748383],[-122.411344,37.748237],[-122.415005,37.748263],[-122.418126,37.748212],[-122.420171,37.748179],[-122.421568,37.748070],[-122.423181,37.747959],[-122.424756,37.747849]]]}};
-		//var extent = geoff.extent().encloseGeometry(geoJSONFeatures);
-		//map.extent(extent.toArray());
-		//map.zoom(Math.floor(map.zoom()));
-	}
-
+	//if (! jQuery.isEmptyObject(originAggregate) || ! jQuery.isEmptyObject(activeMapRegions)) {
+	//}
 
     
 
