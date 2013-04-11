@@ -9,28 +9,29 @@
 
 #map {
 
+  width:460px;
+  height: 300px;
+  overflow: hidden;
+
   rect {
-    fill: none;
+    fill: #eee;
   }
 
   .feature {
-    fill: #ccc;
+    fill: #ddd;
     cursor: pointer;
-  }
-
-  .feature.active {
-    fill: orange;
+    stroke: none;
   }
 
   .mesh {
     fill: none;
-    stroke: #fff;
-    stroke-width: .5px;
+    stroke: #000;
+    stroke-width: .25px;
     stroke-linejoin: round;
   }
 
   .feature.glow {
-    fill: yellow;
+    fill: orange;
   }
 }
 

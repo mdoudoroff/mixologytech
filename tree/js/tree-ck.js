@@ -728,7 +728,7 @@ function buildMap(map_ids) {
 		mapHeight = 300;
 
 	var projection = d3.geo.mercator()
-		.scale(100)
+		.scale(1000)
 		.translate([mapWidth / 2, mapHeight / 2]);
 
 	var path = d3.geo.path()
@@ -783,11 +783,14 @@ function buildMap(map_ids) {
 		var latMin = d3.min(latBounds);
 		var latMax = d3.max(latBounds);
 		var b = [[lonMin,latMin],[lonMax,latMax]];
-		g.transition().duration(750).attr("transform",
+		var newScale = 0.80 / Math.max((b[1][0] - b[0][0]) / mapWidth, (b[1][1] - b[0][1]) / mapHeight);
+		console.log(newScale);
+		g.attr(
+			"transform",
 			"translate(" + projection.translate() + ")" +
-			"scale(" + 0.95 / Math.max((b[1][0] - b[0][0]) / mapWidth, (b[1][1] - b[0][1]) / mapHeight) + ")" +
-			"translate(" + -(b[1][0] + b[0][0]) / 2 + "," + -(b[1][1] + b[0][1]) / 2 + ")");
-
+			"scale(" + newScale + ")" +
+			"translate(" + -(b[1][0] + b[0][0]) / 2 + "," + -(b[1][1] + b[0][1]) / 2 + ")"
+			);
 	});
 
 }
@@ -964,7 +967,6 @@ jQuery(document).ready(function() {
 
 	}
 
-	console.log(typeof map_ids);
 	if (typeof map_ids === 'object' && map_ids.length>0) {
 		buildMap(map_ids);
 	}

@@ -164,7 +164,6 @@ jQuery(document).ready(function() {
 
 	}
 
-	console.log(typeof map_ids);
 	if (typeof map_ids === 'object' && map_ids.length>0) {
 		buildMap(map_ids);
 	}
