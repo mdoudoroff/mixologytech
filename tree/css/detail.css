@@ -74,6 +74,12 @@ footer {
 #map .feature.glow {
   fill: orange;
 }
+#map .country-label {
+  font-size: 20px;
+  fill: #f00;
+  opacity: 0.4;
+  text-transform: uppercase;
+}
 .polaroid {
   position: relative;
   display: block;

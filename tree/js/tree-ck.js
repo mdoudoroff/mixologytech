@@ -756,7 +756,7 @@ function buildMap(map_ids) {
 				if (map_ids.indexOf(d.id)>-1) {
 					return "feature glow " + d.id;
 				} else {
-					return "feature " + d.id; 	
+					return "feature " + d.id;
 				}
 			});
 
@@ -771,26 +771,48 @@ function buildMap(map_ids) {
 		var lonBounds = [];
 		var latBounds = [];
 		g.selectAll("path").each(function(d){
-		if (ids.indexOf(d.id)>-1) {
-			lonBounds.push(path.bounds(d)[0][0]);
-			lonBounds.push(path.bounds(d)[1][0]);
-			latBounds.push(path.bounds(d)[0][1]);
-			latBounds.push(path.bounds(d)[1][1]);
-		}
+			if (ids.indexOf(d.id)>-1) {
+				lonBounds.push(path.bounds(d)[0][0]);
+				lonBounds.push(path.bounds(d)[1][0]);
+				latBounds.push(path.bounds(d)[0][1]);
+				latBounds.push(path.bounds(d)[1][1]);
+			}
 		});
-		var lonMin = d3.min(lonBounds);
-		var lonMax = d3.max(lonBounds);
-		var latMin = d3.min(latBounds);
-		var latMax = d3.max(latBounds);
+		console.log(lonBounds,latBounds);
+		var absLonMin = projection([-169,0]);
+		var absLonMax = projection([180,0]);
+		var lonMin = (d3.min(lonBounds)>absLonMin[0]) ? d3.min(lonBounds) : absLonMin[0];
+		var lonMax = (d3.max(lonBounds)<absLonMax[0]) ? d3.max(lonBounds) : absLonMax[0];
+		//console.log('absLonMin, absLonMax', absLonMin, absLonMax);
+		var absLatMin = projection([0,66]);	// ceiling and floor latitudes (may not work out in the long run)
+		var absLatMax = projection([0,-34]);
+		var latMin = (d3.min(latBounds)>absLatMin[1]) ? d3.min(latBounds) : absLatMin[1];
+		var latMax = (d3.max(latBounds)<absLatMax[1]) ? d3.max(latBounds) : absLatMax[1];
 		var b = [[lonMin,latMin],[lonMax,latMax]];
+		//console.log('b',b);
 		var newScale = 0.80 / Math.max((b[1][0] - b[0][0]) / mapWidth, (b[1][1] - b[0][1]) / mapHeight);
-		console.log(newScale);
 		g.attr(
 			"transform",
 			"translate(" + projection.translate() + ")" +
 			"scale(" + newScale + ")" +
 			"translate(" + -(b[1][0] + b[0][0]) / 2 + "," + -(b[1][1] + b[0][1]) / 2 + ")"
 			);
+
+
+
+		// country labels (we're rendering these after the zoom/crop and applying a reverse scale on the text to get the label up to size)
+		var countryLabels = g.selectAll('.country-label')
+			.data(countries)
+			.enter()
+			.append("text")
+			.attr("class", 'country-label')
+			.text(function(d){return d.properties.name;})
+			.attr("transform", function(d) { return "translate(" + path.centroid(d) + ") scale("+1/newScale+") translate(" + this.getBBox().width/2 * -1 + ",0)"; });
+
+		countryLabels.filter(function(d){ return map_ids.indexOf(d.id)<0; })
+			.attr("visibility","hidden");
+		
+
 	});
 
 }
