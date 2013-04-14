@@ -4,10 +4,10 @@
 
 // @codekit-prepend "topojson.v0.js";
 
-function buildMap(map_ids) {
+function buildMap(activeCountryIDs,activeSpecialRegions) {
 
-	var mapWidth = 460,
-		mapHeight = 300;
+	var mapWidth = $('#map').outerWidth(),
+		mapHeight = (mapWidth<570) ? mapWidth : 570;
 
 	var projection = d3.geo.mercator()
 		.scale(1000)
@@ -17,9 +17,12 @@ function buildMap(map_ids) {
 		.projection(projection);
 
 	var svg = d3.select("#map").append("svg")
-		.attr("width", mapWidth)
-		.attr("height", mapHeight);
+		//.attr("width", mapWidth) // we don't want to specify this here because of the responsive layout
+		.attr("height", mapHeight) // but we do specify this here as a sane starting point
+		.attr("viewBox", "0 0 " + mapWidth + " " + mapHeight ) // responsive
+		.attr("preserveAspectRatio", "xMidYMid meet"); // responsive
 
+    // create a background box ("the sea")
 	svg.append("rect")
 		.attr("width", mapWidth)
 		.attr("height", mapHeight);
@@ -30,12 +33,12 @@ function buildMap(map_ids) {
 
 		var countries = topojson.object(mapData, mapData.objects.subunits3).geometries;
 
-		g.selectAll("path")
+		g.selectAll(".feature")
 			.data(countries)
-		.enter().append("path")
+			.enter().append("path")
 			.attr("d", path)
 			.attr("class", function(d) { 
-				if (map_ids.indexOf(d.id)>-1) {
+				if (activeCountryIDs.indexOf(d.id)>-1) {
 					return "feature glow " + d.id;
 				} else {
 					return "feature " + d.id;
@@ -49,15 +52,34 @@ function buildMap(map_ids) {
 
 
 		// Zoom in on some arbitrary countries
-		var ids = map_ids;
+		var ids = activeCountryIDs;
 		var lonBounds = [];
 		var latBounds = [];
 		g.selectAll("path").each(function(d){
 			if (ids.indexOf(d.id)>-1) {
-				lonBounds.push(path.bounds(d)[0][0]);
-				lonBounds.push(path.bounds(d)[1][0]);
-				latBounds.push(path.bounds(d)[0][1]);
-				latBounds.push(path.bounds(d)[1][1]);
+
+				if (d.id==='USA') {
+					var fudgemin = projection([-127.63,49.79]);
+					var fudgemax = projection([-65.41,24.23]);
+					lonBounds.push(fudgemin[0]);
+					lonBounds.push(fudgemax[0]);
+					latBounds.push(fudgemin[1]);
+					latBounds.push(fudgemax[1]);
+				} else if (d.id==='CAN') {
+					var fudgemin = projection([-142,61]);
+					var fudgemax = projection([-51,41]);
+					lonBounds.push(fudgemin[0]);
+					lonBounds.push(fudgemax[0]);
+					latBounds.push(fudgemin[1]);
+					latBounds.push(fudgemax[1]);
+				} else {
+					lonBounds.push(path.bounds(d)[0][0]);
+					lonBounds.push(path.bounds(d)[1][0]);
+					latBounds.push(path.bounds(d)[0][1]);
+					latBounds.push(path.bounds(d)[1][1]);
+
+				}
+
 			}
 		});
 		console.log(lonBounds,latBounds);
@@ -91,11 +113,64 @@ function buildMap(map_ids) {
 			.text(function(d){return d.properties.name;})
 			.attr("transform", function(d) { return "translate(" + path.centroid(d) + ") scale("+1/newScale+") translate(" + this.getBBox().width/2 * -1 + ",0)"; });
 
-		countryLabels.filter(function(d){ return map_ids.indexOf(d.id)<0; })
+		countryLabels.filter(function(d){ return activeCountryIDs.indexOf(d.id)<0; })
 			.attr("visibility","hidden");
-		
+
+
+
+
+		// overlay some more regions		
+		d3.json("other-regions.json", function(error, mapData) {
+
+			var otherRegions = topojson.object(mapData, mapData.objects["other-regions"]).geometries;
+
+			console.log(otherRegions);
+
+			g.selectAll(".region")
+				.data(otherRegions)
+				.enter().append("path")
+				.attr("d", path)
+				.on("click", function(d) { window.location=d.id+'.html';})
+				.attr("class", function(d){
+					if (activeSpecialRegions.indexOf(d.id)>-1) {
+						return "region glow "+d.id;	
+					} else {
+						return "region "+d.id;
+					}
+				})
+				.on("mouseover", showToolTip)
+				.on("mouseout", hideToolTip)
+				;
+
+
+			// region labels (we're rendering these after the zoom/crop and applying a reverse scale on the text to get the label up to size)
+			var regionLabels = g.selectAll('.region-label')
+				.data(otherRegions)
+				.enter()
+				.append("text")
+				.attr("class", 'region-label')
+				.text(function(d){return d.properties.name;})
+				.attr("transform", function(d) { return "translate(" + path.centroid(d) + ") scale("+1/newScale+") translate(" + this.getBBox().width/2 * -1 + ",0)"; });
+			regionLabels.filter(function(d){ return activeSpecialRegions.indexOf(d.id)<0; })
+				.attr("visibility","hidden");
+
+		});
+
+
+		var tooltip = g.append("div")
+			.attr("class", "tooltip");
 
 	});
+
+	function showToolTip() {
+		console.log('show tooltip', d3.mouse(this));
+		d3.select('.tooltip')
+			.style('left', d3.mouse(this)[0])
+			.style('top', d3.mouse(this)[1]);
+	}
+	function hideToolTip() {
+		console.log('hide tooltip');
+	}
 
 }
 

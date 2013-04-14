@@ -8,9 +8,7 @@
 // map
 
 #map {
-
-  width:460px;
-  height: 300px;
+  max-height: 570px;
   overflow: hidden;
 
   rect {
@@ -36,10 +34,45 @@
 
   .country-label {
     font-size: 20px;
+    font-style: italic;
     fill: #f00;
     opacity: 0.4;
     text-transform: uppercase;
   }
+
+  .region {
+    stroke: #bbb;
+    stroke-width: 2px;
+    stroke-dasharray: 2,2;
+    stroke-linejoin: round;
+    fill: rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+
+  .region.glow {
+    stroke: yellow;
+    fill: rgba(255,255,0,0.4);
+  }
+
+  .region-label {
+    font-size: 14px;
+    fill: black;
+    opacity: 1;
+  }
+
+  .tooltip {   
+    position: absolute;           
+    text-align: center;           
+    width: 60px;                  
+    height: 28px;                 
+    padding: 2px;             
+    font: 12px sans-serif;        
+    background: lightsteelblue;   
+    border: 0px;      
+    border-radius: 8px;           
+    pointer-events: none;         
+  }
+
 }
 
 // photos

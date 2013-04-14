@@ -4,7 +4,9 @@
 /*global ingredientAffinities */
 /*global flavorAffinities */
 /*global originAggregate */
-/*global map_ids */
+/*global activeCountryIDs */
+/*global activeSpecialRegions */
+
 
 // @codekit-prepend "d3.layout.cloud.js";
 // @codekit-prepend "tsv.js";
@@ -164,8 +166,8 @@ jQuery(document).ready(function() {
 
 	}
 
-	if (typeof map_ids === 'object' && map_ids.length>0) {
-		buildMap(map_ids);
+	if (typeof activeCountryIDs === 'object' && activeCountryIDs.length>0 || typeof activeSpecialRegions === 'object' && activeSpecialRegions.length>0) {
+		buildMap(activeCountryIDs,activeSpecialRegions);
 	}
 });
 
