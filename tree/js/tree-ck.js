@@ -874,7 +874,7 @@ function buildMap(activeCountryIDs,activeSpecialRegions) {
 
 		});
 
-
+		// add a tooltip object
 		var tooltip = g.append("div")
 			.attr("class", "tooltip");
 
