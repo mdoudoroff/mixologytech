@@ -16,6 +16,8 @@ var searchPrompt = 'Search by ingredient name...';
 
 var used = [];
 
+var availablePictures = [];
+
 jQuery(document).ready(function() {
 
 	// == search form crap
@@ -118,11 +120,7 @@ jQuery(document).ready(function() {
 		$('#resetsearch').css('opacity','0.5');
 	});
 
-	// pictures
-	var availablePictures = [];
-	var picsToLoad;
-
-	// if leaf photos, normalize
+	// == pictures (initial handling)
 	if (leafPhotos.length>0) {
 		for (var i=0;i<leafPhotos.length;i++) {
 			availablePictures.push({fn:leafPhotos[i],id:'',name:''});			
@@ -130,48 +128,18 @@ jQuery(document).ready(function() {
 	} else if (examplePhotos.length>0) {
 		availablePictures = examplePhotos;
 	}
-
 	if (availablePictures.length<1) {
 		$('#topphotos').hide();
 	} else {
-
-
-		var loadmorepics = $('<div id="morepics">Load more<br/><span id="availpics">'+(availablePictures.length)+'</span> available</div>');
-		$('#topphotos').append(loadmorepics);
-
-		function loadPics() {
-			picsToLoad = 5;
-			while (picsToLoad > 0 && availablePictures.length > 0) {
-				var d = availablePictures.shift();
-				if (d.name.length>0) {
-					var img = $('<div class="polaroid"><a href="ing-'+d.id+'.html"><img src="http://ingr-photos.s3.amazonaws.com/'+d.fn+'" height="180" /><p>'+d.name+'</p></a></div>');
-				} else {
-					var img = $('<div class="polaroid"><a href="http://ingr-photos.s3.amazonaws.com/'+d.fn+'"><img src="http://ingr-photos.s3.amazonaws.com/'+d.fn+'" height="180" /></a></div>');
-				}
-				
-				$('#morepics').before(img);
-				picsToLoad -= 1;				
-			}
-			if (availablePictures.length >= 1) {
-				$('#availpics').text(availablePictures.length);
-			}
-			else {
-				$('#morepics').hide();
-			}
-
-		}	
-
-		loadmorepics.click(loadPics);
-		loadPics();
-
+		$('#topphotos').show();
 	}
 
 
-	// Affinities section
+	// == Affinities section
 	
-	if (1==1) {			// (conditional display logic goes here)
+	if (1===1) {			// (conditional display logic goes here)
 
-		$('#affinities').append($('<div id="cloud"><p>(rendering...)</p></div>'))
+		$('#affinities').append($('<div id="cloud"><p>(rendering...)</p></div>'));
 
 	}
 
@@ -185,33 +153,34 @@ jQuery(document).ready(function() {
 jQuery(window).load(function() {
 
 
-    // ============= AFFINITIES! ================
+	// ============= AFFINITIES! ================
 
-    // blue    orange  green   red     purple  brown   pink    gray    lt green  lt blue
-	// #1f77b4 #ff7f0e #2ca02c #d62728 #9467bd #8c564b #e377c2 #7f7f7f #bcbd22   #17becf
+	/* 
+		blue	orange  green   red	 	purple  brown   pink	gray	lt green  lt blue
+		#1f77b4 #ff7f0e #2ca02c #d62728 #9467bd #8c564b #e377c2 #7f7f7f #bcbd22   #17becf 
+	*/
 	var ordinalColorMapping = {
-		0:'#7f7f7f',     // garnishes, whatevah (default)
-		1:'#d62728',    // bitters
-		2:'#2ca02c',    // mixers/non-alcoholic modifiers/bottled cocktails
+		0:'#7f7f7f',	 // garnishes, whatevah (default)
+		1:'#d62728',	// bitters
+		2:'#2ca02c',	// mixers/non-alcoholic modifiers/bottled cocktails
 		3:'#1f77b4',   // liqueurs
-		4:'#17becf',     // white spirits
-		5:'#8c564b'     // brown spirits
+		4:'#17becf',	 // white spirits
+		5:'#8c564b'	 // brown spirits
 	};
 
 	var flavorOrdinalColorMapping = {
-		0:'#7f7f7f',     // (default)
+		0:'#7f7f7f',	 // (default)
 		1:'#2ca02c',	// vegetal/herbal
-		2:'#ff7f0e',    // spice
-		3:'#e377c2',    // floral
-		4:'#8c564b',    // nutty
-		5:'#d62728',    // fruity
+		2:'#ff7f0e',	// spice
+		3:'#e377c2',	// floral
+		4:'#8c564b',	// nutty
+		5:'#d62728',	// fruity
 	};
 
 	var divwidth = $('#affinities').width();
 
-	//var fill = d3.scale.category20();
-	var ingFill = function(i) {return ordinalColorMapping[i]};
-	var flavFill = function(i) {return flavorOrdinalColorMapping[i]};
+	var ingFill = function(i) {return ordinalColorMapping[i];};
+	var flavFill = function(i) {return flavorOrdinalColorMapping[i];};
 
 	var ingAffinityFilters = ['all','bitters','mixers/modifiers','liqueurs','white spirits','brown spirits'];
 	var flaAffinityFilters = ['all','vegetal/herbal','spice','floral','nutty','fruity'];
@@ -248,7 +217,7 @@ jQuery(window).load(function() {
 	function buildIngAffCloud() {
 		$('#cloud').empty();
 
-    	var terms = Object.keys(ingredientAffinities);
+		var terms = Object.keys(ingredientAffinities);
 
 		d3.layout.cloud().size([divwidth, 600])
 			.words(terms.map(function(d) {
@@ -281,7 +250,7 @@ jQuery(window).load(function() {
 	function buildFlaAffCloud() {
 		$('#cloud').empty();
 
-    	var terms = Object.keys(flavorAffinities);
+		var terms = Object.keys(flavorAffinities);
 
 		d3.layout.cloud().size([divwidth, 600])
 			.words(terms.map(function(d) {
@@ -311,32 +280,67 @@ jQuery(window).load(function() {
 		$('#cloud').append(flaAffinityRadioSet);
 	}
 
-    if (ingredientAffinities || flavorAffinities) {
+	if (ingredientAffinities || flavorAffinities) {
 
 		var affTabs = $('<ul id="afftabs" class="nav nav-tabs"></ul>');
-    	if (ingredientAffinities) {
-    		affTabs.append($('<li><a href="" id="ingAffTab" data-toggle="tab">Ingredients</a></li>'));
-    	}
-    	if (flavorAffinities) {
-    		affTabs.append($('<li><a href="" id="flaAffTab" data-toggle="tab">Flavors</a></li>'));
-    	}
-    	$('#cloud').before(affTabs);
+		if (ingredientAffinities) {
+			affTabs.append($('<li><a href="" id="ingAffTab" data-toggle="tab">Ingredients</a></li>'));
+		}
+		if (flavorAffinities) {
+			affTabs.append($('<li><a href="" id="flaAffTab" data-toggle="tab">Flavors</a></li>'));
+		}
+		$('#cloud').before(affTabs);
 
-    	$('#afftabs a').click(function (e) {
-    		e.preventDefault();
-    		$(this).tab('show');
-    	}).on('shown', function(e) {
-    		console.log('time to show ',$(e.target).attr('id'));
-    		if ($(e.target).attr('id')==="flaAffTab") {
-    			buildFlaAffCloud();
-    		} else {
-    			buildIngAffCloud();
-    		}
-    	});
+		$('#afftabs a').click(function (e) {
+			e.preventDefault();
+			$(this).tab('show');
+		}).on('shown', function(e) {
+			if ($(e.target).attr('id')==="flaAffTab") {
+				buildFlaAffCloud();
+			} else {
+				buildIngAffCloud();
+			}
+		});
 
-    	$('#afftabs a:first').tab('show');
+		$('#afftabs a:first').tab('show');
 
-    }
+	}
+
+	// == load the photos (at long last)
+	if (availablePictures.length>0) {
+
+		var picsToLoad;
+
+		var loadmorepics = $('<div id="morepics">Load more<br/><span id="availpics">'+(availablePictures.length)+'</span> available</div>');
+		$('#topphotos').append(loadmorepics);
+
+		function loadPics() {
+			var img;
+			picsToLoad = 5;
+			while (picsToLoad > 0 && availablePictures.length > 0) {
+				var d = availablePictures.shift();
+				if (d.name.length>0) {
+					img = $('<div class="polaroid"><a href="ing-'+d.id+'.html"><img src="http://ingr-photos.s3.amazonaws.com/'+d.fn+'" height="180" /><p>'+d.name+'</p></a></div>');
+				} else {
+					img = $('<div class="polaroid"><a href="http://ingr-photos.s3.amazonaws.com/'+d.fn+'"><img src="http://ingr-photos.s3.amazonaws.com/'+d.fn+'" height="180" /></a></div>');
+				}
+				
+				$('#morepics').before(img);
+				picsToLoad -= 1;				
+			}
+			if (availablePictures.length >= 1) {
+				$('#availpics').text(availablePictures.length);
+			}
+			else {
+				$('#morepics').hide();
+			}
+
+		}	
+
+		loadmorepics.click(loadPics);
+		loadPics();
+
+	}
 
 });
 
