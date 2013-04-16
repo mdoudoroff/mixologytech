@@ -178,3 +178,14 @@ footer {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
 }
+#cloud {
+  position: relative;
+  padding-top: 36px;
+}
+#ingAffinityRadioSet,
+#flaAffinityRadioSet {
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

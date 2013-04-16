@@ -1066,6 +1066,16 @@ jQuery(document).ready(function() {
 
 	}
 
+
+	// Affinities section
+	
+	if (1==1) {			// (conditional display logic goes here)
+
+		$('#affinities').append($('<div id="cloud"><p>(rendering...)</p></div>'))
+
+	}
+
+
 	if (typeof activeCountryIDs === 'object' && activeCountryIDs.length>0 || typeof activeSpecialRegions === 'object' && activeSpecialRegions.length>0) {
 		buildMap(activeCountryIDs,activeSpecialRegions);
 	}
@@ -1074,12 +1084,6 @@ jQuery(document).ready(function() {
 
 jQuery(window).load(function() {
 
-	// ================= map! =================
-
-	//if (! jQuery.isEmptyObject(originAggregate) || ! jQuery.isEmptyObject(activeMapRegions)) {
-	//}
-
-    
 
     // ============= AFFINITIES! ================
 
@@ -1109,106 +1113,128 @@ jQuery(window).load(function() {
 	var ingFill = function(i) {return ordinalColorMapping[i]};
 	var flavFill = function(i) {return flavorOrdinalColorMapping[i]};
 
-    if (ingredientAffinities) {
+	var ingAffinityFilters = ['all','bitters','mixers/modifiers','liqueurs','white spirits','brown spirits'];
+	var flaAffinityFilters = ['all','vegetal/herbal','spice','floral','nutty','fruity'];
+
+	function drawCloud(words) {
+		d3.select("#cloud").append("svg")
+			.attr("width", divwidth)
+			.attr("height", 600)
+			
+			.append("g")
+			.attr("transform", "translate("+divwidth/2+","+300+")")
+			
+			.selectAll("text")
+			.data(words)
+
+			.enter().append("text")
+			.style("font-size", function(d) { return d.size + "px"; })
+			.style("font-family", "Helvetica")
+			.style("font-weight", "bold")
+			.style("cursor", 'pointer')
+			.style("fill", function(d, i) { return d.color; })
+			.attr("text-anchor", "middle")
+			.attr("class",function(d) {return "affGroup affGroup"+d.groupIdx;})
+			.on("click", function(d) {
+				window.location = d.link;
+			})
+			.attr("transform", function(d) {
+				return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+			})
+			.text(function(d) { return d.text; });
+		}
+
+
+	function buildIngAffCloud() {
+		$('#cloud').empty();
 
     	var terms = Object.keys(ingredientAffinities);
 
-		function drawIA(words) {
-			d3.select("#affinities").append("svg")
-				.attr("width", divwidth)
-				.attr("height", 600)
-				
-				.append("g")
-				.attr("transform", "translate("+divwidth/2+","+300+")")
-				
-				.selectAll("text")
-				.data(words)
-
-				.enter().append("text")
-				.style("font-size", function(d) { return d.size + "px"; })
-				.style("font-family", "Helvetica")
-				.style("font-weight", "bold")
-				.style("cursor", 'pointer')
-				.style("fill", function(d, i) { return ingFill(d.groupIdx); })
-				.attr("text-anchor", "middle")
-				.on("click", function(d) {
-					window.location = "ing-"+d.iid+".html";
-				})
-				.attr("transform", function(d) {
-					return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-				})
-				.text(function(d) { return d.text; });
-			}
-
-    	
-
 		d3.layout.cloud().size([divwidth, 600])
 			.words(terms.map(function(d) {
-				return {text: d, size: 10 + ingredientAffinities[d][0] * 90, iid:ingredientAffinities[d][1], groupIdx:ingredientAffinities[d][2]};
+				return {text: d, size: 10 + ingredientAffinities[d][0] * 90 / 100, iid:ingredientAffinities[d][1], groupIdx:ingredientAffinities[d][2], color:ingFill(ingredientAffinities[d][2]), link:'ing-'+ingredientAffinities[d][1]+'.html'};
 			}))
-			//.words(terms.map(function(d) {
-			//        return {text: d, size: 10 + Math.random() * 90};
-			//      }))
 			.rotate(function() { return ~~(Math.random() * 2) * 0; })
 			.font("Helvetica")
 			.fontWeight('bold')
 			.fontSize(function(d) { return d.size; })
-			.on("end", drawIA)
+			.on("end", drawCloud)
 			.start();
 
+		// add toggle buttons
+		var ingAffinityRadioSet = $('<div id="ingAffinityRadioSet" class="btn-group" data-toggle="buttons-radio"></div>');
+		for (var ingGroupIdx=0; ingGroupIdx<6; ingGroupIdx++) {
+			var button = $('<button type="button" data-group="'+ingGroupIdx+'" class="btn">'+ingAffinityFilters[ingGroupIdx]+'</button>');
+			button.click(function(){
+				if ($(this).data('group')===0) {
+					d3.selectAll('.affGroup').style('opacity',1.0);
+				} else {
+					d3.selectAll('.affGroup').style('opacity',0.1);
+					d3.selectAll('.affGroup'+$(this).data('group')).style('opacity',1.0);				
+				}
+			});
+			ingAffinityRadioSet.append(button);
+		}
+		$('#cloud').append(ingAffinityRadioSet);
+	}
 
-
-    }
-
-    
-    if (flavorAffinities) {
+	function buildFlaAffCloud() {
+		$('#cloud').empty();
 
     	var terms = Object.keys(flavorAffinities);
 
-		function drawFA(words) {
-			d3.select("#affinities").append("svg")
-				.attr("width", divwidth)
-				.attr("height", 600)
-				
-				.append("g")
-				.attr("transform", "translate("+divwidth/2+","+300+")")
-				
-				.selectAll("text")
-				.data(words)
-
-				.enter().append("text")
-				.style("font-size", function(d) { return d.size + "px"; })
-				.style("font-family", "Helvetica")
-				.style("font-weight", "bold")
-				.style("cursor", 'pointer')
-				.style("fill", function(d, i) { return flavFill(d.groupIdx); })
-				.attr("text-anchor", "middle")
-				.on("click", function(d) {
-					window.location = "flavor-"+d.iid+".html";
-				})
-				.attr("transform", function(d) {
-					return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-				})
-				.text(function(d) { return d.text; });
-			}
-
-    	
-
 		d3.layout.cloud().size([divwidth, 600])
 			.words(terms.map(function(d) {
-				return {text: d, size: 10 + flavorAffinities[d][0] * 90, iid:flavorAffinities[d][1], groupIdx:flavorAffinities[d][2]};
+				return {text: d, size: 10 + flavorAffinities[d][0] * 90 / 100, iid:flavorAffinities[d][1], groupIdx:flavorAffinities[d][2], color:flavFill(flavorAffinities[d][2]), link:'flavor-'+flavorAffinities[d][1]+'.html'};
 			}))
-			//.words(terms.map(function(d) {
-			//        return {text: d, size: 10 + Math.random() * 90};
-			//      }))
 			.rotate(function() { return ~~(Math.random() * 2) * 0; })
 			.font("Helvetica")
 			.fontWeight('bold')
 			.fontSize(function(d) { return d.size; })
-			.on("end", drawFA)
+			.on("end", drawCloud)
 			.start();
 
+		// add toggle buttons
+		var flaAffinityRadioSet = $('<div id="flaAffinityRadioSet" class="btn-group" data-toggle="buttons-radio"></div>');
+		for (var flaGroupIdx=0; flaGroupIdx<6; flaGroupIdx++) {
+			var button = $('<button type="button" data-group="'+flaGroupIdx+'" class="btn">'+flaAffinityFilters[flaGroupIdx]+'</button>');
+			button.click(function(){
+				if ($(this).data('group')===0) {
+					d3.selectAll('.affGroup').style('opacity',1.0);
+				} else {
+					d3.selectAll('.affGroup').style('opacity',0.1);
+					d3.selectAll('.affGroup'+$(this).data('group')).style('opacity',1.0);				
+				}
+			});
+			flaAffinityRadioSet.append(button);
+		}
+		$('#cloud').append(flaAffinityRadioSet);
+	}
 
+    if (ingredientAffinities || flavorAffinities) {
+
+		var affTabs = $('<ul id="afftabs" class="nav nav-tabs"></ul>');
+    	if (ingredientAffinities) {
+    		affTabs.append($('<li><a href="" id="ingAffTab" data-toggle="tab">Ingredients</a></li>'));
+    	}
+    	if (flavorAffinities) {
+    		affTabs.append($('<li><a href="" id="flaAffTab" data-toggle="tab">Flavors</a></li>'));
+    	}
+    	$('#cloud').before(affTabs);
+
+    	$('#afftabs a').click(function (e) {
+    		e.preventDefault();
+    		$(this).tab('show');
+    	}).on('shown', function(e) {
+    		console.log('time to show ',$(e.target).attr('id'));
+    		if ($(e.target).attr('id')==="flaAffTab") {
+    			buildFlaAffCloud();
+    		} else {
+    			buildIngAffCloud();
+    		}
+    	});
+
+    	$('#afftabs a:first').tab('show');
 
     }
 
