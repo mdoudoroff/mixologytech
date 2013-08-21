@@ -51,7 +51,8 @@ footer {
 
 }
 #bigTotal,
-#barTotal {
+#barTotal,
+#webReports {
   width: 120px;
   height: 54px;
   line-height: 18px;
@@ -64,6 +65,9 @@ footer {
 #bigTotal .bigsub,
 #barTotal .bigsub {
   font-size: 18px;
+}
+#webReports {
+  font-size: 24px;
 }
 .feature-icon {
   float: left;
