@@ -94,16 +94,18 @@ body {
 	text-align: center;
 	width: 1024px;
 	margin: 0 auto;
+	position:relative;
 }
 
 #supercontainer {
 	position: absolute;
-	top: 0px;
+	top: 40px;
 	bottom: 0px;
 	width: 1024px;
 	height: 1054px;
 	background-color: rgb(0,64,225);
 	border-bottom: 6px solid #422102;
+	padding-top:30px;
 }
 
 #masthead {
