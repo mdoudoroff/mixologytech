@@ -1,0 +1,623 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#text1 {
+    float: none;
+    font-size: 1.3em;
+    width: 65.791364%;
+    height: auto;
+    text-align: left;
+    font-weight: 900;
+    line-height: 1.4em;
+    margin-left: 17.143122%;
+    margin-top: 38px;
+    clear: none;
+    min-height: 26px;
+    margin-right: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: cronos-pro;
+}
+
+#text2 {
+    float: none;
+    font-size: 1.1em;
+    width: 65.791364%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.4em;
+    margin: 18px 0px 0px 17.143122%;
+    clear: none;
+    min-height: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: cronos-pro;
+}
+
+#header {
+    float: left;
+    height: 127px;
+    clear: none;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    display: block;
+}
+
+#text {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    margin-right: 0%;
+    font-family: cronos-pro;
+}
+
+#main {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    width: 99.995367%;
+    position: relative;
+    display: block;
+}
+
+#text5 {
+    float: none;
+    font-size: 1.1em;
+    width: 99.985626%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.4em;
+    margin: 0px 0px 0px 0%;
+    clear: none;
+    min-height: 0px;
+    position: static;
+    top: 0px;
+    left: 0px;
+    min-width: 0px;
+    font-family: cronos-pro;
+}
+
+#text4 {
+    float: none;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.4em;
+    margin: 0px 0px 9px;
+    clear: none;
+    min-height: 67px;
+    min-width: 0px;
+    font-family: cronos-pro;
+}
+
+#box2 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+}
+
+#box3 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    background-color: rgb(132, 132, 132);
+    padding-bottom: 36px;
+}
+
+#text6 {
+    float: none;
+    font-size: 1em;
+    width: 82.936434%;
+    height: auto;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1em;
+    margin: 18px 0% 0px 8.52715%;
+    clear: none;
+    min-height: 0px;
+    font-family: cronos-pro;
+    letter-spacing: 0.1em;
+}
+
+#tiki2 {
+    float: left;
+    height: auto;
+    margin: 0px 0px 9px 2.41531%;
+    clear: none;
+    width: 40.834358%;
+}
+
+#image {
+    float: left;
+    width: 100px;
+    max-width: 100%;
+    height: 100px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+    left: 0px;
+    right: auto;
+}
+
+#image1 {
+    float: left;
+    width: 368px;
+    max-width: 100%;
+    height: 140px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 116.16878924265625px;
+    z-index: 1;
+}
+
+#image2 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 9px auto 0px 22px;
+    clear: both;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#product_info {
+    float: left;
+    height: auto;
+    clear: none;
+    width: 180px;
+    position: absolute;
+    top: -119px;
+    left: auto;
+    right: 8.5%;
+}
+
+#image3 {
+    float: left;
+    width: 100px;
+    max-width: 100%;
+    height: 100px;
+    margin: 0px 9px 9px 0.015625px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image4 {
+    float: left;
+    width: 80px;
+    max-width: 100%;
+    height: 80px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: 9px;
+}
+
+#textspan1 {
+    float: none;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    font-style: italic;
+    font-family: cronos-pro;
+}
+
+#textspan3 {
+    float: none;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    font-style: italic;
+    font-family: cronos-pro;
+}
+
+#video_poster {
+    float: none;
+    width: 79.999305%;
+    max-width: 100%;
+    height: auto;
+    margin: 18px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#sidebar_section {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    width: 100%;
+    margin-right: 0%;
+    background-color: rgb(221, 227, 245);
+    padding: 9px;
+}
+
+#box1 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+}
+
+#bbb {
+    float: left;
+    height: auto;
+    margin-left: 7.967449%;
+    margin-top: 0px;
+    clear: none;
+    width: 40.815433%;
+    margin-right: 0%;
+}
+
+#box {
+    float: left;
+    height: 140px;
+    margin-left: 8.531224%;
+    margin-top: 14px;
+    clear: none;
+    width: 484.15625px;
+    position: relative;
+}
+
+#text3 {
+    float: none;
+    font-size: 1em;
+    width: 65.791364%;
+    height: auto;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+    margin: 18px 0px 18px 17.143122%;
+    clear: none;
+    min-height: 26px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-style: italic;
+    font-family: cronos-pro;
+    letter-spacing: 1.1px;
+}
+
+#textspan {
+    float: none;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    font-family: cronos-pro;
+}
+
+#textspan2 {
+    float: none;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    font-family: cronos-pro;
+}
+
+#textspan4 {
+    float: none;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    font-family: cronos-pro;
+}
+
+@media only screen and (max-width: 816px) {
+    #image1 {
+        height: 100px;
+        width: 262.84375px;
+    }
+
+    #image {
+        width: 88.96875px;
+        height: 88.96875px;
+    }
+
+    #box {
+        width: 379px;
+        height: 113px;
+    }
+
+    #video_poster {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    #product_info {
+        width: 82.943999%;
+        position: relative;
+        right: auto;
+        top: 0px;
+        left: 0px;
+        margin-top: 29px;
+        margin-left: 8.525759%;
+        clear: none;
+        height: auto;
+        margin-right: 0px;
+        float: none;
+    }
+
+    #text1 {
+        width: 82.939515%;
+        margin-top: 27px;
+        margin-left: 8.525759%;
+        clear: none;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-right: 0px;
+        float: none;
+        height: auto;
+    }
+
+    #text2 {
+        width: 82.939515%;
+        margin-top: 18px;
+        margin-left: 8.532484%;
+        clear: none;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-right: 0px;
+        float: none;
+        height: auto;
+    }
+
+    #video_poster {
+        width: 89.996861%;
+        margin-top: 27px;
+        margin-left: auto;
+        clear: none;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-right: auto;
+        float: none;
+    }
+
+    #text {
+        width: 48.556679%;
+        text-align: left;
+        height: auto;
+    }
+
+    #image2 {
+        margin: 0px;
+        clear: both;
+        position: absolute;
+        top: 0px;
+        left: auto;
+        right: 0px;
+    }
+
+    #main {
+        height: auto;
+        margin-left: 0%;
+        margin-right: 0px;
+        float: none;
+        clear: both;
+        width: 99.995516%;
+    }
+
+    #sidebar_section {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: none;
+        width: 100%;
+    }
+
+    #box1 {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: both;
+        width: 100%;
+    }
+
+    #box3 {
+        height: 55px;
+    }
+
+    #header {
+        width: 100%;
+        height: 127px;
+    }
+
+    #box2 {
+        width: 100%;
+    }
+
+    #tiki2 {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 85.127485%;
+        clear: both;
+        margin-top: 18px;
+        margin-left: 7.432806%;
+    }
+
+    #bbb {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 84.598214%;
+        margin-top: 18px;
+    }
+
+    #image3 {
+        width: 100px;
+        height: 100px;
+    }
+
+    #text4 {
+        width: 100%;
+    }
+
+    #image4 {
+        width: 80px;
+        height: 80px;
+    }
+
+    #text5 {
+        width: 100%;
+        height: auto;
+    }
+
+    #text3 {
+        width: 82.939515%;
+        margin-top: 27px;
+        margin-left: 8.525759%;
+        clear: none;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-right: 0px;
+        float: none;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 449px) {
+    #image {
+        top: 0px;
+        left: 2%;
+        width: 20%;
+        height: auto;
+        right: auto;
+    }
+
+    #image1 {
+        width: 70%;
+        height: auto;
+        top: 0px;
+        left: 26.628767%;
+    }
+
+    #box {
+        margin-top: 14px;
+        margin-left: 0%;
+        clear: none;
+        width: 100%;
+        height: auto;
+    }
+
+    #product_info {
+        width: 96%;
+        margin-left: 2%;
+        height: auto;
+        margin-top: 18px;
+    }
+
+    #text1 {
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 18px;
+        font-size: 1.1em;
+    }
+
+    #text2 {
+        width: 96%;
+        margin-left: 2%;
+        font-size: 1.1em;
+    }
+
+    #video_poster {
+        width: 96%;
+        margin-left: 2%;
+    }
+
+    #text6 {
+        text-align: center;
+    }
+
+    #text3 {
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 18px;
+    }
+
+    #text4 {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #main {
+        margin-left: 0%;
+        clear: none;
+        width: 99.995102%;
+    }
+
+    #header {
+        height: 99px;
+    }
+
+    #sidebar_section {
+        width: 100%;
+    }
+
+    #box1 {
+        width: 100%;
+    }
+
+    #box2 {
+        width: 100%;
+    }
+
+    #box3 {
+        width: 100%;
+        height: 55px;
+    }
+
+    #text6 {
+        width: 96%;
+        margin-top: 18px;
+        margin-left: 2%;
+        text-align: center;
+    }
+
+    #text {
+        height: auto;
+        width: 56.048428%;
+    }
+}
+
