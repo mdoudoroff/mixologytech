@@ -365,9 +365,6 @@ a:hover {
         height: 113px;
     }
 
-    #video_poster {
-        width: 80%;
-    }
 }
 
 @media only screen and (max-width: 699px) {
@@ -385,34 +382,8 @@ a:hover {
         float: none;
     }
 
-    #text1 {
-        width: 82.939515%;
-        margin-top: 27px;
-        margin-left: 8.525759%;
-        clear: none;
-        position: relative;
-        top: 0px;
-        left: 0px;
-        margin-right: 0px;
-        float: none;
-        height: auto;
-    }
-
-    #text2 {
-        width: 82.939515%;
-        margin-top: 18px;
-        margin-left: 8.532484%;
-        clear: none;
-        position: relative;
-        top: 0px;
-        left: 0px;
-        margin-right: 0px;
-        float: none;
-        height: auto;
-    }
 
     #video_poster {
-        width: 89.996861%;
         margin-top: 27px;
         margin-left: auto;
         clear: none;
@@ -556,21 +527,9 @@ a:hover {
         margin-top: 18px;
     }
 
-    #text1 {
-        width: 96%;
-        margin-left: 2%;
-        margin-top: 18px;
-        font-size: 1.1em;
-    }
-
-    #text2 {
-        width: 96%;
-        margin-left: 2%;
-        font-size: 1.1em;
-    }
 
     #video_poster {
-        width: 96%;
+
         margin-left: 2%;
     }
 
@@ -630,3 +589,79 @@ a:hover {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+
+    #video_poster {
+        width: 640px;
+        height: 360px;
+    }
+
+    #blurb {
+        width: 640px;
+        margin:3em auto 0 auto;
+    }
+
+    #text1 {
+        width:auto;
+        margin:1em 0;
+        line-height: 1.0;
+    }
+
+    #text2 {
+        width:auto;
+        margin:1em 0;
+        padding-left: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    #video_poster {
+        width: 640px;
+        height: 360px;
+    }
+
+    #blurb {
+        margin: 0 auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 568px) {
+
+    #video_poster {
+        width: 304px;
+        height: 171px;
+    }
+
+    #blurb {
+        width: 90%;
+        margin:0 auto 0 auto;
+    }
+
+    #text1 {
+        width:auto;
+        margin:1em 9px;
+        line-height: 1.0;
+    }
+
+    #text2 {
+        width:auto;
+        margin:1em 9px;
+        padding-left: 20px;
+    }
+
+    #text2 li {
+        margin-left:0;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    #blurb {
+        width: 304px;
+        margin:0 auto 0 auto;
+    }
+}
