@@ -7,6 +7,21 @@ body {
     line-height: 1.4;
 }
 
+a {
+    color: #d7633e;
+    text-decoration: underline;
+}
+
+a:hover, li a:hover, p a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #d7633e;
+    text-decoration: underline;
+}
+
 #icon {
     max-width:100px;
     width: 70%;
