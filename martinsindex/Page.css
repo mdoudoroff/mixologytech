@@ -22,6 +22,14 @@ a:visited {
     text-decoration: underline;
 }
 
+figure {
+    margin-top:9px;
+}
+
+figure img {
+    width: 100%;
+}
+
 #icon {
     max-width:100px;
     width: 70%;
