@@ -349,6 +349,33 @@ a:hover {
     font-family: cronos-pro;
 }
 
+@media only screen and (max-width: 1024px) {
+
+    #video_poster {
+        width: 640px;
+        height: 360px;
+    }
+
+    #blurb {
+        width: 640px;
+        margin:3em auto 0 auto;
+    }
+
+    #text1 {
+        width:auto;
+        margin:1em 0;
+        line-height: 1.0;
+    }
+
+    #text2 {
+        width:auto;
+        margin:1em 0;
+        padding-left: 20px;
+    }
+
+}
+
+
 @media only screen and (max-width: 816px) {
     #image1 {
         height: 100px;
@@ -366,6 +393,21 @@ a:hover {
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+
+    #video_poster {
+        width: 640px;
+        height: 360px;
+    }
+
+    #blurb {
+        margin: 0 auto;
+    }
+
+
+}
+
 
 @media only screen and (max-width: 699px) {
     #product_info {
@@ -496,6 +538,35 @@ a:hover {
     }
 }
 
+@media only screen and (max-width: 568px) {
+
+    #video_poster {
+        width: 304px;
+        height: 171px;
+    }
+
+    #blurb {
+        width: 90%;
+        margin:0 auto 0 auto;
+    }
+
+    #text1 {
+        width:auto;
+        margin:1em 9px;
+        line-height: 1.0;
+    }
+
+    #text2 {
+        width:auto;
+        margin:1em 9px;
+        padding-left: 20px;
+    }
+
+    #text2 li {
+        margin-left:0;
+    }
+
+}
 @media only screen and (max-width: 449px) {
     #image {
         top: 0px;
@@ -525,6 +596,7 @@ a:hover {
         margin-left: 2%;
         height: auto;
         margin-top: 18px;
+        text-align:center;
     }
 
 
@@ -546,6 +618,26 @@ a:hover {
     #text4 {
         font-size: 1.1em;
     }
+
+
+    #text {
+        height: auto;
+        width: 100%;
+        text-align:center;
+        float:none;
+
+    }
+    #image2 {
+        clear: both;
+        position: relative;
+        display: block;
+        left:inherit;
+        right:inherit;
+        float:none;
+        margin:9px auto;
+    }
+
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -583,85 +675,10 @@ a:hover {
         text-align: center;
     }
 
-    #text {
-        height: auto;
-        width: 56.048428%;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-
-    #video_poster {
-        width: 640px;
-        height: 360px;
-    }
-
-    #blurb {
-        width: 640px;
-        margin:3em auto 0 auto;
-    }
-
-    #text1 {
-        width:auto;
-        margin:1em 0;
-        line-height: 1.0;
-    }
-
-    #text2 {
-        width:auto;
-        margin:1em 0;
-        padding-left: 20px;
-    }
-
-}
-
-@media only screen and (max-width: 768px) {
-
-    #video_poster {
-        width: 640px;
-        height: 360px;
-    }
-
-    #blurb {
-        margin: 0 auto;
-    }
-
-
-}
-
-@media only screen and (max-width: 568px) {
-
-    #video_poster {
-        width: 304px;
-        height: 171px;
-    }
-
-    #blurb {
-        width: 90%;
-        margin:0 auto 0 auto;
-    }
-
-    #text1 {
-        width:auto;
-        margin:1em 9px;
-        line-height: 1.0;
-    }
-
-    #text2 {
-        width:auto;
-        margin:1em 9px;
-        padding-left: 20px;
-    }
-
-    #text2 li {
-        margin-left:0;
-    }
-
-}
-
-@media only screen and (max-width: 320px) {
     #blurb {
         width: 304px;
         margin:0 auto 0 auto;
     }
+
 }
+
