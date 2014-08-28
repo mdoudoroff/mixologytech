@@ -48,7 +48,7 @@ figure img {
     margin: 18px auto;   
 }
 
-#blurb {
+#blurb, .copy {
     margin: 18px auto;
     width: 90%;
     max-width: 600px;
@@ -56,6 +56,9 @@ figure img {
     padding: 1em;
 }
 
+.copy p {
+    margin-bottom: 9px;
+}
 .dingbat {
     max-height: 11px;
     width: auto;
