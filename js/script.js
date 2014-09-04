@@ -51,7 +51,7 @@ $(document).ready(function() {
                         formatString: '%m/%d/%Y'
                     },
 
-                    tickInterval: '1 month'
+                    tickInterval: '2 month'
 
                 },
                 yaxis: {
