@@ -5,7 +5,7 @@
 
 $(document).ready(function() {
 
-		// database update graph
+    // database update graph
 
     $.jqplot.config.enablePlugins = true;
     $.jsDate.config.defaultCentury = 2000;
