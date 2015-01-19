@@ -1,0 +1,92 @@
+
+@import "global.less";
+
+@homeBackgroundColor: #f6f6f6;
+
+figure {
+	margin-left:0;
+	margin-right:0;
+}
+
+article {
+	color: #666;
+	font-family: "myriad-pro";
+	line-height: 1.4;
+	font-size: 90%;
+}
+
+article div.row {
+	background: @homeBackgroundColor;
+}
+
+
+section.text {
+	margin:0 auto;
+	max-width: 600px;
+	text-align: left;
+}
+
+section.center {
+	margin:0 auto;
+	text-align: center;	
+}
+
+.appRack {
+	margin-left:0;
+	margin-bottom:0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+
+.appRack li {
+	font-family: Helvetica, sans;
+	display: inline-block;
+	width: 117px;
+	text-align: center;
+	line-height: 1.2;
+	padding:0;
+	height: auto;
+	margin-bottom: 0.2em;
+	font-size: 14px;
+}
+
+.appRack li img {
+	width: 54px;
+	margin-bottom: 4px;
+}
+
+.appRack li a {
+	display:block;
+	color: black;
+}
+
+.appRack li a:hover {
+	color: red;
+}
+
+h2 {
+	margin-top:1em;
+	font-size: 180%;
+	font-weight: 200;
+	color: #000;
+}
+
+
+@media (min-width: 700px) {
+
+	section.text p {
+		font-size: 120%;
+	}
+
+	figure {
+		margin-left: 3em;
+		margin-right: 3em;
+	}
+
+	.appRack li img {
+		width: 72px;
+	}
+
+
+}

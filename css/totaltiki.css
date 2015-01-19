@@ -1,0 +1,154 @@
+a:hover {
+  color: #ff0000;
+}
+nav {
+  padding: 0.25em 0 0 0;
+  border-bottom: 2px solid black;
+}
+#navGlob {
+  text-align: right;
+}
+#navGlob span {
+  font-family: Helvetica, sans;
+  display: inline-block;
+  line-height: 33px;
+  padding: 0;
+  height: auto;
+  margin-bottom: 0.2em;
+  font-size: 0.9em;
+  margin-left: 2em;
+}
+#navApp {
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+#navApp li {
+  font-family: Helvetica, sans;
+  display: inline-block;
+  width: 117px;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0;
+  height: auto;
+  margin-bottom: 0.2em;
+  font-size: 14px;
+}
+#navApp li img {
+  width: 54px;
+  margin-bottom: 3px;
+}
+#navApp li a {
+  display: block;
+  color: black;
+}
+#navApp li a:hover {
+  background-color: #ffffff;
+  color: red;
+}
+#masthead {
+  color: #19156d;
+  letter-spacing: -1px;
+  font-size: 175%;
+  font-weight: bold;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+#masthead a {
+  color: #19156d;
+}
+#masthead a:hover {
+  color: #ff0000;
+}
+#home {
+  display: inline-block;
+  float: right;
+  text-align: right;
+  background-color: red;
+}
+footer {
+  border-top: 2px solid black;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: gray;
+  text-align: center;
+  font-size: 80%;
+}
+@media (max-width: 700px) {
+  #navApp {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  #navApp {
+    display: block;
+  }
+  #navGlob #menuToggle {
+    display: none;
+  }
+  #masthead {
+    font-size: 250%;
+  }
+  #navGlob span {
+    line-height: 40px;
+  }
+  #navApp li img {
+    width: 72px;
+  }
+}
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+article div.row {
+  background: url('../totaltiki/img/bkgd.tiki~ipad.png');
+  font-family: cronos-pro;
+}
+#appmasthead {
+  padding-top: 1em;
+}
+section.text {
+  margin: 0 auto;
+  max-width: 600px;
+}
+section.center {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+video {
+  width: 95%;
+}
+.dropphoto {
+  width: 100px;
+  float: left;
+  margin-right: 0.5em;
+  margin-bottom: 0;
+}
+.appversions {
+  text-align: center;
+  font-size: 90%;
+}
+section.quotes {
+  max-width: 600px;
+  margin: 1em auto;
+}
+section.quotes p {
+  font-style: italic;
+  text-align: left;
+}
+@media (min-width: 700px) {
+  article p,
+  article li {
+    font-size: 120%;
+  }
+  video {
+    width: 90%;
+  }
+  figure {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+}
