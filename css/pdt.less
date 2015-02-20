@@ -1,0 +1,86 @@
+
+@import "global.less";
+
+@pdtIndexBackgroundColor: #200000;
+
+figure {
+	margin-left:0;
+	margin-right:0;
+}
+
+article div.row {
+	font-family: "Avenir Next", sans-serif;
+	color: white;
+	background: @pdtIndexBackgroundColor;
+	text-align:center;
+}
+
+.dingbat {
+	height: 36px;
+	margin: 1em 0;
+}
+
+#logotype {
+	max-width: 384px;
+}
+
+#icon {
+	max-width: 100px;
+}
+
+#appmasthead {
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+
+section.text {
+	margin:0 auto;
+	max-width: 600px;
+	text-align: left;
+}
+
+section.center {
+	margin:0 auto;
+	text-align: center;	
+}
+
+video { width: 95%; }
+
+.dropphoto {
+	width: 100px;
+	float:left;
+	margin-right: 0.5em;
+	margin-bottom: 0;
+}
+
+.appversions {
+	text-align: center;
+	font-size: 90%;
+}
+
+section.quotes {
+	max-width: 600px;
+	margin: 1em auto;
+}
+
+section.quotes p {
+	font-style: italic;
+	text-align: left;
+}
+
+@media (min-width: 700px) {
+
+	section.text p, section.text li, section.quotes p {
+		font-size: 120%;
+	}
+
+	video { width: 90%; }
+
+	figure {
+		margin-left: 3em;
+		margin-right: 3em;
+	}
+
+
+}

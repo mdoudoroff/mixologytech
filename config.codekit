@@ -1,16 +1,7 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18270",
+"creatorBuild": "18493",
 "files": {
-	"\/app-release-notes.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app-release-notes.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/css\/foundation.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -153,6 +144,35 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/css\/pdt.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/pdt.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/pdt.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/pdt.less",
+		"outputAbbreviatedPath": "\/css\/pdt.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
 		},
 	"\/css\/totaltiki.css": {
 		"fileType": 16,
@@ -456,6 +476,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/gfx\/icon-pdt-256.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48889,
+		"inputAbbreviatedPath": "\/gfx\/icon-pdt-256.png",
+		"outputAbbreviatedPath": "\/gfx\/icon-pdt-256.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/gfx\/icon-tikiplus-256.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -527,6 +558,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/ingr-updates.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ingr-updates.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1630,6 +1670,246 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+	"\/pdt\/img\/combo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 207596,
+		"inputAbbreviatedPath": "\/pdt\/img\/combo.jpg",
+		"outputAbbreviatedPath": "\/pdt\/img\/combo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/combo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 817501,
+		"inputAbbreviatedPath": "\/pdt\/img\/combo.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/combo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/dingbat.hairball.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1693,
+		"inputAbbreviatedPath": "\/pdt\/img\/dingbat.hairball.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/dingbat.hairball.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/dingbat.key.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4291,
+		"inputAbbreviatedPath": "\/pdt\/img\/dingbat.key.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/dingbat.key.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/hairball-appicon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5158,
+		"inputAbbreviatedPath": "\/pdt\/img\/hairball-appicon@2x.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/hairball-appicon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/icon-promo.hairball-200.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30840,
+		"inputAbbreviatedPath": "\/pdt\/img\/icon-promo.hairball-200.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/icon-promo.hairball-200.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/icon-promo.hairball.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 180348,
+		"inputAbbreviatedPath": "\/pdt\/img\/icon-promo.hairball.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/icon-promo.hairball.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/logo.hairball-large.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39889,
+		"inputAbbreviatedPath": "\/pdt\/img\/logo.hairball-large.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/logo.hairball-large.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/logo.hairball.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25399,
+		"inputAbbreviatedPath": "\/pdt\/img\/logo.hairball.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/logo.hairball.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/logo.pdt.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 179405,
+		"inputAbbreviatedPath": "\/pdt\/img\/logo.pdt.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/logo.pdt.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/masthead.hairball@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25399,
+		"inputAbbreviatedPath": "\/pdt\/img\/masthead.hairball@2x.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/masthead.hairball@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/photo.beachbumberry.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28346,
+		"inputAbbreviatedPath": "\/pdt\/img\/photo.beachbumberry.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/photo.beachbumberry.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/photo.beachbumberry@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 98563,
+		"inputAbbreviatedPath": "\/pdt\/img\/photo.beachbumberry@2x.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/photo.beachbumberry@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/tiki-plus-appicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17624,
+		"inputAbbreviatedPath": "\/pdt\/img\/tiki-plus-appicon.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/tiki-plus-appicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/tiki-plus-appicon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54575,
+		"inputAbbreviatedPath": "\/pdt\/img\/tiki-plus-appicon@2x.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/tiki-plus-appicon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/tiki3-appicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28331,
+		"inputAbbreviatedPath": "\/pdt\/img\/tiki3-appicon.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/tiki3-appicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/tiki3-appicon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 100102,
+		"inputAbbreviatedPath": "\/pdt\/img\/tiki3-appicon@2x.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/tiki3-appicon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/video-poster.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33319,
+		"inputAbbreviatedPath": "\/pdt\/img\/video-poster.jpg",
+		"outputAbbreviatedPath": "\/pdt\/img\/video-poster.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/video-poster.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 406093,
+		"inputAbbreviatedPath": "\/pdt\/img\/video-poster.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/video-poster.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/video-poster@2x.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 86793,
+		"inputAbbreviatedPath": "\/pdt\/img\/video-poster@2x.jpg",
+		"outputAbbreviatedPath": "\/pdt\/img\/video-poster@2x.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/img\/video-poster@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.33851e+06,
+		"inputAbbreviatedPath": "\/pdt\/img\/video-poster@2x.png",
+		"outputAbbreviatedPath": "\/pdt\/img\/video-poster@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pdt\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/tikiplus\/css\/handheld.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -2065,6 +2345,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"ensure_comprehensions": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"indentation": {
 			"active": 1,
 			"flagValue": 2
@@ -2155,6 +2439,10 @@
 			},
 		"space_operators": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
 			"flagValue": -1
 			}
 		},
@@ -2640,6 +2928,7 @@
 	"slimAutoOutputPathStyle": 0,
 	"slimCompileOnly": 0,
 	"slimLogicless": 0,
+	"slimOutputFormat": 0,
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
 	"stylusAutoOutputPathEnabled": 1,
@@ -2664,8 +2953,9 @@
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
-	"typescriptNoResolve": 0,
+	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,
+	"typescriptSuppressImplicitAnyIndexErrors": 0,
 	"typescriptTargetECMAVersion": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
@@ -2702,6 +2992,10 @@
 			"flagValue": -1
 			},
 		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -2745,6 +3039,10 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -2757,8 +3055,16 @@
 			"active": 1,
 			"flagValue": 32000
 			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"properties": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"quote-keys": {
