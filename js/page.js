@@ -61,7 +61,7 @@ jQuery(document).ready(function() {
                         formatString: '%m-%d-%Y'
                     },
 
-                    tickInterval: '3 month'
+                    tickInterval: '4 month'
 
                 },
                 yaxis: {
