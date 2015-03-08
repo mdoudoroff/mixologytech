@@ -78,6 +78,30 @@ h2 {
 	font-size: 180%;
 }
 
+#kenburns_slideshow {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    background-color:black;
+    border: 3px double white;
+    overflow: hidden;
+    margin: 9px auto;
+}
+
+.kb-slide{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+}
+
+.kb-slide img{
+    position: relative;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
 @media (min-width: 700px) {
 
 	section.text p, section.text li, section.quotes p {
@@ -91,5 +115,9 @@ h2 {
 		margin-right: 3em;
 	}
 
+	#kenburns_slideshow {
+	    width: 450px;
+	    height: 450px;
+	}
 
 }
