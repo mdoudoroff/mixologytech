@@ -1,3 +1,4 @@
+// @codekit-prepend "smoothslides.js";
 
 var appsToggleState = 'closed';
 
@@ -18,6 +19,7 @@ jQuery(document).ready(function() {
 
 	});
 
+/*
     $("#kenburns_slideshow").Kenburns({
         images:["/pdt/slides/drink.pdt.ambrosio-cup.jpg",
 "/pdt/slides/drink.pdt.bentons-old-fashioned.jpg",
@@ -56,6 +58,17 @@ jQuery(document).ready(function() {
         onLoadingComplete: function(){
             console.log('image loading complete');
         }
-    });
+    }); */
 
+});
+
+/* wait for images to load */
+jQuery(window).load(function() {
+    $(window).smoothSlides({
+    duration: 5000,
+    order: "random",
+    captions: "false",
+    navigation: "false",
+    pagination: "false"
+    });
 });
