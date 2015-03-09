@@ -67,6 +67,7 @@ jQuery(window).load(function() {
     $(window).smoothSlides({
     duration: 5000,
     order: "random",
+    effect: "zoomOut",
     captions: "false",
     navigation: "false",
     pagination: "false"
