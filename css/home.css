@@ -101,6 +101,9 @@ footer {
 figure {
   margin-left: 0;
   margin-right: 0;
+  background-color: #f6f6f6;
+  padding: 2em;
+  border: 3px double black;
 }
 article {
   color: #000;
@@ -113,6 +116,10 @@ article div.row {
   background: url("../gfx/bkgd.mixologytech.jpg");
   border-right: 2px solid black;
   border-left: 2px solid black;
+}
+article a {
+  color: #db4b24;
+  font-weight: bold;
 }
 section.text {
   margin: 0 auto;
@@ -148,6 +155,7 @@ section.center {
 .appRack li a {
   display: block;
   color: black;
+  font-weight: normal;
 }
 .appRack li a:hover {
   color: red;
