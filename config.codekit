@@ -441,6 +441,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/gfx\/bkgd.mixologytech.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2221,
+		"inputAbbreviatedPath": "\/gfx\/bkgd.mixologytech.jpg",
+		"outputAbbreviatedPath": "\/gfx\/bkgd.mixologytech.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/gfx\/hairball-appicon@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1952,6 +1963,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/pdt\/index2.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pdt\/index2.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/pdt\/kenburns.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -1971,6 +1991,303 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/pdt\/slides\/drink.pdt.ambrosio-cup.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67740,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.ambrosio-cup.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.ambrosio-cup.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.bentons-old-fashioned.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 103817,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.bentons-old-fashioned.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.bentons-old-fashioned.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.betula.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 74962,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.betula.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.betula.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.boite-bloody-mary.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69575,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.boite-bloody-mary.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.boite-bloody-mary.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.brandy-crusta2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66833,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.brandy-crusta2.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.brandy-crusta2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.brazilian-tea-punch.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 78820,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.brazilian-tea-punch.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.brazilian-tea-punch.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.caprice.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65797,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.caprice.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.caprice.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.cereal-milk.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61505,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.cereal-milk.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.cereal-milk.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.cherry-pop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 70786,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.cherry-pop.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.cherry-pop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.corn-n-oil.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80756,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.corn-n-oil.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.corn-n-oil.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.Deep-Purple.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 93442,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Deep-Purple.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Deep-Purple.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.dry-prefecture.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 73470,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.dry-prefecture.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.dry-prefecture.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.Green-Thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75390,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Green-Thumb.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Green-Thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.Idle-Hands.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 134079,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Idle-Hands.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Idle-Hands.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.jimmy-roosevelt.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68636,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.jimmy-roosevelt.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.jimmy-roosevelt.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.kina-miele2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 114822,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.kina-miele2.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.kina-miele2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.lawn-dart.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57954,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.lawn-dart.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.lawn-dart.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.les-globetrotter.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 78915,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.les-globetrotter.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.les-globetrotter.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.lions-tooth.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80341,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.lions-tooth.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.lions-tooth.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.little-squirt-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66500,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.little-squirt-2.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.little-squirt-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.Lucky-Peach.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117945,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Lucky-Peach.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Lucky-Peach.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.Old-Friend-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80478,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Old-Friend-3.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Old-Friend-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.Parliament.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 82402,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Parliament.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Parliament.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.Pearacea-new.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 79639,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Pearacea-new.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.Pearacea-new.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.precious-pluot.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60198,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.precious-pluot.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.precious-pluot.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.scanda-panda-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 77207,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.scanda-panda-2.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.scanda-panda-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/pdt\/slides\/drink.pdt.zombie.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 103937,
+		"inputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.zombie.jpg",
+		"outputAbbreviatedPath": "\/pdt\/slides\/drink.pdt.zombie.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/tikiplus\/css\/handheld.css": {
 		"fileType": 16,
