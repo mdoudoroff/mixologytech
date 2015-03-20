@@ -113,7 +113,7 @@ article div.row {
   margin: 1em 0;
 }
 #logotype {
-  max-width: 384px;
+  max-width: 300px;
 }
 #icon {
   max-width: 100px;
@@ -318,6 +318,9 @@ h2 {
   transition: none!important;
 }
 @media (min-width: 700px) {
+  #logotype {
+    max-width: 384px;
+  }
   section.text p,
   section.text li,
   section.quotes p {
