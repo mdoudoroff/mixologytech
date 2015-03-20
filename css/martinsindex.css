@@ -114,6 +114,7 @@ article div.row {
 }
 #logotype {
   max-width: 430px;
+  max-width: 300px;
 }
 #icon {
   max-width: 100px;
@@ -158,6 +159,9 @@ section.quotes p {
   text-align: left;
 }
 @media (min-width: 700px) {
+  #logotype {
+    max-width: 430px;
+  }
   section.text p,
   section.text li,
   section.quotes p {
