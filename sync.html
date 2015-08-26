@@ -44,8 +44,45 @@
 
           <h2>Sync</h2>
 
-          <p>...</p>
+          <h3>Overview</h3>
 
+          <p>We are in the process of rolling out sync features for all the recipe apps: </p><ul><li><a href="pdt/index.html">PDT Cocktails</a></li><li><a href="totaltiki/index.html">Beachbum Berry’s Total Tiki</a></li><li><a href="martinsindex/index.html">Martin’s Index</a></li><li><a href="gaz/index.html">gaz regan’s 101 Best New Cocktails</a></li></ul>
+
+          <p>The rollout is proceeding in <em>phases</em>. <strong>We are in the <em>first</em> phase, which encompasses the straight, 1:1 synchronization of ingredient inventory data between instances of all apps.</strong> What this means is that if, in one app, you flip the switch for, say, Tanqueray London Dry Gin, that literal change can propogate across any of the other apps you have—when applicable—on the same device or other devices you also use.</p>
+
+          <p>Ingredient sync provies two benefits:</p>
+          <ol>
+            <li><strong>A form of distributed backup</strong>: if you have to reinstall an app for any reason, you can recover your ingredient inventory simply by reconnecting to your account on the server</li>
+            <li><strong>More efficient inventory management</strong>: you only have to make a change once and all the apps are automatically updated</li>
+          </ol>
+
+          <p><strong>Even if you only use one app on one device, the sync service is still valuable as a backup mechanism.</strong></p>
+
+          <p>Future phases will introduce more nuanced, substitution-friendly ingredient sync behavior, favorites, flags and some other unannounced stuff. As we proceed, I will update this page with further details.</p>
+
+
+          <h3>How it works</h3>
+
+          <p>We are not using iCloud for the sync infrastructure for many good reasons that I’m not going to belabor here. Instead, we’ve implemented our own sync server. To start using sync, you’ll create a free sync account within any one of the apps, then use the same account credentials to link the other apps. It’s pretty straightforward, and should “just work” thereafter.</p>
+
+          <p>In short, the sync server is a simple mechanism that unifies and caches a snapshot of your total inventory data from one or more apps. Each app then retrieves that data on an as-needed basis to keep itself up-to-date.</p>
+
+
+          <h3>Getting started</h3>
+
+          <p>To create your free sync account, you’ll be providing a (functional) email address and password. You’ll use this email address and password as your login credentials for all the apps you use on all your devices.</p>
+
+          <p>We will take reasonable steps to protect your email address and will not expose, sell or transfer it to third parties. You won’t be receiving emails from us, either, except if you request a password reset or to inform you about something relevant to your account.</p>
+
+          <p>You can create your sync account by tapping the gear icon <img src="gfx/button.settings@3x.png" style="height:14px;" /> at the bottom of the main screen and choosing “Sync”. Choose the “Need an account? Create one.” option and follow the prompt. We provide 1Password integration if you use that tool.</p>
+
+          <p>If you have other apps and/or devices, simply proceed to each in turn and use the “Login” form to connect each to the same account you just created. When the app asks if you wish to merge or replace the local inventory, you will normally want to <strong>merge</strong>.</p>
+
+          <p>That’s it! Going forward, you shouldn’t have to do anything but use the apps normally. They will automatically check the server for changes to sync. Obviously, sync only works when your devices have internet access and can reach the server. A display at the bottom of the main screen is provided to let you know what’s up:</p>
+
+          <p style="text-align:center;"><img src="gfx/grab.sync-status.jpg" style="height: 33px;" /></p>
+
+          <p>Final note: sync is not instantaneous—there’s a latency of several seconds, so if you madly switch back and forth between apps flipping switches, it is possible to out-run the sync system. As long as your changes are propagating reasonably quickly and correctly, there’s no cause for concern.</p>
           
           <p>Questions? Please email <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#109;&#105;&#120;&#111;&#108;&#111;&#103;&#121;&#116;&#101;&#99;&#104;&#46;&#99;&#111;&#109;">&#105;&#110;&#102;&#111;&#64;&#109;&#105;&#120;&#111;&#108;&#111;&#103;&#121;&#116;&#101;&#99;&#104;&#46;&#99;&#111;&#109;</a>.</p>
 
