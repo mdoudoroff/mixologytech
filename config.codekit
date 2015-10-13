@@ -540,6 +540,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/gfx\/icon-punch-256.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57013,
+		"inputAbbreviatedPath": "\/gfx\/icon-punch-256.png",
+		"outputAbbreviatedPath": "\/gfx\/icon-punch-256.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/gfx\/icon-tikiplus-256.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2696,11 +2707,53 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+	"\/punch\/img\/combo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/punch\/img\/combo.png",
+		"outputAbbreviatedPath": "\/punch\/img\/combo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/punch\/img\/dingbat.hairball.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1693,
+		"inputAbbreviatedPath": "\/punch\/img\/dingbat.hairball.png",
+		"outputAbbreviatedPath": "\/punch\/img\/dingbat.hairball.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/punch\/img\/logo.punch-large.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 356241,
+		"inputAbbreviatedPath": "\/punch\/img\/logo.punch-large.png",
+		"outputAbbreviatedPath": "\/punch\/img\/logo.punch-large.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/punch\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/punch\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/punch\/press.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/punch\/press.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

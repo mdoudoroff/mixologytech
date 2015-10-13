@@ -102,6 +102,13 @@ figure {
   margin-left: 0;
   margin-right: 0;
 }
+h1,
+h2 {
+  font-family: Marion, "adobe-caslon-pro", serif;
+}
+small {
+  text-transform: uppercase;
+}
 article div.row {
   font-family: Marion, "adobe-caslon-pro", serif;
   background: #fff4da;
