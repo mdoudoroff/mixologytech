@@ -101,21 +101,18 @@ footer {
 figure {
   margin-left: 0;
   margin-right: 0;
-  background-color: #f6f6f6;
+  background-color: #fff;
   padding: 2em;
   border: 3px double black;
 }
 article {
   color: #000;
-  font-family: "myriad-pro";
+  font-family: "Helvetica Neue", Helvetica, sans;
   line-height: 1.4;
   font-size: 90%;
 }
 article div.row {
-  background: #f6f6f6;
-  background: url("../gfx/bkgd.mixologytech.jpg");
-  border-right: 2px solid black;
-  border-left: 2px solid black;
+  background: #fff;
 }
 article a {
   color: #db4b24;
@@ -137,7 +134,8 @@ section.center {
   margin-bottom: 0.5em;
   text-align: center;
 }
-.appRack li {
+.appRack li,
+.appiconleft {
   font-family: Helvetica, sans;
   display: inline-block;
   width: 117px;
@@ -148,23 +146,42 @@ section.center {
   margin-bottom: 0.2em;
   font-size: 14px;
 }
-.appRack li img {
+.appRack li img,
+.appiconleft img {
   width: 54px;
   margin-bottom: 4px;
 }
-.appRack li a {
+.appRack li a,
+.appiconleft a {
   display: block;
   color: black;
   font-weight: normal;
 }
-.appRack li a:hover {
+.appRack li a:hover,
+.appiconleft a:hover {
   color: red;
 }
 h2 {
-  margin-top: 1em;
+  margin: 1em 0 1em 0;
   font-size: 180%;
   font-weight: 200;
   color: #000;
+  clear: both;
+  text-align: center;
+}
+.appiconleft {
+  display: block;
+  float: left;
+  margin: 0 1em 0 0;
+}
+.appiconleft img {
+  width: 128px;
+}
+.tabular {
+  padding-left: 140px;
+  display: block;
+  margin-bottom: 2em;
+  min-height: 140px;
 }
 @media (min-width: 700px) {
   section.text p {
@@ -176,5 +193,8 @@ h2 {
   }
   .appRack li img {
     width: 72px;
+  }
+  .appiconleft img {
+    width: 128px;
   }
 }

@@ -1,7 +1,7 @@
 
 @import "global.less";
 
-@homeBackgroundColor: #f6f6f6;
+@homeBackgroundColor: #fff;
 
 figure {
 	margin-left:0;
@@ -13,16 +13,16 @@ figure {
 
 article {
 	color: #000;
-	font-family: "myriad-pro";
+	font-family: "Helvetica Neue", Helvetica, sans;
 	line-height: 1.4;
 	font-size: 90%;
 }
 
 article div.row {
 	background: @homeBackgroundColor;
-	background: url("../gfx/bkgd.mixologytech.jpg");
-	border-right: 2px solid black;
-	border-left: 2px solid black;
+	//background: url("../gfx/bkgd.mixologytech.jpg");
+	//border-right: 2px solid black;
+	//border-left: 2px solid black;
 }
 
 article a {
@@ -49,7 +49,7 @@ section.center {
 	text-align: center;
 }
 
-.appRack li {
+.appRack li, .appiconleft {
 	font-family: Helvetica, sans;
 	display: inline-block;
 	width: 117px;
@@ -61,26 +61,47 @@ section.center {
 	font-size: 14px;
 }
 
-.appRack li img {
+.appRack li img, .appiconleft img{
 	width: 54px;
 	margin-bottom: 4px;
 }
 
-.appRack li a {
+.appRack li a,  .appiconleft a {
 	display:block;
 	color: black;
 	font-weight: normal;
 }
 
-.appRack li a:hover {
+.appRack li a:hover,  .appiconleft a:hover {
 	color: red;
 }
 
 h2 {
-	margin-top:1em;
+	margin:1em 0 1em 0;
 	font-size: 180%;
 	font-weight: 200;
 	color: #000;
+	clear:both;
+	text-align: center;
+}
+
+.appiconleft {
+	display: block;
+	float: left;
+	margin: 0 1em 0 0;
+
+	img {
+		width: 128px;
+	}
+
+}
+
+.tabular {
+	
+	padding-left: 140px;
+	display: block;
+	margin-bottom: 2em;
+	min-height: 140px;
 }
 
 
@@ -98,6 +119,15 @@ h2 {
 	.appRack li img {
 		width: 72px;
 	}
+
+	.appiconleft {
+
+		img {
+			width: 128px;
+		}
+
+	}
+
 
 
 }
