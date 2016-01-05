@@ -106,6 +106,13 @@ article div.row {
   background: url('../totaltiki/img/bkgd.tiki~ipad.png');
   font-family: cronos-pro;
 }
+h1,
+h2 {
+  font-family: cronos-pro;
+}
+#logotype {
+  max-width: 350px;
+}
 #appmasthead {
   padding-top: 1em;
 }
@@ -113,7 +120,8 @@ section.text {
   margin: 0 auto;
   max-width: 600px;
 }
-section.center {
+section.center,
+section#recipelist {
   margin: 0 auto;
   max-width: 600px;
   text-align: center;

@@ -107,6 +107,10 @@ article div.row {
   background: #white;
   text-align: center;
 }
+h1,
+h2 {
+  font-family: Optima, sans-serif;
+}
 .dingbat {
   max-width: 160px;
   margin: 1em 0;
@@ -149,6 +153,12 @@ section.quotes {
 }
 section.quotes p {
   font-style: italic;
+  text-align: left;
+}
+h2 {
+  margin-top: 1em;
+}
+.subsection {
   text-align: left;
 }
 @media (min-width: 700px) {
