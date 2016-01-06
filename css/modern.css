@@ -158,7 +158,8 @@ section.quotes p {
 h1,
 h2,
 h3 {
-  color: #b59859;
+  margin-top: 1em;
+  color: #ffffff;
   font-family: "Avenir Next", sans-serif;
 }
 h2 {

@@ -1376,6 +1376,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/modernclassics\/gfx\/dingbat.modern.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6534,
+		"inputAbbreviatedPath": "\/modernclassics\/gfx\/dingbat.modern.png",
+		"outputAbbreviatedPath": "\/modernclassics\/gfx\/dingbat.modern.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/modernclassics\/gfx\/hero.modern.png": {
 		"fileType": 32768,
 		"ignore": 0,
