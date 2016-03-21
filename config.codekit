@@ -2958,6 +2958,26 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/shakenstirred\/img\/logo.smallscreennetwork.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/shakenstirred\/img\/logo.smallscreennetwork.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/shakenstirred\/img\/logo.smallscreennetwork.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18406,
+		"inputAbbreviatedPath": "\/shakenstirred\/img\/logo.smallscreennetwork.png",
+		"outputAbbreviatedPath": "\/shakenstirred\/img\/logo.smallscreennetwork.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/shakenstirred\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
