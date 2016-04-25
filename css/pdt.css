@@ -6,7 +6,7 @@ nav {
   border-bottom: 2px solid black;
 }
 #navGlob {
-  text-align: right;
+  text-align: center;
 }
 #navGlob span {
   font-family: Helvetica, sans;
@@ -16,7 +16,7 @@ nav {
   height: auto;
   margin-bottom: 0.2em;
   font-size: 0.9em;
-  margin-left: 2em;
+  margin: 0 1em;
 }
 #navApp {
   margin-left: 0;
@@ -55,6 +55,7 @@ nav {
   font-weight: bold;
   margin-top: 0.2em;
   margin-bottom: 0.2em;
+  text-align: center;
 }
 #masthead a {
   color: #19156d;
