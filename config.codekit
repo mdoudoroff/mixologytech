@@ -356,6 +356,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/gaz\/img\/jacket.101bnc-2012.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40496,
+		"inputAbbreviatedPath": "\/gaz\/img\/jacket.101bnc-2012.jpg",
+		"outputAbbreviatedPath": "\/gaz\/img\/jacket.101bnc-2012.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gaz\/img\/jacket.101bnc-2013.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29600,
+		"inputAbbreviatedPath": "\/gaz\/img\/jacket.101bnc-2013.jpg",
+		"outputAbbreviatedPath": "\/gaz\/img\/jacket.101bnc-2013.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gaz\/img\/jacket.101bnc-2014.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28892,
+		"inputAbbreviatedPath": "\/gaz\/img\/jacket.101bnc-2014.jpg",
+		"outputAbbreviatedPath": "\/gaz\/img\/jacket.101bnc-2014.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gaz\/img\/jacket.annual-manual-2011.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28917,
+		"inputAbbreviatedPath": "\/gaz\/img\/jacket.annual-manual-2011.jpg",
+		"outputAbbreviatedPath": "\/gaz\/img\/jacket.annual-manual-2011.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/gaz\/img\/logo.gaz-large.png": {
 		"fileType": 32768,
 		"ignore": 0,

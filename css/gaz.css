@@ -162,6 +162,14 @@ h2 {
 .subsection {
   text-align: left;
 }
+.jackets {
+  text-align: center;
+}
+.jackets img {
+  max-width: 40%;
+  margin: 9px;
+  max-height: 250px;
+}
 @media (min-width: 700px) {
   #logotype {
     max-width: 430px;
