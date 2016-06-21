@@ -3301,6 +3301,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/totaltiki\/img\/jacket.potions.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 331069,
+		"inputAbbreviatedPath": "\/totaltiki\/img\/jacket.potions.png",
+		"outputAbbreviatedPath": "\/totaltiki\/img\/jacket.potions.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/totaltiki\/img\/jacket.remixed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 360193,
+		"inputAbbreviatedPath": "\/totaltiki\/img\/jacket.remixed.png",
+		"outputAbbreviatedPath": "\/totaltiki\/img\/jacket.remixed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/totaltiki\/img\/jacket.sippin-safari.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 290369,
+		"inputAbbreviatedPath": "\/totaltiki\/img\/jacket.sippin-safari.png",
+		"outputAbbreviatedPath": "\/totaltiki\/img\/jacket.sippin-safari.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/totaltiki\/img\/jacket.taboo-table.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 391216,
+		"inputAbbreviatedPath": "\/totaltiki\/img\/jacket.taboo-table.png",
+		"outputAbbreviatedPath": "\/totaltiki\/img\/jacket.taboo-table.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/totaltiki\/img\/masthead-large.png": {
 		"fileType": 32768,
 		"ignore": 0,
