@@ -106,12 +106,12 @@ figure {
 }
 article div.row {
   font-family: Optima, sans-serif;
-  color: white;
-  background: #585858;
+  color: black;
+  background: #b7dfe2;
   text-align: center;
 }
 article a {
-  color: lightblue;
+  color: red;
 }
 .dingbat {
   height: 18px;
@@ -162,7 +162,7 @@ h2,
 h3 {
   margin-top: 1em;
   color: #ffffff;
-  font-family: "Avenir Next", sans-serif;
+  font-family: "Optima", sans-serif;
 }
 h2 {
   font-size: 180%;
