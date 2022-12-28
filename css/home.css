@@ -223,3 +223,19 @@ h2 {
     width: 128px;
   }
 }
+.productComparison td {
+  text-align: center;
+}
+.productComparison td:first-child,
+.productComparison th:first-child {
+  text-align: left;
+}
+.productComparison td.green {
+  background-color: #cfc;
+}
+.productComparison td.gray {
+  color: #ccc;
+}
+.productComparison td.quantity {
+  font-weight: bold;
+}
