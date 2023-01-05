@@ -19,27 +19,38 @@ nav {
   font-size: 0.9em;
   margin: 0 1em;
 }
-#navApp {
+ul#navApp {
   margin-left: 0;
   margin-bottom: 0;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #navApp li {
   font-family: Helvetica, sans;
-  display: inline-block;
-  width: 117px;
+  display: block;
+  width: 83px;
   text-align: center;
   line-height: 1.2;
   padding: 0;
   height: auto;
   margin-bottom: 0.2em;
-  font-size: 14px;
+  font-size: 10px;
 }
 #navApp li img {
-  width: 54px;
+  width: 45px;
   margin-bottom: 3px;
+}
+#navApp li.web {
+  width: 119px;
+  display: flex;
+  align-items: center;
+}
+#navApp li.web img {
+  width: 100%;
 }
 #navApp li a {
   display: block;
@@ -52,7 +63,7 @@ nav {
 #masthead {
   color: #19156d;
   letter-spacing: -1px;
-  font-size: 175%;
+  font-size: 150%;
   font-weight: bold;
   margin-top: 0.2em;
   margin-bottom: 0.2em;
@@ -91,14 +102,20 @@ footer {
     display: none;
   }
   #masthead {
-    font-size: 250%;
+    font-size: 200%;
   }
   #navGlob span {
     line-height: 40px;
   }
   #navApp li img {
-    width: 72px;
+    width: 45px;
   }
+}
+div.ttol {
+  background: url('/gfx/tiki4_bg_pattern.jpg');
+}
+.boxshadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 figure {
   margin-left: 0;
