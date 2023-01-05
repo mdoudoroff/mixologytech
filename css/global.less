@@ -144,3 +144,45 @@ div.ttol {
 .boxshadow {
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+table.productComparison {
+	border: none;
+
+	tr:nth-of-type(even) {
+		background: none;
+	}
+	tr:nth-of-type(odd) {
+		background: none;
+	}
+
+	tr.data:nth-of-type(even) {
+		background: rgb(250,250,250);
+	}
+
+	td {
+		text-align: center;
+	}
+
+	tr.blank th, tr.section th {
+		background: none;
+	}
+
+	td:first-child, th:first-child {
+		text-align: left;
+	}
+
+	td.green {
+		background-color: #cfc;
+	}
+	td.gray {
+		color: #ccc;
+	}
+
+	td.quantity {
+		font-weight: bold;
+	}
+
+}
+
+
+

@@ -117,6 +117,38 @@ div.ttol {
 .boxshadow {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+table.productComparison {
+  border: none;
+}
+table.productComparison tr:nth-of-type(even) {
+  background: none;
+}
+table.productComparison tr:nth-of-type(odd) {
+  background: none;
+}
+table.productComparison tr.data:nth-of-type(even) {
+  background: #fafafa;
+}
+table.productComparison td {
+  text-align: center;
+}
+table.productComparison tr.blank th,
+table.productComparison tr.section th {
+  background: none;
+}
+table.productComparison td:first-child,
+table.productComparison th:first-child {
+  text-align: left;
+}
+table.productComparison td.green {
+  background-color: #cfc;
+}
+table.productComparison td.gray {
+  color: #ccc;
+}
+table.productComparison td.quantity {
+  font-weight: bold;
+}
 figure {
   margin-left: 0;
   margin-right: 0;
@@ -239,20 +271,4 @@ h2 {
   .appiconleft img {
     width: 128px;
   }
-}
-.productComparison td {
-  text-align: center;
-}
-.productComparison td:first-child,
-.productComparison th:first-child {
-  text-align: left;
-}
-.productComparison td.green {
-  background-color: #cfc;
-}
-.productComparison td.gray {
-  color: #ccc;
-}
-.productComparison td.quantity {
-  font-weight: bold;
 }
