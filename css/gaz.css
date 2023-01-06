@@ -114,6 +114,9 @@ footer {
 div.ttol {
   background: url('/gfx/tiki4_bg_pattern2.jpg');
 }
+div.ttol a {
+  color: #CC443F;
+}
 .boxshadow {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

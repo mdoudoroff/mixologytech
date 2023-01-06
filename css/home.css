@@ -114,6 +114,9 @@ footer {
 div.ttol {
   background: url('/gfx/tiki4_bg_pattern2.jpg');
 }
+div.ttol a {
+  color: #CC443F;
+}
 .boxshadow {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -213,7 +216,7 @@ section.center {
   color: red;
 }
 h2 {
-  margin: 1em 0 1em 0;
+  margin: 2em 0 2em 0;
   font-size: 180%;
   font-weight: 200;
   color: #000;
