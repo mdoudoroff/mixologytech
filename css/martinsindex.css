@@ -25,7 +25,7 @@ ul#navApp {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   text-align: center;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -90,13 +90,13 @@ footer {
   font-size: 80%;
 }
 @media (max-width: 700px) {
-  #navApp {
+  ul#navApp {
     display: none;
   }
 }
 @media (min-width: 700px) {
-  #navApp {
-    display: block;
+  ul#navApp {
+    display: flex;
   }
   #navGlob #menuToggle {
     display: none;

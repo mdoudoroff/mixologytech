@@ -12,12 +12,13 @@ jQuery(document).ready(function() {
 	// global nav stuff
 
 	$('#menuToggle').click(function(event) {
-		$('#navApp').slideToggle();
 		if (appsToggleState === 'closed') {
 			appsToggleState = 'open';
+			$('#navApp').css('display','flex');
 			$("#menuToggle").html('<a href="#">Apps ▾</a>');		
 		} else {
 			appsToggleState = 'closed';
+			$('#navApp').css('display','none');
 			$("#menuToggle").html('<a href="#">Apps ▸</a>');
 		}
 		event.preventDefault();
