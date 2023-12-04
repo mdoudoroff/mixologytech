@@ -1,0 +1,392 @@
+@use "pico";
+
+html {
+	--pico-font-family: font-family: aktiv-grotesk, sans-serif;
+}
+
+body {
+	background-color: #F0F1F3;
+}
+
+p {
+	color: #555;
+}
+
+
+.appicon {
+	width: 30%;
+	height: auto;
+
+	@media only screen and (min-width:675px) {
+		width: 200px;
+	}
+}
+
+.features-grid {
+	--grid-column-gap: 25px;
+	display: grid;
+	grid-template-columns: 5fr repeat(4,minmax(50px,1fr));
+	grid-template-rows: 1fr auto repeat(9,minmax(50px,max-content));
+	grid-row-gap: 10px;
+	grid-column-gap: var(--grid-column-gap);
+	margin-bottom: 2em;
+
+	h3 {
+		grid-column-start: 1;
+		grid-column-end: 6;
+		font-size: 120%;
+		font-weight: bold;
+		margin-top: 1.5em;
+		margin-bottom: 0;
+	}
+
+	.feature-compatibility {
+			grid-column-start: 2;
+			grid-column-end: 6;
+
+			display: grid;
+			grid-template-columns: repeat(4,minmax(0,1fr));
+			grid-column-gap: var(--grid-column-gap);
+	}
+
+	.feature {
+		display: flex;
+		width: 100%;
+		justify-content: left;
+		align-items: center;
+		text-align: left;
+	}
+
+	.compatibility {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+
+	.green {
+		color: green;
+	}
+	.gray {
+		color: #ccc;
+	}
+
+	.quantity {
+		font-weight: bold;
+	}
+
+
+	@media only screen and (max-width:675px) {
+
+		--grid-column-gap: 5px;
+
+		.feature {
+			grid-column-start: 1;
+			grid-column-end: 6;
+
+		}
+
+		.feature-compatibility {
+			grid-column-start: 1;
+			grid-column-end: 6;
+			padding-bottom: 0.5em;
+			border-bottom: 1px solid #d2d2d2;
+		}
+
+		.compatibility {
+
+		}
+
+
+		.compress {
+			font-size: 80%;
+		}
+
+
+	}
+
+}
+
+
+
+#tmlogotype {
+	width: 100%;
+
+	@media only screen and (min-width:675px) {
+		width: 640px;
+	}
+}
+
+#ttapplogotype {
+	width: 100%;
+
+	@media only screen and (min-width:675px) {
+		width: 420px;
+	}
+}
+
+.appgrid {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-left: 0;
+	padding: 0;
+
+	li {
+		list-style: none;
+		padding: 0.5em 0.5em;
+		width: 33%;
+
+		line-height: 1;
+		font-size: 0.8rem;
+		text-align: left;
+
+		@media only screen and (min-width:675px) {
+			width: 128px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	li img {
+		width:80px;
+		height: auto;
+		display: block;
+		margin-bottom: 0.25em;
+
+		@media only screen and (min-width:675px) {
+			width: 128px;
+		}
+
+	}
+}
+
+.appstorebutton {
+
+}
+
+#hero-totaltiki {
+	display: block;
+	margin: 1em auto;
+
+	@media only screen and (min-width:675px) {
+		width: 60vw;
+	}
+}
+
+section.card {
+	h2 { line-height: 1; margin-bottom: 1rem;}
+	p { margin-bottom: 1rem;}
+
+}
+
+.review {
+	max-width: 40em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: --pico-block-spacing-vertical;
+	margin-bottom: --pico-block-spacing-vertical;
+	.stars {
+		color: orange;
+	}
+	p {
+		font-size: 0.9rem;
+		line-height: 1.2;		
+	}
+}
+
+.card {
+	background-color: white;
+	border-radius: 18px;
+	padding: 1em;
+}
+
+#card-totaltiki-content {
+	@media only screen and (min-width:675px) {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+
+		hgroup {
+			max-width: 50%;
+		}
+	}
+
+	img {
+
+		border-radius: 18px;
+		margin-bottom: 1em;
+
+		@media only screen and (min-width:675px) {
+			width: 40%;
+			height: auto;
+
+		}
+	}
+
+}
+
+#card-database {
+
+	@media only screen and (min-width:675px) {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+
+		hgroup {
+			max-width: 35%;
+		}
+	}
+
+	img {
+
+		@media only screen and (min-width:675px) {
+			height: 80vh;
+		}
+	}
+}
+
+#card-ingredients {
+
+	@media only screen and (min-width:675px) {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+
+		hgroup {
+			max-width: 35%;
+		}
+	}
+
+	img {
+
+		margin-bottom: 1em;
+
+		@media only screen and (min-width:675px) {
+			width: 40%;
+		}
+	}
+}
+
+#card-apptools {
+
+	@media only screen and (min-width:675px) {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+
+		hgroup {
+			max-width: 30%;
+		}
+	}
+
+	img {
+
+		@media only screen and (min-width:675px) {
+			height: 80vh;
+		}
+	}
+}
+
+#card-appinterop {
+
+	@media only screen and (min-width:675px) {
+		p { max-width: 30em;}
+	}
+
+	img {
+
+		@media only screen and (min-width:675px) {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+	}
+}
+
+#card-ttol-nextgen {
+
+	@media only screen and (min-width:675px) {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+
+		hgroup {
+			max-width: 35%;
+		}
+	}
+
+	img {
+
+		margin-bottom: 1em;
+
+		@media only screen and (min-width:675px) {
+			width: 60%;
+		}
+	}
+}
+
+#card-ttol-entertain {
+
+	@media only screen and (min-width:675px) {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+
+		hgroup {
+			max-width: 35%;
+		}
+	}
+
+	img {
+
+		margin-bottom: 1em;
+
+		@media only screen and (min-width:675px) {
+			width: 60%;
+		}
+	}
+}
+
+#card-tm-privaterecipes {
+
+	@media only screen and (min-width:675px) {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+
+		hgroup {
+			max-width: 35%;
+		}
+	}
+
+	img {
+
+		margin-bottom: 1em;
+
+		@media only screen and (min-width:675px) {
+			width: 60%;
+		}
+	}
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
