@@ -210,6 +210,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/gfx\/feature-tm-entertain.jpg" : {
+      "ft" : 16384,
+      "iS" : 90439,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/gfx\/feature-tm-entertain.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/gfx\/feature-tm-privaterecipes.jpg" : {
       "ft" : 16384,
       "iS" : 240613,
@@ -296,7 +309,7 @@
       "oAP" : "\/gfx\/feature-ttol-entertain.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
