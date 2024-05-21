@@ -270,6 +270,9 @@ section.card h2, section.card h3 {
   }
 }
 
+section:not(.card) h1 img, .app__masthead h1 img {
+  margin-inline: auto;
+}
 @media (width < 480px) {
   section:not(.card), .app__masthead {
     padding: var(--panel-padding);
@@ -424,6 +427,9 @@ a {
   font-size: var(--font-size-4);
   margin-top: 1em;
 }
+.theme--modern main {
+  color: white;
+}
 
 .theme--martini {
   background: conic-gradient(from 0.5turn at center bottom, rgb(183, 223, 226), rgb(173, 213, 216));
@@ -459,7 +465,12 @@ a {
   background: conic-gradient(from 0.5turn at center bottom, rgb(245, 234, 208), rgb(235, 224, 198));
 }
 .theme--hairball .app__masthead h1 img {
-  max-width: 50%;
+  max-width: 80%;
+}
+@media (width > 480px) {
+  .theme--hairball .app__masthead h1 img {
+    max-width: 50%;
+  }
 }
 .theme--hairball .appicon {
   filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.25));
@@ -505,11 +516,7 @@ a {
 .theme--pdt {
   background: conic-gradient(from 0.5turn at center bottom, rgb(42, 0, 0), rgb(52, 0, 0));
   color: white;
-
-  main { color: white; }
 }
-
-
 .theme--pdt .appicon {
   filter: drop-shadow(0px 0px 18px rgba(255, 255, 255, 0.5));
 }
@@ -527,6 +534,9 @@ a {
 .theme--pdt .recipes h2:not(:first-child) {
   font-size: var(--font-size-4);
   margin-top: 1em;
+}
+.theme--pdt main {
+  color: white;
 }
 
 .theme--gaz {
@@ -1040,13 +1050,13 @@ a[role=button]:hover {
 }
 .features-grid .green {
   color: white;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: var(--radius-round);
   padding: 0 var(--flow-spacing);
 }
 .features-grid .gray {
   font-weight: bold;
-  color: hsla(0, 0%, 0%, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 .features-grid .quantity {
   font-weight: bold;
@@ -1063,7 +1073,7 @@ a[role=button]:hover {
     grid-column-start: 1;
     grid-column-end: 6;
     padding-bottom: 0.5em;
-    border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   }
   .features-grid .compress {
     font-size: 80%;

@@ -135,6 +135,8 @@ section.card {
 
 }
 section:not(.card), .app__masthead {
+
+    h1 img { margin-inline: auto; }
     @media (width < 480px) {
         padding: var(--panel-padding);
     }

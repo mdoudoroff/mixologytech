@@ -92,6 +92,7 @@ a { color: var(--indigo-8);} // basically nuking dark mode here
 			margin-top: 1em;
 		}
 	}
+	main { color: white; }
 }
 .theme--martini {
 	background: conic-gradient(from 0.5turn at center bottom, rgba(183,223,226,1.0), rgba(173,213,216, 1.0));
@@ -123,8 +124,13 @@ a { color: var(--indigo-8);} // basically nuking dark mode here
 }
 .theme--hairball {
 	background: conic-gradient(from 0.5turn at center bottom, rgba(245,234,208,1.0), rgba(235,224,198, 1.0));
+
 	.app__masthead h1 img {
-		max-width: 50%;
+		max-width: 80%;
+
+		@media(width > 480px) {
+			max-width: 50%;
+		}
 	}
 	.appicon {
 		filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.25));
@@ -147,6 +153,7 @@ a { color: var(--indigo-8);} // basically nuking dark mode here
 }
 .theme--punch {
 	background: conic-gradient(from 0.5turn at center bottom, rgba(245,234,208,1.0), rgba(235,224,198, 1.0));
+
 	.appicon {
 		filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.25));
 	}
@@ -187,6 +194,7 @@ a { color: var(--indigo-8);} // basically nuking dark mode here
 			margin-top: 1em;
 		}
 	}
+	main { color: white; }
 }
 .theme--gaz {
 	background: conic-gradient(from 0.5turn at center bottom, rgba(250,250,250,1.0), rgba(240,240,240, 1.0));
@@ -218,7 +226,6 @@ a[role="button"] {
 	color: white;
 	background: var(--indigo-9);
 	border-radius: var(--radius-2);
-	// box-shadow: var(--shadow-2),0 1px var(--surface-3),0 0 0 0 hsl(var(--gray-5-hsl)/25%);
 	box-shadow: var(--shadow-2);
 	align-items: center;
 	display: inline-flex;
@@ -750,7 +757,7 @@ a[role="button"] {
 	.green {
 		color: white;
 		// background-color: var(--green-10);
-		background-color: hsla(0,0,0,0.5);
+		background-color: rgb(0,0,0,0.5);
 		border-radius: var(--radius-round);
 		padding: 0 var(--flow-spacing);
 	}
@@ -758,7 +765,7 @@ a[role="button"] {
 	.gray {
 		// color: var(--gray-6);
 		font-weight: bold;
-		color: hsla(0,0,0,0.5);
+		color: rgb(0,0,0,0.5);
 	}
 
 	.quantity {
@@ -780,7 +787,7 @@ a[role="button"] {
 			grid-column-start: 1;
 			grid-column-end: 6;
 			padding-bottom: 0.5em;
-			border-bottom: 1px solid hsla(0,0,0,0.5);
+			border-bottom: 1px solid rgb(0,0,0,0.5);
 		}
 
 		.compress {
