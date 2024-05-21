@@ -1,2 +1,0 @@
-var appsToggleState="closed";jQuery(document).ready((function(){$("#syncgridtop").hide(),setInterval((function(){$("#syncgridtop").fadeToggle(1e3)}),3e3),$("#menuToggle").click((function(e){"closed"===appsToggleState?(appsToggleState="open",$("#navApp").css("display","flex"),$("#menuToggle").html('<a href="#">Apps ▾</a>')):(appsToggleState="closed",$("#navApp").css("display","none"),$("#menuToggle").html('<a href="#">Apps ▸</a>')),e.preventDefault()}))}));
-//# sourceMappingURL=page-min.js.map
