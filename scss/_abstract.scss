@@ -1,0 +1,176 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+
+[data-theme="light"] {
+    color-scheme: only light;
+}
+  
+[data-theme="dark"] {
+    color-scheme: only dark;
+}
+
+:root {
+    --main-color: black; // NOTE: this is just used by SVGs
+    --main-background-color-light: var(--surface-1);
+    --main-background-color-dark: black;
+    --main-background-color: var(--main-background-color-light);
+    background-color: var(--main-background-color);
+    --card-bkgd: var(--gray-2);
+    --footer-background: var(--gradient-23);
+
+    --font-size-05: .85rem;
+
+    --dark-mode-color: rgb(3,5,7);
+
+    --fluid-table-font-size: clamp(.65rem, 1.5vw, 1rem);;
+    --table-font-size: var(--font-size-fluid-0);
+
+    --flow-spacing: var(--size-2);
+    --section-spacing: var(--size-3);
+    --panel-padding: var(--size-4);
+    --panel-margin-bottom: var(--size-3);
+    --inline-gap: var(--size-1);
+    --button-row-spacing: var(--size-3);
+
+    --link-color: var(--indigo-8);
+    --link-hover-color: color-mix(in srgb, white 15%, var(--link-color));
+    --link-border-color: var(--indigo-9); // actually used mainly for styling form elements
+    --link-background: var(--indigo-12);
+    --link-background-hover-color: color-mix(in srgb, white 20%, var(--link-background));
+    --link-background-label: var(--indigo-2);
+    --deemphasis-color: var(--gray-6);
+    --admin-color: var(--orange-6);
+    
+    --label-color-light: var(--gray-7);
+    --label-color-dark: var(--gray-5);
+    --label-color: var(--label-color-light);
+    --form-background-color-light: var(--gray-2);
+    --form-background-color-dark: var(--gray-9);
+    --form-background-color: var(--form-background-color-light);
+    --input-background-color-light: var(--indigo-0);
+    --input-background-color-dark: var(--indigo-12);
+    --input-background-color: var(--input-background-color-light);
+    --accordion-border-color-closed-light: var(--gray-3);
+    --accordion-border-color-closed-dark: var(--gray-9);
+    --accordion-border-color-closed: var(--accordion-border-color-closed-light);
+
+    --hicon-mono-foreground: white;
+    --hicon-mono-background: black;
+    --curatorial-panel-background-color-light: var(--gray-1);
+    --curatorial-panel-background-color-dark: var(--gray-9);
+    --curatorial-panel-background-color: var(--curatorial-panel-background-color-light);
+    --annotation-background-color-light: var(--gray-2);
+    --annotation-background-color-dark: var(--gray-9);
+    --annotation-background: var(--annotation-background-color-light);
+    --tabular-rule-color: var(--annotation-background);
+
+
+    --inner-shadow-8: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    --button-glow-box-shadow: rgba(50, 50, 93, 0.25) 0px 7.5px 15px -3px inset, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px inset;
+
+    --inventoryGreen: green;
+    --inventoryYellow: orange;
+    --inventoryRed: red;
+    --inventoryGray: gray;
+
+    --recipePanelBorder: 1px solid var(--deemphasis-color);
+    --myrecipe-bkgd: linear-gradient(60deg, rgba(244,244,244,1) 0%, rgba(252,252,252,1) 35%, rgba(245,241,241,1) 150%);
+    // --hairball-bkgd-1860s: #c98029;
+    --hairball-bkgd-1860s: linear-gradient(70deg, rgba(201,120,39,1) 0%, rgba(201,128,41,1) 35%, rgba(195,123,37,1) 200%);
+    --hairball-bkgd-1870s: linear-gradient(70deg, rgba(204,142,64,1) 0%, rgba(208,141,57,1) 35%, rgba(227,145,43,1) 200%);
+    --hairball-bkgd-1880s: linear-gradient(70deg, rgba(231,168,84,1) 0%, rgba(189,140,76,1) 35%, rgba(222,164,87,1) 200%);
+    --hairball-bkgd-1890s: linear-gradient(70deg, rgba(237,192,120,1) 0%, rgba(236,195,131,1) 35%, rgba(236,187,109,1) 200%);
+    --hairball-bkgd-1900s: linear-gradient(70deg, rgba(249,214,152,1) 0%, rgba(240,202,136,1) 35%, rgba(250,223,176,1) 200%);
+    --hairball-bkgd-1910s: linear-gradient(70deg, rgba(231,208,161,1) 0%, rgba(255,229,177,1) 35%, rgba(255,232,187,1) 200%);
+    --hairball-bkgd-1920s: linear-gradient(70deg, rgba(255,238,199,1) 0%, rgba(250,237,208,1) 35%, rgba(255,229,177,1) 200%);
+    --hairball-bkgd-1930s: linear-gradient(70deg, rgba(251,237,204,1) 0%, rgba(233,225,205,1) 35%, rgba(255,244,218,1) 200%);
+    --hairball-bkgd-1940s: linear-gradient(70deg, rgba(254,250,243,1) 0%, rgba(255,247,234,1) 35%, rgba(255,250,242,1) 200%);
+    --hairball-bkgd-1950s: linear-gradient(70deg, rgba(241,239,234,1) 0%, rgba(255,250,240,1) 35%, rgba(241,237,229,1) 200%);
+    --_presentation-bkgd: var(--myrecipe-bkgd);
+    --serif-font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    --_presentation-font-family: initial;
+    --_presentation-link-hover-color: --link-color;
+
+    --primary-font-family: system-ui, sans-serif;
+    font-family: var(--primary-font-family);
+    font-weight: normal;
+
+    --kwicon-diameter: 80px;
+    --gallery-thumb-height: 270px;
+
+    --help-bkgd-A: lch(89.89% 55.88 98.14);
+    --help-bkgd-B: lch(94.12% 25.03 121.34);
+
+    --timelinePrimaryStrokeColor: black;
+    --timelineHighlightStrokeColor: green;
+    --timelineAnnotationColor: var(--gray-5);
+    --timelineGridStrokeColor: var(--gray-5);
+
+    --scrollbar-foreground: var(--gray-4);
+    --scrollbar-background: var(--gray-7);
+
+}
+
+// tiki4 color overwrites
+:root.tiki4 {
+    --link-color: var(--lime-10);
+    --link-border-color: var(--lime-9); // actually used mainly for styling form elements
+    --link-hover-color: color-mix(in srgb, white 15%, var(--link-color));
+    --link-background: var(--lime-12);
+    --link-background-hover-color: color-mix(in srgb, white 20%, var(--link-background));
+    --link-background-label: var(--lime-2);
+    --input-background-color-light: var(--lime-0);
+    --input-background-color-dark: var(--lime-12);
+    #flag { color: var(--lime-9); }
+
+    background: url('/static/gfx/tiki4_bg_pattern.jpg');
+    // background-size: 75%;
+}
+
+
+[data-theme="dark"] {
+    background-color: var(--gray-10);
+    --main-color: rgb(238,238,238); // NOTE: this is just used by SVGs
+    --text-1: var(--dark-mode-color);
+    --link-color: var(--indigo-3);
+    --link-hover-color: color-mix(in srgb, white 25%, var(--link-color));
+    --link-background: var(--indigo-12);
+    --link-background-label: var(--indigo-3);
+    --annotation-background: var(--annotation-background-color-dark);
+    --curatorial-panel-background-color: var(--curatorial-panel-background-color-dark);
+    --form-background-color: var(--form-background-color-dark);
+    --hicon-mono-foreground: black;
+    --hicon-mono-background: white;
+    --label-color: var(--label-color-dark);
+    --main-background-color: var(--main-background-color-dark);
+    --input-background-color: var(--input-background-color-dark);
+
+
+    --help-bkgd-A: lch(37.24% 36.36 82.79);
+    --help-bkgd-B: lch(40.21% 29 102.02);
+
+    --timelinePrimaryStrokeColor: white;
+    --timelineAnnotationColor: var(--gray-7);
+    --timelineGridStrokeColor: var(--gray-7);
+
+    --scrollbar-foreground: var(--gray-8);
+    --scrollbar-background: var(--gray-5);
+
+}
+
+// dark tiki4 overwrites
+[data-theme="dark"].tiki4 {
+    background-color: black;
+    --link-color: var(--lime-5);
+    --link-border-color: var(--lime-9); // actually used mainly for styling form elements        
+    --link-hover-color: color-mix(in srgb, white 15%, var(--link-color));
+
+    --link-background: var(--lime-12);
+    --link-background-hover-color: color-mix(in srgb, white 20%, var(--link-background));
+    --link-background-label: var(--lime-3);
+
+    #flag { color: var(--lime-9); }
+
+    background: url('/static/gfx/tiki4_bg_pattern-dark.jpg');
+}

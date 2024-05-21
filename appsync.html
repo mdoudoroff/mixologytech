@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/page.css">
+    <title>MixologyTech App Sync Service</title>
+  </head>
+  <body class="theme--other">
+
+
+
+    <main class="container">
+
+      <article>
+
+        <section>
+        <h1>MixologyTech Sync</h1>
+        <p><em>This tutorial applies to eight native apps for iPhone &amp; iPad, only</em><br><br></p>
+        </section>
+
+
+        <section class="text">
+
+          <p>Using a single sync account, you can unify your ingredient inventory, journal and lists across any or all MixologyTech apps for iPhone and iPad you purchase, across as many devices as you own.</p>
+
+          <p>Sync provides a few benefits:</p>
+          <ol>
+            <li><strong>A form of distributed backup</strong>: if you have to reinstall an app for any reason, you can recover your inventory, journal and lists simply by reconnecting to your account on the server</li>
+            <li><strong>More efficient ingredient inventory management</strong>: you only have to make a change once and all your other apps will be automatically updated</li>
+            <li><strong>Shared lists and journal</strong>: the journal and lists features can work standalone within an app, but they’re generally more useful when they can span multiple apps</li>
+            <li><strong>Web access to your data</strong>: you can access your sync data at any time by logging into <a href="https://my.mixologytech.com">https://my.mixologytech.com</a></li>
+          </ol>
+
+          <p><strong>Even if you only use one app on one device, the sync service is still valuable as a backup mechanism.</strong></p>
+
+        </section>
+
+        <div class="videoWrapper">
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/okZ3Rl5uv5U?rel=0" frameborder="0" allowfullscreen></iframe> <p><em>How to set up sync</em></p>
+          <br style="clear:both;" />
+        </div>
+
+        <section class="card">
+
+
+
+          <h3>How it works: the short version</h3>
+          <p>Writing about this service makes it sound more complicated to use than it actually is. Here’s the quick start:</p>
+          <ol>
+            <li>Fire up an app.</li>
+            <li>Tap the settings button <img src="gfx/button.settings@3x.png" style="height:14px; display: inline;" /> at the bottom of the main menu.</li>
+            <li>Choose “Sync”.</li>
+            <li>If you don’t have an account yet, create one.</li>
+            <li>If you have an account, log into it.</li>
+            <li>Done! You’re syncing!</li>
+            <li>Repeat as necessary for your other apps and devices.</li>
+          </ol>
+
+        </section>
+
+        <section class="card">
+          <h3>How it works: the long version</h3>
+
+          <p>We are <strong>not</strong> using iCloud for the sync infrastructure for many good reasons that I’m not going to belabor here. Instead, we’ve implemented our own sync server. To start using sync, you’ll create a free sync account within any one of the apps, then use the same account credentials to link the other apps. It’s pretty straightforward, and should “just work” thereafter.</p>
+
+          <p>In short, the sync server is a simple mechanism that unifies and caches a snapshot of your total inventory, list and journal data from one or more apps. Each app then retrieves that data on an as-needed basis to keep itself up-to-date, and sends changes to the server when appropriate.</p>
+
+          <p>To create your free sync account, you’ll be providing a (functional) email address and password. You’ll use this email address and password as your login credentials for all the apps you use on all your devices.</p>
+
+          <p><strong>We will take reasonable steps to protect your email address and will not expose, sell or transfer it to third parties. You generally won’t be receiving emails from us, either, except if you request a password reset or to inform you about something relevant to your account. (Perhaps a rare announcement email if something we think is really important comes up.)</strong> That said, this is a casual sync service for drink recipe apps and you should use it only for casual purposes, ultimately at your own risk. (Common sense, people!)</p>
+
+          <p>Please note our <a href="privacy.html">privacy policy</a>.</p>
+
+          <p>You can create your sync account by tapping the gear icon <img src="gfx/button.settings@3x.png" style="height:14px;" /> at the bottom of the main screen and choosing “Sync”. Choose the “Need an account? Create one.” option and follow the prompt. We provide 1Password integration if you use that tool.</p>
+
+          <p>If you have other apps and/or devices, simply proceed to each in turn and use the “Login” form to connect each to the same account you just created. When the app asks if you wish to merge or replace the local inventory, you will normally want to <strong>merge</strong>. If you choose “replace”, then any inventory, journal and list data in the app you’re using will be erased and replaced with whatever is on the server.</p>
+
+          <p>That’s about it! Going forward, you shouldn’t have to do anything but use the apps normally. They will automatically check the server for changes to sync. Obviously, sync only works when your devices have internet access and can reach the server. A display at the bottom of the main screen is provided to let you know what’s up:</p>
+
+          <p style="text-align:center;"><img src="gfx/grab.sync-status.jpg" style="max-height: 33px;" /></p>
+
+          <p>Final note: sync is not instantaneous—there’s a latency of several seconds, so if you madly switch back and forth between apps flipping switches, it is indeed possible to out-run the sync system. As long as your changes are propagating reasonably quickly and correctly, there’s no cause for concern.</p>
+          
+          <p>Questions? Please email <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#109;&#105;&#120;&#111;&#108;&#111;&#103;&#121;&#116;&#101;&#99;&#104;&#46;&#99;&#111;&#109;">&#105;&#110;&#102;&#111;&#64;&#109;&#105;&#120;&#111;&#108;&#111;&#103;&#121;&#116;&#101;&#99;&#104;&#46;&#99;&#111;&#109;</a>.</p>
+
+        </section>
+
+
+      </artcle>
+    </main>
+
+    <footer>
+      <div class="container">
+      <h3>MixologyTech/Martin Doudoroff LLC</h3>
+      <a href="index.html">Home</a>
+      <div class="grid">
+        <div>
+          <h4>Online apps</h4>
+          <ul>
+            <li><a class="secondary" href="totaltikionline.html">Beachbum Berry’s Total Tiki Online</a></li>
+            <li><a class="secondary" href="totalmixology.html">Total Mixology</a></li>
+            <li><a class="secondary" href="enterprise.html">Total Mixology Enterprise</a></li>
+            <li><a class="secondary" href="comparison.html">Compare features</a></li>
+          </ul>
+          <h4>iPhone/iPad apps</h4>
+          <ul>
+            <li><a class="secondary" href="app-ssn.html">Shaken and Stirred: Easy Craft Cocktails</a></li>
+            <li><a class="secondary" href="app-modern.html">Modern Classics of the Cocktail Renaissance</a></li>
+            <li><a class="secondary" href="app-martini.html">The Martini Cocktail</a></li>
+            <li><a class="secondary" href="app-hairball.html">Martin’s Index of Cocktails</a></li>
+            <li><a class="secondary" href="app-punch.html">Wondrich’s Index of Punch</a></li>
+            <li><a class="secondary" href="app-pdt.html">PDT Cocktails</a></li>
+            <li><a class="secondary" href="app-tiki3.html">Beachbum Berry’s Total Tiki</a></li>
+            <li><a class="secondary" href="app-gaz.html">Gaz Regan‘s 101 Best New Cocktails (2011–2015)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a class="secondary" href="faq.html">Subscriber FAQ</a></li>
+            <li><a class="secondary" href="android.html">Will there be an Android version?</a></li>
+            <li><a class="secondary" href="http://eepurl.com/bZe3Zr">Join our mailing list</a></li>
+            <li><a class="secondary" href="mailto:info@mixologytech.com">Get help (email)</a></li>
+            <li><a class="secondary" href="https://spiritsandcocktails.community/c/mixologytech-ios-apps">Customer Forum</a></li>
+            <li><a class="secondary" href="appsync.html">How to set up sync for your iPhone/iPad apps</a></li>
+            <li><a class="secondary" href="https://my.mixologytech.com/">App Sync Web Login</a></li>
+            <li><a class="secondary" href="privacy.html">Privacy Policy</a></li>
+
+          </ul>                    
+        </div>
+      </div>
+      <br />
+      <small>Copyright 2015–2024 Martin Doudoroff LLC.</small>
+      </div>
+    </footer>
+
+  </body>
+</html>
