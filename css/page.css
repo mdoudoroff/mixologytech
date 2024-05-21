@@ -505,7 +505,11 @@ a {
 .theme--pdt {
   background: conic-gradient(from 0.5turn at center bottom, rgb(42, 0, 0), rgb(52, 0, 0));
   color: white;
+
+  main { color: white; }
 }
+
+
 .theme--pdt .appicon {
   filter: drop-shadow(0px 0px 18px rgba(255, 255, 255, 0.5));
 }
