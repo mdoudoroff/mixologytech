@@ -533,6 +533,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/gfx\/feature-tm-hero.png" : {
+      "ft" : 32768,
+      "iS" : 878578,
+      "oA" : 0,
+      "oAP" : "\/gfx\/feature-tm-hero.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/gfx\/feature-tm-inventory.jpg" : {
       "ft" : 16384,
       "iS" : 154603,
