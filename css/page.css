@@ -1,5 +1,5 @@
-@import "/css/open-props.min.css";
-@import "/css/normalize.min.css";
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
 [data-theme=light] {
   color-scheme: only light;
 }
@@ -243,11 +243,12 @@ footer .grid ul li {
   display: none;
 }
 
-section {
+section, section div {
   margin-block: var(--flow-spacing);
+  margin-trim: block;
 }
-section p {
-  margin-block: var(--flow-spacing);
+section p, section div p {
+  margin-block: 1lh;
 }
 
 section.card {

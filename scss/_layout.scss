@@ -105,10 +105,11 @@ footer {
     display: none;
 }
 
-section {
+section, section div {
     margin-block: var(--flow-spacing);
+    margin-trim: block;
 
-    p { margin-block: var(--flow-spacing);}
+    p { margin-block: 1lh;}
 }
 
 
