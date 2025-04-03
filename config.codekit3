@@ -1404,6 +1404,42 @@
       "oS" : 1,
       "pg" : 0
     },
+    "\/scss\/buttons.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/scss\/buttons.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/scss\/normalize.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/normalize.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/scss\/open-props.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/open-props.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/scss\/page.scss" : {
       "aP" : 0,
       "bl" : 0,

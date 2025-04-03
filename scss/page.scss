@@ -1,3 +1,5 @@
+@use "open-props.min.css";
+@use "normalize.min.css";
 
 @use "abstract";
 @use "layout";
@@ -582,11 +584,11 @@ a[role="button"] {
 		font-size: 0.8rem;
 		text-align: left;
 
+		text-align: center;
+
 		@media (width >= 675px) {
 			width: 128px;
 		}
-
-		text-align: center;
 
 		a {
 			text-decoration: none;
