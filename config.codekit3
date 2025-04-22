@@ -1298,6 +1298,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/gfx\/tm-social.jpg" : {
+      "ft" : 16384,
+      "iS" : 105925,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/gfx\/tm-social.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/gfx\/ttol-social.jpg" : {
+      "ft" : 16384,
+      "iS" : 102766,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/gfx\/ttol-social.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1453,28 +1479,20 @@
       "oS" : 1,
       "pg" : 0
     },
-    "\/totalmixology.html" : {
+    "\/totalmixology-defunct.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/totalmixology.html",
+      "oAP" : "\/totalmixology-defunct.html",
       "oF" : 0
     },
-    "\/totaltikionline-old.html" : {
+    "\/totaltikionline-defunct.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/totaltikionline-old.html",
-      "oF" : 0
-    },
-    "\/totaltikionline.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/totaltikionline.html",
+      "oAP" : "\/totaltikionline-defunct.html",
       "oF" : 0
     }
   },
