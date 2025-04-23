@@ -440,6 +440,8 @@ a[role="button"] {
 
 		font-size: var(--font-size-fluid-2);
 		font-weight: var(--font-weight-9);
+		line-height: 1.1;
+		text-align: center;
 	}
 
 	@media (width < 480px) {
