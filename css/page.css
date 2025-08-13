@@ -1501,7 +1501,6 @@ footer .grid ul li {
 
 section, section div {
   margin-block: var(--flow-spacing);
-  margin-trim: block;
 }
 section p, section div p {
   margin-block: 1lh;
