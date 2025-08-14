@@ -1532,6 +1532,7 @@ section:not(.card) h1 img, .app__masthead h1 img {
 @media (width < 480px) {
   section:not(.card), .app__masthead {
     padding: var(--panel-padding);
+    padding-inline: 1em;
   }
 }
 
@@ -2220,6 +2221,11 @@ a[role=button]:hover {
   background: rgba(255, 255, 255, 0.3);
   padding: 2ch;
 }
+@media (width < 400px) {
+  .homeonlinegrid {
+    gap: 2ch;
+  }
+}
 
 .homeappgrid {
   display: flex;
@@ -2374,4 +2380,8 @@ mark {
 
 .button__row a.login {
   background-color: var(--green-7);
+}
+
+small {
+  line-height: 1;
 }

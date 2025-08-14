@@ -654,6 +654,9 @@ a[role="button"] {
 
 		}
 	}
+	@media (width < 400px) {
+		gap: 2ch;
+	}
 }
 .homeappgrid {
 	display: flex;
@@ -848,4 +851,8 @@ mark {
 
 .button__row a.login {
 	background-color: var(--green-7);
+}
+
+small {
+	line-height: 1;
 }
